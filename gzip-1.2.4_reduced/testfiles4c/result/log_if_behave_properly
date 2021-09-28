@@ -886,3 +886,595 @@ testfiles/sample1_fuzzed99.gz testfiles/sample1_fuzzed99.rb2 differ: byte 14, li
 testfiles/sample1_fuzzed100.gz testfiles/sample1_fuzzed100.rb2 differ: byte 11, line 1
 
 
+testfiles/sample1_fuzzed0.gz testfiles/sample1_fuzzed0.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed1.gz testfiles/sample1_fuzzed1.rb2 differ: byte 12742, line 57
+
+
+testfiles/sample1_fuzzed2.gz testfiles/sample1_fuzzed2.rb2 differ: byte 12755, line 61
+
+
+testfiles/sample1_fuzzed3.gz testfiles/sample1_fuzzed3.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed4.gz testfiles/sample1_fuzzed4.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed5.gz testfiles/sample1_fuzzed5.rb2 differ: byte 38066, line 148
+
+
+testfiles/sample1_fuzzed6.gz testfiles/sample1_fuzzed6.rb2 differ: byte 58, line 1
+
+
+testfiles/sample1_fuzzed7.gz testfiles/sample1_fuzzed7.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed8.gz testfiles/sample1_fuzzed8.rb2 differ: byte 12760, line 64
+
+
+testfiles/sample1_fuzzed9.gz testfiles/sample1_fuzzed9.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed10.gz testfiles/sample1_fuzzed10.rb2 differ: byte 12760, line 74
+
+
+testfiles/sample1_fuzzed11.gz testfiles/sample1_fuzzed11.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed12.gz testfiles/sample1_fuzzed12.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed13.gz testfiles/sample1_fuzzed13.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed14.gz testfiles/sample1_fuzzed14.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed15.gz testfiles/sample1_fuzzed15.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed16.gz testfiles/sample1_fuzzed16.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed17.gz testfiles/sample1_fuzzed17.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed18.gz testfiles/sample1_fuzzed18.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed19.gz testfiles/sample1_fuzzed19.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed20.gz testfiles/sample1_fuzzed20.rb2 differ: byte 12760, line 74
+
+
+testfiles/sample1_fuzzed21.gz testfiles/sample1_fuzzed21.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed22.gz testfiles/sample1_fuzzed22.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed23.gz testfiles/sample1_fuzzed23.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed24.gz testfiles/sample1_fuzzed24.rb2 differ: byte 12774, line 58
+
+
+testfiles/sample1_fuzzed25.gz testfiles/sample1_fuzzed25.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed26.gz testfiles/sample1_fuzzed26.rb2 differ: byte 12758, line 62
+
+
+testfiles/sample1_fuzzed27.gz testfiles/sample1_fuzzed27.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed28.gz testfiles/sample1_fuzzed28.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed29.gz testfiles/sample1_fuzzed29.rb2 differ: byte 127, line 2
+
+
+testfiles/sample1_fuzzed30.gz testfiles/sample1_fuzzed30.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed31.gz testfiles/sample1_fuzzed31.rb2 differ: byte 57, line 1
+
+
+testfiles/sample1_fuzzed32.gz testfiles/sample1_fuzzed32.rb2 differ: byte 38070, line 174
+
+
+testfiles/sample1_fuzzed33.gz testfiles/sample1_fuzzed33.rb2 differ: byte 12769, line 61
+
+
+testfiles/sample1_fuzzed34.gz testfiles/sample1_fuzzed34.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed35.gz testfiles/sample1_fuzzed35.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed36.gz testfiles/sample1_fuzzed36.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed37.gz testfiles/sample1_fuzzed37.rb2 differ: byte 12755, line 67
+
+
+testfiles/sample1_fuzzed38.gz testfiles/sample1_fuzzed38.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed39.gz testfiles/sample1_fuzzed39.rb2 differ: byte 12759, line 55
+
+
+testfiles/sample1_fuzzed40.gz testfiles/sample1_fuzzed40.rb2 differ: byte 12769, line 59
+
+
+testfiles/sample1_fuzzed41.gz testfiles/sample1_fuzzed41.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed42.gz testfiles/sample1_fuzzed42.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed43.gz testfiles/sample1_fuzzed43.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed44.gz testfiles/sample1_fuzzed44.rb2 differ: byte 127, line 3
+
+
+testfiles/sample1_fuzzed45.gz testfiles/sample1_fuzzed45.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed46.gz testfiles/sample1_fuzzed46.rb2 differ: byte 11, line 1
+
+
+
+
+
+
+testfiles/sample1_fuzzed49.gz testfiles/sample1_fuzzed49.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed50.gz testfiles/sample1_fuzzed50.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed51.gz testfiles/sample1_fuzzed51.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed52.gz testfiles/sample1_fuzzed52.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed53.gz testfiles/sample1_fuzzed53.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed54.gz testfiles/sample1_fuzzed54.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed55.gz testfiles/sample1_fuzzed55.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed56.gz testfiles/sample1_fuzzed56.rb2 differ: byte 12, line 1
+
+
+
+
+testfiles/sample1_fuzzed58.gz testfiles/sample1_fuzzed58.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed59.gz testfiles/sample1_fuzzed59.rb2 differ: byte 13304, line 61
+
+
+testfiles/sample1_fuzzed60.gz testfiles/sample1_fuzzed60.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed61.gz testfiles/sample1_fuzzed61.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed62.gz testfiles/sample1_fuzzed62.rb2 differ: byte 12762, line 71
+
+
+testfiles/sample1_fuzzed63.gz testfiles/sample1_fuzzed63.rb2 differ: byte 38060, line 150
+
+
+
+
+testfiles/sample1_fuzzed65.gz testfiles/sample1_fuzzed65.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed66.gz testfiles/sample1_fuzzed66.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed67.gz testfiles/sample1_fuzzed67.rb2 differ: byte 12746, line 54
+
+
+testfiles/sample1_fuzzed68.gz testfiles/sample1_fuzzed68.rb2 differ: byte 12796, line 74
+
+
+testfiles/sample1_fuzzed69.gz testfiles/sample1_fuzzed69.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed70.gz testfiles/sample1_fuzzed70.rb2 differ: byte 12759, line 76
+
+
+testfiles/sample1_fuzzed71.gz testfiles/sample1_fuzzed71.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed72.gz testfiles/sample1_fuzzed72.rb2 differ: byte 12756, line 74
+
+
+
+
+testfiles/sample1_fuzzed74.gz testfiles/sample1_fuzzed74.rb2 differ: byte 38068, line 158
+
+
+testfiles/sample1_fuzzed75.gz testfiles/sample1_fuzzed75.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed76.gz testfiles/sample1_fuzzed76.rb2 differ: byte 11, line 1
+
+
+
+
+
+
+testfiles/sample1_fuzzed79.gz testfiles/sample1_fuzzed79.rb2 differ: byte 12757, line 60
+
+
+testfiles/sample1_fuzzed80.gz testfiles/sample1_fuzzed80.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed81.gz testfiles/sample1_fuzzed81.rb2 differ: byte 38062, line 150
+
+
+testfiles/sample1_fuzzed82.gz testfiles/sample1_fuzzed82.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed83.gz testfiles/sample1_fuzzed83.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed84.gz testfiles/sample1_fuzzed84.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed85.gz testfiles/sample1_fuzzed85.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed86.gz testfiles/sample1_fuzzed86.rb2 differ: byte 12758, line 64
+
+
+testfiles/sample1_fuzzed87.gz testfiles/sample1_fuzzed87.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed88.gz testfiles/sample1_fuzzed88.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed89.gz testfiles/sample1_fuzzed89.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed90.gz testfiles/sample1_fuzzed90.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed91.gz testfiles/sample1_fuzzed91.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed92.gz testfiles/sample1_fuzzed92.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed93.gz testfiles/sample1_fuzzed93.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed94.gz testfiles/sample1_fuzzed94.rb2 differ: byte 12761, line 53
+
+
+testfiles/sample1_fuzzed95.gz testfiles/sample1_fuzzed95.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed96.gz testfiles/sample1_fuzzed96.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed97.gz testfiles/sample1_fuzzed97.rb2 differ: byte 13304, line 62
+
+
+testfiles/sample1_fuzzed98.gz testfiles/sample1_fuzzed98.rb2 differ: byte 12759, line 56
+
+
+testfiles/sample1_fuzzed99.gz testfiles/sample1_fuzzed99.rb2 differ: byte 14, line 1
+
+
+testfiles/sample1_fuzzed100.gz testfiles/sample1_fuzzed100.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed0.gz testfiles/sample1_fuzzed0.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed1.gz testfiles/sample1_fuzzed1.rb2 differ: byte 12742, line 57
+
+
+testfiles/sample1_fuzzed2.gz testfiles/sample1_fuzzed2.rb2 differ: byte 12755, line 61
+
+
+testfiles/sample1_fuzzed3.gz testfiles/sample1_fuzzed3.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed4.gz testfiles/sample1_fuzzed4.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed5.gz testfiles/sample1_fuzzed5.rb2 differ: byte 38066, line 148
+
+
+testfiles/sample1_fuzzed6.gz testfiles/sample1_fuzzed6.rb2 differ: byte 58, line 1
+
+
+testfiles/sample1_fuzzed7.gz testfiles/sample1_fuzzed7.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed8.gz testfiles/sample1_fuzzed8.rb2 differ: byte 12760, line 64
+
+
+testfiles/sample1_fuzzed9.gz testfiles/sample1_fuzzed9.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed10.gz testfiles/sample1_fuzzed10.rb2 differ: byte 12760, line 74
+
+
+testfiles/sample1_fuzzed11.gz testfiles/sample1_fuzzed11.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed12.gz testfiles/sample1_fuzzed12.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed13.gz testfiles/sample1_fuzzed13.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed14.gz testfiles/sample1_fuzzed14.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed15.gz testfiles/sample1_fuzzed15.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed16.gz testfiles/sample1_fuzzed16.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed17.gz testfiles/sample1_fuzzed17.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed18.gz testfiles/sample1_fuzzed18.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed19.gz testfiles/sample1_fuzzed19.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed20.gz testfiles/sample1_fuzzed20.rb2 differ: byte 12760, line 74
+
+
+testfiles/sample1_fuzzed21.gz testfiles/sample1_fuzzed21.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed22.gz testfiles/sample1_fuzzed22.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed23.gz testfiles/sample1_fuzzed23.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed24.gz testfiles/sample1_fuzzed24.rb2 differ: byte 12774, line 58
+
+
+testfiles/sample1_fuzzed25.gz testfiles/sample1_fuzzed25.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed26.gz testfiles/sample1_fuzzed26.rb2 differ: byte 12758, line 62
+
+
+testfiles/sample1_fuzzed27.gz testfiles/sample1_fuzzed27.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed28.gz testfiles/sample1_fuzzed28.rb2 differ: byte 12758, line 74
+
+
+testfiles/sample1_fuzzed29.gz testfiles/sample1_fuzzed29.rb2 differ: byte 127, line 2
+
+
+testfiles/sample1_fuzzed30.gz testfiles/sample1_fuzzed30.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed31.gz testfiles/sample1_fuzzed31.rb2 differ: byte 57, line 1
+
+
+testfiles/sample1_fuzzed32.gz testfiles/sample1_fuzzed32.rb2 differ: byte 38070, line 174
+
+
+testfiles/sample1_fuzzed33.gz testfiles/sample1_fuzzed33.rb2 differ: byte 12769, line 61
+
+
+testfiles/sample1_fuzzed34.gz testfiles/sample1_fuzzed34.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed35.gz testfiles/sample1_fuzzed35.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed36.gz testfiles/sample1_fuzzed36.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed37.gz testfiles/sample1_fuzzed37.rb2 differ: byte 12755, line 67
+
+
+testfiles/sample1_fuzzed38.gz testfiles/sample1_fuzzed38.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed39.gz testfiles/sample1_fuzzed39.rb2 differ: byte 12759, line 55
+
+
+testfiles/sample1_fuzzed40.gz testfiles/sample1_fuzzed40.rb2 differ: byte 12769, line 59
+
+
+testfiles/sample1_fuzzed41.gz testfiles/sample1_fuzzed41.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed42.gz testfiles/sample1_fuzzed42.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed43.gz testfiles/sample1_fuzzed43.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed44.gz testfiles/sample1_fuzzed44.rb2 differ: byte 127, line 3
+
+
+testfiles/sample1_fuzzed45.gz testfiles/sample1_fuzzed45.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed46.gz testfiles/sample1_fuzzed46.rb2 differ: byte 11, line 1
+
+
+
+
+
+
+testfiles/sample1_fuzzed49.gz testfiles/sample1_fuzzed49.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed50.gz testfiles/sample1_fuzzed50.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed51.gz testfiles/sample1_fuzzed51.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed52.gz testfiles/sample1_fuzzed52.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed53.gz testfiles/sample1_fuzzed53.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed54.gz testfiles/sample1_fuzzed54.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed55.gz testfiles/sample1_fuzzed55.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed56.gz testfiles/sample1_fuzzed56.rb2 differ: byte 12, line 1
+
+
+
+
+testfiles/sample1_fuzzed58.gz testfiles/sample1_fuzzed58.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed59.gz testfiles/sample1_fuzzed59.rb2 differ: byte 13304, line 61
+
+
+testfiles/sample1_fuzzed60.gz testfiles/sample1_fuzzed60.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed61.gz testfiles/sample1_fuzzed61.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed62.gz testfiles/sample1_fuzzed62.rb2 differ: byte 12762, line 71
+
+
+testfiles/sample1_fuzzed63.gz testfiles/sample1_fuzzed63.rb2 differ: byte 38060, line 150
+
+
+
+
+testfiles/sample1_fuzzed65.gz testfiles/sample1_fuzzed65.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed66.gz testfiles/sample1_fuzzed66.rb2 differ: byte 21, line 1
+
+
+testfiles/sample1_fuzzed67.gz testfiles/sample1_fuzzed67.rb2 differ: byte 12746, line 54
+
+
+testfiles/sample1_fuzzed68.gz testfiles/sample1_fuzzed68.rb2 differ: byte 12796, line 74
+
+
+testfiles/sample1_fuzzed69.gz testfiles/sample1_fuzzed69.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed70.gz testfiles/sample1_fuzzed70.rb2 differ: byte 12759, line 76
+
+
+testfiles/sample1_fuzzed71.gz testfiles/sample1_fuzzed71.rb2 differ: byte 12771, line 74
+
+
+testfiles/sample1_fuzzed72.gz testfiles/sample1_fuzzed72.rb2 differ: byte 12756, line 74
+
+
+
+
+testfiles/sample1_fuzzed74.gz testfiles/sample1_fuzzed74.rb2 differ: byte 38068, line 158
+
+
+testfiles/sample1_fuzzed75.gz testfiles/sample1_fuzzed75.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed76.gz testfiles/sample1_fuzzed76.rb2 differ: byte 11, line 1
+
+
+
+
+
+
+testfiles/sample1_fuzzed79.gz testfiles/sample1_fuzzed79.rb2 differ: byte 12757, line 60
+
+
+testfiles/sample1_fuzzed80.gz testfiles/sample1_fuzzed80.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed81.gz testfiles/sample1_fuzzed81.rb2 differ: byte 38062, line 150
+
+
+testfiles/sample1_fuzzed82.gz testfiles/sample1_fuzzed82.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed83.gz testfiles/sample1_fuzzed83.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed84.gz testfiles/sample1_fuzzed84.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed85.gz testfiles/sample1_fuzzed85.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed86.gz testfiles/sample1_fuzzed86.rb2 differ: byte 12758, line 64
+
+
+testfiles/sample1_fuzzed87.gz testfiles/sample1_fuzzed87.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed88.gz testfiles/sample1_fuzzed88.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed89.gz testfiles/sample1_fuzzed89.rb2 differ: byte 12756, line 74
+
+
+testfiles/sample1_fuzzed90.gz testfiles/sample1_fuzzed90.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed91.gz testfiles/sample1_fuzzed91.rb2 differ: byte 13, line 1
+
+
+testfiles/sample1_fuzzed92.gz testfiles/sample1_fuzzed92.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed93.gz testfiles/sample1_fuzzed93.rb2 differ: byte 12, line 1
+
+
+testfiles/sample1_fuzzed94.gz testfiles/sample1_fuzzed94.rb2 differ: byte 12761, line 53
+
+
+testfiles/sample1_fuzzed95.gz testfiles/sample1_fuzzed95.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed96.gz testfiles/sample1_fuzzed96.rb2 differ: byte 11, line 1
+
+
+testfiles/sample1_fuzzed97.gz testfiles/sample1_fuzzed97.rb2 differ: byte 13304, line 62
+
+
+testfiles/sample1_fuzzed98.gz testfiles/sample1_fuzzed98.rb2 differ: byte 12759, line 56
+
+
+testfiles/sample1_fuzzed99.gz testfiles/sample1_fuzzed99.rb2 differ: byte 14, line 1
+
+
+testfiles/sample1_fuzzed100.gz testfiles/sample1_fuzzed100.rb2 differ: byte 11, line 1
+
+
