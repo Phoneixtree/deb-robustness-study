@@ -2,6 +2,7 @@
 
 export home_folder=$(pwd)
 export rad_files4gzip=${home_folder}/fuzzed_input/radamsa_fuzzed/
+export afl_seed=${home_folder}/fuzzed_input/afl_seed/
 export bins=${home_folder}/original_files_and_refs
 export origin=${bins}/gzip-1.2.4.origin
 export reduced=${bins}/gzip-1.2.4.reduced
