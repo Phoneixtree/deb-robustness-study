@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function arg_test(){
+	echo "1st arg is "$1
+	echo "2nd arg is "$2
+	echo "3rd arg is "$3
+}
+
+
+function main(){
+	
+	arg_test "-c -f 44"
+	
+	arg1="44" 
+	
+	arg2="-c -f $arg1"
+		
+	arg_test "$arg2"
+
+}
+main
