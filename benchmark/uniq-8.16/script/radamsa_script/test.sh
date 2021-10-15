@@ -13,7 +13,15 @@ export SRC=$home_folder/original_files_and_refs/$name.c
 
 
 function clean() {
-  return 0 
+
+  cnt=0
+while(( $cnt<=500 )) 
+do
+  rm ${rad_files}/input${cnt}
+  rm ${rad_files}/data${cnt}
+  let "cnt++"
+done
+
 }
 
 
@@ -22,14 +30,14 @@ function desired_run() {
   cnt=0
   while(( $cnt<=500 )) 
   do
-  temp1=$({ timeout $TIMEOUT $REDUCED_BIN $1 data.txt; } 2>&1  )
+  temp1=$({ timeout $TIMEOUT $REDUCED_BIN $1 data${cnt}.txt; } 2>&1  )
   echo $? >> result/log_reduced
-  temp2=$({ $ORIGIN_BIN $1 data.txt; } 2>&1)
+  temp2=$({ $ORIGIN_BIN $1 data${cnt}.txt; } 2>&1)
   echo $? >> result/log_origin
   diff -q <(echo $temp1) <(echo $temp2) >&/dev/null   >> result/log_if_behave_properly
-  temp1=$({ timeout $TIMEOUT $REDUCED_BIN $1 input; } 2>&1  )
+  temp1=$({ timeout $TIMEOUT $REDUCED_BIN $1 input${cnt}; } 2>&1  )
   echo $? >> result/log_reduced
-  temp2=$({ $ORIGIN_BIN $1 input; })
+  temp2=$({ $ORIGIN_BIN $1 input${cnt}; })
   echo $? >> result/log_origin
   diff -q <(echo $temp1) <(echo $temp2) >&/dev/null  >> result/log_if_behave_properly
   
@@ -39,22 +47,46 @@ return 0
 }
 
 function desired() {
+  ./create_fuzzed_testfile.sh
   desired_run ""  
+  clean
   ./result_analysis.sh
+
+  ./create_fuzzed_testfile.sh
   desired_run "-c"  
+  clean
   ./result_analysis.sh
+  
+  ./create_fuzzed_testfile.sh
   desired_run "-d"
+  clean
   ./result_analysis.sh  
+
+  ./create_fuzzed_testfile.sh
   desired_run "-u"
+  clean
   ./result_analysis.sh  
+
+  ./create_fuzzed_testfile.sh
   desired_run "-i"
+  clean
   ./result_analysis.sh  
+
+  ./create_fuzzed_testfile.sh
   desired_run "-f 5"
+  clean
   ./result_analysis.sh  
+
+  ./create_fuzzed_testfile.sh
   desired_run "-s 10"
+  clean
   ./result_analysis.sh  
+
+  ./create_fuzzed_testfile.sh
   desired_run "-w 10"
+    clean
   ./result_analysis.sh  
+
   return 0
 }
 
@@ -66,7 +98,6 @@ function desired() {
 function main() {
   rm -r result
   mkdir result
-  ./create_fuzzed_testfile.sh
   clean
   desired
   clean

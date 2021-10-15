@@ -13,9 +13,9 @@ function main(){
 	
 	arg1="44" 
 	
-	arg2=`echo "-c -f "$arg1`
+	arg2="-c -f $arg1"
 		
-	arg_test $arg2
+	arg_test "$arg2"
 
 }
 main
