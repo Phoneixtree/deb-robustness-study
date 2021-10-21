@@ -22,8 +22,8 @@ def train():
         execute(cmd)
 
 def test():
-    #BIN = './bzip2.orig_temp/bzip2.orig.debloated'
-    BIN = './bzip2.orig'
+    BIN = '../original_files_and_refs/bzip2.orig.debloated'
+    test = '../fuzzed_input/radamsa_fuzzed/sample1.rb2_fuzzed'
 
     for fname in os.listdir('test'):
         fpath = os.path.join('test', fname)
