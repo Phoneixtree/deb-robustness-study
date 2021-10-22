@@ -25,8 +25,8 @@ def test():
     BIN = '../original_files_and_refs/bzip2.orig.debloated'
     test = '../fuzzed_input/radamsa_fuzzed/sample1.rb2_fuzzed'
 
-    for fname in os.listdir('test'):
-        fpath = os.path.join('test', fname)
+    for fname in os.listdir(test):
+        fpath = os.path.join(test, fname)
         # -c
         cmd = BIN + ' -c < ' + fpath + ' > tmp.log'
         execute(cmd)
