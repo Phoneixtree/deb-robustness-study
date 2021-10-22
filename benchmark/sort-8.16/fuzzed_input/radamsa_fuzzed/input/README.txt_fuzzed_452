@@ -1,0 +1,37 @@
+Command line used to find this crash:
+
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-8.16.reduced.afl @@
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+memory limit. The limit used for this fuzzinf session was 50.0 MB.
+
+them to a vendor? Check out the afl-tmin that comes with the fuzzThanks :-)
+Thanks :-)
+
+
+er!
+Need a tool to minimize test cases before investigating the crashes or sending
+
+Found any cool bugs in open-source tools using afl-fuzz, be sure to set the same
+memory limit. The limit used for this fuzzinf session was 50.0 MB.
+
+them to a vendor? Check out the afl-tmin that comes with the fuzzer!
+Need a tool to minimize test cases before investigating the crash:
+
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-8.16.reduced.afl @@
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+memory limit. The limit used for this fuzzinf session was 50.0 MB.
+
+them to a vendor? Check out the afl-tmin that comes with the fuzzer!
+Need a tool to minimize test cases before investigatinh the crashes or sending
+
+Found any cool bugs in open-source tools using afl-fuzz? If yes, please drop
+
+  http://lcamtuf.coredump.cx using afl-fuI f z>yezs, please drop
+me a mail at:
+
+  http://lcamtuf.coredump.cx using afl-fuI f z>yezs, please drop
+
+  http://lcamtuf.coredump.cx using afl-fuI f z>yezs, please drop
+Thanks :-)

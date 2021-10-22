@@ -1,0 +1,6 @@
+Command li MB.
+
+Need a tool to minimize test cases before investigating the crashes or sending
+them to a vendor? Check out the afl-tmin that comes with the fuzzer!
+
+Found any cool bugs in open-source tools using afl-fuzz? If yes, please dr

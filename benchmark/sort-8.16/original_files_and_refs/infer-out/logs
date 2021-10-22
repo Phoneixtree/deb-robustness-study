@@ -1,0 +1,32 @@
+[641754][      debug] Loading models took 27.778ms
+[642046][      debug] Sqlite write daemon: starting up
+[642046][      debug] Sqlite write daemon: set up complete, waiting for connections
+[641754][environment] CWD = /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/uniq-8.16/original_files_and_refs
+[641754][environment] No .inferconfig file found
+[641754][environment] Project root = /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/uniq-8.16/original_files_and_refs
+[641754][environment] INFER_ARGS =   @/tmp/args.tmp.8a902b
+[641754][environment] command line arguments:   infer run -- gcc -c uniq-8.16.c
+[641754][environment] Available memory at startup: 5069 MB
+[641754][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[641754][environment] Scheduler: file
+[641754][environment] Cores used: 4
+[641754][environment] Infer version v1.1.0
+[641754][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[641754][environment] 
+[641754][   progress] Capturing in make/cc mode...
+[641754][      debug] 
+[641754][      debug] *** Beginning capture of file /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/uniq-8.16/original_files_and_refs/uniq-8.16.c ***
+[641754][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[641754][      debug] Elapsed: 625ms.
+[641754][      debug] GC stats for capture:
+[641754][      debug]   minor_words: 6.13115e+07
+[641754][      debug]   promoted_words: 2.49133e+06
+[641754][      debug]   major_words: 2.67729e+06
+[641754][      debug]   minor_collections: 65
+[641754][      debug]   major_collections: 3
+[641754][      debug]   compactions: 0
+[641754][      debug]   top_heap_words: 2680320
+[641754][      debug]   
+[641754][environment] Parallel jobs: 4
+[641754][   progress] Found 1 source file to analyze in /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/uniq-8.16/original_files_and_refs/infer-out
+[644834][   progress] uniq-8.16.c starting

@@ -1,0 +1,17 @@
+Command line used to find thʳis crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-18446744073709551617.1830424420057843805.reduced.a󠁟fl @@
+
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+memory limit. The limit used ‪for this fuzzing session was -1765233424.-170141183460469231731687303715884105722 MB.
+
+Need a tool to minimize test cases before investigating the crashes or sending
+them to a vendor? Check out the afl-t‭min that comes with the fuzzer!
+
+Found any cool bugs in open-source tools using afl-fuzz? If yes, please drop
+me a mail at <lcamtuf@coredump.cx> once the issues are fixed - I'd love to
+add your finds to the gallery at:
+
+  http://lcamtuf.coredump.cx/afl/
+
+Thanks :-)

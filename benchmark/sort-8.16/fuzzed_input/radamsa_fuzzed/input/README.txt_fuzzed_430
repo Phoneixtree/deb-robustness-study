@@ -1,0 +1,14 @@
+Command line used to find this crash:
+
+
+afl-fuzz -i afl_input -o afl_output_󠁲reduced ./sort-248.-1894.reduced.afl @@
+
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+memory limit. The limit used for this fuzzing session was 51.170141183460470671405605070384137395227 MB.
+
+Need a tool to minimize test cases before investigating the crashes or sending
+them to a vendor? Check out the afl-tmin that comes with th the gallery at:
+
+  http://lcamtuf.coredump.cx/afl/
+
+Thanks :-)

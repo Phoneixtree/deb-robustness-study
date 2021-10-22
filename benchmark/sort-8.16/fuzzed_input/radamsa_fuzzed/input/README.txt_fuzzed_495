@@ -1,0 +1,14 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduce used for this fuzzing session was 50.0 MB.
+
+Need a tool to minimize test cases before inv6estigating the crashes or sending
+them to a vendor? Check out the afl-tmin that comes with the fuzzer!
+
+Found any cool bugs in open-source test cases before inv6estigating the crashes or sending
+them to a vendor? Check out the afl-tmin that comes with the fuzzer!
+
+Found any cool bugs in open-source tools using afl-fuzz? If yes, please drop
+me a mail at <lcamtuf@coredump.cx/afl/
+
+Thanks :-)
