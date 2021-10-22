@@ -37,3 +37,6 @@ gcc/clang -w -o $BIN $SRC -lm
 ```
 
 2. All source code is a merged version of the original program. If you want to check out the original program, refer to [SIR benchmark](https://sir.csc.ncsu.edu/portal/index.php), register to have access, and then download the source code.
+
+### Online spreadsheet for result-sharing
+https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
