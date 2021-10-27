@@ -363,13 +363,13 @@ character_stream open_character_stream(string FILENAME )
     tmp___0 = fopen((char const   * __restrict  )FILENAME, (char const   * __restrict  )"r");
     stream_ptr->fp = tmp___0;
     }
-                                                                 
+    //                                                             
        
 
 
 
        
-     
+  //   
   }
   return (stream_ptr);
 }
