@@ -1,0 +1,114 @@
+[1751738][      debug] Loading models took 24.828ms
+[1751740][      debug] Sqlite write daemon: starting up
+[1751740][      debug] Sqlite write daemon: set up complete, waiting for connections
+[1751738][environment] CWD = /home/cytmo/Documents/git/benchmark/printtokens/input.origin
+[1751738][environment] No .inferconfig file found
+[1751738][environment] Project root = /home/cytmo/Documents/git/benchmark/printtokens/input.origin
+[1751738][environment] INFER_ARGS =   @/tmp/args.tmp.57e2e5
+[1751738][environment] command line arguments:   infer run -- gcc -c printtokens.c
+[1751738][environment] Available memory at startup: 4658 MB
+[1751738][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[1751738][environment] Scheduler: file
+[1751738][environment] Cores used: 4
+[1751738][environment] Infer version v1.1.0
+[1751738][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[1751738][environment] 
+[1751738][   progress] Capturing in make/cc mode...
+[1751738][      debug] 
+[1751738][      debug] *** Beginning capture of file /home/cytmo/Documents/git/benchmark/printtokens/input.origin/printtokens.c ***
+[1751738][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[1751738][      debug] Elapsed: 268ms.
+[1751738][      debug] GC stats for capture:
+[1751738][      debug]   minor_words: 6.02707e+06
+[1751738][      debug]   promoted_words: 441741
+[1751738][      debug]   major_words: 473124
+[1751738][      debug]   minor_collections: 8
+[1751738][      debug]   major_collections: 1
+[1751738][      debug]   compactions: 0
+[1751738][      debug]   top_heap_words: 1157632
+[1751738][      debug]   
+[1751738][environment] Parallel jobs: 4
+[1751738][   progress] Found 1 source file to analyze in /home/cytmo/Documents/git/benchmark/printtokens/input.origin/infer-out
+[1751744][   progress] printtokens.c starting
+[1751744][   progress] printtokens.c DONE
+[1751738][      debug] Backend stats:
+[1751738][      debug]   summary_file_try_load= 162
+[1751738][      debug]   summary_read_from_disk= 0
+[1751738][      debug]   summary_cache_hits= 1128 (87%)
+[1751738][      debug]   summary_cache_misses= 162
+[1751738][      debug]   ondemand_procs_analyzed= 22
+[1751738][      debug]   ondemand_local_cache_hits= 403 (93%)
+[1751738][      debug]   ondemand_local_cache_misses= 29
+[1751738][      debug]   proc_locker_lock_time_user= 0.00000000
+[1751738][      debug]   proc_locker_lock_time_sys= 0.00000000
+[1751738][      debug]   proc_locker_lock_time_wall= 0.00000000
+[1751738][      debug]   proc_locker_unlock_time_user= 0.00000000
+[1751738][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[1751738][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[1751738][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[1751738][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[1751738][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[1751738][      debug]   restart_scheduler_total_time_user= 0.00000000
+[1751738][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[1751738][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[1751738][      debug]   
+[1751738][      debug] GC stats for backend_stats.gc_stats_add.:
+[1751738][      debug]   minor_words: 1.33135e+09
+[1751738][      debug]   promoted_words: 1.48849e+07
+[1751738][      debug]   major_words: 1.53474e+07
+[1751738][      debug]   minor_collections: 1286
+[1751738][      debug]   major_collections: 35
+[1751738][      debug]   compactions: 0
+[1751738][      debug]   top_heap_words: 5234688
+[1751738][      debug]   
+[1751738][      debug] GC stats for backend_stats.gc_stats_max.:
+[1751738][      debug]   minor_words: 1.33135e+09
+[1751738][      debug]   promoted_words: 1.48849e+07
+[1751738][      debug]   major_words: 1.53474e+07
+[1751738][      debug]   minor_collections: 1286
+[1751738][      debug]   major_collections: 35
+[1751738][      debug]   compactions: 0
+[1751738][      debug]   top_heap_words: 1761792
+[1751738][      debug]   
+[1751738][      debug] Average over 4 processes
+[1751738][      debug] GC stats for backend_stats.gc_stats_average.:
+[1751738][      debug]   minor_words: 3.32837e+08
+[1751738][      debug]   promoted_words: 3.72124e+06
+[1751738][      debug]   major_words: 3.83685e+06
+[1751738][      debug]   minor_collections: 321
+[1751738][      debug]   major_collections: 8
+[1751738][      debug]   compactions: 0
+[1751738][      debug]   top_heap_words: 1308672
+[1751738][      debug]   
+[1751738][      debug] Analysis phase finished in 3.089s
+[1751738][      debug] backend_stats.scheduler_process_analysis_time_user= 0.01897200
+[1751738][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.05973900
+[1751738][      debug] backend_stats.scheduler_process_analysis_time_wall= 3.08874756
+[1751738][      debug] GC stats for analysis_scheduler:
+[1751738][      debug]   minor_words: 1.3287e+06
+[1751738][      debug]   promoted_words: 7891
+[1751738][      debug]   major_words: 16597
+[1751738][      debug]   minor_collections: 2
+[1751738][      debug]   major_collections: 2
+[1751738][      debug]   compactions: 1
+[1751738][      debug]   top_heap_words: 1157632
+[1751738][      debug]   
+[1751738][      debug] GC stats for report:
+[1751738][      debug]   minor_words: 278503
+[1751738][      debug]   promoted_words: 0
+[1751738][      debug]   major_words: 924
+[1751738][      debug]   minor_collections: 0
+[1751738][      debug]   major_collections: 0
+[1751738][      debug]   compactions: 0
+[1751738][      debug]   top_heap_words: 1157632
+[1751738][      debug]   
+[1751738][      debug] GC stats for main_process_full:
+[1751738][      debug]   minor_words: 9.31236e+06
+[1751738][      debug]   promoted_words: 615133
+[1751738][      debug]   major_words: 1.18219e+06
+[1751738][      debug]   minor_collections: 14
+[1751738][      debug]   major_collections: 5
+[1751738][      debug]   compactions: 2
+[1751738][      debug]   top_heap_words: 1157632
+[1751738][      debug]   
+[1751740][      debug] Sqlite write daemon: terminating
