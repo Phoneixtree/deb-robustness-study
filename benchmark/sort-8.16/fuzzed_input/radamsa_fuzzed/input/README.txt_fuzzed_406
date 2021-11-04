@@ -1,0 +1,13 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort--549422974256537844729.4294967312.reduced.`fl @@
+
+If you can't reproduce a bug outside of afl-fuzz, please drop
+me a mais crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort--549422974256537844729.4294967312.reduced.`fl @@
+
+If you can't reproduce a bug outside of afl-fuzz, please drop
+me a mail at <lcamtuf@coredump.cx/afl/
+
+Thanks :-)

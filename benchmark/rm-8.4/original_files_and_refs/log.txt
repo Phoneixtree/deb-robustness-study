@@ -1,0 +1,3 @@
+/chiselbench/benchmark/rm-8.4/merged/rm-8.4.reduced: cannot remove `dir': Is a directory
+/chiselbench/benchmark/rm-8.4/merged/rm-8.4.reduced: cannot remove `dir': Is a directory
+/chiselbench/benchmark/rm-8.4/merged/rm-8.4.reduced: error closing file

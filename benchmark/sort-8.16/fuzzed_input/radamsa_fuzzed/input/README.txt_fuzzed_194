@@ -1,0 +1,12 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-0.256.reduced.afl @@
+
+If you can't reproduce a bug outside of afl-fuzz? If yes, please drop
+Found any cool bugs in open-source tools using afl-fuzz? If yes, please drop
+me a mail at <lcamtuf@coredump.cx> once the issues are fixed - I'd love to
+add your finds to the gallery at:
+
+  http://lcamtuf.coredump.cx/afl/
+
+Thanks :-)

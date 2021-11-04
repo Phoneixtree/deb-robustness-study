@@ -1,0 +1,14 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-3657616628033.9223372036854775809.reduced.afl @@
+
+If you can't reproduce a bug outside of afl-fuzz, be sure investigating the crashes or sending
+ crashes or sending
+them to a vendor? Check out the afl-tmin that comes with the fuzmp.cx> once the issues are fixed - I'd love to
+add your finds to the gallery at:
+  http://lcamtuf.coredump.cx/afl/
+  http://lcamtuf.coredump.cx/afl/
+
+
+
+Thanks :-)
