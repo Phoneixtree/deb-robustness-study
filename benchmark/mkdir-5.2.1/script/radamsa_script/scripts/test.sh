@@ -51,7 +51,7 @@ function run_error() {
 # Default Options: -m, -p
 function desired() {
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "" | radamsa --seed ${cnt}`
       run "$arg1 d1"
@@ -61,7 +61,7 @@ function desired() {
   ./result_analysis.sh ""
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "" | radamsa --seed ${cnt}`
       run_error $arg1 d1/d2
@@ -71,7 +71,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 123124" | radamsa --seed ${cnt}`
       run_error "$arg1" d1/d2
@@ -81,7 +81,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m" | radamsa --seed ${cnt}`
       run_error "$arg1" d1/d2
@@ -91,7 +91,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 400" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -101,7 +101,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 555" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -111,7 +111,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 644" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -121,7 +121,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 610" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -131,7 +131,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-m 777" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -141,7 +141,7 @@ function desired() {
   ./result_analysis.sh
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-p" | radamsa --seed ${cnt}`
       run "$arg1" d1/d2
@@ -153,7 +153,7 @@ function desired() {
   rm -rf d1
 
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-p" | radamsa --seed ${cnt}`
       run "$arg1" d1/d2/d3/d4
@@ -165,7 +165,7 @@ function desired() {
   /bin/mkdir d1
   
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-p" | radamsa --seed ${cnt}`
       run "$arg1" d1
@@ -177,7 +177,7 @@ function desired() {
 
   /bin/mkdir d1
    cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
       arg1=`echo "-p" | radamsa --seed ${cnt}`
       run "$arg1" d1/d2

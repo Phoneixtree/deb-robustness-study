@@ -1,6 +1,6 @@
 # FEATURE: CONFIG_FEATURE_TAR_CREATE
 cnt=0
-while(( $cnt<=500 )) 
+while(( $cnt<=499 )) 
 do
     echo "foo foo" | radamsa --seed ${cnt} > foo.orig
     cp foo.orig foo

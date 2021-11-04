@@ -3,7 +3,7 @@ cnt=0
 rm result/log_if_behave_properly
 rm result/log_reduced
 rm result/log_origin
-while(( $cnt<=500 )) 
+while(( $cnt<=499 )) 
 do
   ${origin} -d < ${rad_files4gzip}/input_1_option_d/sample1_fuzzed${cnt}.gz > ${rad_files4gzip}/input_1_option_d/sample1_fuzzed${cnt}.tst 2>/dev/null
   echo $? >> result/log_origin

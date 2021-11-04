@@ -19,7 +19,7 @@ function clean() {
 
 function run1() {
   cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
   { timeout $TIMEOUT $REDUCED_BIN $rad_files/file${cnt}; } >&$LOG
   r=$?
@@ -99,7 +99,7 @@ function run3() {
 
 function run4() {
 cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
   { timeout $TIMEOUT echo "Y" | timeout $TIMEOUT $REDUCED_BIN -i $rad_files/filei${cnt}; } >&$LOG
   r=$?
@@ -114,7 +114,7 @@ cnt=0
 done
 ./create_fuzzed_testfile.sh
 cnt=0
-  while(( $cnt<=500 )) 
+  while(( $cnt<=499 )) 
   do
   { timeout $TIMEOUT echo "N" | timeout $TIMEOUT $REDUCED_BIN -i $rad_files/filei${cnt}; } >&$LOG
   r=$?

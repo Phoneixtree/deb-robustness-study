@@ -1,7 +1,7 @@
 # FEATURE: CONFIG_FEATURE_TAR_CREATE
 # FEATURE: CONFIG_FEATURE_SEAMLESS_GZ
 cnt=0
-while(( $cnt<=500 )) 
+while(( $cnt<=499 )) 
 do
 echo "foo foo bar"| radamsa --seed ${cnt} > foo.orig
 cp foo.orig foo

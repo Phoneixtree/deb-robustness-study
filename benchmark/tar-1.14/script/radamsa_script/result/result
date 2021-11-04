@@ -44,7 +44,7 @@ tar-handles-exclude-and-extract-lists count = 500
 
 reduced_bin -xf hang 0 times (total 500)
 
-reduced_bin -xf has 501 exceptions (total 500)
+reduced_bin -xf has 0 exceptions (total 500)
 
 reduced_bin successfully executed 0 times (total 500)
 

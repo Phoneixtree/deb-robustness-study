@@ -1,6 +1,6 @@
 #!/bin/bash
 cnt=0
-while(( $cnt<=500 )) 
+while(( $cnt<=499 )) 
 do
   echo "1234" >> file 
   echo "1234" >> filei 

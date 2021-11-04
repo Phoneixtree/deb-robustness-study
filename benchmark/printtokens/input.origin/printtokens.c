@@ -314,15 +314,17 @@ int main(int argc , char **argv )
                  
      
 
-
+                                                                                                                         
+            
      
+
    
   {
   stream_ptr = open_token_stream(*(argv + 1));
   }
   {
   while (1) {
-                     ;/* CIL Label */ ;
+                                     ;
     {
     token_ptr = get_token(stream_ptr);
     tmp = is_eof_token(token_ptr);
@@ -334,11 +336,11 @@ int main(int argc , char **argv )
     print_token(token_ptr);
     }
   }
-  while_break: ;/* CIL Label */ ;
+  while_break: /* CIL Label */ ;
   }
   {
   print_token(token_ptr);
-  exit(0);
+          
   }
 }
 }
@@ -353,23 +355,27 @@ character_stream open_character_stream(string FILENAME )
   {
   tmp = malloc(sizeof(struct stream_type ));
   stream_ptr = (character_stream )tmp;
-  stream_ptr->stream_ind = 5;
-  stream_ptr->stream[5] = (char )'\000';
+                             
+                                        
   }
   if ((unsigned long )FILENAME == (unsigned long )((void *)0)) {
     stream_ptr->fp = stdin;
   } else {
-    {
+     
+
     tmp___0 = fopen((char const   * __restrict  )FILENAME, (char const   * __restrict  )"r");
     stream_ptr->fp = tmp___0;
-    }
-    //                                                             
+     
+
+                                                                 
        
 
-
-
+                                                                                                        
+                        
+              
        
-  //   
+
+     
   }
   return (stream_ptr);
 }
@@ -398,37 +404,43 @@ BOOLEAN is_end_of_character_stream(character_stream stream_ptr )
 { 
 
 
-  {
+   
+
   if ((int )stream_ptr->stream[stream_ptr->stream_ind - 1] == -1) {
     return (1);
   } else {
-    return (0);
+               
   }
-}
+ 
+
 }
 void unget_char(CHARACTER ch , character_stream stream_ptr ) 
 { 
 
 
-  {
-  if (stream_ptr->stream_ind == 0) {
+   
 
-  } else {
+                                    
+           
+          
+
     (stream_ptr->stream_ind) --;
-    stream_ptr->stream[stream_ptr->stream_ind] = ch;
-  }
-  return;
-}
+                                                    
+   
+
+         
+ 
+
 }
 token_stream open_token_stream(string FILENAME ) 
 { 
   token_stream token_ptr ;
-  int tmp ;
+           
 
   {
   {
-  tmp = malloc(sizeof(struct token_stream_type ));
-  token_ptr = (token_stream )tmp;
+                                                  
+                                 
   token_ptr->ch_stream = open_character_stream(FILENAME);
   }
   return (token_ptr);
@@ -448,7 +460,7 @@ token get_token(token_stream tstream_ptr )
   int tmp___0 ;
   token tmp___1 ;
   token tmp___2 ;
-  int tmp___3 ;
+               
 
   {
   {
@@ -461,20 +473,22 @@ token get_token(token_stream tstream_ptr )
   }
   {
   while (1) {
-                     ;/* CIL Label */ ;
+                                     ;
                             
-
+                       
      
-    if (token_ind < 80) {
-      {
+                        {
+       
+
       tmp___0 = token_ind;
       token_ind ++;
       token_str[tmp___0] = ch;
       next_st = next_state(cu_state, (char )((int )ch));
-      }
-    } else {
+       
 
-    }
+    }       
+                   
+     
     if (next_st == -1) {
       {
       tmp___1 = error_or_eof_case(tstream_ptr, token_ptr, cu_state, token_str, token_ind,
@@ -503,16 +517,16 @@ token get_token(token_stream tstream_ptr )
     }
     {
                        
-
+                  
      
                        
-
+                  
      
                         
-
+                  
      
                         
-
+                  
      
     if (next_st == 16) {
       goto case_6;
@@ -521,7 +535,7 @@ token get_token(token_stream tstream_ptr )
       goto case_19;
     }
                         
-
+                   
      
     if (next_st == 21) {
       goto case_19;
@@ -536,10 +550,10 @@ token get_token(token_stream tstream_ptr )
       goto case_19;
     }
                         
-
+                   
      
                         
-
+                   
      
     if (next_st == 27) {
       goto case_27;
@@ -550,68 +564,68 @@ token get_token(token_stream tstream_ptr )
     if (next_st == 30) {
       goto case_30;
     }
-    goto switch_default;
-    switch_default: ;/* CIL Label */ 
-    goto switch_break;
-    case_6: ;/* CIL Label */ 
-             ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-    {
-    ch = get_char(tstream_ptr->ch_stream);
-    tmp___3 = check_delimiter((char )((int )ch));
+                        
+                                    
+     goto switch_break;
+    case_6: /* CIL Label */ 
+                            
+                              
+                              
+                              
+     {
+                                          
+                                                 
     }
-    if (tmp___3 == 1) {
+                      {
       {
       token_ptr->token_id = keyword(next_st);
-      unget_char(ch, tstream_ptr->ch_stream);
-      token_ptr->token_string[0] = (char )'\000';
+                                             
+                                                 
       }
       return (token_ptr);
     }
-    {
-
-    }
-
-    case_19: ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-              ;/* CIL Label */ 
-    {
+     
+                                           
+     
+                      
+    case_19: /* CIL Label */ 
+                             
+                              
+                              
+                              
+                              
+                              
+                              
+     {
     token_ptr->token_id = special(next_st);
-    token_ptr->token_string[0] = (char )'\000';
+                                               
     }
     return (token_ptr);
-    case_27: ;/* CIL Label */ 
-              ;/* CIL Label */ 
-    {
+    case_27: /* CIL Label */ 
+                             
+     {
     token_ptr->token_id = constant(next_st, token_str, token_ind);
     get_actual_token(token_str, token_ind);
     strcpy(token_ptr->token_string, token_str);
     }
     return (token_ptr);
-    case_30: ;/* CIL Label */ 
+    case_30: /* CIL Label */ 
     {
     skip(tstream_ptr->ch_stream);
-    next_st = 0;
-    token_ind = next_st;
+                
+                        
     }
-    goto switch_break;
-    switch_break: ;/* CIL Label */ ;
+                      
+    switch_break: /* CIL Label */ ;
     }
     {
     cu_state = next_st;
     ch = get_char(tstream_ptr->ch_stream);
     }
   }
-                ;/* CIL Label */ ;
+                                ;
   }
-
+                                  
 }
 }
 static token numeric_case(token_stream tstream_ptr , token token_ptr , char ch , char *token_str ,
@@ -629,7 +643,7 @@ static token numeric_case(token_stream tstream_ptr , token token_ptr , char ch ,
     token_ptr->token_id = -1;
     {
     while (1) {
-                       ;/* CIL Label */ ;
+                                       ;
       {
       tmp___0 = check_delimiter((char )((int )ch));
       }
@@ -637,7 +651,7 @@ static token numeric_case(token_stream tstream_ptr , token token_ptr , char ch ,
         goto while_break;
       }
                             
-
+                         
        
       {
       tmp = token_ind;
@@ -646,7 +660,7 @@ static token numeric_case(token_stream tstream_ptr , token token_ptr , char ch ,
       *(token_str + tmp) = ch;
       }
     }
-    while_break: ;/* CIL Label */ ;
+    while_break: /* CIL Label */ ;
     }
     {
     unget_char(ch, tstream_ptr->ch_stream);
@@ -676,15 +690,17 @@ static token error_or_eof_case(token_stream tstream_ptr , token token_ptr , int 
   tmp = is_end_of_character_stream(tstream_ptr->ch_stream);
   }
   if (tmp) {
-    token_ptr->token_id = 0;
-    token_ptr->token_string[0] = (char )'\000';
+                            
+                                               
     return (token_ptr);
   }
   if (cu_state != 0) {
-    {
+     
+
     unget_char(ch, tstream_ptr->ch_stream);
     token_ind --;
-    }
+     
+
   }
   {
   token_ptr->token_id = -1;
@@ -697,78 +713,86 @@ static token error_or_eof_case(token_stream tstream_ptr , token token_ptr , int 
 static int check_delimiter(char ch ) 
 { 
   unsigned short const   **tmp ;
-  unsigned short const   **tmp___0 ;
+                                    
 
   {
   {
   tmp = __ctype_b_loc();
   }
   if (! ((int const   )*(*tmp + (int )ch) & 1024)) {
-    {
-    tmp___0 = __ctype_b_loc();
-    }
-    if (! ((int const   )*(*tmp___0 + (int )ch) & 2048)) {
+     
+                              
+     
+                                                          
+
       return (1);
-    }
+     
+
   }
-  return (0);
+             
 }
 }
 static int keyword(int state ) 
 { 
 
 
-  {
-  {
-                   
+   
 
    
-                   
 
+                   
+                
+   
+                   
+                
    
                     
-
+                 
    
                     
+                 
+   
+                    
+                 
+   
+                      
+                          
+             
+                          
+             
+                           
+              
+                           
+              
+                           
+   return (16);
+                                  
+   
+                                                                               
+   
+                    
+                                 
+   
 
    
-  if (state == 16) {
-    goto case_16;
-  }
+          
+   
+ 
 
-           ;/* CIL Label */ 
-
-           ;/* CIL Label */ 
-
-            ;/* CIL Label */ 
-
-            ;/* CIL Label */ 
-
-  case_16: ;/* CIL Label */ 
-  return (16);
-                   ;/* CIL Label */ 
-  {
-
-  }
-
-                 ;/* CIL Label */ ;
-  }
-  {
-
-  }
-}
 }
 static int special(int state ) 
 { 
 
 
-  {
-  {
-  if (state == 19) {
-    goto case_19;
-  }
-                    
+   
 
+   
+
+                    
+                 
+   
+                    
+                 
    
   if (state == 21) {
     goto case_21;
@@ -782,40 +806,42 @@ static int special(int state )
   if (state == 24) {
     goto case_24;
   }
-
-
-
-
-
-
-
-  case_19: ;/* CIL Label */ 
-  return (19);
-            ;/* CIL Label */ 
-
-  case_21: ;/* CIL Label */ 
+                    
+                 
+   
+                    
+                 
+   
+                      
+                           
+   return (19);
+                           
+              
+  case_21: /* CIL Label */ 
   return (21);
-  case_22: ;/* CIL Label */ 
+  case_22: /* CIL Label */ 
   return (22);
-  case_23: ;/* CIL Label */ 
+  case_23: /* CIL Label */ 
   return (23);
-  case_24: ;/* CIL Label */ 
+  case_24: /* CIL Label */ 
   return (24);
-            ;/* CIL Label */ 
+                           
+              
+                           
+              
+                                  
+   
+                                                                               
+   
+                    
+                                 
+   
 
-            ;/* CIL Label */ 
+   
+          
+   
+ 
 
-                   ;/* CIL Label */ 
-  {
-
-  }
-
-                 ;/* CIL Label */ ;
-  }
-  {
-
-  }
-}
 }
 static void skip(character_stream stream_ptr ) 
 { 
@@ -823,68 +849,76 @@ static void skip(character_stream stream_ptr )
   BOOLEAN tmp ;
 
   {
-  {
+   
+
   while (1) {
-                     ;/* CIL Label */ ;
+                                     ;
     {
     c = get_char(stream_ptr);
     }
-    if ((int )c != 10) {
+                       {
       {
       tmp = is_end_of_character_stream(stream_ptr);
       }
-                
+      if (tmp) {
+        goto while_break;
+      }
+    }       
+                       
+     
+  }
+  while_break: /* CIL Label */ ;
+   
 
-       
-    } else {
-      goto while_break;
-    }
-  }
-  while_break: ;/* CIL Label */ ;
-  }
                       
      
 
+                              
      
+
    
-  return;
+         
 }
 }
 static int constant(int state , char *token_str , int token_ind ) 
 { 
 
 
-  {
-  {
-  if (state == 27) {
-    goto case_27;
-  }
+   
+
+   
+
+                    
+                 
+   
   if (state == 29) {
     goto case_29;
   }
-
-  case_27: ;/* CIL Label */ 
-  return (27);
-  case_29: ;/* CIL Label */ 
+                      
+                           
+   return (27);
+  case_29: /* CIL Label */ 
   *(token_str + (token_ind - 2)) = (char )' ';
-  return (29);
-                   ;/* CIL Label */ 
+              
+                                  
+                    
+                                 
+   
 
-                 ;/* CIL Label */ ;
-  }
+             
+ 
 
-}
 }
 static int next_state(int state , char ch ) 
 { 
   int tmp ;
-  int tmp___0 ;
+               
 
   {
   if (state < 0) {
     return (state);
   }
-  if (base[state] + (int )ch >= 0) {
+                                   {
     if (check[base[state] + (int )ch] == state) {
       return (next[base[state] + (int )ch]);
     } else {
@@ -893,48 +927,52 @@ static int next_state(int state , char ch )
       }
       return (tmp);
     }
-  } else {
-    {
-    tmp___0 = next_state(default1[state], ch);
-    }
-    return (tmp___0);
-  }
+  }       
+     
+                                              
+     
+                     
+   
 }
 }
 BOOLEAN is_eof_token(token t ) 
 { 
 
 
-  {
+   
+
   if (t->token_id == 0) {
     return (1);
   }
-  return (0);
-}
+             
+ 
+
 }
 BOOLEAN print_token(token token_ptr ) 
 { 
 
 
-  {
-  {
-  if (token_ptr->token_id == -1) {
-    goto case_neg_1;
-  }
+   
+
+   
+
+                                  
+                    
+   
   if (token_ptr->token_id == 0) {
     goto case_0;
   }
                                  
-
+                
    
                                  
-
+                
    
                                   
-
+                 
    
                                   
-
+                 
    
   if (token_ptr->token_id == 16) {
     goto case_16;
@@ -949,7 +987,7 @@ BOOLEAN print_token(token token_ptr )
     goto case_19;
   }
                                   
-
+                 
    
   if (token_ptr->token_id == 21) {
     goto case_21;
@@ -964,7 +1002,7 @@ BOOLEAN print_token(token token_ptr )
     goto case_24;
   }
                                   
-
+                 
    
   if (token_ptr->token_id == 27) {
     goto case_27;
@@ -972,156 +1010,158 @@ BOOLEAN print_token(token token_ptr )
   if (token_ptr->token_id == 29) {
     goto case_29;
   }
-
-
-
-
-  case_neg_1: ;/* CIL Label */ 
-  {
+                                  
+                 
+   
+                      
+                              
+   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"error,\t\"");
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%s", token_ptr->token_string);
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"\".\n");
   }
   return (1);
-  case_0: ;/* CIL Label */ 
+  case_0: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"eof.\n");
   }
+             
+                          
+   
+                                                                                               
+   
+             
+                          
+   
+                                                                                            
+   
   return (1);
-           ;/* CIL Label */ 
-  {
-
-  }
-
-           ;/* CIL Label */ 
-  {
-
-  }
-
-            ;/* CIL Label */ 
-  {
-
-  }
-
-            ;/* CIL Label */ 
-  {
-
-  }
-
-  case_16: ;/* CIL Label */ 
+                           
+   
+                                                                                           
+   
+             
+                           
+   
+                                                                                           
+   
+             
+  case_16: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"keyword,\t\"xor\".\n");
   }
   return (1);
-  case_17: ;/* CIL Label */ 
+  case_17: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"identifier,\t\"");
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%s", token_ptr->token_string);
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"\".\n");
   }
   return (1);
-  case_18: ;/* CIL Label */ 
+  case_18: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"numeric,\t");
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%s", token_ptr->token_string);
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )".\n");
   }
   return (1);
-  case_19: ;/* CIL Label */ 
+  case_19: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"lparen.\n");
   }
   return (1);
-            ;/* CIL Label */ 
-  {
-
-  }
-
-  case_21: ;/* CIL Label */ 
+                           
+   
+                                                                                 
+   
+             
+  case_21: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"lsquare.\n");
   }
   return (1);
-  case_22: ;/* CIL Label */ 
+  case_22: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"rsquare.\n");
   }
   return (1);
-  case_23: ;/* CIL Label */ 
+  case_23: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"quote.\n");
   }
   return (1);
-  case_24: ;/* CIL Label */ 
+  case_24: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"bquote.\n");
   }
   return (1);
-            ;/* CIL Label */ 
-  {
-
-  }
-
-  case_27: ;/* CIL Label */ 
+                           
+   
+                                                                                
+   
+             
+  case_27: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"string,\t");
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%s", token_ptr->token_string);
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )".\n");
   }
   return (1);
-  case_29: ;/* CIL Label */ 
+  case_29: /* CIL Label */ 
   {
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"character,\t\"");
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%s", token_ptr->token_string);
   fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"\".\n");
   }
-  return (1);
-            ;/* CIL Label */ 
-  {
+             
+                           
+   
+                                                                                           
+   
+             
+                                  
+                    
+                                 
+   
 
-  }
+             
+ 
 
-                   ;/* CIL Label */ 
-
-                 ;/* CIL Label */ ;
-  }
-
-}
 }
 static void get_actual_token(char *token_str , int token_ind ) 
 { 
   int ind ;
   int start ;
-  unsigned short const   **tmp ;
+                                
   unsigned short const   **tmp___0 ;
 
   {
   ind = token_ind;
-  {
-  while (1) {
-                     ;/* CIL Label */ ;
-    if (ind > 0) {
-      {
-      tmp = __ctype_b_loc();
-      }
-      if (! ((int const   )*(*tmp + (int )*(token_str + (ind - 1))) & 8192)) {
-        goto while_break;
-      }
-    } else {
-
-    }
-
-  }
-  while_break: ;/* CIL Label */ ;
-  }
+   
+             
+                                      
+                  
+       
+                            
+       
+                                                                              
+                         
+       
+            
+                       
+     
+           
+   
+                                
+   
   *(token_str + ind) = (char )'\000';
-  token_ind = ind;
+                  
   ind = 0;
   {
   while (1) {
-                         ;/* CIL Label */ ;
+                                         ;
                               
-
+                           
      
     {
     tmp___0 = __ctype_b_loc();
@@ -1131,12 +1171,12 @@ static void get_actual_token(char *token_str , int token_ind )
     }
     ind ++;
   }
-  while_break___0: ;/* CIL Label */ ;
+  while_break___0: /* CIL Label */ ;
   }
   start = 0;
   {
   while (1) {
-                         ;/* CIL Label */ ;
+                                         ;
     if (! (ind <= token_ind)) {
       goto while_break___1;
     }
@@ -1144,8 +1184,8 @@ static void get_actual_token(char *token_str , int token_ind )
     start ++;
     ind ++;
   }
-  while_break___1: ;/* CIL Label */ ;
+  while_break___1: /* CIL Label */ ;
   }
-  return;
+         
 }
 }

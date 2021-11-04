@@ -18,7 +18,7 @@ function clean() {
 
 function run() {
 cnt=0
-while(( $cnt<=500 )) 
+while(( $cnt<=499 )) 
 do
   echo ${rad_files}/${2}_fuzzed_${cnt}
   timeout -k 0.4 0.4 $REDUCED_BIN $1 ${rad_files}/${2}_fuzzed_${cnt} >&$LOG 

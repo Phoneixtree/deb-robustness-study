@@ -18,11 +18,11 @@ tests/tar-extracts-multiple-files
 tests/tar-extracts-to-standard-output
 0
 tests/tar-handles-cz-options
-139
+0
 tests/tar-handles-empty-include-and-non-empty-exclude-list
 0
 tests/tar-handles-exclude-and-extract-lists
 0
 tests/tar-handles-multiple-X-options
-1
+0
 tests/tar-handles-nested-exclude
