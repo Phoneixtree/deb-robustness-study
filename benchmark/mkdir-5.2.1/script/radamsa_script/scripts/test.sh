@@ -2,7 +2,7 @@
 # $1: option
 set +o posix
 cnt=0
-export TIMEOUT="-k 0.5 0.5"
+export TIMEOUT="-k 0.1 0.1"
 export LOG=result/log.txt
 export BENCHMARK_NAME=uniq-8.16
 export BENCHMARK_DIR=$bins
