@@ -21,7 +21,7 @@ L_0x400cd0:
 		push	qword ptr [rip + RIP_L_1 + 0x61d008]
 L_1:
 L_0x400cd6:
-L_indcall_0x400cd6_target_0x7f9a55bd9500:
+L_indcall_0x400cd6_target_0x7f9ef48a6500:
 		jmp qword ptr [rip + RIP_L_2 + 0x61d010]
 L_2:
 
@@ -29,9 +29,9 @@ L_0x400ce0:
 L_indcall_0x400ce0_target_0x400ce6:
 		cmp qword ptr [rip + RIP_L_3 + 0x61d018], 0x400ce6
 L_3:
-		jne L_indcall_0x400ce0_target_0x7ff24d561480
+		jne L_indcall_0x400ce0_target_0x7fa6d6428480
 		jmp L_0x400ce6
-L_indcall_0x400ce0_target_0x7ff24d561480:
+L_indcall_0x400ce0_target_0x7fa6d6428480:
 		jmp qword ptr [rip + RIP_L_4 + 0x61d018]
 L_4:
 
@@ -40,15 +40,30 @@ L_0x400ce6:
 L_0x400ceb:
 		jmp	L_0x400cd0
 
+L_0x400cf0:
+L_indcall_0x400cf0_target_0x400cf6:
+		cmp qword ptr [rip + RIP_L_5 + 0x61d020], 0x400cf6
+L_5:
+		jne L_indcall_0x400cf0_target_0xffffffffffffffff
+		jmp L_0x400cf6
+L_indcall_0x400cf0_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_6 + 0x61d020]
+L_6:
+
+L_0x400cf6:
+		push	1
+L_0x400cfb:
+		jmp	L_0x400cd0
+
 L_0x400d00:
 L_indcall_0x400d00_target_0x400d06:
-		cmp qword ptr [rip + RIP_L_5 + 0x61d028], 0x400d06
-L_5:
-		jne L_indcall_0x400d00_target_0x7f9a557079a0
+		cmp qword ptr [rip + RIP_L_7 + 0x61d028], 0x400d06
+L_7:
+		jne L_indcall_0x400d00_target_0x7f3d2e5459a0
 		jmp L_0x400d06
-L_indcall_0x400d00_target_0x7f9a557079a0:
-		jmp qword ptr [rip + RIP_L_6 + 0x61d028]
-L_6:
+L_indcall_0x400d00_target_0x7f3d2e5459a0:
+		jmp qword ptr [rip + RIP_L_8 + 0x61d028]
+L_8:
 
 L_0x400d06:
 		push	2
@@ -57,28 +72,43 @@ L_0x400d0b:
 
 L_0x400d20:
 L_indcall_0x400d20_target_0x400d26:
-		cmp qword ptr [rip + RIP_L_7 + 0x61d038], 0x400d26
-L_7:
-		jne L_indcall_0x400d20_target_0x7ff24d5c5730
+		cmp qword ptr [rip + RIP_L_9 + 0x61d038], 0x400d26
+L_9:
+		jne L_indcall_0x400d20_target_0x7f3d2e55e730
 		jmp L_0x400d26
-L_indcall_0x400d20_target_0x7ff24d5c5730:
-		jmp qword ptr [rip + RIP_L_8 + 0x61d038]
-L_8:
+L_indcall_0x400d20_target_0x7f3d2e55e730:
+		jmp qword ptr [rip + RIP_L_10 + 0x61d038]
+L_10:
 
 L_0x400d26:
 		push	4
 L_0x400d2b:
 		jmp	L_0x400cd0
 
+L_0x400d30:
+L_indcall_0x400d30_target_0x400d36:
+		cmp qword ptr [rip + RIP_L_11 + 0x61d040], 0x400d36
+L_11:
+		jne L_indcall_0x400d30_target_0xffffffffffffffff
+		jmp L_0x400d36
+L_indcall_0x400d30_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_12 + 0x61d040]
+L_12:
+
+L_0x400d36:
+		push	5
+L_0x400d3b:
+		jmp	L_0x400cd0
+
 L_0x400d40:
 L_indcall_0x400d40_target_0x400d46:
-		cmp qword ptr [rip + RIP_L_9 + 0x61d048], 0x400d46
-L_9:
-		jne L_indcall_0x400d40_target_0xffffffffffffffff
+		cmp qword ptr [rip + RIP_L_13 + 0x61d048], 0x400d46
+L_13:
+		jne L_indcall_0x400d40_target_0x7f276cae5af0
 		jmp L_0x400d46
-L_indcall_0x400d40_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_10 + 0x61d048]
-L_10:
+L_indcall_0x400d40_target_0x7f276cae5af0:
+		jmp qword ptr [rip + RIP_L_14 + 0x61d048]
+L_14:
 
 L_0x400d46:
 		push	6
@@ -87,13 +117,13 @@ L_0x400d4b:
 
 L_0x400d50:
 L_indcall_0x400d50_target_0x400d56:
-		cmp qword ptr [rip + RIP_L_11 + 0x61d050], 0x400d56
-L_11:
-		jne L_indcall_0x400d50_target_0xffffffffffffffff
+		cmp qword ptr [rip + RIP_L_15 + 0x61d050], 0x400d56
+L_15:
+		jne L_indcall_0x400d50_target_0x7f3d2e55e100
 		jmp L_0x400d56
-L_indcall_0x400d50_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_12 + 0x61d050]
-L_12:
+L_indcall_0x400d50_target_0x7f3d2e55e100:
+		jmp qword ptr [rip + RIP_L_16 + 0x61d050]
+L_16:
 
 L_0x400d56:
 		push	7
@@ -102,13 +132,13 @@ L_0x400d5b:
 
 L_0x400d60:
 L_indcall_0x400d60_target_0x400d66:
-		cmp qword ptr [rip + RIP_L_13 + 0x61d058], 0x400d66
-L_13:
-		jne L_indcall_0x400d60_target_0x7f38adb7e790
+		cmp qword ptr [rip + RIP_L_17 + 0x61d058], 0x400d66
+L_17:
+		jne L_indcall_0x400d60_target_0x7f3d2e538790
 		jmp L_0x400d66
-L_indcall_0x400d60_target_0x7f38adb7e790:
-		jmp qword ptr [rip + RIP_L_14 + 0x61d058]
-L_14:
+L_indcall_0x400d60_target_0x7f3d2e538790:
+		jmp qword ptr [rip + RIP_L_18 + 0x61d058]
+L_18:
 
 L_0x400d66:
 		push	8
@@ -117,13 +147,13 @@ L_0x400d6b:
 
 L_0x400d70:
 L_indcall_0x400d70_target_0x400d76:
-		cmp qword ptr [rip + RIP_L_15 + 0x61d060], 0x400d76
-L_15:
+		cmp qword ptr [rip + RIP_L_19 + 0x61d060], 0x400d76
+L_19:
 		jne L_indcall_0x400d70_target_0xffffffffffffffff
 		jmp L_0x400d76
 L_indcall_0x400d70_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_16 + 0x61d060]
-L_16:
+		jmp qword ptr [rip + RIP_L_20 + 0x61d060]
+L_20:
 
 L_0x400d76:
 		push	9
@@ -132,13 +162,13 @@ L_0x400d7b:
 
 L_0x400d80:
 L_indcall_0x400d80_target_0x400d86:
-		cmp qword ptr [rip + RIP_L_17 + 0x61d068], 0x400d86
-L_17:
-		jne L_indcall_0x400d80_target_0x7f38adb775f0
+		cmp qword ptr [rip + RIP_L_21 + 0x61d068], 0x400d86
+L_21:
+		jne L_indcall_0x400d80_target_0x7f9e4e0925f0
 		jmp L_0x400d86
-L_indcall_0x400d80_target_0x7f38adb775f0:
-		jmp qword ptr [rip + RIP_L_18 + 0x61d068]
-L_18:
+L_indcall_0x400d80_target_0x7f9e4e0925f0:
+		jmp qword ptr [rip + RIP_L_22 + 0x61d068]
+L_22:
 
 L_0x400d86:
 		push	0xa
@@ -147,28 +177,43 @@ L_0x400d8b:
 
 L_0x400d90:
 L_indcall_0x400d90_target_0x400d96:
-		cmp qword ptr [rip + RIP_L_19 + 0x61d070], 0x400d96
-L_19:
-		jne L_indcall_0x400d90_target_0xffffffffffffffff
+		cmp qword ptr [rip + RIP_L_23 + 0x61d070], 0x400d96
+L_23:
+		jne L_indcall_0x400d90_target_0x7f3d2e5307e0
 		jmp L_0x400d96
-L_indcall_0x400d90_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_20 + 0x61d070]
-L_20:
+L_indcall_0x400d90_target_0x7f3d2e5307e0:
+		jmp qword ptr [rip + RIP_L_24 + 0x61d070]
+L_24:
 
 L_0x400d96:
 		push	0xb
 L_0x400d9b:
 		jmp	L_0x400cd0
 
+L_0x400da0:
+L_indcall_0x400da0_target_0x400da6:
+		cmp qword ptr [rip + RIP_L_25 + 0x61d078], 0x400da6
+L_25:
+		jne L_indcall_0x400da0_target_0x7f276ca77a90
+		jmp L_0x400da6
+L_indcall_0x400da0_target_0x7f276ca77a90:
+		jmp qword ptr [rip + RIP_L_26 + 0x61d078]
+L_26:
+
+L_0x400da6:
+		push	0xc
+L_0x400dab:
+		jmp	L_0x400cd0
+
 L_0x400db0:
 L_indcall_0x400db0_target_0x400db6:
-		cmp qword ptr [rip + RIP_L_21 + 0x61d080], 0x400db6
-L_21:
-		jne L_indcall_0x400db0_target_0x7f9e124f1170
+		cmp qword ptr [rip + RIP_L_27 + 0x61d080], 0x400db6
+L_27:
+		jne L_indcall_0x400db0_target_0x7f9e4e17e170
 		jmp L_0x400db6
-L_indcall_0x400db0_target_0x7f9e124f1170:
-		jmp qword ptr [rip + RIP_L_22 + 0x61d080]
-L_22:
+L_indcall_0x400db0_target_0x7f9e4e17e170:
+		jmp qword ptr [rip + RIP_L_28 + 0x61d080]
+L_28:
 
 L_0x400db6:
 		push	0xd
@@ -177,13 +222,13 @@ L_0x400dbb:
 
 L_0x400dd0:
 L_indcall_0x400dd0_target_0x400dd6:
-		cmp qword ptr [rip + RIP_L_23 + 0x61d090], 0x400dd6
-L_23:
-		jne L_indcall_0x400dd0_target_0x7f38adb7ed70
+		cmp qword ptr [rip + RIP_L_29 + 0x61d090], 0x400dd6
+L_29:
+		jne L_indcall_0x400dd0_target_0x7efecced7d70
 		jmp L_0x400dd6
-L_indcall_0x400dd0_target_0x7f38adb7ed70:
-		jmp qword ptr [rip + RIP_L_24 + 0x61d090]
-L_24:
+L_indcall_0x400dd0_target_0x7efecced7d70:
+		jmp qword ptr [rip + RIP_L_30 + 0x61d090]
+L_30:
 
 L_0x400dd6:
 		push	0xf
@@ -192,13 +237,13 @@ L_0x400ddb:
 
 L_0x400df0:
 L_indcall_0x400df0_target_0x400df6:
-		cmp qword ptr [rip + RIP_L_25 + 0x61d0a0], 0x400df6
-L_25:
+		cmp qword ptr [rip + RIP_L_31 + 0x61d0a0], 0x400df6
+L_31:
 		jne L_indcall_0x400df0_target_0xffffffffffffffff
 		jmp L_0x400df6
 L_indcall_0x400df0_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_26 + 0x61d0a0]
-L_26:
+		jmp qword ptr [rip + RIP_L_32 + 0x61d0a0]
+L_32:
 
 L_0x400df6:
 		push	0x11
@@ -207,13 +252,13 @@ L_0x400dfb:
 
 L_0x400e00:
 L_indcall_0x400e00_target_0x400e06:
-		cmp qword ptr [rip + RIP_L_27 + 0x61d0a8], 0x400e06
-L_27:
-		jne L_indcall_0x400e00_target_0x7f9e262516b0
+		cmp qword ptr [rip + RIP_L_33 + 0x61d0a8], 0x400e06
+L_33:
+		jne L_indcall_0x400e00_target_0x7f9e4e1796b0
 		jmp L_0x400e06
-L_indcall_0x400e00_target_0x7f9e262516b0:
-		jmp qword ptr [rip + RIP_L_28 + 0x61d0a8]
-L_28:
+L_indcall_0x400e00_target_0x7f9e4e1796b0:
+		jmp qword ptr [rip + RIP_L_34 + 0x61d0a8]
+L_34:
 
 L_0x400e06:
 		push	0x12
@@ -222,28 +267,58 @@ L_0x400e0b:
 
 L_0x400e10:
 L_indcall_0x400e10_target_0x400e16:
-		cmp qword ptr [rip + RIP_L_29 + 0x61d0b0], 0x400e16
-L_29:
-		jne L_indcall_0x400e10_target_0x7f9a556ba670
+		cmp qword ptr [rip + RIP_L_35 + 0x61d0b0], 0x400e16
+L_35:
+		jne L_indcall_0x400e10_target_0x7f9e4e059670
 		jmp L_0x400e16
-L_indcall_0x400e10_target_0x7f9a556ba670:
-		jmp qword ptr [rip + RIP_L_30 + 0x61d0b0]
-L_30:
+L_indcall_0x400e10_target_0x7f9e4e059670:
+		jmp qword ptr [rip + RIP_L_36 + 0x61d0b0]
+L_36:
 
 L_0x400e16:
 		push	0x13
 L_0x400e1b:
 		jmp	L_0x400cd0
 
+L_0x400e20:
+L_indcall_0x400e20_target_0x400e26:
+		cmp qword ptr [rip + RIP_L_37 + 0x61d0b8], 0x400e26
+L_37:
+		jne L_indcall_0x400e20_target_0x7f3d2e5194a0
+		jmp L_0x400e26
+L_indcall_0x400e20_target_0x7f3d2e5194a0:
+		jmp qword ptr [rip + RIP_L_38 + 0x61d0b8]
+L_38:
+
+L_0x400e26:
+		push	0x14
+L_0x400e2b:
+		jmp	L_0x400cd0
+
+L_0x400e30:
+L_indcall_0x400e30_target_0x400e36:
+		cmp qword ptr [rip + RIP_L_39 + 0x61d0c0], 0x400e36
+L_39:
+		jne L_indcall_0x400e30_target_0x7f3d2e5311e0
+		jmp L_0x400e36
+L_indcall_0x400e30_target_0x7f3d2e5311e0:
+		jmp qword ptr [rip + RIP_L_40 + 0x61d0c0]
+L_40:
+
+L_0x400e36:
+		push	0x15
+L_0x400e3b:
+		jmp	L_0x400cd0
+
 L_0x400e40:
 L_indcall_0x400e40_target_0x400e46:
-		cmp qword ptr [rip + RIP_L_31 + 0x61d0c8], 0x400e46
-L_31:
+		cmp qword ptr [rip + RIP_L_41 + 0x61d0c8], 0x400e46
+L_41:
 		jne L_indcall_0x400e40_target_0xffffffffffffffff
 		jmp L_0x400e46
 L_indcall_0x400e40_target_0xffffffffffffffff:
-		jmp qword ptr [rip + RIP_L_32 + 0x61d0c8]
-L_32:
+		jmp qword ptr [rip + RIP_L_42 + 0x61d0c8]
+L_42:
 
 L_0x400e46:
 		push	0x16
@@ -252,13 +327,13 @@ L_0x400e4b:
 
 L_0x400e50:
 L_indcall_0x400e50_target_0x400e56:
-		cmp qword ptr [rip + RIP_L_33 + 0x61d0d0], 0x400e56
-L_33:
-		jne L_indcall_0x400e50_target_0x7f9a55707350
+		cmp qword ptr [rip + RIP_L_43 + 0x61d0d0], 0x400e56
+L_43:
+		jne L_indcall_0x400e50_target_0x7f9e4e0a6350
 		jmp L_0x400e56
-L_indcall_0x400e50_target_0x7f9a55707350:
-		jmp qword ptr [rip + RIP_L_34 + 0x61d0d0]
-L_34:
+L_indcall_0x400e50_target_0x7f9e4e0a6350:
+		jmp qword ptr [rip + RIP_L_44 + 0x61d0d0]
+L_44:
 
 L_0x400e56:
 		push	0x17
@@ -267,13 +342,13 @@ L_0x400e5b:
 
 L_0x400e60:
 L_indcall_0x400e60_target_0x400e66:
-		cmp qword ptr [rip + RIP_L_35 + 0x61d0d8], 0x400e66
-L_35:
-		jne L_indcall_0x400e60_target_0x7f9e12404c90
+		cmp qword ptr [rip + RIP_L_45 + 0x61d0d8], 0x400e66
+L_45:
+		jne L_indcall_0x400e60_target_0x7f276c9fdc90
 		jmp L_0x400e66
-L_indcall_0x400e60_target_0x7f9e12404c90:
-		jmp qword ptr [rip + RIP_L_36 + 0x61d0d8]
-L_36:
+L_indcall_0x400e60_target_0x7f276c9fdc90:
+		jmp qword ptr [rip + RIP_L_46 + 0x61d0d8]
+L_46:
 
 L_0x400e66:
 		push	0x18
@@ -282,28 +357,133 @@ L_0x400e6b:
 
 L_0x400e70:
 L_indcall_0x400e70_target_0x400e76:
-		cmp qword ptr [rip + RIP_L_37 + 0x61d0e0], 0x400e76
-L_37:
-		jne L_indcall_0x400e70_target_0x7f38adb791b0
+		cmp qword ptr [rip + RIP_L_47 + 0x61d0e0], 0x400e76
+L_47:
+		jne L_indcall_0x400e70_target_0x7f9e4e0941b0
 		jmp L_0x400e76
-L_indcall_0x400e70_target_0x7f38adb791b0:
-		jmp qword ptr [rip + RIP_L_38 + 0x61d0e0]
-L_38:
+L_indcall_0x400e70_target_0x7f9e4e0941b0:
+		jmp qword ptr [rip + RIP_L_48 + 0x61d0e0]
+L_48:
 
 L_0x400e76:
 		push	0x19
 L_0x400e7b:
 		jmp	L_0x400cd0
 
+L_0x400e80:
+L_indcall_0x400e80_target_0x400e86:
+		cmp qword ptr [rip + RIP_L_49 + 0x61d0e8], 0x400e86
+L_49:
+		jne L_indcall_0x400e80_target_0xffffffffffffffff
+		jmp L_0x400e86
+L_indcall_0x400e80_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_50 + 0x61d0e8]
+L_50:
+
+L_0x400e86:
+		push	0x1a
+L_0x400e8b:
+		jmp	L_0x400cd0
+
+L_0x400e90:
+L_indcall_0x400e90_target_0x400e96:
+		cmp qword ptr [rip + RIP_L_51 + 0x61d0f0], 0x400e96
+L_51:
+		jne L_indcall_0x400e90_target_0xffffffffffffffff
+		jmp L_0x400e96
+L_indcall_0x400e90_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_52 + 0x61d0f0]
+L_52:
+
+L_0x400e96:
+		push	0x1b
+L_0x400e9b:
+		jmp	L_0x400cd0
+
+L_0x400ea0:
+L_indcall_0x400ea0_target_0x400ea6:
+		cmp qword ptr [rip + RIP_L_53 + 0x61d0f8], 0x400ea6
+L_53:
+		jne L_indcall_0x400ea0_target_0xffffffffffffffff
+		jmp L_0x400ea6
+L_indcall_0x400ea0_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_54 + 0x61d0f8]
+L_54:
+
+L_0x400ea6:
+		push	0x1c
+L_0x400eab:
+		jmp	L_0x400cd0
+
+L_0x400eb0:
+L_indcall_0x400eb0_target_0x400eb6:
+		cmp qword ptr [rip + RIP_L_55 + 0x61d100], 0x400eb6
+L_55:
+		jne L_indcall_0x400eb0_target_0xffffffffffffffff
+		jmp L_0x400eb6
+L_indcall_0x400eb0_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_56 + 0x61d100]
+L_56:
+
+L_0x400eb6:
+		push	0x1d
+L_0x400ebb:
+		jmp	L_0x400cd0
+
+L_0x400ed0:
+L_indcall_0x400ed0_target_0x400ed6:
+		cmp qword ptr [rip + RIP_L_57 + 0x61d110], 0x400ed6
+L_57:
+		jne L_indcall_0x400ed0_target_0x7f276ca77b30
+		jmp L_0x400ed6
+L_indcall_0x400ed0_target_0x7f276ca77b30:
+		jmp qword ptr [rip + RIP_L_58 + 0x61d110]
+L_58:
+
+L_0x400ed6:
+		push	0x1f
+L_0x400edb:
+		jmp	L_0x400cd0
+
+L_0x400ee0:
+L_indcall_0x400ee0_target_0x400ee6:
+		cmp qword ptr [rip + RIP_L_59 + 0x61d118], 0x400ee6
+L_59:
+		jne L_indcall_0x400ee0_target_0xffffffffffffffff
+		jmp L_0x400ee6
+L_indcall_0x400ee0_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_60 + 0x61d118]
+L_60:
+
+L_0x400ee6:
+		push	0x20
+L_0x400eeb:
+		jmp	L_0x400cd0
+
+L_0x400ef0:
+L_indcall_0x400ef0_target_0x400ef6:
+		cmp qword ptr [rip + RIP_L_61 + 0x61d120], 0x400ef6
+L_61:
+		jne L_indcall_0x400ef0_target_0xffffffffffffffff
+		jmp L_0x400ef6
+L_indcall_0x400ef0_target_0xffffffffffffffff:
+		jmp qword ptr [rip + RIP_L_62 + 0x61d120]
+L_62:
+
+L_0x400ef6:
+		push	0x21
+L_0x400efb:
+		jmp	L_0x400cd0
+
 L_0x400f00:
 L_indcall_0x400f00_target_0x400f06:
-		cmp qword ptr [rip + RIP_L_39 + 0x61d128], 0x400f06
-L_39:
-		jne L_indcall_0x400f00_target_0x7fa0c8133a10
+		cmp qword ptr [rip + RIP_L_63 + 0x61d128], 0x400f06
+L_63:
+		jne L_indcall_0x400f00_target_0x7fa6d645fa10
 		jmp L_0x400f06
-L_indcall_0x400f00_target_0x7fa0c8133a10:
-		jmp qword ptr [rip + RIP_L_40 + 0x61d128]
-L_40:
+L_indcall_0x400f00_target_0x7fa6d645fa10:
+		jmp qword ptr [rip + RIP_L_64 + 0x61d128]
+L_64:
 
 L_0x400f06:
 		push	0x22
@@ -312,13 +492,13 @@ L_0x400f0b:
 
 L_0x400f20:
 L_indcall_0x400f20_target_0x400f26:
-		cmp qword ptr [rip + RIP_L_41 + 0x61d138], 0x400f26
-L_41:
-		jne L_indcall_0x400f20_target_0x7f587e251970
+		cmp qword ptr [rip + RIP_L_65 + 0x61d138], 0x400f26
+L_65:
+		jne L_indcall_0x400f20_target_0x7efeccf01970
 		jmp L_0x400f26
-L_indcall_0x400f20_target_0x7f587e251970:
-		jmp qword ptr [rip + RIP_L_42 + 0x61d138]
-L_42:
+L_indcall_0x400f20_target_0x7efeccf01970:
+		jmp qword ptr [rip + RIP_L_66 + 0x61d138]
+L_66:
 
 L_0x400f26:
 		push	0x24
@@ -395,8 +575,8 @@ L_0x400ff9:
 		ret	
 
 L_0x401000:
-		cmp	byte ptr [rip + RIP_L_43 + 0x61de08], 0
-L_43:
+		cmp	byte ptr [rip + RIP_L_67 + 0x61de08], 0
+L_67:
 L_0x401007:
 		jne L_cond_dummy
 
@@ -410,8 +590,8 @@ L_0x40100d:
 L_0x401012:
 		pop	rbp
 L_0x401013:
-		mov	byte ptr [rip + RIP_L_44 + 0x61de08], 1
-L_44:
+		mov	byte ptr [rip + RIP_L_68 + 0x61de08], 1
+L_68:
 L_0x40101a:
 		ret	
 
@@ -555,7 +735,6 @@ L_0x401167:
 		mov	ecx, dword ptr [rbp + rax*4 - 0x450]
 L_0x40116e:
 		mov	dword ptr [rbp - 0x147c], ecx
-
 L_0x401174:
 
 L_0x401179:
@@ -920,7 +1099,6 @@ L_0x40151e:
 		and	ecx, 0xff
 L_0x401524:
 		mov	dword ptr [rbp - 0x149c], ecx
-
 L_0x40152a:
 		movsxd	rax, dword ptr [rbp - 0x24]
 L_0x40152e:
@@ -971,7 +1149,6 @@ L_0x40159a:
 		mov	ecx, dword ptr [rbp + rax*4 - 0x450]
 L_0x4015a1:
 		mov	dword ptr [rbp - 0x14a4], ecx
-
 L_0x4015a7:
 
 L_0x4015ac:
@@ -1101,9 +1278,7 @@ L_0x4016c3:
 		cmp	eax, dword ptr [rbp - 0x18]
 L_0x4016c6:
 		jle	L_0x4016d0
-
-L_0x4016cc:
-		mov	byte ptr [rbp - 0x35], 1
+		call L_cond_dummy
 
 L_0x4016d0:
 		mov	eax, dword ptr [rbp - 0x2c]
@@ -1117,71 +1292,9 @@ L_0x4016d9:
 L_0x4016de:
 		cmp	byte ptr [rbp - 0x35], 0
 L_0x4016e2:
-		jne	L_0x4016ed
+		jne L_cond_dummy
 
 L_0x4016e8:
-		jmp	L_0x40175e
-
-L_0x4016ed:
-		mov	dword ptr [rbp - 0x2c], 1
-
-L_0x4016f4:
-
-L_0x4016f9:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x4016fc:
-		cmp	eax, dword ptr [rbp - 0x14]
-L_0x4016ff:
-		jle	L_0x40170a
-
-L_0x401705:
-		jmp	L_0x401759
-
-L_0x40170a:
-		mov	eax, 2
-L_0x40170f:
-		movsxd	rcx, dword ptr [rbp - 0x2c]
-L_0x401713:
-		mov	edx, dword ptr [rbp + rcx*4 - 0xc60]
-L_0x40171a:
-		sar	edx, 8
-L_0x40171d:
-		mov	dword ptr [rbp - 0x30], edx
-L_0x401720:
-		mov	edx, dword ptr [rbp - 0x30]
-L_0x401723:
-		mov	dword ptr [rbp - 0x14c4], eax
-L_0x401729:
-		mov	eax, edx
-L_0x40172b:
-		cdq	
-L_0x40172c:
-		mov	esi, dword ptr [rbp - 0x14c4]
-L_0x401732:
-		idiv	esi
-L_0x401734:
-		add	eax, 1
-L_0x401737:
-		mov	dword ptr [rbp - 0x30], eax
-L_0x40173a:
-		mov	eax, dword ptr [rbp - 0x30]
-L_0x40173d:
-		shl	eax, 8
-L_0x401740:
-		movsxd	rcx, dword ptr [rbp - 0x2c]
-L_0x401744:
-		mov	dword ptr [rbp + rcx*4 - 0xc60], eax
-L_0x40174b:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x40174e:
-		add	eax, 1
-L_0x401751:
-		mov	dword ptr [rbp - 0x2c], eax
-L_0x401754:
-		jmp	L_0x4016f4
-
-L_0x401759:
-		jmp	L_0x4010e4
 
 L_0x40175e:
 		add	rsp, 0x14d0
@@ -1293,6 +1406,9278 @@ L_0x401887:
 L_0x401888:
 		ret	
 
+L_0x401890:
+		push	rbp
+L_0x401891:
+		mov	rbp, rsp
+L_0x401894:
+		mov	eax, dword ptr [rbp + 0x10]
+L_0x401897:
+		mov	qword ptr [rbp - 8], rdi
+L_0x40189b:
+		mov	qword ptr [rbp - 0x10], rsi
+L_0x40189f:
+		mov	qword ptr [rbp - 0x18], rdx
+L_0x4018a3:
+		mov	qword ptr [rbp - 0x20], rcx
+L_0x4018a7:
+		mov	dword ptr [rbp - 0x24], r8d
+L_0x4018ab:
+		mov	dword ptr [rbp - 0x28], r9d
+L_0x4018af:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4018b2:
+		mov	dword ptr [rbp - 0x30], 0
+L_0x4018b9:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x4018bc:
+		mov	dword ptr [rbp - 0x34], eax
+
+L_0x4018bf:
+
+L_0x4018c4:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x4018c7:
+		cmp	eax, dword ptr [rbp - 0x28]
+L_0x4018ca:
+		jle	L_0x4018d5
+
+L_0x4018d0:
+		jmp	L_0x40193a
+
+L_0x4018d5:
+		mov	dword ptr [rbp - 0x38], 0
+
+L_0x4018dc:
+
+L_0x4018e1:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x4018e4:
+		cmp	eax, dword ptr [rbp - 0x2c]
+L_0x4018e7:
+		jl	L_0x4018f2
+
+L_0x4018ed:
+		jmp	L_0x40192c
+
+L_0x4018f2:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x4018f6:
+		movsxd	rcx, dword ptr [rbp - 0x38]
+L_0x4018fa:
+		movzx	edx, byte ptr [rax + rcx]
+L_0x4018fe:
+		cmp	edx, dword ptr [rbp - 0x34]
+L_0x401901:
+		jne	L_0x40191e
+
+L_0x401907:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x40190a:
+		mov	rcx, qword ptr [rbp - 0x18]
+L_0x40190e:
+		movsxd	rdx, dword ptr [rbp - 0x30]
+L_0x401912:
+		mov	dword ptr [rcx + rdx*4], eax
+L_0x401915:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x401918:
+		add	eax, 1
+L_0x40191b:
+		mov	dword ptr [rbp - 0x30], eax
+
+L_0x40191e:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x401921:
+		add	eax, 1
+L_0x401924:
+		mov	dword ptr [rbp - 0x38], eax
+L_0x401927:
+		jmp	L_0x4018dc
+
+L_0x40192c:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x40192f:
+		add	eax, 1
+L_0x401932:
+		mov	dword ptr [rbp - 0x34], eax
+L_0x401935:
+		jmp	L_0x4018bf
+
+L_0x40193a:
+		mov	dword ptr [rbp - 0x34], 0
+
+L_0x401941:
+
+L_0x401946:
+		cmp	dword ptr [rbp - 0x34], 0x17
+L_0x40194a:
+		jl	L_0x401955
+
+L_0x401950:
+		jmp	L_0x401972
+
+L_0x401955:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401959:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x40195d:
+		mov	dword ptr [rax + rcx*4], 0
+L_0x401964:
+		mov	edx, dword ptr [rbp - 0x34]
+L_0x401967:
+		add	edx, 1
+L_0x40196a:
+		mov	dword ptr [rbp - 0x34], edx
+L_0x40196d:
+		jmp	L_0x401941
+
+L_0x401972:
+		mov	dword ptr [rbp - 0x34], 0
+
+L_0x401979:
+
+L_0x40197e:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x401981:
+		cmp	eax, dword ptr [rbp - 0x2c]
+L_0x401984:
+		jl	L_0x40198f
+
+L_0x40198a:
+		jmp	L_0x4019bc
+
+L_0x40198f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401993:
+		mov	rcx, qword ptr [rbp - 0x20]
+L_0x401997:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x40199b:
+		movzx	esi, byte ptr [rcx + rdx]
+L_0x40199f:
+		add	esi, 1
+L_0x4019a2:
+		movsxd	rcx, esi
+L_0x4019a5:
+		mov	esi, dword ptr [rax + rcx*4]
+L_0x4019a8:
+		add	esi, 1
+L_0x4019ab:
+		mov	dword ptr [rax + rcx*4], esi
+L_0x4019ae:
+		mov	esi, dword ptr [rbp - 0x34]
+L_0x4019b1:
+		add	esi, 1
+L_0x4019b4:
+		mov	dword ptr [rbp - 0x34], esi
+L_0x4019b7:
+		jmp	L_0x401979
+
+L_0x4019bc:
+		mov	dword ptr [rbp - 0x34], 1
+
+L_0x4019c3:
+
+L_0x4019c8:
+		cmp	dword ptr [rbp - 0x34], 0x17
+L_0x4019cc:
+		jl	L_0x4019d7
+
+L_0x4019d2:
+		jmp	L_0x401a03
+
+L_0x4019d7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4019db:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x4019de:
+		sub	ecx, 1
+L_0x4019e1:
+		movsxd	rdx, ecx
+L_0x4019e4:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x4019e7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4019eb:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x4019ef:
+		add	ecx, dword ptr [rax + rdx*4]
+L_0x4019f2:
+		mov	dword ptr [rax + rdx*4], ecx
+L_0x4019f5:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x4019f8:
+		add	ecx, 1
+L_0x4019fb:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x4019fe:
+		jmp	L_0x4019c3
+
+L_0x401a03:
+		mov	dword ptr [rbp - 0x34], 0
+
+L_0x401a0a:
+
+L_0x401a0f:
+		cmp	dword ptr [rbp - 0x34], 0x17
+L_0x401a13:
+		jl	L_0x401a1e
+
+L_0x401a19:
+		jmp	L_0x401a3b
+
+L_0x401a1e:
+		mov	rax, qword ptr [rbp - 8]
+L_0x401a22:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x401a26:
+		mov	dword ptr [rax + rcx*4], 0
+L_0x401a2d:
+		mov	edx, dword ptr [rbp - 0x34]
+L_0x401a30:
+		add	edx, 1
+L_0x401a33:
+		mov	dword ptr [rbp - 0x34], edx
+L_0x401a36:
+		jmp	L_0x401a0a
+
+L_0x401a3b:
+		mov	dword ptr [rbp - 0x3c], 0
+L_0x401a42:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x401a45:
+		mov	dword ptr [rbp - 0x34], eax
+
+L_0x401a48:
+
+L_0x401a4d:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x401a50:
+		cmp	eax, dword ptr [rbp - 0x28]
+L_0x401a53:
+		jle	L_0x401a5e
+
+L_0x401a59:
+		jmp	L_0x401aa7
+
+L_0x401a5e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401a62:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x401a65:
+		add	ecx, 1
+L_0x401a68:
+		movsxd	rdx, ecx
+L_0x401a6b:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x401a6e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401a72:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x401a76:
+		sub	ecx, dword ptr [rax + rdx*4]
+L_0x401a79:
+		add	ecx, dword ptr [rbp - 0x3c]
+L_0x401a7c:
+		mov	dword ptr [rbp - 0x3c], ecx
+L_0x401a7f:
+		mov	ecx, dword ptr [rbp - 0x3c]
+L_0x401a82:
+		sub	ecx, 1
+L_0x401a85:
+		mov	rax, qword ptr [rbp - 8]
+L_0x401a89:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x401a8d:
+		mov	dword ptr [rax + rdx*4], ecx
+L_0x401a90:
+		mov	ecx, dword ptr [rbp - 0x3c]
+L_0x401a93:
+		shl	ecx, 1
+L_0x401a96:
+		mov	dword ptr [rbp - 0x3c], ecx
+L_0x401a99:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x401a9c:
+		add	ecx, 1
+L_0x401a9f:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x401aa2:
+		jmp	L_0x401a48
+
+L_0x401aa7:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x401aaa:
+		add	eax, 1
+L_0x401aad:
+		mov	dword ptr [rbp - 0x34], eax
+
+L_0x401ab0:
+
+L_0x401ab5:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x401ab8:
+		cmp	eax, dword ptr [rbp - 0x28]
+L_0x401abb:
+		jle	L_0x401ac6
+
+L_0x401ac1:
+		jmp	L_0x401b00
+
+L_0x401ac6:
+		mov	rax, qword ptr [rbp - 8]
+L_0x401aca:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x401acd:
+		sub	ecx, 1
+L_0x401ad0:
+		movsxd	rdx, ecx
+L_0x401ad3:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x401ad6:
+		add	ecx, 1
+L_0x401ad9:
+		shl	ecx, 1
+L_0x401adc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ae0:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x401ae4:
+		sub	ecx, dword ptr [rax + rdx*4]
+L_0x401ae7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401aeb:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x401aef:
+		mov	dword ptr [rax + rdx*4], ecx
+L_0x401af2:
+		mov	ecx, dword ptr [rbp - 0x34]
+L_0x401af5:
+		add	ecx, 1
+L_0x401af8:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x401afb:
+		jmp	L_0x401ab0
+
+L_0x401b00:
+		pop	rbp
+L_0x401b01:
+		ret	
+
+L_0x401b10:
+		push	rbp
+L_0x401b11:
+		mov	rbp, rsp
+L_0x401b14:
+		sub	rsp, 0x240
+L_0x401b1b:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x401b1f:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x401b23:
+		mov	rdi, qword ptr [rdi]
+L_0x401b26:
+		mov	qword ptr [rbp - 0x28], rdi
+L_0x401b2a:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x401b2e:
+		cmp	dword ptr [rdi + 8], 0xa
+L_0x401b32:
+		jne	L_0x401c8b
+
+L_0x401b38:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b3c:
+		mov	dword ptr [rax + 0xfa24], 0
+L_0x401b46:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b4a:
+		mov	dword ptr [rax + 0xfa28], 0
+L_0x401b54:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b58:
+		mov	dword ptr [rax + 0xfa2c], 0
+L_0x401b62:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b66:
+		mov	dword ptr [rax + 0xfa30], 0
+L_0x401b70:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b74:
+		mov	dword ptr [rax + 0xfa34], 0
+L_0x401b7e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b82:
+		mov	dword ptr [rax + 0xfa38], 0
+L_0x401b8c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b90:
+		mov	dword ptr [rax + 0xfa3c], 0
+L_0x401b9a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401b9e:
+		mov	dword ptr [rax + 0xfa40], 0
+L_0x401ba8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401bac:
+		mov	dword ptr [rax + 0xfa44], 0
+L_0x401bb6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401bba:
+		mov	dword ptr [rax + 0xfa48], 0
+L_0x401bc4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401bc8:
+		mov	dword ptr [rax + 0xfa4c], 0
+L_0x401bd2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401bd6:
+		mov	dword ptr [rax + 0xfa50], 0
+L_0x401be0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401be4:
+		mov	dword ptr [rax + 0xfa54], 0
+L_0x401bee:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401bf2:
+		mov	dword ptr [rax + 0xfa58], 0
+L_0x401bfc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c00:
+		mov	dword ptr [rax + 0xfa5c], 0
+L_0x401c0a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c0e:
+		mov	dword ptr [rax + 0xfa60], 0
+L_0x401c18:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c1c:
+		mov	dword ptr [rax + 0xfa64], 0
+L_0x401c26:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c2a:
+		mov	dword ptr [rax + 0xfa68], 0
+L_0x401c34:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c38:
+		mov	dword ptr [rax + 0xfa6c], 0
+L_0x401c42:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c46:
+		mov	dword ptr [rax + 0xfa70], 0
+L_0x401c50:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c54:
+		mov	dword ptr [rax + 0xfa74], 0
+L_0x401c5e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c62:
+		mov	qword ptr [rax + 0xfa78], 0
+L_0x401c6d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c71:
+		mov	qword ptr [rax + 0xfa80], 0
+L_0x401c7c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c80:
+		mov	qword ptr [rax + 0xfa88], 0
+
+L_0x401c8b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c8f:
+		mov	ecx, dword ptr [rax + 0xfa24]
+L_0x401c95:
+		mov	dword ptr [rbp - 0x2c], ecx
+L_0x401c98:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401c9c:
+		mov	ecx, dword ptr [rax + 0xfa28]
+L_0x401ca2:
+		mov	dword ptr [rbp - 0x30], ecx
+L_0x401ca5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ca9:
+		mov	ecx, dword ptr [rax + 0xfa2c]
+L_0x401caf:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x401cb2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cb6:
+		mov	ecx, dword ptr [rax + 0xfa30]
+L_0x401cbc:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x401cbf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cc3:
+		mov	ecx, dword ptr [rax + 0xfa34]
+L_0x401cc9:
+		mov	dword ptr [rbp - 0x3c], ecx
+L_0x401ccc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cd0:
+		mov	ecx, dword ptr [rax + 0xfa38]
+L_0x401cd6:
+		mov	dword ptr [rbp - 0x40], ecx
+L_0x401cd9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cdd:
+		mov	ecx, dword ptr [rax + 0xfa3c]
+L_0x401ce3:
+		mov	dword ptr [rbp - 0x44], ecx
+L_0x401ce6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cea:
+		mov	ecx, dword ptr [rax + 0xfa40]
+L_0x401cf0:
+		mov	dword ptr [rbp - 0x48], ecx
+L_0x401cf3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401cf7:
+		mov	ecx, dword ptr [rax + 0xfa44]
+L_0x401cfd:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x401d00:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d04:
+		mov	ecx, dword ptr [rax + 0xfa48]
+L_0x401d0a:
+		mov	dword ptr [rbp - 0x50], ecx
+L_0x401d0d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d11:
+		mov	ecx, dword ptr [rax + 0xfa4c]
+L_0x401d17:
+		mov	dword ptr [rbp - 0x54], ecx
+L_0x401d1a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d1e:
+		mov	ecx, dword ptr [rax + 0xfa50]
+L_0x401d24:
+		mov	dword ptr [rbp - 0x58], ecx
+L_0x401d27:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d2b:
+		mov	ecx, dword ptr [rax + 0xfa54]
+L_0x401d31:
+		mov	dword ptr [rbp - 0x5c], ecx
+L_0x401d34:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d38:
+		mov	ecx, dword ptr [rax + 0xfa58]
+L_0x401d3e:
+		mov	dword ptr [rbp - 0x60], ecx
+L_0x401d41:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d45:
+		mov	ecx, dword ptr [rax + 0xfa5c]
+L_0x401d4b:
+		mov	dword ptr [rbp - 0x64], ecx
+L_0x401d4e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d52:
+		mov	ecx, dword ptr [rax + 0xfa60]
+L_0x401d58:
+		mov	dword ptr [rbp - 0x68], ecx
+L_0x401d5b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d5f:
+		mov	ecx, dword ptr [rax + 0xfa64]
+L_0x401d65:
+		mov	dword ptr [rbp - 0x6c], ecx
+L_0x401d68:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d6c:
+		mov	ecx, dword ptr [rax + 0xfa68]
+L_0x401d72:
+		mov	dword ptr [rbp - 0x70], ecx
+L_0x401d75:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d79:
+		mov	ecx, dword ptr [rax + 0xfa6c]
+L_0x401d7f:
+		mov	dword ptr [rbp - 0x74], ecx
+L_0x401d82:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d86:
+		mov	ecx, dword ptr [rax + 0xfa70]
+L_0x401d8c:
+		mov	dword ptr [rbp - 0x78], ecx
+L_0x401d8f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401d93:
+		mov	ecx, dword ptr [rax + 0xfa74]
+L_0x401d99:
+		mov	dword ptr [rbp - 0x7c], ecx
+L_0x401d9c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401da0:
+		mov	rax, qword ptr [rax + 0xfa78]
+L_0x401da7:
+		mov	qword ptr [rbp - 0x88], rax
+L_0x401dae:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401db2:
+		mov	rax, qword ptr [rax + 0xfa80]
+L_0x401db9:
+		mov	qword ptr [rbp - 0x90], rax
+L_0x401dc0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401dc4:
+		mov	rax, qword ptr [rax + 0xfa88]
+L_0x401dcb:
+		mov	qword ptr [rbp - 0x98], rax
+L_0x401dd2:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x401dd9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ddd:
+		cmp	dword ptr [rax + 8], 0xa
+L_0x401de1:
+		jne	L_0x401dec
+
+L_0x401de7:
+		jmp	L_0x4020e9
+
+L_0x401dec:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401df0:
+		cmp	dword ptr [rax + 8], 0xb
+L_0x401df4:
+		jne	L_0x401dff
+		call L_cond_dummy
+
+L_0x401dff:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e03:
+		cmp	dword ptr [rax + 8], 0xc
+L_0x401e07:
+		jne	L_0x401e12
+		call L_cond_dummy
+
+L_0x401e12:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e16:
+		cmp	dword ptr [rax + 8], 0xd
+L_0x401e1a:
+		jne	L_0x401e25
+		call L_cond_dummy
+
+L_0x401e25:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e29:
+		cmp	dword ptr [rax + 8], 0xe
+L_0x401e2d:
+		jne	L_0x401e38
+
+L_0x401e33:
+		jmp	L_0x4026dc
+
+L_0x401e38:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e3c:
+		cmp	dword ptr [rax + 8], 0xf
+L_0x401e40:
+		jne	L_0x401e4b
+		call L_cond_dummy
+
+L_0x401e4b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e4f:
+		cmp	dword ptr [rax + 8], 0x10
+L_0x401e53:
+		jne	L_0x401e5e
+		call L_cond_dummy
+
+L_0x401e5e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e62:
+		cmp	dword ptr [rax + 8], 0x11
+L_0x401e66:
+		jne	L_0x401e71
+		call L_cond_dummy
+
+L_0x401e71:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e75:
+		cmp	dword ptr [rax + 8], 0x12
+L_0x401e79:
+		jne	L_0x401e84
+		call L_cond_dummy
+
+L_0x401e84:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e88:
+		cmp	dword ptr [rax + 8], 0x13
+L_0x401e8c:
+		jne	L_0x401e97
+		call L_cond_dummy
+
+L_0x401e97:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401e9b:
+		cmp	dword ptr [rax + 8], 0x14
+L_0x401e9f:
+		jne	L_0x401eaa
+		call L_cond_dummy
+
+L_0x401eaa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401eae:
+		cmp	dword ptr [rax + 8], 0x15
+L_0x401eb2:
+		jne	L_0x401ebd
+		call L_cond_dummy
+
+L_0x401ebd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ec1:
+		cmp	dword ptr [rax + 8], 0x16
+L_0x401ec5:
+		jne	L_0x401ed0
+		call L_cond_dummy
+
+L_0x401ed0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ed4:
+		cmp	dword ptr [rax + 8], 0x17
+L_0x401ed8:
+		jne	L_0x401ee3
+		call L_cond_dummy
+
+L_0x401ee3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ee7:
+		cmp	dword ptr [rax + 8], 0x18
+L_0x401eeb:
+		jne	L_0x401ef6
+		call L_cond_dummy
+
+L_0x401ef6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401efa:
+		cmp	dword ptr [rax + 8], 0x19
+L_0x401efe:
+		jne	L_0x401f09
+		call L_cond_dummy
+
+L_0x401f09:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f0d:
+		cmp	dword ptr [rax + 8], 0x1a
+L_0x401f11:
+		jne	L_0x401f1c
+		call L_cond_dummy
+
+L_0x401f1c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f20:
+		cmp	dword ptr [rax + 8], 0x1b
+L_0x401f24:
+		jne	L_0x401f2f
+		call L_cond_dummy
+
+L_0x401f2f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f33:
+		cmp	dword ptr [rax + 8], 0x1c
+L_0x401f37:
+		jne	L_0x401f42
+		call L_cond_dummy
+
+L_0x401f42:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f46:
+		cmp	dword ptr [rax + 8], 0x1d
+L_0x401f4a:
+		jne	L_0x401f55
+		call L_cond_dummy
+
+L_0x401f55:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f59:
+		cmp	dword ptr [rax + 8], 0x1e
+L_0x401f5d:
+		jne	L_0x401f68
+		call L_cond_dummy
+
+L_0x401f68:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f6c:
+		cmp	dword ptr [rax + 8], 0x1f
+L_0x401f70:
+		jne	L_0x401f7b
+		call L_cond_dummy
+
+L_0x401f7b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f7f:
+		cmp	dword ptr [rax + 8], 0x20
+L_0x401f83:
+		jne	L_0x401f8e
+		call L_cond_dummy
+
+L_0x401f8e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401f92:
+		cmp	dword ptr [rax + 8], 0x21
+L_0x401f96:
+		jne	L_0x401fa1
+		call L_cond_dummy
+
+L_0x401fa1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401fa5:
+		cmp	dword ptr [rax + 8], 0x22
+L_0x401fa9:
+		jne	L_0x401fb4
+		call L_cond_dummy
+
+L_0x401fb4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401fb8:
+		cmp	dword ptr [rax + 8], 0x23
+L_0x401fbc:
+		jne	L_0x401fc7
+		call L_cond_dummy
+
+L_0x401fc7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401fcb:
+		cmp	dword ptr [rax + 8], 0x24
+L_0x401fcf:
+		jne	L_0x401fda
+		call L_cond_dummy
+
+L_0x401fda:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401fde:
+		cmp	dword ptr [rax + 8], 0x25
+L_0x401fe2:
+		jne	L_0x401fed
+		call L_cond_dummy
+
+L_0x401fed:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x401ff1:
+		cmp	dword ptr [rax + 8], 0x26
+L_0x401ff5:
+		jne	L_0x402000
+
+L_0x401ffb:
+		jmp	L_0x404ba4
+
+L_0x402000:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402004:
+		cmp	dword ptr [rax + 8], 0x27
+L_0x402008:
+		jne	L_0x402013
+
+L_0x40200e:
+		jmp	L_0x404cf1
+
+L_0x402013:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402017:
+		cmp	dword ptr [rax + 8], 0x28
+L_0x40201b:
+		jne	L_0x402026
+
+L_0x402021:
+		jmp	L_0x40557c
+
+L_0x402026:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40202a:
+		cmp	dword ptr [rax + 8], 0x29
+L_0x40202e:
+		jne L_cond_dummy
+
+L_0x402034:
+		jmp	L_0x4056c9
+
+L_0x4020e9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4020ed:
+		mov	dword ptr [rax + 8], 0xa
+
+L_0x4020f4:
+
+L_0x4020f9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4020fd:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402101:
+		jl	L_0x402151
+
+L_0x402107:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40210b:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40210e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402112:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402115:
+		sub	edx, 8
+L_0x402118:
+		mov	dword ptr [rbp - 0x18c], ecx
+L_0x40211e:
+		mov	ecx, edx
+L_0x402120:
+		mov	edx, dword ptr [rbp - 0x18c]
+L_0x402126:
+		shr	edx, cl
+L_0x402128:
+		and	edx, 0xff
+L_0x40212e:
+		mov	dword ptr [rbp - 0x9c], edx
+L_0x402134:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402138:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40213b:
+		sub	edx, 8
+L_0x40213e:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402141:
+		mov	edx, dword ptr [rbp - 0x9c]
+L_0x402147:
+		mov	cl, dl
+L_0x402149:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40214c:
+		jmp	L_0x4021f2
+
+L_0x402151:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402155:
+		mov	rax, qword ptr [rax]
+L_0x402158:
+		cmp	dword ptr [rax + 8], 0
+L_0x40215c:
+		jne	L_0x40216e
+		call L_cond_dummy
+
+L_0x40216e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402172:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402175:
+		shl	ecx, 8
+L_0x402178:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40217c:
+		mov	rax, qword ptr [rax]
+L_0x40217f:
+		mov	rax, qword ptr [rax]
+L_0x402182:
+		movzx	edx, byte ptr [rax]
+L_0x402185:
+		or	ecx, edx
+L_0x402187:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40218b:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x40218e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402192:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402195:
+		add	ecx, 8
+L_0x402198:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40219b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40219f:
+		mov	rax, qword ptr [rax]
+L_0x4021a2:
+		mov	rsi, qword ptr [rax]
+L_0x4021a5:
+		add	rsi, 1
+L_0x4021a9:
+		mov	qword ptr [rax], rsi
+L_0x4021ac:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4021b0:
+		mov	rax, qword ptr [rax]
+L_0x4021b3:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4021b6:
+		add	ecx, -1
+L_0x4021b9:
+		mov	dword ptr [rax + 8], ecx
+L_0x4021bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4021c0:
+		mov	rax, qword ptr [rax]
+L_0x4021c3:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4021c6:
+		add	ecx, 1
+L_0x4021c9:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4021cc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4021d0:
+		mov	rax, qword ptr [rax]
+L_0x4021d3:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4021d7:
+		jne	L_0x4021ed
+		call L_cond_dummy
+
+L_0x4021ed:
+		jmp	L_0x4020f4
+
+L_0x4021f2:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x4021f6:
+		cmp	eax, 0x42
+L_0x4021f9:
+		je	L_0x40220b
+
+L_0x4021ff:
+		mov	dword ptr [rbp - 0x18], 0xfffffffb
+L_0x402206:
+		jmp	L_0x406c8a
+
+L_0x40220b:
+
+L_0x402210:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402214:
+		mov	dword ptr [rax + 8], 0xb
+
+L_0x40221b:
+
+L_0x402220:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402224:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402228:
+		jl	L_0x402278
+
+L_0x40222e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402232:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402235:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402239:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40223c:
+		sub	edx, 8
+L_0x40223f:
+		mov	dword ptr [rbp - 0x190], ecx
+L_0x402245:
+		mov	ecx, edx
+L_0x402247:
+		mov	edx, dword ptr [rbp - 0x190]
+L_0x40224d:
+		shr	edx, cl
+L_0x40224f:
+		and	edx, 0xff
+L_0x402255:
+		mov	dword ptr [rbp - 0xa0], edx
+L_0x40225b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40225f:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402262:
+		sub	edx, 8
+L_0x402265:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402268:
+		mov	edx, dword ptr [rbp - 0xa0]
+L_0x40226e:
+		mov	cl, dl
+L_0x402270:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402273:
+		jmp	L_0x402319
+
+L_0x402278:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40227c:
+		mov	rax, qword ptr [rax]
+L_0x40227f:
+		cmp	dword ptr [rax + 8], 0
+L_0x402283:
+		jne	L_0x402295
+		call L_cond_dummy
+
+L_0x402295:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402299:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40229c:
+		shl	ecx, 8
+L_0x40229f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022a3:
+		mov	rax, qword ptr [rax]
+L_0x4022a6:
+		mov	rax, qword ptr [rax]
+L_0x4022a9:
+		movzx	edx, byte ptr [rax]
+L_0x4022ac:
+		or	ecx, edx
+L_0x4022ae:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022b2:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4022b5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022b9:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4022bc:
+		add	ecx, 8
+L_0x4022bf:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4022c2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022c6:
+		mov	rax, qword ptr [rax]
+L_0x4022c9:
+		mov	rsi, qword ptr [rax]
+L_0x4022cc:
+		add	rsi, 1
+L_0x4022d0:
+		mov	qword ptr [rax], rsi
+L_0x4022d3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022d7:
+		mov	rax, qword ptr [rax]
+L_0x4022da:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4022dd:
+		add	ecx, -1
+L_0x4022e0:
+		mov	dword ptr [rax + 8], ecx
+L_0x4022e3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022e7:
+		mov	rax, qword ptr [rax]
+L_0x4022ea:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4022ed:
+		add	ecx, 1
+L_0x4022f0:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4022f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4022f7:
+		mov	rax, qword ptr [rax]
+L_0x4022fa:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4022fe:
+		jne	L_0x402314
+		call L_cond_dummy
+
+L_0x402314:
+		jmp	L_0x40221b
+
+L_0x402319:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40231d:
+		cmp	eax, 0x5a
+L_0x402320:
+		je	L_0x402332
+		call L_cond_dummy
+
+L_0x402332:
+
+L_0x402337:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40233b:
+		mov	dword ptr [rax + 8], 0xc
+
+L_0x402342:
+
+L_0x402347:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40234b:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x40234f:
+		jl	L_0x40239f
+
+L_0x402355:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402359:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40235c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402360:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402363:
+		sub	edx, 8
+L_0x402366:
+		mov	dword ptr [rbp - 0x194], ecx
+L_0x40236c:
+		mov	ecx, edx
+L_0x40236e:
+		mov	edx, dword ptr [rbp - 0x194]
+L_0x402374:
+		shr	edx, cl
+L_0x402376:
+		and	edx, 0xff
+L_0x40237c:
+		mov	dword ptr [rbp - 0xa4], edx
+L_0x402382:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402386:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402389:
+		sub	edx, 8
+L_0x40238c:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40238f:
+		mov	edx, dword ptr [rbp - 0xa4]
+L_0x402395:
+		mov	cl, dl
+L_0x402397:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40239a:
+		jmp	L_0x402440
+
+L_0x40239f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023a3:
+		mov	rax, qword ptr [rax]
+L_0x4023a6:
+		cmp	dword ptr [rax + 8], 0
+L_0x4023aa:
+		jne	L_0x4023bc
+		call L_cond_dummy
+
+L_0x4023bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023c0:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4023c3:
+		shl	ecx, 8
+L_0x4023c6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023ca:
+		mov	rax, qword ptr [rax]
+L_0x4023cd:
+		mov	rax, qword ptr [rax]
+L_0x4023d0:
+		movzx	edx, byte ptr [rax]
+L_0x4023d3:
+		or	ecx, edx
+L_0x4023d5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023d9:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4023dc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023e0:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4023e3:
+		add	ecx, 8
+L_0x4023e6:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4023e9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023ed:
+		mov	rax, qword ptr [rax]
+L_0x4023f0:
+		mov	rsi, qword ptr [rax]
+L_0x4023f3:
+		add	rsi, 1
+L_0x4023f7:
+		mov	qword ptr [rax], rsi
+L_0x4023fa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4023fe:
+		mov	rax, qword ptr [rax]
+L_0x402401:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402404:
+		add	ecx, -1
+L_0x402407:
+		mov	dword ptr [rax + 8], ecx
+L_0x40240a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40240e:
+		mov	rax, qword ptr [rax]
+L_0x402411:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402414:
+		add	ecx, 1
+L_0x402417:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x40241a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40241e:
+		mov	rax, qword ptr [rax]
+L_0x402421:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402425:
+		jne	L_0x40243b
+		call L_cond_dummy
+
+L_0x40243b:
+		jmp	L_0x402342
+
+L_0x402440:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402444:
+		cmp	eax, 0x68
+L_0x402447:
+		je	L_0x402459
+		call L_cond_dummy
+
+L_0x402459:
+
+L_0x40245e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402462:
+		mov	dword ptr [rax + 8], 0xd
+
+L_0x402469:
+
+L_0x40246e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402472:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402476:
+		jl	L_0x4024c8
+
+L_0x40247c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402480:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402483:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402487:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40248a:
+		sub	edx, 8
+L_0x40248d:
+		mov	dword ptr [rbp - 0x198], ecx
+L_0x402493:
+		mov	ecx, edx
+L_0x402495:
+		mov	edx, dword ptr [rbp - 0x198]
+L_0x40249b:
+		shr	edx, cl
+L_0x40249d:
+		and	edx, 0xff
+L_0x4024a3:
+		mov	dword ptr [rbp - 0xa8], edx
+L_0x4024a9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4024ad:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4024b0:
+		sub	edx, 8
+L_0x4024b3:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4024b6:
+		mov	edx, dword ptr [rbp - 0xa8]
+L_0x4024bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4024c0:
+		mov	dword ptr [rax + 0x28], edx
+L_0x4024c3:
+		jmp	L_0x402569
+
+L_0x4024c8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4024cc:
+		mov	rax, qword ptr [rax]
+L_0x4024cf:
+		cmp	dword ptr [rax + 8], 0
+L_0x4024d3:
+		jne	L_0x4024e5
+		call L_cond_dummy
+
+L_0x4024e5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4024e9:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4024ec:
+		shl	ecx, 8
+L_0x4024ef:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4024f3:
+		mov	rax, qword ptr [rax]
+L_0x4024f6:
+		mov	rax, qword ptr [rax]
+L_0x4024f9:
+		movzx	edx, byte ptr [rax]
+L_0x4024fc:
+		or	ecx, edx
+L_0x4024fe:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402502:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402505:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402509:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40250c:
+		add	ecx, 8
+L_0x40250f:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402512:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402516:
+		mov	rax, qword ptr [rax]
+L_0x402519:
+		mov	rsi, qword ptr [rax]
+L_0x40251c:
+		add	rsi, 1
+L_0x402520:
+		mov	qword ptr [rax], rsi
+L_0x402523:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402527:
+		mov	rax, qword ptr [rax]
+L_0x40252a:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40252d:
+		add	ecx, -1
+L_0x402530:
+		mov	dword ptr [rax + 8], ecx
+L_0x402533:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402537:
+		mov	rax, qword ptr [rax]
+L_0x40253a:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x40253d:
+		add	ecx, 1
+L_0x402540:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402543:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402547:
+		mov	rax, qword ptr [rax]
+L_0x40254a:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x40254e:
+		jne	L_0x402564
+		call L_cond_dummy
+
+L_0x402564:
+		jmp	L_0x402469
+
+L_0x402569:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40256d:
+		cmp	dword ptr [rax + 0x28], 0x31
+L_0x402571:
+		jge	L_0x402583
+		call L_cond_dummy
+
+L_0x402583:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402587:
+		cmp	dword ptr [rax + 0x28], 0x39
+L_0x40258b:
+		jle	L_0x40259d
+		call L_cond_dummy
+
+L_0x40259d:
+
+L_0x4025a2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4025a6:
+		mov	ecx, dword ptr [rax + 0x28]
+L_0x4025a9:
+		sub	ecx, 0x30
+L_0x4025ac:
+		mov	dword ptr [rax + 0x28], ecx
+L_0x4025af:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4025b3:
+		cmp	byte ptr [rax + 0x2c], 0
+L_0x4025b7:
+		je	L_0x40267b
+		call L_cond_dummy
+
+L_0x40267b:
+		mov	edx, 1
+L_0x402680:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x402684:
+		mov	rax, qword ptr [rax + 0x38]
+L_0x402688:
+		mov	rcx, qword ptr [rbp - 0x28]
+L_0x40268c:
+		mov	rdi, qword ptr [rcx + 0x48]
+L_0x402690:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x402694:
+		imul	esi, dword ptr [rcx + 0x28], 0x186a0
+L_0x40269b:
+		movsxd	rcx, esi
+L_0x40269e:
+		shl	rcx, 2
+L_0x4026a2:
+		mov	esi, ecx
+L_0x4026a4:
+L_indcall_0x4026a4_target_0x40c990:
+		cmp rax, 0x40c990
+		jne L_indcall_dummy
+		call L_0x40c990
+
+L_0x4026a6:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4026aa:
+		mov	qword ptr [rcx + 0xc50], rax
+L_0x4026b1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4026b5:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x4026bc:
+		cmp	rax, 0
+L_0x4026c0:
+		jne	L_0x4026d2
+		call L_cond_dummy
+
+L_0x4026d2:
+
+L_0x4026d7:
+
+L_0x4026dc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4026e0:
+		mov	dword ptr [rax + 8], 0xe
+
+L_0x4026e7:
+
+L_0x4026ec:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4026f0:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x4026f4:
+		jl	L_0x402744
+
+L_0x4026fa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4026fe:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402701:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402705:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402708:
+		sub	edx, 8
+L_0x40270b:
+		mov	dword ptr [rbp - 0x19c], ecx
+L_0x402711:
+		mov	ecx, edx
+L_0x402713:
+		mov	edx, dword ptr [rbp - 0x19c]
+L_0x402719:
+		shr	edx, cl
+L_0x40271b:
+		and	edx, 0xff
+L_0x402721:
+		mov	dword ptr [rbp - 0xac], edx
+L_0x402727:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40272b:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40272e:
+		sub	edx, 8
+L_0x402731:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402734:
+		mov	edx, dword ptr [rbp - 0xac]
+L_0x40273a:
+		mov	cl, dl
+L_0x40273c:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40273f:
+		jmp	L_0x4027e5
+
+L_0x402744:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402748:
+		mov	rax, qword ptr [rax]
+L_0x40274b:
+		cmp	dword ptr [rax + 8], 0
+L_0x40274f:
+		jne	L_0x402761
+		call L_cond_dummy
+
+L_0x402761:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402765:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402768:
+		shl	ecx, 8
+L_0x40276b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40276f:
+		mov	rax, qword ptr [rax]
+L_0x402772:
+		mov	rax, qword ptr [rax]
+L_0x402775:
+		movzx	edx, byte ptr [rax]
+L_0x402778:
+		or	ecx, edx
+L_0x40277a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40277e:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402781:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402785:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402788:
+		add	ecx, 8
+L_0x40278b:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40278e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402792:
+		mov	rax, qword ptr [rax]
+L_0x402795:
+		mov	rsi, qword ptr [rax]
+L_0x402798:
+		add	rsi, 1
+L_0x40279c:
+		mov	qword ptr [rax], rsi
+L_0x40279f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4027a3:
+		mov	rax, qword ptr [rax]
+L_0x4027a6:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4027a9:
+		add	ecx, -1
+L_0x4027ac:
+		mov	dword ptr [rax + 8], ecx
+L_0x4027af:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4027b3:
+		mov	rax, qword ptr [rax]
+L_0x4027b6:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4027b9:
+		add	ecx, 1
+L_0x4027bc:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4027bf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4027c3:
+		mov	rax, qword ptr [rax]
+L_0x4027c6:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4027ca:
+		jne	L_0x4027e0
+		call L_cond_dummy
+
+L_0x4027e0:
+		jmp	L_0x4026e7
+
+L_0x4027e5:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x4027e9:
+		cmp	eax, 0x17
+L_0x4027ec:
+		jne	L_0x4027f7
+
+L_0x4027f2:
+		jmp	L_0x4061f4
+
+L_0x4027f7:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x4027fb:
+		cmp	eax, 0x31
+L_0x4027fe:
+		je	L_0x402810
+		call L_cond_dummy
+
+L_0x402810:
+
+L_0x402815:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402819:
+		mov	dword ptr [rax + 8], 0xf
+
+L_0x402820:
+
+L_0x402825:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402829:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x40282d:
+		jl	L_0x40287d
+
+L_0x402833:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402837:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40283a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40283e:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402841:
+		sub	edx, 8
+L_0x402844:
+		mov	dword ptr [rbp - 0x1a0], ecx
+L_0x40284a:
+		mov	ecx, edx
+L_0x40284c:
+		mov	edx, dword ptr [rbp - 0x1a0]
+L_0x402852:
+		shr	edx, cl
+L_0x402854:
+		and	edx, 0xff
+L_0x40285a:
+		mov	dword ptr [rbp - 0xb0], edx
+L_0x402860:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402864:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402867:
+		sub	edx, 8
+L_0x40286a:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40286d:
+		mov	edx, dword ptr [rbp - 0xb0]
+L_0x402873:
+		mov	cl, dl
+L_0x402875:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402878:
+		jmp	L_0x40291e
+
+L_0x40287d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402881:
+		mov	rax, qword ptr [rax]
+L_0x402884:
+		cmp	dword ptr [rax + 8], 0
+L_0x402888:
+		jne	L_0x40289a
+		call L_cond_dummy
+
+L_0x40289a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40289e:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4028a1:
+		shl	ecx, 8
+L_0x4028a4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028a8:
+		mov	rax, qword ptr [rax]
+L_0x4028ab:
+		mov	rax, qword ptr [rax]
+L_0x4028ae:
+		movzx	edx, byte ptr [rax]
+L_0x4028b1:
+		or	ecx, edx
+L_0x4028b3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028b7:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4028ba:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028be:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4028c1:
+		add	ecx, 8
+L_0x4028c4:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4028c7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028cb:
+		mov	rax, qword ptr [rax]
+L_0x4028ce:
+		mov	rsi, qword ptr [rax]
+L_0x4028d1:
+		add	rsi, 1
+L_0x4028d5:
+		mov	qword ptr [rax], rsi
+L_0x4028d8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028dc:
+		mov	rax, qword ptr [rax]
+L_0x4028df:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4028e2:
+		add	ecx, -1
+L_0x4028e5:
+		mov	dword ptr [rax + 8], ecx
+L_0x4028e8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028ec:
+		mov	rax, qword ptr [rax]
+L_0x4028ef:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4028f2:
+		add	ecx, 1
+L_0x4028f5:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4028f8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4028fc:
+		mov	rax, qword ptr [rax]
+L_0x4028ff:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402903:
+		jne	L_0x402919
+		call L_cond_dummy
+
+L_0x402919:
+		jmp	L_0x402820
+
+L_0x40291e:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402922:
+		cmp	eax, 0x41
+L_0x402925:
+		je	L_0x402937
+		call L_cond_dummy
+
+L_0x402937:
+
+L_0x40293c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402940:
+		mov	dword ptr [rax + 8], 0x10
+
+L_0x402947:
+
+L_0x40294c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402950:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402954:
+		jl	L_0x4029a4
+
+L_0x40295a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40295e:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402961:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402965:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402968:
+		sub	edx, 8
+L_0x40296b:
+		mov	dword ptr [rbp - 0x1a4], ecx
+L_0x402971:
+		mov	ecx, edx
+L_0x402973:
+		mov	edx, dword ptr [rbp - 0x1a4]
+L_0x402979:
+		shr	edx, cl
+L_0x40297b:
+		and	edx, 0xff
+L_0x402981:
+		mov	dword ptr [rbp - 0xb4], edx
+L_0x402987:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40298b:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40298e:
+		sub	edx, 8
+L_0x402991:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402994:
+		mov	edx, dword ptr [rbp - 0xb4]
+L_0x40299a:
+		mov	cl, dl
+L_0x40299c:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40299f:
+		jmp	L_0x402a45
+
+L_0x4029a4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029a8:
+		mov	rax, qword ptr [rax]
+L_0x4029ab:
+		cmp	dword ptr [rax + 8], 0
+L_0x4029af:
+		jne	L_0x4029c1
+		call L_cond_dummy
+
+L_0x4029c1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029c5:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4029c8:
+		shl	ecx, 8
+L_0x4029cb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029cf:
+		mov	rax, qword ptr [rax]
+L_0x4029d2:
+		mov	rax, qword ptr [rax]
+L_0x4029d5:
+		movzx	edx, byte ptr [rax]
+L_0x4029d8:
+		or	ecx, edx
+L_0x4029da:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029de:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4029e1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029e5:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4029e8:
+		add	ecx, 8
+L_0x4029eb:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4029ee:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4029f2:
+		mov	rax, qword ptr [rax]
+L_0x4029f5:
+		mov	rsi, qword ptr [rax]
+L_0x4029f8:
+		add	rsi, 1
+L_0x4029fc:
+		mov	qword ptr [rax], rsi
+L_0x4029ff:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a03:
+		mov	rax, qword ptr [rax]
+L_0x402a06:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402a09:
+		add	ecx, -1
+L_0x402a0c:
+		mov	dword ptr [rax + 8], ecx
+L_0x402a0f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a13:
+		mov	rax, qword ptr [rax]
+L_0x402a16:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402a19:
+		add	ecx, 1
+L_0x402a1c:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402a1f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a23:
+		mov	rax, qword ptr [rax]
+L_0x402a26:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402a2a:
+		jne	L_0x402a40
+		call L_cond_dummy
+
+L_0x402a40:
+		jmp	L_0x402947
+
+L_0x402a45:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402a49:
+		cmp	eax, 0x59
+L_0x402a4c:
+		je	L_0x402a5e
+		call L_cond_dummy
+
+L_0x402a5e:
+
+L_0x402a63:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a67:
+		mov	dword ptr [rax + 8], 0x11
+
+L_0x402a6e:
+
+L_0x402a73:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a77:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402a7b:
+		jl	L_0x402acb
+
+L_0x402a81:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a85:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402a88:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402a8c:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402a8f:
+		sub	edx, 8
+L_0x402a92:
+		mov	dword ptr [rbp - 0x1a8], ecx
+L_0x402a98:
+		mov	ecx, edx
+L_0x402a9a:
+		mov	edx, dword ptr [rbp - 0x1a8]
+L_0x402aa0:
+		shr	edx, cl
+L_0x402aa2:
+		and	edx, 0xff
+L_0x402aa8:
+		mov	dword ptr [rbp - 0xb8], edx
+L_0x402aae:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ab2:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402ab5:
+		sub	edx, 8
+L_0x402ab8:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402abb:
+		mov	edx, dword ptr [rbp - 0xb8]
+L_0x402ac1:
+		mov	cl, dl
+L_0x402ac3:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402ac6:
+		jmp	L_0x402b6c
+
+L_0x402acb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402acf:
+		mov	rax, qword ptr [rax]
+L_0x402ad2:
+		cmp	dword ptr [rax + 8], 0
+L_0x402ad6:
+		jne	L_0x402ae8
+		call L_cond_dummy
+
+L_0x402ae8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402aec:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402aef:
+		shl	ecx, 8
+L_0x402af2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402af6:
+		mov	rax, qword ptr [rax]
+L_0x402af9:
+		mov	rax, qword ptr [rax]
+L_0x402afc:
+		movzx	edx, byte ptr [rax]
+L_0x402aff:
+		or	ecx, edx
+L_0x402b01:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b05:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402b08:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b0c:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402b0f:
+		add	ecx, 8
+L_0x402b12:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402b15:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b19:
+		mov	rax, qword ptr [rax]
+L_0x402b1c:
+		mov	rsi, qword ptr [rax]
+L_0x402b1f:
+		add	rsi, 1
+L_0x402b23:
+		mov	qword ptr [rax], rsi
+L_0x402b26:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b2a:
+		mov	rax, qword ptr [rax]
+L_0x402b2d:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402b30:
+		add	ecx, -1
+L_0x402b33:
+		mov	dword ptr [rax + 8], ecx
+L_0x402b36:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b3a:
+		mov	rax, qword ptr [rax]
+L_0x402b3d:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402b40:
+		add	ecx, 1
+L_0x402b43:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402b46:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b4a:
+		mov	rax, qword ptr [rax]
+L_0x402b4d:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402b51:
+		jne	L_0x402b67
+		call L_cond_dummy
+
+L_0x402b67:
+		jmp	L_0x402a6e
+
+L_0x402b6c:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402b70:
+		cmp	eax, 0x26
+L_0x402b73:
+		je	L_0x402b85
+		call L_cond_dummy
+
+L_0x402b85:
+
+L_0x402b8a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b8e:
+		mov	dword ptr [rax + 8], 0x12
+
+L_0x402b95:
+
+L_0x402b9a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402b9e:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402ba2:
+		jl	L_0x402bf2
+
+L_0x402ba8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402bac:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402baf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402bb3:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402bb6:
+		sub	edx, 8
+L_0x402bb9:
+		mov	dword ptr [rbp - 0x1ac], ecx
+L_0x402bbf:
+		mov	ecx, edx
+L_0x402bc1:
+		mov	edx, dword ptr [rbp - 0x1ac]
+L_0x402bc7:
+		shr	edx, cl
+L_0x402bc9:
+		and	edx, 0xff
+L_0x402bcf:
+		mov	dword ptr [rbp - 0xbc], edx
+L_0x402bd5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402bd9:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402bdc:
+		sub	edx, 8
+L_0x402bdf:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402be2:
+		mov	edx, dword ptr [rbp - 0xbc]
+L_0x402be8:
+		mov	cl, dl
+L_0x402bea:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402bed:
+		jmp	L_0x402c93
+
+L_0x402bf2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402bf6:
+		mov	rax, qword ptr [rax]
+L_0x402bf9:
+		cmp	dword ptr [rax + 8], 0
+L_0x402bfd:
+		jne	L_0x402c0f
+		call L_cond_dummy
+
+L_0x402c0f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c13:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402c16:
+		shl	ecx, 8
+L_0x402c19:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c1d:
+		mov	rax, qword ptr [rax]
+L_0x402c20:
+		mov	rax, qword ptr [rax]
+L_0x402c23:
+		movzx	edx, byte ptr [rax]
+L_0x402c26:
+		or	ecx, edx
+L_0x402c28:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c2c:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402c2f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c33:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402c36:
+		add	ecx, 8
+L_0x402c39:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402c3c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c40:
+		mov	rax, qword ptr [rax]
+L_0x402c43:
+		mov	rsi, qword ptr [rax]
+L_0x402c46:
+		add	rsi, 1
+L_0x402c4a:
+		mov	qword ptr [rax], rsi
+L_0x402c4d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c51:
+		mov	rax, qword ptr [rax]
+L_0x402c54:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402c57:
+		add	ecx, -1
+L_0x402c5a:
+		mov	dword ptr [rax + 8], ecx
+L_0x402c5d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c61:
+		mov	rax, qword ptr [rax]
+L_0x402c64:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402c67:
+		add	ecx, 1
+L_0x402c6a:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402c6d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402c71:
+		mov	rax, qword ptr [rax]
+L_0x402c74:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402c78:
+		jne	L_0x402c8e
+		call L_cond_dummy
+
+L_0x402c8e:
+		jmp	L_0x402b95
+
+L_0x402c93:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402c97:
+		cmp	eax, 0x53
+L_0x402c9a:
+		je	L_0x402cac
+		call L_cond_dummy
+
+L_0x402cac:
+
+L_0x402cb1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402cb5:
+		mov	dword ptr [rax + 8], 0x13
+
+L_0x402cbc:
+
+L_0x402cc1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402cc5:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402cc9:
+		jl	L_0x402d19
+
+L_0x402ccf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402cd3:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402cd6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402cda:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402cdd:
+		sub	edx, 8
+L_0x402ce0:
+		mov	dword ptr [rbp - 0x1b0], ecx
+L_0x402ce6:
+		mov	ecx, edx
+L_0x402ce8:
+		mov	edx, dword ptr [rbp - 0x1b0]
+L_0x402cee:
+		shr	edx, cl
+L_0x402cf0:
+		and	edx, 0xff
+L_0x402cf6:
+		mov	dword ptr [rbp - 0xc0], edx
+L_0x402cfc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d00:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402d03:
+		sub	edx, 8
+L_0x402d06:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402d09:
+		mov	edx, dword ptr [rbp - 0xc0]
+L_0x402d0f:
+		mov	cl, dl
+L_0x402d11:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402d14:
+		jmp	L_0x402dba
+
+L_0x402d19:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d1d:
+		mov	rax, qword ptr [rax]
+L_0x402d20:
+		cmp	dword ptr [rax + 8], 0
+L_0x402d24:
+		jne	L_0x402d36
+		call L_cond_dummy
+
+L_0x402d36:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d3a:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402d3d:
+		shl	ecx, 8
+L_0x402d40:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d44:
+		mov	rax, qword ptr [rax]
+L_0x402d47:
+		mov	rax, qword ptr [rax]
+L_0x402d4a:
+		movzx	edx, byte ptr [rax]
+L_0x402d4d:
+		or	ecx, edx
+L_0x402d4f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d53:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402d56:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d5a:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402d5d:
+		add	ecx, 8
+L_0x402d60:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402d63:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d67:
+		mov	rax, qword ptr [rax]
+L_0x402d6a:
+		mov	rsi, qword ptr [rax]
+L_0x402d6d:
+		add	rsi, 1
+L_0x402d71:
+		mov	qword ptr [rax], rsi
+L_0x402d74:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d78:
+		mov	rax, qword ptr [rax]
+L_0x402d7b:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402d7e:
+		add	ecx, -1
+L_0x402d81:
+		mov	dword ptr [rax + 8], ecx
+L_0x402d84:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d88:
+		mov	rax, qword ptr [rax]
+L_0x402d8b:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402d8e:
+		add	ecx, 1
+L_0x402d91:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402d94:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402d98:
+		mov	rax, qword ptr [rax]
+L_0x402d9b:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402d9f:
+		jne	L_0x402db5
+		call L_cond_dummy
+
+L_0x402db5:
+		jmp	L_0x402cbc
+
+L_0x402dba:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x402dbe:
+		cmp	eax, 0x59
+L_0x402dc1:
+		je	L_0x402dd3
+		call L_cond_dummy
+
+L_0x402dd3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402dd7:
+		mov	ecx, dword ptr [rax + 0x30]
+L_0x402dda:
+		add	ecx, 1
+L_0x402ddd:
+		mov	dword ptr [rax + 0x30], ecx
+L_0x402de0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402de4:
+		cmp	dword ptr [rax + 0x34], 2
+L_0x402de8:
+		jl	L_0x402e14
+		call L_cond_dummy
+
+L_0x402e14:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e18:
+		mov	dword ptr [rax + 0xc68], 0
+L_0x402e22:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e26:
+		mov	dword ptr [rax + 8], 0x14
+
+L_0x402e2d:
+
+L_0x402e32:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e36:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402e3a:
+		jl	L_0x402e8a
+
+L_0x402e40:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e44:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402e47:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e4b:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402e4e:
+		sub	edx, 8
+L_0x402e51:
+		mov	dword ptr [rbp - 0x1b8], ecx
+L_0x402e57:
+		mov	ecx, edx
+L_0x402e59:
+		mov	edx, dword ptr [rbp - 0x1b8]
+L_0x402e5f:
+		shr	edx, cl
+L_0x402e61:
+		and	edx, 0xff
+L_0x402e67:
+		mov	dword ptr [rbp - 0xc4], edx
+L_0x402e6d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e71:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402e74:
+		sub	edx, 8
+L_0x402e77:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402e7a:
+		mov	edx, dword ptr [rbp - 0xc4]
+L_0x402e80:
+		mov	cl, dl
+L_0x402e82:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402e85:
+		jmp	L_0x402f2b
+
+L_0x402e8a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402e8e:
+		mov	rax, qword ptr [rax]
+L_0x402e91:
+		cmp	dword ptr [rax + 8], 0
+L_0x402e95:
+		jne	L_0x402ea7
+		call L_cond_dummy
+
+L_0x402ea7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402eab:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402eae:
+		shl	ecx, 8
+L_0x402eb1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402eb5:
+		mov	rax, qword ptr [rax]
+L_0x402eb8:
+		mov	rax, qword ptr [rax]
+L_0x402ebb:
+		movzx	edx, byte ptr [rax]
+L_0x402ebe:
+		or	ecx, edx
+L_0x402ec0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ec4:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402ec7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ecb:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402ece:
+		add	ecx, 8
+L_0x402ed1:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402ed4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ed8:
+		mov	rax, qword ptr [rax]
+L_0x402edb:
+		mov	rsi, qword ptr [rax]
+L_0x402ede:
+		add	rsi, 1
+L_0x402ee2:
+		mov	qword ptr [rax], rsi
+L_0x402ee5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ee9:
+		mov	rax, qword ptr [rax]
+L_0x402eec:
+		mov	ecx, dword ptr [rax + 8]
+L_0x402eef:
+		add	ecx, -1
+L_0x402ef2:
+		mov	dword ptr [rax + 8], ecx
+L_0x402ef5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ef9:
+		mov	rax, qword ptr [rax]
+L_0x402efc:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x402eff:
+		add	ecx, 1
+L_0x402f02:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x402f05:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f09:
+		mov	rax, qword ptr [rax]
+L_0x402f0c:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x402f10:
+		jne	L_0x402f26
+		call L_cond_dummy
+
+L_0x402f26:
+		jmp	L_0x402e2d
+
+L_0x402f2b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f2f:
+		mov	ecx, dword ptr [rax + 0xc68]
+L_0x402f35:
+		shl	ecx, 8
+L_0x402f38:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x402f3c:
+		or	ecx, edx
+L_0x402f3e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f42:
+		mov	dword ptr [rax + 0xc68], ecx
+L_0x402f48:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f4c:
+		mov	dword ptr [rax + 8], 0x15
+
+L_0x402f53:
+
+L_0x402f58:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f5c:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x402f60:
+		jl	L_0x402fb0
+
+L_0x402f66:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f6a:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402f6d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f71:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402f74:
+		sub	edx, 8
+L_0x402f77:
+		mov	dword ptr [rbp - 0x1bc], ecx
+L_0x402f7d:
+		mov	ecx, edx
+L_0x402f7f:
+		mov	edx, dword ptr [rbp - 0x1bc]
+L_0x402f85:
+		shr	edx, cl
+L_0x402f87:
+		and	edx, 0xff
+L_0x402f8d:
+		mov	dword ptr [rbp - 0xc8], edx
+L_0x402f93:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402f97:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x402f9a:
+		sub	edx, 8
+L_0x402f9d:
+		mov	dword ptr [rax + 0x24], edx
+L_0x402fa0:
+		mov	edx, dword ptr [rbp - 0xc8]
+L_0x402fa6:
+		mov	cl, dl
+L_0x402fa8:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x402fab:
+		jmp	L_0x403051
+
+L_0x402fb0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402fb4:
+		mov	rax, qword ptr [rax]
+L_0x402fb7:
+		cmp	dword ptr [rax + 8], 0
+L_0x402fbb:
+		jne	L_0x402fcd
+		call L_cond_dummy
+
+L_0x402fcd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402fd1:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x402fd4:
+		shl	ecx, 8
+L_0x402fd7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402fdb:
+		mov	rax, qword ptr [rax]
+L_0x402fde:
+		mov	rax, qword ptr [rax]
+L_0x402fe1:
+		movzx	edx, byte ptr [rax]
+L_0x402fe4:
+		or	ecx, edx
+L_0x402fe6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402fea:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x402fed:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ff1:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x402ff4:
+		add	ecx, 8
+L_0x402ff7:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x402ffa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x402ffe:
+		mov	rax, qword ptr [rax]
+L_0x403001:
+		mov	rsi, qword ptr [rax]
+L_0x403004:
+		add	rsi, 1
+L_0x403008:
+		mov	qword ptr [rax], rsi
+L_0x40300b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40300f:
+		mov	rax, qword ptr [rax]
+L_0x403012:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403015:
+		add	ecx, -1
+L_0x403018:
+		mov	dword ptr [rax + 8], ecx
+L_0x40301b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40301f:
+		mov	rax, qword ptr [rax]
+L_0x403022:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403025:
+		add	ecx, 1
+L_0x403028:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x40302b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40302f:
+		mov	rax, qword ptr [rax]
+L_0x403032:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x403036:
+		jne	L_0x40304c
+		call L_cond_dummy
+
+L_0x40304c:
+		jmp	L_0x402f53
+
+L_0x403051:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403055:
+		mov	ecx, dword ptr [rax + 0xc68]
+L_0x40305b:
+		shl	ecx, 8
+L_0x40305e:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x403062:
+		or	ecx, edx
+L_0x403064:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403068:
+		mov	dword ptr [rax + 0xc68], ecx
+L_0x40306e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403072:
+		mov	dword ptr [rax + 8], 0x16
+
+L_0x403079:
+
+L_0x40307e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403082:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x403086:
+		jl	L_0x4030d6
+
+L_0x40308c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403090:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403093:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403097:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40309a:
+		sub	edx, 8
+L_0x40309d:
+		mov	dword ptr [rbp - 0x1c0], ecx
+L_0x4030a3:
+		mov	ecx, edx
+L_0x4030a5:
+		mov	edx, dword ptr [rbp - 0x1c0]
+L_0x4030ab:
+		shr	edx, cl
+L_0x4030ad:
+		and	edx, 0xff
+L_0x4030b3:
+		mov	dword ptr [rbp - 0xcc], edx
+L_0x4030b9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4030bd:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4030c0:
+		sub	edx, 8
+L_0x4030c3:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4030c6:
+		mov	edx, dword ptr [rbp - 0xcc]
+L_0x4030cc:
+		mov	cl, dl
+L_0x4030ce:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4030d1:
+		jmp	L_0x403177
+
+L_0x4030d6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4030da:
+		mov	rax, qword ptr [rax]
+L_0x4030dd:
+		cmp	dword ptr [rax + 8], 0
+L_0x4030e1:
+		jne	L_0x4030f3
+		call L_cond_dummy
+
+L_0x4030f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4030f7:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4030fa:
+		shl	ecx, 8
+L_0x4030fd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403101:
+		mov	rax, qword ptr [rax]
+L_0x403104:
+		mov	rax, qword ptr [rax]
+L_0x403107:
+		movzx	edx, byte ptr [rax]
+L_0x40310a:
+		or	ecx, edx
+L_0x40310c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403110:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403113:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403117:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40311a:
+		add	ecx, 8
+L_0x40311d:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403120:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403124:
+		mov	rax, qword ptr [rax]
+L_0x403127:
+		mov	rsi, qword ptr [rax]
+L_0x40312a:
+		add	rsi, 1
+L_0x40312e:
+		mov	qword ptr [rax], rsi
+L_0x403131:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403135:
+		mov	rax, qword ptr [rax]
+L_0x403138:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40313b:
+		add	ecx, -1
+L_0x40313e:
+		mov	dword ptr [rax + 8], ecx
+L_0x403141:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403145:
+		mov	rax, qword ptr [rax]
+L_0x403148:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x40314b:
+		add	ecx, 1
+L_0x40314e:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403151:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403155:
+		mov	rax, qword ptr [rax]
+L_0x403158:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x40315c:
+		jne	L_0x403172
+		call L_cond_dummy
+
+L_0x403172:
+		jmp	L_0x403079
+
+L_0x403177:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40317b:
+		mov	ecx, dword ptr [rax + 0xc68]
+L_0x403181:
+		shl	ecx, 8
+L_0x403184:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x403188:
+		or	ecx, edx
+L_0x40318a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40318e:
+		mov	dword ptr [rax + 0xc68], ecx
+L_0x403194:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403198:
+		mov	dword ptr [rax + 8], 0x17
+
+L_0x40319f:
+
+L_0x4031a4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4031a8:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x4031ac:
+		jl	L_0x4031fc
+
+L_0x4031b2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4031b6:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4031b9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4031bd:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4031c0:
+		sub	edx, 8
+L_0x4031c3:
+		mov	dword ptr [rbp - 0x1c4], ecx
+L_0x4031c9:
+		mov	ecx, edx
+L_0x4031cb:
+		mov	edx, dword ptr [rbp - 0x1c4]
+L_0x4031d1:
+		shr	edx, cl
+L_0x4031d3:
+		and	edx, 0xff
+L_0x4031d9:
+		mov	dword ptr [rbp - 0xd0], edx
+L_0x4031df:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4031e3:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4031e6:
+		sub	edx, 8
+L_0x4031e9:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4031ec:
+		mov	edx, dword ptr [rbp - 0xd0]
+L_0x4031f2:
+		mov	cl, dl
+L_0x4031f4:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4031f7:
+		jmp	L_0x40329d
+
+L_0x4031fc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403200:
+		mov	rax, qword ptr [rax]
+L_0x403203:
+		cmp	dword ptr [rax + 8], 0
+L_0x403207:
+		jne	L_0x403219
+		call L_cond_dummy
+
+L_0x403219:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40321d:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403220:
+		shl	ecx, 8
+L_0x403223:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403227:
+		mov	rax, qword ptr [rax]
+L_0x40322a:
+		mov	rax, qword ptr [rax]
+L_0x40322d:
+		movzx	edx, byte ptr [rax]
+L_0x403230:
+		or	ecx, edx
+L_0x403232:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403236:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403239:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40323d:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x403240:
+		add	ecx, 8
+L_0x403243:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403246:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40324a:
+		mov	rax, qword ptr [rax]
+L_0x40324d:
+		mov	rsi, qword ptr [rax]
+L_0x403250:
+		add	rsi, 1
+L_0x403254:
+		mov	qword ptr [rax], rsi
+L_0x403257:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40325b:
+		mov	rax, qword ptr [rax]
+L_0x40325e:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403261:
+		add	ecx, -1
+L_0x403264:
+		mov	dword ptr [rax + 8], ecx
+L_0x403267:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40326b:
+		mov	rax, qword ptr [rax]
+L_0x40326e:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403271:
+		add	ecx, 1
+L_0x403274:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403277:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40327b:
+		mov	rax, qword ptr [rax]
+L_0x40327e:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x403282:
+		jne	L_0x403298
+		call L_cond_dummy
+
+L_0x403298:
+		jmp	L_0x40319f
+
+L_0x40329d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032a1:
+		mov	ecx, dword ptr [rax + 0xc68]
+L_0x4032a7:
+		shl	ecx, 8
+L_0x4032aa:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x4032ae:
+		or	ecx, edx
+L_0x4032b0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032b4:
+		mov	dword ptr [rax + 0xc68], ecx
+L_0x4032ba:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032be:
+		mov	dword ptr [rax + 8], 0x18
+
+L_0x4032c5:
+
+L_0x4032ca:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032ce:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x4032d2:
+		jl	L_0x403323
+
+L_0x4032d8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032dc:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4032df:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4032e3:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4032e6:
+		sub	edx, 1
+L_0x4032e9:
+		mov	dword ptr [rbp - 0x1c8], ecx
+L_0x4032ef:
+		mov	ecx, edx
+L_0x4032f1:
+		mov	edx, dword ptr [rbp - 0x1c8]
+L_0x4032f7:
+		shr	edx, cl
+L_0x4032f9:
+		and	edx, 1
+L_0x4032fc:
+		mov	dword ptr [rbp - 0xd4], edx
+L_0x403302:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403306:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403309:
+		add	edx, -1
+L_0x40330c:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40330f:
+		mov	edx, dword ptr [rbp - 0xd4]
+L_0x403315:
+		mov	cl, dl
+L_0x403317:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40331b:
+		mov	byte ptr [rax + 0x14], cl
+L_0x40331e:
+		jmp	L_0x4033c4
+
+L_0x403323:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403327:
+		mov	rax, qword ptr [rax]
+L_0x40332a:
+		cmp	dword ptr [rax + 8], 0
+L_0x40332e:
+		jne	L_0x403340
+		call L_cond_dummy
+
+L_0x403340:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403344:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403347:
+		shl	ecx, 8
+L_0x40334a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40334e:
+		mov	rax, qword ptr [rax]
+L_0x403351:
+		mov	rax, qword ptr [rax]
+L_0x403354:
+		movzx	edx, byte ptr [rax]
+L_0x403357:
+		or	ecx, edx
+L_0x403359:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40335d:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403360:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403364:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x403367:
+		add	ecx, 8
+L_0x40336a:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40336d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403371:
+		mov	rax, qword ptr [rax]
+L_0x403374:
+		mov	rsi, qword ptr [rax]
+L_0x403377:
+		add	rsi, 1
+L_0x40337b:
+		mov	qword ptr [rax], rsi
+L_0x40337e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403382:
+		mov	rax, qword ptr [rax]
+L_0x403385:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403388:
+		add	ecx, -1
+L_0x40338b:
+		mov	dword ptr [rax + 8], ecx
+L_0x40338e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403392:
+		mov	rax, qword ptr [rax]
+L_0x403395:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403398:
+		add	ecx, 1
+L_0x40339b:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x40339e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033a2:
+		mov	rax, qword ptr [rax]
+L_0x4033a5:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4033a9:
+		jne	L_0x4033bf
+		call L_cond_dummy
+
+L_0x4033bf:
+		jmp	L_0x4032c5
+
+L_0x4033c4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033c8:
+		mov	dword ptr [rax + 0x38], 0
+L_0x4033cf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033d3:
+		mov	dword ptr [rax + 8], 0x19
+
+L_0x4033da:
+
+L_0x4033df:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033e3:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x4033e7:
+		jl	L_0x403437
+
+L_0x4033ed:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033f1:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4033f4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4033f8:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4033fb:
+		sub	edx, 8
+L_0x4033fe:
+		mov	dword ptr [rbp - 0x1cc], ecx
+L_0x403404:
+		mov	ecx, edx
+L_0x403406:
+		mov	edx, dword ptr [rbp - 0x1cc]
+L_0x40340c:
+		shr	edx, cl
+L_0x40340e:
+		and	edx, 0xff
+L_0x403414:
+		mov	dword ptr [rbp - 0xd8], edx
+L_0x40341a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40341e:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403421:
+		sub	edx, 8
+L_0x403424:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403427:
+		mov	edx, dword ptr [rbp - 0xd8]
+L_0x40342d:
+		mov	cl, dl
+L_0x40342f:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x403432:
+		jmp	L_0x4034d8
+
+L_0x403437:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40343b:
+		mov	rax, qword ptr [rax]
+L_0x40343e:
+		cmp	dword ptr [rax + 8], 0
+L_0x403442:
+		jne	L_0x403454
+		call L_cond_dummy
+
+L_0x403454:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403458:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40345b:
+		shl	ecx, 8
+L_0x40345e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403462:
+		mov	rax, qword ptr [rax]
+L_0x403465:
+		mov	rax, qword ptr [rax]
+L_0x403468:
+		movzx	edx, byte ptr [rax]
+L_0x40346b:
+		or	ecx, edx
+L_0x40346d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403471:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403474:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403478:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40347b:
+		add	ecx, 8
+L_0x40347e:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403481:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403485:
+		mov	rax, qword ptr [rax]
+L_0x403488:
+		mov	rsi, qword ptr [rax]
+L_0x40348b:
+		add	rsi, 1
+L_0x40348f:
+		mov	qword ptr [rax], rsi
+L_0x403492:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403496:
+		mov	rax, qword ptr [rax]
+L_0x403499:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40349c:
+		add	ecx, -1
+L_0x40349f:
+		mov	dword ptr [rax + 8], ecx
+L_0x4034a2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4034a6:
+		mov	rax, qword ptr [rax]
+L_0x4034a9:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4034ac:
+		add	ecx, 1
+L_0x4034af:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4034b2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4034b6:
+		mov	rax, qword ptr [rax]
+L_0x4034b9:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4034bd:
+		jne	L_0x4034d3
+		call L_cond_dummy
+
+L_0x4034d3:
+		jmp	L_0x4033da
+
+L_0x4034d8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4034dc:
+		mov	ecx, dword ptr [rax + 0x38]
+L_0x4034df:
+		shl	ecx, 8
+L_0x4034e2:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x4034e6:
+		or	ecx, edx
+L_0x4034e8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4034ec:
+		mov	dword ptr [rax + 0x38], ecx
+L_0x4034ef:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4034f3:
+		mov	dword ptr [rax + 8], 0x1a
+
+L_0x4034fa:
+
+L_0x4034ff:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403503:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x403507:
+		jl	L_0x403557
+
+L_0x40350d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403511:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403514:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403518:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40351b:
+		sub	edx, 8
+L_0x40351e:
+		mov	dword ptr [rbp - 0x1d0], ecx
+L_0x403524:
+		mov	ecx, edx
+L_0x403526:
+		mov	edx, dword ptr [rbp - 0x1d0]
+L_0x40352c:
+		shr	edx, cl
+L_0x40352e:
+		and	edx, 0xff
+L_0x403534:
+		mov	dword ptr [rbp - 0xdc], edx
+L_0x40353a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40353e:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403541:
+		sub	edx, 8
+L_0x403544:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403547:
+		mov	edx, dword ptr [rbp - 0xdc]
+L_0x40354d:
+		mov	cl, dl
+L_0x40354f:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x403552:
+		jmp	L_0x4035f8
+
+L_0x403557:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40355b:
+		mov	rax, qword ptr [rax]
+L_0x40355e:
+		cmp	dword ptr [rax + 8], 0
+L_0x403562:
+		jne	L_0x403574
+		call L_cond_dummy
+
+L_0x403574:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403578:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40357b:
+		shl	ecx, 8
+L_0x40357e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403582:
+		mov	rax, qword ptr [rax]
+L_0x403585:
+		mov	rax, qword ptr [rax]
+L_0x403588:
+		movzx	edx, byte ptr [rax]
+L_0x40358b:
+		or	ecx, edx
+L_0x40358d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403591:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403594:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403598:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40359b:
+		add	ecx, 8
+L_0x40359e:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4035a1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4035a5:
+		mov	rax, qword ptr [rax]
+L_0x4035a8:
+		mov	rsi, qword ptr [rax]
+L_0x4035ab:
+		add	rsi, 1
+L_0x4035af:
+		mov	qword ptr [rax], rsi
+L_0x4035b2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4035b6:
+		mov	rax, qword ptr [rax]
+L_0x4035b9:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4035bc:
+		add	ecx, -1
+L_0x4035bf:
+		mov	dword ptr [rax + 8], ecx
+L_0x4035c2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4035c6:
+		mov	rax, qword ptr [rax]
+L_0x4035c9:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4035cc:
+		add	ecx, 1
+L_0x4035cf:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4035d2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4035d6:
+		mov	rax, qword ptr [rax]
+L_0x4035d9:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4035dd:
+		jne	L_0x4035f3
+		call L_cond_dummy
+
+L_0x4035f3:
+		jmp	L_0x4034fa
+
+L_0x4035f8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4035fc:
+		mov	ecx, dword ptr [rax + 0x38]
+L_0x4035ff:
+		shl	ecx, 8
+L_0x403602:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x403606:
+		or	ecx, edx
+L_0x403608:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40360c:
+		mov	dword ptr [rax + 0x38], ecx
+L_0x40360f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403613:
+		mov	dword ptr [rax + 8], 0x1b
+
+L_0x40361a:
+
+L_0x40361f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403623:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x403627:
+		jl	L_0x403677
+
+L_0x40362d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403631:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403634:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403638:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40363b:
+		sub	edx, 8
+L_0x40363e:
+		mov	dword ptr [rbp - 0x1d4], ecx
+L_0x403644:
+		mov	ecx, edx
+L_0x403646:
+		mov	edx, dword ptr [rbp - 0x1d4]
+L_0x40364c:
+		shr	edx, cl
+L_0x40364e:
+		and	edx, 0xff
+L_0x403654:
+		mov	dword ptr [rbp - 0xe0], edx
+L_0x40365a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40365e:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403661:
+		sub	edx, 8
+L_0x403664:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403667:
+		mov	edx, dword ptr [rbp - 0xe0]
+L_0x40366d:
+		mov	cl, dl
+L_0x40366f:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x403672:
+		jmp	L_0x403718
+
+L_0x403677:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40367b:
+		mov	rax, qword ptr [rax]
+L_0x40367e:
+		cmp	dword ptr [rax + 8], 0
+L_0x403682:
+		jne	L_0x403694
+		call L_cond_dummy
+
+L_0x403694:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403698:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40369b:
+		shl	ecx, 8
+L_0x40369e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036a2:
+		mov	rax, qword ptr [rax]
+L_0x4036a5:
+		mov	rax, qword ptr [rax]
+L_0x4036a8:
+		movzx	edx, byte ptr [rax]
+L_0x4036ab:
+		or	ecx, edx
+L_0x4036ad:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036b1:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4036b4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036b8:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4036bb:
+		add	ecx, 8
+L_0x4036be:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4036c1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036c5:
+		mov	rax, qword ptr [rax]
+L_0x4036c8:
+		mov	rsi, qword ptr [rax]
+L_0x4036cb:
+		add	rsi, 1
+L_0x4036cf:
+		mov	qword ptr [rax], rsi
+L_0x4036d2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036d6:
+		mov	rax, qword ptr [rax]
+L_0x4036d9:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4036dc:
+		add	ecx, -1
+L_0x4036df:
+		mov	dword ptr [rax + 8], ecx
+L_0x4036e2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036e6:
+		mov	rax, qword ptr [rax]
+L_0x4036e9:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4036ec:
+		add	ecx, 1
+L_0x4036ef:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4036f2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4036f6:
+		mov	rax, qword ptr [rax]
+L_0x4036f9:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4036fd:
+		jne	L_0x403713
+		call L_cond_dummy
+
+L_0x403713:
+		jmp	L_0x40361a
+
+L_0x403718:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40371c:
+		mov	ecx, dword ptr [rax + 0x38]
+L_0x40371f:
+		shl	ecx, 8
+L_0x403722:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x403726:
+		or	ecx, edx
+L_0x403728:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40372c:
+		mov	dword ptr [rax + 0x38], ecx
+L_0x40372f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403733:
+		cmp	dword ptr [rax + 0x38], 0
+L_0x403737:
+		jge	L_0x403749
+		call L_cond_dummy
+
+L_0x403749:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40374d:
+		mov	ecx, dword ptr [rax + 0x38]
+L_0x403750:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403754:
+		imul	edx, dword ptr [rax + 0x28], 0x186a0
+L_0x40375b:
+		add	edx, 0xa
+L_0x40375e:
+		cmp	ecx, edx
+L_0x403760:
+		jle	L_0x403772
+		call L_cond_dummy
+
+L_0x403772:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x403779:
+
+L_0x40377e:
+		cmp	dword ptr [rbp - 0x2c], 0x10
+L_0x403782:
+		jl	L_0x40378d
+
+L_0x403788:
+		jmp	L_0x4038d8
+
+L_0x40378d:
+
+L_0x403792:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403796:
+		mov	dword ptr [rax + 8], 0x1c
+
+L_0x40379d:
+
+L_0x4037a2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4037a6:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x4037aa:
+		jl	L_0x4037f7
+
+L_0x4037b0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4037b4:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4037b7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4037bb:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4037be:
+		sub	edx, 1
+L_0x4037c1:
+		mov	dword ptr [rbp - 0x1d8], ecx
+L_0x4037c7:
+		mov	ecx, edx
+L_0x4037c9:
+		mov	edx, dword ptr [rbp - 0x1d8]
+L_0x4037cf:
+		shr	edx, cl
+L_0x4037d1:
+		and	edx, 1
+L_0x4037d4:
+		mov	dword ptr [rbp - 0xe4], edx
+L_0x4037da:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4037de:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4037e1:
+		add	edx, -1
+L_0x4037e4:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4037e7:
+		mov	edx, dword ptr [rbp - 0xe4]
+L_0x4037ed:
+		mov	cl, dl
+L_0x4037ef:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4037f2:
+		jmp	L_0x403898
+
+L_0x4037f7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4037fb:
+		mov	rax, qword ptr [rax]
+L_0x4037fe:
+		cmp	dword ptr [rax + 8], 0
+L_0x403802:
+		jne	L_0x403814
+		call L_cond_dummy
+
+L_0x403814:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403818:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40381b:
+		shl	ecx, 8
+L_0x40381e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403822:
+		mov	rax, qword ptr [rax]
+L_0x403825:
+		mov	rax, qword ptr [rax]
+L_0x403828:
+		movzx	edx, byte ptr [rax]
+L_0x40382b:
+		or	ecx, edx
+L_0x40382d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403831:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403834:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403838:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40383b:
+		add	ecx, 8
+L_0x40383e:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403841:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403845:
+		mov	rax, qword ptr [rax]
+L_0x403848:
+		mov	rsi, qword ptr [rax]
+L_0x40384b:
+		add	rsi, 1
+L_0x40384f:
+		mov	qword ptr [rax], rsi
+L_0x403852:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403856:
+		mov	rax, qword ptr [rax]
+L_0x403859:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40385c:
+		add	ecx, -1
+L_0x40385f:
+		mov	dword ptr [rax + 8], ecx
+L_0x403862:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403866:
+		mov	rax, qword ptr [rax]
+L_0x403869:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x40386c:
+		add	ecx, 1
+L_0x40386f:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403872:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403876:
+		mov	rax, qword ptr [rax]
+L_0x403879:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x40387d:
+		jne	L_0x403893
+		call L_cond_dummy
+
+L_0x403893:
+		jmp	L_0x40379d
+
+L_0x403898:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40389c:
+		cmp	eax, 1
+L_0x40389f:
+		jne L_cond_dummy
+
+L_0x4038a5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4038a9:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x4038ad:
+		mov	byte ptr [rax + rcx + 0xd7c], 1
+L_0x4038b5:
+
+L_0x4038ca:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4038cd:
+		add	eax, 1
+L_0x4038d0:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4038d3:
+		jmp	L_0x403779
+
+L_0x4038d8:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x4038df:
+
+L_0x4038e4:
+		cmp	dword ptr [rbp - 0x2c], 0x100
+L_0x4038eb:
+		jl	L_0x4038f6
+
+L_0x4038f1:
+		jmp	L_0x403914
+
+L_0x4038f6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4038fa:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x4038fe:
+		mov	byte ptr [rax + rcx + 0xc7c], 0
+L_0x403906:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x403909:
+		add	edx, 1
+L_0x40390c:
+		mov	dword ptr [rbp - 0x2c], edx
+L_0x40390f:
+		jmp	L_0x4038df
+
+L_0x403914:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x40391b:
+
+L_0x403920:
+		cmp	dword ptr [rbp - 0x2c], 0x10
+L_0x403924:
+		jl	L_0x40392f
+
+L_0x40392a:
+		jmp	L_0x403ab1
+
+L_0x40392f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403933:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x403937:
+		cmp	byte ptr [rax + rcx + 0xd7c], 0
+L_0x40393f:
+		je L_cond_dummy
+
+L_0x403945:
+		mov	dword ptr [rbp - 0x30], 0
+
+L_0x40394c:
+
+L_0x403951:
+		cmp	dword ptr [rbp - 0x30], 0x10
+L_0x403955:
+		jl	L_0x403960
+
+L_0x40395b:
+		jmp	L_0x403a9e
+
+L_0x403960:
+
+L_0x403965:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403969:
+		mov	dword ptr [rax + 8], 0x1d
+
+L_0x403970:
+
+L_0x403975:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403979:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x40397d:
+		jl	L_0x4039ca
+
+L_0x403983:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403987:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40398a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40398e:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403991:
+		sub	edx, 1
+L_0x403994:
+		mov	dword ptr [rbp - 0x1dc], ecx
+L_0x40399a:
+		mov	ecx, edx
+L_0x40399c:
+		mov	edx, dword ptr [rbp - 0x1dc]
+L_0x4039a2:
+		shr	edx, cl
+L_0x4039a4:
+		and	edx, 1
+L_0x4039a7:
+		mov	dword ptr [rbp - 0xe8], edx
+L_0x4039ad:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4039b1:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4039b4:
+		add	edx, -1
+L_0x4039b7:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4039ba:
+		mov	edx, dword ptr [rbp - 0xe8]
+L_0x4039c0:
+		mov	cl, dl
+L_0x4039c2:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4039c5:
+		jmp	L_0x403a6b
+
+L_0x4039ca:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4039ce:
+		mov	rax, qword ptr [rax]
+L_0x4039d1:
+		cmp	dword ptr [rax + 8], 0
+L_0x4039d5:
+		jne	L_0x4039e7
+		call L_cond_dummy
+
+L_0x4039e7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4039eb:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4039ee:
+		shl	ecx, 8
+L_0x4039f1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4039f5:
+		mov	rax, qword ptr [rax]
+L_0x4039f8:
+		mov	rax, qword ptr [rax]
+L_0x4039fb:
+		movzx	edx, byte ptr [rax]
+L_0x4039fe:
+		or	ecx, edx
+L_0x403a00:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a04:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403a07:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a0b:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x403a0e:
+		add	ecx, 8
+L_0x403a11:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403a14:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a18:
+		mov	rax, qword ptr [rax]
+L_0x403a1b:
+		mov	rsi, qword ptr [rax]
+L_0x403a1e:
+		add	rsi, 1
+L_0x403a22:
+		mov	qword ptr [rax], rsi
+L_0x403a25:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a29:
+		mov	rax, qword ptr [rax]
+L_0x403a2c:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403a2f:
+		add	ecx, -1
+L_0x403a32:
+		mov	dword ptr [rax + 8], ecx
+L_0x403a35:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a39:
+		mov	rax, qword ptr [rax]
+L_0x403a3c:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403a3f:
+		add	ecx, 1
+L_0x403a42:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403a45:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a49:
+		mov	rax, qword ptr [rax]
+L_0x403a4c:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x403a50:
+		jne	L_0x403a66
+		call L_cond_dummy
+
+L_0x403a66:
+		jmp	L_0x403970
+
+L_0x403a6b:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x403a6f:
+		cmp	eax, 1
+L_0x403a72:
+		jne L_cond_dummy
+
+L_0x403a78:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403a7c:
+		mov	ecx, dword ptr [rbp - 0x2c]
+L_0x403a7f:
+		shl	ecx, 4
+L_0x403a82:
+		add	ecx, dword ptr [rbp - 0x30]
+L_0x403a85:
+		movsxd	rdx, ecx
+L_0x403a88:
+		mov	byte ptr [rax + rdx + 0xc7c], 1
+L_0x403a90:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x403a93:
+		add	eax, 1
+L_0x403a96:
+		mov	dword ptr [rbp - 0x30], eax
+L_0x403a99:
+		jmp	L_0x40394c
+
+L_0x403a9e:
+
+L_0x403aa3:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x403aa6:
+		add	eax, 1
+L_0x403aa9:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x403aac:
+		jmp	L_0x40391b
+
+L_0x403ab1:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x403ab5:
+		call	L_0x406df0
+
+L_0x403aba:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x403abe:
+		cmp	dword ptr [rdi + 0xc78], 0
+L_0x403ac5:
+		jne	L_0x403ad7
+		call L_cond_dummy
+
+L_0x403ad7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403adb:
+		mov	ecx, dword ptr [rax + 0xc78]
+L_0x403ae1:
+		add	ecx, 2
+L_0x403ae4:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x403ae7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403aeb:
+		mov	dword ptr [rax + 8], 0x1e
+L_0x403af2:
+
+L_0x403af7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403afb:
+		cmp	dword ptr [rax + 0x24], 3
+L_0x403aff:
+		jl L_cond_dummy
+
+L_0x403b05:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403b09:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403b0c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403b10:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403b13:
+		sub	edx, 3
+L_0x403b16:
+		mov	dword ptr [rbp - 0x1e0], ecx
+L_0x403b1c:
+		mov	ecx, edx
+L_0x403b1e:
+		mov	edx, dword ptr [rbp - 0x1e0]
+L_0x403b24:
+		shr	edx, cl
+L_0x403b26:
+		and	edx, 7
+L_0x403b29:
+		mov	dword ptr [rbp - 0xec], edx
+L_0x403b2f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403b33:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403b36:
+		sub	edx, 3
+L_0x403b39:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403b3c:
+		mov	edx, dword ptr [rbp - 0xec]
+L_0x403b42:
+		mov	dword ptr [rbp - 0x3c], edx
+L_0x403b45:
+
+L_0x403beb:
+		cmp	dword ptr [rbp - 0x3c], 2
+L_0x403bef:
+		jge	L_0x403c01
+		call L_cond_dummy
+
+L_0x403c01:
+		cmp	dword ptr [rbp - 0x3c], 6
+L_0x403c05:
+		jle	L_0x403c17
+		call L_cond_dummy
+
+L_0x403c17:
+
+L_0x403c1c:
+
+L_0x403c21:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c25:
+		mov	dword ptr [rax + 8], 0x1f
+
+L_0x403c2c:
+
+L_0x403c31:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c35:
+		cmp	dword ptr [rax + 0x24], 0xf
+L_0x403c39:
+		jl	L_0x403c87
+
+L_0x403c3f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c43:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403c46:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c4a:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403c4d:
+		sub	edx, 0xf
+L_0x403c50:
+		mov	dword ptr [rbp - 0x1e4], ecx
+L_0x403c56:
+		mov	ecx, edx
+L_0x403c58:
+		mov	edx, dword ptr [rbp - 0x1e4]
+L_0x403c5e:
+		shr	edx, cl
+L_0x403c60:
+		and	edx, 0x7fff
+L_0x403c66:
+		mov	dword ptr [rbp - 0xf0], edx
+L_0x403c6c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c70:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403c73:
+		sub	edx, 0xf
+L_0x403c76:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403c79:
+		mov	edx, dword ptr [rbp - 0xf0]
+L_0x403c7f:
+		mov	dword ptr [rbp - 0x40], edx
+L_0x403c82:
+		jmp	L_0x403d28
+
+L_0x403c87:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403c8b:
+		mov	rax, qword ptr [rax]
+L_0x403c8e:
+		cmp	dword ptr [rax + 8], 0
+L_0x403c92:
+		jne	L_0x403ca4
+		call L_cond_dummy
+
+L_0x403ca4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403ca8:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403cab:
+		shl	ecx, 8
+L_0x403cae:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403cb2:
+		mov	rax, qword ptr [rax]
+L_0x403cb5:
+		mov	rax, qword ptr [rax]
+L_0x403cb8:
+		movzx	edx, byte ptr [rax]
+L_0x403cbb:
+		or	ecx, edx
+L_0x403cbd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403cc1:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403cc4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403cc8:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x403ccb:
+		add	ecx, 8
+L_0x403cce:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403cd1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403cd5:
+		mov	rax, qword ptr [rax]
+L_0x403cd8:
+		mov	rsi, qword ptr [rax]
+L_0x403cdb:
+		add	rsi, 1
+L_0x403cdf:
+		mov	qword ptr [rax], rsi
+L_0x403ce2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403ce6:
+		mov	rax, qword ptr [rax]
+L_0x403ce9:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403cec:
+		add	ecx, -1
+L_0x403cef:
+		mov	dword ptr [rax + 8], ecx
+L_0x403cf2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403cf6:
+		mov	rax, qword ptr [rax]
+L_0x403cf9:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403cfc:
+		add	ecx, 1
+L_0x403cff:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403d02:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403d06:
+		mov	rax, qword ptr [rax]
+L_0x403d09:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x403d0d:
+		jne	L_0x403d23
+		call L_cond_dummy
+
+L_0x403d23:
+		jmp	L_0x403c2c
+
+L_0x403d28:
+		cmp	dword ptr [rbp - 0x40], 1
+L_0x403d2c:
+		jge	L_0x403d3e
+		call L_cond_dummy
+
+L_0x403d3e:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x403d45:
+
+L_0x403d4a:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x403d4d:
+		cmp	eax, dword ptr [rbp - 0x40]
+L_0x403d50:
+		jl	L_0x403d5b
+
+L_0x403d56:
+		jmp	L_0x403ecc
+
+L_0x403d5b:
+		mov	dword ptr [rbp - 0x30], 0
+
+L_0x403d62:
+
+L_0x403d67:
+
+L_0x403d6c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403d70:
+		mov	dword ptr [rax + 8], 0x20
+
+L_0x403d77:
+
+L_0x403d7c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403d80:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x403d84:
+		jl	L_0x403dd1
+
+L_0x403d8a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403d8e:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403d91:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403d95:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403d98:
+		sub	edx, 1
+L_0x403d9b:
+		mov	dword ptr [rbp - 0x1e8], ecx
+L_0x403da1:
+		mov	ecx, edx
+L_0x403da3:
+		mov	edx, dword ptr [rbp - 0x1e8]
+L_0x403da9:
+		shr	edx, cl
+L_0x403dab:
+		and	edx, 1
+L_0x403dae:
+		mov	dword ptr [rbp - 0xf4], edx
+L_0x403db4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403db8:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x403dbb:
+		add	edx, -1
+L_0x403dbe:
+		mov	dword ptr [rax + 0x24], edx
+L_0x403dc1:
+		mov	edx, dword ptr [rbp - 0xf4]
+L_0x403dc7:
+		mov	cl, dl
+L_0x403dc9:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x403dcc:
+		jmp	L_0x403e72
+
+L_0x403dd1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403dd5:
+		mov	rax, qword ptr [rax]
+L_0x403dd8:
+		cmp	dword ptr [rax + 8], 0
+L_0x403ddc:
+		jne	L_0x403dee
+		call L_cond_dummy
+
+L_0x403dee:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403df2:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x403df5:
+		shl	ecx, 8
+L_0x403df8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403dfc:
+		mov	rax, qword ptr [rax]
+L_0x403dff:
+		mov	rax, qword ptr [rax]
+L_0x403e02:
+		movzx	edx, byte ptr [rax]
+L_0x403e05:
+		or	ecx, edx
+L_0x403e07:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e0b:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x403e0e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e12:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x403e15:
+		add	ecx, 8
+L_0x403e18:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x403e1b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e1f:
+		mov	rax, qword ptr [rax]
+L_0x403e22:
+		mov	rsi, qword ptr [rax]
+L_0x403e25:
+		add	rsi, 1
+L_0x403e29:
+		mov	qword ptr [rax], rsi
+L_0x403e2c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e30:
+		mov	rax, qword ptr [rax]
+L_0x403e33:
+		mov	ecx, dword ptr [rax + 8]
+L_0x403e36:
+		add	ecx, -1
+L_0x403e39:
+		mov	dword ptr [rax + 8], ecx
+L_0x403e3c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e40:
+		mov	rax, qword ptr [rax]
+L_0x403e43:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x403e46:
+		add	ecx, 1
+L_0x403e49:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x403e4c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403e50:
+		mov	rax, qword ptr [rax]
+L_0x403e53:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x403e57:
+		jne	L_0x403e6d
+		call L_cond_dummy
+
+L_0x403e6d:
+		jmp	L_0x403d77
+
+L_0x403e72:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x403e76:
+		cmp	eax, 0
+L_0x403e79:
+		jne	L_0x403e84
+
+L_0x403e7f:
+		jmp	L_0x403eaa
+
+L_0x403e84:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x403e87:
+		add	eax, 1
+L_0x403e8a:
+		mov	dword ptr [rbp - 0x30], eax
+L_0x403e8d:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x403e90:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x403e93:
+		jl	L_0x403ea5
+		call L_cond_dummy
+
+L_0x403ea5:
+		jmp	L_0x403d62
+
+L_0x403eaa:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x403ead:
+		mov	cl, al
+L_0x403eaf:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x403eb3:
+		movsxd	rsi, dword ptr [rbp - 0x2c]
+L_0x403eb7:
+		mov	byte ptr [rdx + rsi + 0x651e], cl
+L_0x403ebe:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x403ec1:
+		add	eax, 1
+L_0x403ec4:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x403ec7:
+		jmp	L_0x403d45
+
+L_0x403ecc:
+		mov	byte ptr [rbp - 0xfc], 0
+
+L_0x403ed3:
+
+L_0x403ed8:
+		movzx	eax, byte ptr [rbp - 0xfc]
+L_0x403edf:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x403ee2:
+		jl	L_0x403eed
+
+L_0x403ee8:
+		jmp	L_0x403f1a
+
+L_0x403eed:
+		mov	al, byte ptr [rbp - 0xfc]
+L_0x403ef3:
+		movzx	ecx, byte ptr [rbp - 0xfc]
+L_0x403efa:
+		mov	edx, ecx
+L_0x403efc:
+		mov	byte ptr [rbp + rdx - 0xfa], al
+L_0x403f03:
+		movzx	ecx, byte ptr [rbp - 0xfc]
+L_0x403f0a:
+		add	ecx, 1
+L_0x403f0d:
+		mov	al, cl
+L_0x403f0f:
+		mov	byte ptr [rbp - 0xfc], al
+L_0x403f15:
+		jmp	L_0x403ed3
+
+L_0x403f1a:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x403f21:
+
+L_0x403f26:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x403f29:
+		cmp	eax, dword ptr [rbp - 0x40]
+L_0x403f2c:
+		jl	L_0x403f37
+
+L_0x403f32:
+		jmp	L_0x403fe6
+
+L_0x403f37:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x403f3b:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x403f3f:
+		mov	dl, byte ptr [rax + rcx + 0x651e]
+L_0x403f46:
+		mov	byte ptr [rbp - 0xfc], dl
+L_0x403f4c:
+		movzx	esi, byte ptr [rbp - 0xfc]
+L_0x403f53:
+		mov	eax, esi
+L_0x403f55:
+		mov	dl, byte ptr [rbp + rax - 0xfa]
+L_0x403f5c:
+		mov	byte ptr [rbp - 0xfb], dl
+
+L_0x403f62:
+
+L_0x403f67:
+		movzx	eax, byte ptr [rbp - 0xfc]
+L_0x403f6e:
+		cmp	eax, 0
+L_0x403f71:
+		jg	L_0x403f7c
+
+L_0x403f77:
+		jmp	L_0x403fb7
+
+L_0x403f7c:
+		movzx	eax, byte ptr [rbp - 0xfc]
+L_0x403f83:
+		sub	eax, 1
+L_0x403f86:
+		movsxd	rcx, eax
+L_0x403f89:
+		mov	dl, byte ptr [rbp + rcx - 0xfa]
+L_0x403f90:
+		movzx	eax, byte ptr [rbp - 0xfc]
+L_0x403f97:
+		mov	ecx, eax
+L_0x403f99:
+		mov	byte ptr [rbp + rcx - 0xfa], dl
+L_0x403fa0:
+		movzx	eax, byte ptr [rbp - 0xfc]
+L_0x403fa7:
+		sub	eax, 1
+L_0x403faa:
+		mov	dl, al
+L_0x403fac:
+		mov	byte ptr [rbp - 0xfc], dl
+L_0x403fb2:
+		jmp	L_0x403f62
+
+L_0x403fb7:
+		mov	al, byte ptr [rbp - 0xfb]
+L_0x403fbd:
+		mov	byte ptr [rbp - 0xfa], al
+L_0x403fc3:
+		mov	al, byte ptr [rbp - 0xfb]
+L_0x403fc9:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x403fcd:
+		movsxd	rdx, dword ptr [rbp - 0x2c]
+L_0x403fd1:
+		mov	byte ptr [rcx + rdx + 0x1ecc], al
+L_0x403fd8:
+		mov	esi, dword ptr [rbp - 0x2c]
+L_0x403fdb:
+		add	esi, 1
+L_0x403fde:
+		mov	dword ptr [rbp - 0x2c], esi
+L_0x403fe1:
+		jmp	L_0x403f21
+
+L_0x403fe6:
+		mov	dword ptr [rbp - 0x34], 0
+
+L_0x403fed:
+
+L_0x403ff2:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x403ff5:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x403ff8:
+		jl	L_0x404003
+
+L_0x403ffe:
+		jmp	L_0x4043f6
+
+L_0x404003:
+
+L_0x404008:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40400c:
+		mov	dword ptr [rax + 8], 0x21
+
+L_0x404013:
+
+L_0x404018:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40401c:
+		cmp	dword ptr [rax + 0x24], 5
+L_0x404020:
+		jl	L_0x40406b
+
+L_0x404026:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40402a:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40402d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404031:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404034:
+		sub	edx, 5
+L_0x404037:
+		mov	dword ptr [rbp - 0x1ec], ecx
+L_0x40403d:
+		mov	ecx, edx
+L_0x40403f:
+		mov	edx, dword ptr [rbp - 0x1ec]
+L_0x404045:
+		shr	edx, cl
+L_0x404047:
+		and	edx, 0x1f
+L_0x40404a:
+		mov	dword ptr [rbp - 0x100], edx
+L_0x404050:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404054:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404057:
+		sub	edx, 5
+L_0x40405a:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40405d:
+		mov	edx, dword ptr [rbp - 0x100]
+L_0x404063:
+		mov	dword ptr [rbp - 0x64], edx
+L_0x404066:
+		jmp	L_0x40410c
+
+L_0x40406b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40406f:
+		mov	rax, qword ptr [rax]
+L_0x404072:
+		cmp	dword ptr [rax + 8], 0
+L_0x404076:
+		jne	L_0x404088
+		call L_cond_dummy
+
+L_0x404088:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40408c:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40408f:
+		shl	ecx, 8
+L_0x404092:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404096:
+		mov	rax, qword ptr [rax]
+L_0x404099:
+		mov	rax, qword ptr [rax]
+L_0x40409c:
+		movzx	edx, byte ptr [rax]
+L_0x40409f:
+		or	ecx, edx
+L_0x4040a1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040a5:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4040a8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040ac:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4040af:
+		add	ecx, 8
+L_0x4040b2:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4040b5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040b9:
+		mov	rax, qword ptr [rax]
+L_0x4040bc:
+		mov	rsi, qword ptr [rax]
+L_0x4040bf:
+		add	rsi, 1
+L_0x4040c3:
+		mov	qword ptr [rax], rsi
+L_0x4040c6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040ca:
+		mov	rax, qword ptr [rax]
+L_0x4040cd:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4040d0:
+		add	ecx, -1
+L_0x4040d3:
+		mov	dword ptr [rax + 8], ecx
+L_0x4040d6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040da:
+		mov	rax, qword ptr [rax]
+L_0x4040dd:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4040e0:
+		add	ecx, 1
+L_0x4040e3:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4040e6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4040ea:
+		mov	rax, qword ptr [rax]
+L_0x4040ed:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4040f1:
+		jne	L_0x404107
+		call L_cond_dummy
+
+L_0x404107:
+		jmp	L_0x404013
+
+L_0x40410c:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x404113:
+
+L_0x404118:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x40411b:
+		cmp	eax, dword ptr [rbp - 0x38]
+L_0x40411e:
+		jl	L_0x404129
+
+L_0x404124:
+		jmp	L_0x4043e8
+
+L_0x404129:
+
+L_0x40412e:
+
+L_0x404133:
+		cmp	dword ptr [rbp - 0x64], 1
+L_0x404137:
+		jge	L_0x404149
+		call L_cond_dummy
+
+L_0x404149:
+		cmp	dword ptr [rbp - 0x64], 0x14
+L_0x40414d:
+		jle	L_0x40415f
+		call L_cond_dummy
+
+L_0x40415f:
+
+L_0x404164:
+
+L_0x404169:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40416d:
+		mov	dword ptr [rax + 8], 0x22
+
+L_0x404174:
+
+L_0x404179:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40417d:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x404181:
+		jl	L_0x4041ce
+
+L_0x404187:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40418b:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40418e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404192:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404195:
+		sub	edx, 1
+L_0x404198:
+		mov	dword ptr [rbp - 0x1f0], ecx
+L_0x40419e:
+		mov	ecx, edx
+L_0x4041a0:
+		mov	edx, dword ptr [rbp - 0x1f0]
+L_0x4041a6:
+		shr	edx, cl
+L_0x4041a8:
+		and	edx, 1
+L_0x4041ab:
+		mov	dword ptr [rbp - 0x104], edx
+L_0x4041b1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4041b5:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4041b8:
+		add	edx, -1
+L_0x4041bb:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4041be:
+		mov	edx, dword ptr [rbp - 0x104]
+L_0x4041c4:
+		mov	cl, dl
+L_0x4041c6:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4041c9:
+		jmp	L_0x40426f
+
+L_0x4041ce:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4041d2:
+		mov	rax, qword ptr [rax]
+L_0x4041d5:
+		cmp	dword ptr [rax + 8], 0
+L_0x4041d9:
+		jne	L_0x4041eb
+		call L_cond_dummy
+
+L_0x4041eb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4041ef:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4041f2:
+		shl	ecx, 8
+L_0x4041f5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4041f9:
+		mov	rax, qword ptr [rax]
+L_0x4041fc:
+		mov	rax, qword ptr [rax]
+L_0x4041ff:
+		movzx	edx, byte ptr [rax]
+L_0x404202:
+		or	ecx, edx
+L_0x404204:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404208:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x40420b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40420f:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x404212:
+		add	ecx, 8
+L_0x404215:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x404218:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40421c:
+		mov	rax, qword ptr [rax]
+L_0x40421f:
+		mov	rsi, qword ptr [rax]
+L_0x404222:
+		add	rsi, 1
+L_0x404226:
+		mov	qword ptr [rax], rsi
+L_0x404229:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40422d:
+		mov	rax, qword ptr [rax]
+L_0x404230:
+		mov	ecx, dword ptr [rax + 8]
+L_0x404233:
+		add	ecx, -1
+L_0x404236:
+		mov	dword ptr [rax + 8], ecx
+L_0x404239:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40423d:
+		mov	rax, qword ptr [rax]
+L_0x404240:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x404243:
+		add	ecx, 1
+L_0x404246:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x404249:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40424d:
+		mov	rax, qword ptr [rax]
+L_0x404250:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x404254:
+		jne	L_0x40426a
+		call L_cond_dummy
+
+L_0x40426a:
+		jmp	L_0x404174
+
+L_0x40426f:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x404273:
+		cmp	eax, 0
+L_0x404276:
+		jne	L_0x404281
+
+L_0x40427c:
+		jmp	L_0x4043b5
+
+L_0x404281:
+
+L_0x404286:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40428a:
+		mov	dword ptr [rax + 8], 0x23
+
+L_0x404291:
+
+L_0x404296:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40429a:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x40429e:
+		jl	L_0x4042eb
+
+L_0x4042a4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4042a8:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4042ab:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4042af:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4042b2:
+		sub	edx, 1
+L_0x4042b5:
+		mov	dword ptr [rbp - 0x1f4], ecx
+L_0x4042bb:
+		mov	ecx, edx
+L_0x4042bd:
+		mov	edx, dword ptr [rbp - 0x1f4]
+L_0x4042c3:
+		shr	edx, cl
+L_0x4042c5:
+		and	edx, 1
+L_0x4042c8:
+		mov	dword ptr [rbp - 0x108], edx
+L_0x4042ce:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4042d2:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4042d5:
+		add	edx, -1
+L_0x4042d8:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4042db:
+		mov	edx, dword ptr [rbp - 0x108]
+L_0x4042e1:
+		mov	cl, dl
+L_0x4042e3:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4042e6:
+		jmp	L_0x40438c
+
+L_0x4042eb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4042ef:
+		mov	rax, qword ptr [rax]
+L_0x4042f2:
+		cmp	dword ptr [rax + 8], 0
+L_0x4042f6:
+		jne	L_0x404308
+		call L_cond_dummy
+
+L_0x404308:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40430c:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40430f:
+		shl	ecx, 8
+L_0x404312:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404316:
+		mov	rax, qword ptr [rax]
+L_0x404319:
+		mov	rax, qword ptr [rax]
+L_0x40431c:
+		movzx	edx, byte ptr [rax]
+L_0x40431f:
+		or	ecx, edx
+L_0x404321:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404325:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x404328:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40432c:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40432f:
+		add	ecx, 8
+L_0x404332:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x404335:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404339:
+		mov	rax, qword ptr [rax]
+L_0x40433c:
+		mov	rsi, qword ptr [rax]
+L_0x40433f:
+		add	rsi, 1
+L_0x404343:
+		mov	qword ptr [rax], rsi
+L_0x404346:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40434a:
+		mov	rax, qword ptr [rax]
+L_0x40434d:
+		mov	ecx, dword ptr [rax + 8]
+L_0x404350:
+		add	ecx, -1
+L_0x404353:
+		mov	dword ptr [rax + 8], ecx
+L_0x404356:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40435a:
+		mov	rax, qword ptr [rax]
+L_0x40435d:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x404360:
+		add	ecx, 1
+L_0x404363:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x404366:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40436a:
+		mov	rax, qword ptr [rax]
+L_0x40436d:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x404371:
+		jne	L_0x404387
+		call L_cond_dummy
+
+L_0x404387:
+		jmp	L_0x404291
+
+L_0x40438c:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x404390:
+		cmp	eax, 0
+L_0x404393:
+		jne	L_0x4043a7
+
+L_0x404399:
+		mov	eax, dword ptr [rbp - 0x64]
+L_0x40439c:
+		add	eax, 1
+L_0x40439f:
+		mov	dword ptr [rbp - 0x64], eax
+L_0x4043a2:
+		jmp	L_0x4043b0
+
+L_0x4043a7:
+		mov	eax, dword ptr [rbp - 0x64]
+L_0x4043aa:
+		add	eax, -1
+L_0x4043ad:
+		mov	dword ptr [rbp - 0x64], eax
+
+L_0x4043b0:
+		jmp	L_0x40412e
+
+L_0x4043b5:
+		mov	eax, dword ptr [rbp - 0x64]
+L_0x4043b8:
+		mov	cl, al
+L_0x4043ba:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x4043be:
+		add	rdx, 0xab70
+L_0x4043c5:
+		movsxd	rsi, dword ptr [rbp - 0x34]
+L_0x4043c9:
+		imul	rsi, rsi, 0x102
+L_0x4043d0:
+		add	rdx, rsi
+L_0x4043d3:
+		movsxd	rsi, dword ptr [rbp - 0x2c]
+L_0x4043d7:
+		mov	byte ptr [rdx + rsi], cl
+L_0x4043da:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4043dd:
+		add	eax, 1
+L_0x4043e0:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4043e3:
+		jmp	L_0x404113
+
+L_0x4043e8:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x4043eb:
+		add	eax, 1
+L_0x4043ee:
+		mov	dword ptr [rbp - 0x34], eax
+L_0x4043f1:
+		jmp	L_0x403fed
+
+L_0x4043f6:
+		mov	dword ptr [rbp - 0x34], 0
+
+L_0x4043fd:
+
+L_0x404402:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x404405:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x404408:
+		jl	L_0x404413
+
+L_0x40440e:
+		jmp	L_0x404595
+
+L_0x404413:
+		mov	dword ptr [rbp - 0x1c], 0x20
+L_0x40441a:
+		mov	dword ptr [rbp - 0x20], 0
+L_0x404421:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x404428:
+
+L_0x40442d:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x404430:
+		cmp	eax, dword ptr [rbp - 0x38]
+L_0x404433:
+		jl	L_0x40443e
+
+L_0x404439:
+		jmp	L_0x4044e4
+
+L_0x40443e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404442:
+		add	rax, 0xab70
+L_0x404448:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x40444c:
+		imul	rcx, rcx, 0x102
+L_0x404453:
+		add	rax, rcx
+L_0x404456:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x40445a:
+		movzx	edx, byte ptr [rax + rcx]
+L_0x40445e:
+		cmp	edx, dword ptr [rbp - 0x20]
+L_0x404461:
+		jle	L_0x40448a
+
+L_0x404467:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40446b:
+		add	rax, 0xab70
+L_0x404471:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x404475:
+		imul	rcx, rcx, 0x102
+L_0x40447c:
+		add	rax, rcx
+L_0x40447f:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x404483:
+		movzx	edx, byte ptr [rax + rcx]
+L_0x404487:
+		mov	dword ptr [rbp - 0x20], edx
+
+L_0x40448a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40448e:
+		add	rax, 0xab70
+L_0x404494:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x404498:
+		imul	rcx, rcx, 0x102
+L_0x40449f:
+		add	rax, rcx
+L_0x4044a2:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x4044a6:
+		movzx	edx, byte ptr [rax + rcx]
+L_0x4044aa:
+		cmp	edx, dword ptr [rbp - 0x1c]
+L_0x4044ad:
+		jge	L_0x4044d6
+
+L_0x4044b3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4044b7:
+		add	rax, 0xab70
+L_0x4044bd:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x4044c1:
+		imul	rcx, rcx, 0x102
+L_0x4044c8:
+		add	rax, rcx
+L_0x4044cb:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x4044cf:
+		movzx	edx, byte ptr [rax + rcx]
+L_0x4044d3:
+		mov	dword ptr [rbp - 0x1c], edx
+
+L_0x4044d6:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4044d9:
+		add	eax, 1
+L_0x4044dc:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4044df:
+		jmp	L_0x404428
+
+L_0x4044e4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4044e8:
+		add	rax, 0xb17c
+L_0x4044ee:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x4044f2:
+		imul	rcx, rcx, 0x408
+L_0x4044f9:
+		add	rax, rcx
+L_0x4044fc:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404500:
+		add	rcx, 0xc9ac
+L_0x404507:
+		movsxd	rdx, dword ptr [rbp - 0x34]
+L_0x40450b:
+		imul	rdx, rdx, 0x408
+L_0x404512:
+		add	rcx, rdx
+L_0x404515:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x404519:
+		add	rdx, 0xe1dc
+L_0x404520:
+		movsxd	rsi, dword ptr [rbp - 0x34]
+L_0x404524:
+		imul	rsi, rsi, 0x408
+L_0x40452b:
+		add	rdx, rsi
+L_0x40452e:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x404532:
+		add	rsi, 0xab70
+L_0x404539:
+		movsxd	rdi, dword ptr [rbp - 0x34]
+L_0x40453d:
+		imul	rdi, rdi, 0x102
+L_0x404544:
+		add	rsi, rdi
+L_0x404547:
+		mov	r8d, dword ptr [rbp - 0x1c]
+L_0x40454b:
+		mov	r9d, dword ptr [rbp - 0x20]
+L_0x40454f:
+		mov	r10d, dword ptr [rbp - 0x38]
+L_0x404553:
+		mov	rdi, rax
+L_0x404556:
+		mov	qword ptr [rbp - 0x200], rsi
+L_0x40455d:
+		mov	rsi, rcx
+L_0x404560:
+		mov	rcx, qword ptr [rbp - 0x200]
+L_0x404567:
+		mov	dword ptr [rsp], r10d
+L_0x40456b:
+		call	L_0x401890
+
+L_0x404570:
+		mov	r8d, dword ptr [rbp - 0x1c]
+L_0x404574:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404578:
+		movsxd	rcx, dword ptr [rbp - 0x34]
+L_0x40457c:
+		mov	dword ptr [rax + rcx*4 + 0xfa0c], r8d
+L_0x404584:
+		mov	r8d, dword ptr [rbp - 0x34]
+L_0x404588:
+		add	r8d, 1
+L_0x40458c:
+		mov	dword ptr [rbp - 0x34], r8d
+L_0x404590:
+		jmp	L_0x4043fd
+
+L_0x404595:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404599:
+		mov	ecx, dword ptr [rax + 0xc78]
+L_0x40459f:
+		add	ecx, 1
+L_0x4045a2:
+		mov	dword ptr [rbp - 0x44], ecx
+L_0x4045a5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4045a9:
+		imul	ecx, dword ptr [rax + 0x28], 0x186a0
+L_0x4045b0:
+		mov	dword ptr [rbp - 0x54], ecx
+L_0x4045b3:
+		mov	dword ptr [rbp - 0x48], 0xffffffff
+L_0x4045ba:
+		mov	dword ptr [rbp - 0x4c], 0
+L_0x4045c1:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x4045c8:
+
+L_0x4045cd:
+		cmp	dword ptr [rbp - 0x2c], 0xff
+L_0x4045d4:
+		jle	L_0x4045df
+
+L_0x4045da:
+		jmp	L_0x4045fd
+
+L_0x4045df:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4045e3:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x4045e7:
+		mov	dword ptr [rax + rcx*4 + 0x44], 0
+L_0x4045ef:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x4045f2:
+		add	edx, 1
+L_0x4045f5:
+		mov	dword ptr [rbp - 0x2c], edx
+L_0x4045f8:
+		jmp	L_0x4045c8
+
+L_0x4045fd:
+		mov	dword ptr [rbp - 0x114], 0xfff
+L_0x404607:
+		mov	dword ptr [rbp - 0x10c], 0xf
+
+L_0x404611:
+
+L_0x404616:
+		cmp	dword ptr [rbp - 0x10c], 0
+L_0x40461d:
+		jge	L_0x404628
+
+L_0x404623:
+		jmp	L_0x4046be
+
+L_0x404628:
+		mov	dword ptr [rbp - 0x110], 0xf
+
+L_0x404632:
+
+L_0x404637:
+		cmp	dword ptr [rbp - 0x110], 0
+L_0x40463e:
+		jge	L_0x404649
+
+L_0x404644:
+		jmp	L_0x40468f
+
+L_0x404649:
+		mov	eax, dword ptr [rbp - 0x10c]
+L_0x40464f:
+		shl	eax, 4
+L_0x404652:
+		add	eax, dword ptr [rbp - 0x110]
+L_0x404658:
+		mov	cl, al
+L_0x40465a:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x40465e:
+		movsxd	rsi, dword ptr [rbp - 0x114]
+L_0x404665:
+		mov	byte ptr [rdx + rsi + 0xe8c], cl
+L_0x40466c:
+		mov	eax, dword ptr [rbp - 0x114]
+L_0x404672:
+		add	eax, -1
+L_0x404675:
+		mov	dword ptr [rbp - 0x114], eax
+L_0x40467b:
+		mov	eax, dword ptr [rbp - 0x110]
+L_0x404681:
+		add	eax, -1
+L_0x404684:
+		mov	dword ptr [rbp - 0x110], eax
+L_0x40468a:
+		jmp	L_0x404632
+
+L_0x40468f:
+		mov	eax, dword ptr [rbp - 0x114]
+L_0x404695:
+		add	eax, 1
+L_0x404698:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40469c:
+		movsxd	rdx, dword ptr [rbp - 0x10c]
+L_0x4046a3:
+		mov	dword ptr [rcx + rdx*4 + 0x1e8c], eax
+L_0x4046aa:
+		mov	eax, dword ptr [rbp - 0x10c]
+L_0x4046b0:
+		add	eax, -1
+L_0x4046b3:
+		mov	dword ptr [rbp - 0x10c], eax
+L_0x4046b9:
+		jmp	L_0x404611
+
+L_0x4046be:
+		mov	dword ptr [rbp - 0x58], 0
+L_0x4046c5:
+		cmp	dword ptr [rbp - 0x4c], 0
+L_0x4046c9:
+		jne L_cond_dummy
+
+L_0x4046cf:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x4046d2:
+		add	eax, 1
+L_0x4046d5:
+		mov	dword ptr [rbp - 0x48], eax
+L_0x4046d8:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x4046db:
+		cmp	eax, dword ptr [rbp - 0x40]
+L_0x4046de:
+		jl	L_0x4046f0
+		call L_cond_dummy
+
+L_0x4046f0:
+		mov	dword ptr [rbp - 0x4c], 0x32
+L_0x4046f7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4046fb:
+		movsxd	rcx, dword ptr [rbp - 0x48]
+L_0x4046ff:
+		movzx	edx, byte ptr [rax + rcx + 0x1ecc]
+L_0x404707:
+		mov	dword ptr [rbp - 0x78], edx
+L_0x40470a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40470e:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404712:
+		mov	edx, dword ptr [rax + rcx*4 + 0xfa0c]
+L_0x404719:
+		mov	dword ptr [rbp - 0x7c], edx
+L_0x40471c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404720:
+		add	rax, 0xb17c
+L_0x404726:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x40472a:
+		imul	rcx, rcx, 0x408
+L_0x404731:
+		add	rax, rcx
+L_0x404734:
+		mov	qword ptr [rbp - 0x88], rax
+L_0x40473b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40473f:
+		add	rax, 0xe1dc
+L_0x404745:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404749:
+		imul	rcx, rcx, 0x408
+L_0x404750:
+		add	rax, rcx
+L_0x404753:
+		mov	qword ptr [rbp - 0x98], rax
+L_0x40475a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40475e:
+		add	rax, 0xc9ac
+L_0x404764:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404768:
+		imul	rcx, rcx, 0x408
+L_0x40476f:
+		add	rax, rcx
+L_0x404772:
+		mov	qword ptr [rbp - 0x90], rax
+L_0x404779:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40477c:
+		add	eax, -1
+L_0x40477f:
+		mov	dword ptr [rbp - 0x4c], eax
+L_0x404782:
+		mov	eax, dword ptr [rbp - 0x7c]
+L_0x404785:
+		mov	dword ptr [rbp - 0x6c], eax
+L_0x404788:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40478c:
+		mov	dword ptr [rax + 8], 0x24
+L_0x404793:
+
+L_0x404798:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40479c:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40479f:
+		cmp	ecx, dword ptr [rbp - 0x6c]
+L_0x4047a2:
+		jl L_cond_dummy
+
+L_0x4047a8:
+		mov	eax, 1
+L_0x4047ad:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4047b1:
+		mov	edx, dword ptr [rcx + 0x20]
+L_0x4047b4:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4047b8:
+		mov	esi, dword ptr [rcx + 0x24]
+L_0x4047bb:
+		sub	esi, dword ptr [rbp - 0x6c]
+L_0x4047be:
+		mov	ecx, esi
+L_0x4047c0:
+		shr	edx, cl
+L_0x4047c2:
+		mov	ecx, dword ptr [rbp - 0x6c]
+L_0x4047c5:
+		shl	eax, cl
+L_0x4047c7:
+		sub	eax, 1
+L_0x4047ca:
+		and	edx, eax
+L_0x4047cc:
+		mov	dword ptr [rbp - 0x118], edx
+L_0x4047d2:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x4047d5:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4047d9:
+		mov	edx, dword ptr [rdi + 0x24]
+L_0x4047dc:
+		sub	edx, eax
+L_0x4047de:
+		mov	dword ptr [rdi + 0x24], edx
+L_0x4047e1:
+		mov	eax, dword ptr [rbp - 0x118]
+L_0x4047e7:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x4047ea:
+
+L_0x404890:
+
+L_0x404895:
+
+L_0x40489a:
+		cmp	dword ptr [rbp - 0x6c], 0x14
+L_0x40489e:
+		jle	L_0x4048b0
+		call L_cond_dummy
+
+L_0x4048b0:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4048b3:
+		mov	rcx, qword ptr [rbp - 0x88]
+L_0x4048ba:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x4048be:
+		cmp	eax, dword ptr [rcx + rdx*4]
+L_0x4048c1:
+		jg	L_0x4048cc
+
+L_0x4048c7:
+		jmp	L_0x4049ea
+
+L_0x4048cc:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x4048cf:
+		add	eax, 1
+L_0x4048d2:
+		mov	dword ptr [rbp - 0x6c], eax
+L_0x4048d5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4048d9:
+		mov	dword ptr [rax + 8], 0x25
+
+L_0x4048e0:
+
+L_0x4048e5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4048e9:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x4048ed:
+		jl	L_0x404938
+
+L_0x4048f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4048f7:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4048fa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4048fe:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404901:
+		sub	edx, 1
+L_0x404904:
+		mov	dword ptr [rbp - 0x204], ecx
+L_0x40490a:
+		mov	ecx, edx
+L_0x40490c:
+		mov	edx, dword ptr [rbp - 0x204]
+L_0x404912:
+		shr	edx, cl
+L_0x404914:
+		and	edx, 1
+L_0x404917:
+		mov	dword ptr [rbp - 0x11c], edx
+L_0x40491d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404921:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404924:
+		add	edx, -1
+L_0x404927:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40492a:
+		mov	edx, dword ptr [rbp - 0x11c]
+L_0x404930:
+		mov	dword ptr [rbp - 0x74], edx
+L_0x404933:
+		jmp	L_0x4049d9
+
+L_0x404938:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40493c:
+		mov	rax, qword ptr [rax]
+L_0x40493f:
+		cmp	dword ptr [rax + 8], 0
+L_0x404943:
+		jne	L_0x404955
+		call L_cond_dummy
+
+L_0x404955:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404959:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40495c:
+		shl	ecx, 8
+L_0x40495f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404963:
+		mov	rax, qword ptr [rax]
+L_0x404966:
+		mov	rax, qword ptr [rax]
+L_0x404969:
+		movzx	edx, byte ptr [rax]
+L_0x40496c:
+		or	ecx, edx
+L_0x40496e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404972:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x404975:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404979:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40497c:
+		add	ecx, 8
+L_0x40497f:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x404982:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404986:
+		mov	rax, qword ptr [rax]
+L_0x404989:
+		mov	rsi, qword ptr [rax]
+L_0x40498c:
+		add	rsi, 1
+L_0x404990:
+		mov	qword ptr [rax], rsi
+L_0x404993:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404997:
+		mov	rax, qword ptr [rax]
+L_0x40499a:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40499d:
+		add	ecx, -1
+L_0x4049a0:
+		mov	dword ptr [rax + 8], ecx
+L_0x4049a3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4049a7:
+		mov	rax, qword ptr [rax]
+L_0x4049aa:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4049ad:
+		add	ecx, 1
+L_0x4049b0:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4049b3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4049b7:
+		mov	rax, qword ptr [rax]
+L_0x4049ba:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4049be:
+		jne	L_0x4049d4
+		call L_cond_dummy
+
+L_0x4049d4:
+		jmp	L_0x4048e0
+
+L_0x4049d9:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4049dc:
+		shl	eax, 1
+L_0x4049df:
+		or	eax, dword ptr [rbp - 0x74]
+L_0x4049e2:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x4049e5:
+		jmp	L_0x404895
+
+L_0x4049ea:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4049ed:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x4049f4:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x4049f8:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x4049fb:
+		cmp	eax, 0
+L_0x4049fe:
+		jge	L_0x404a10
+		call L_cond_dummy
+
+L_0x404a10:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x404a13:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x404a1a:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x404a1e:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x404a21:
+		cmp	eax, 0x102
+L_0x404a26:
+		jl	L_0x404a38
+		call L_cond_dummy
+
+L_0x404a38:
+
+L_0x404a3d:
+		mov	rax, qword ptr [rbp - 0x98]
+L_0x404a44:
+		mov	ecx, dword ptr [rbp - 0x70]
+L_0x404a47:
+		mov	rdx, qword ptr [rbp - 0x90]
+L_0x404a4e:
+		movsxd	rsi, dword ptr [rbp - 0x6c]
+L_0x404a52:
+		sub	ecx, dword ptr [rdx + rsi*4]
+L_0x404a55:
+		movsxd	rdx, ecx
+L_0x404a58:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x404a5b:
+		mov	dword ptr [rbp - 0x50], ecx
+L_0x404a5e:
+
+L_0x404a63:
+		mov	eax, dword ptr [rbp - 0x50]
+L_0x404a66:
+		cmp	eax, dword ptr [rbp - 0x44]
+L_0x404a69:
+		jne	L_0x404a74
+
+L_0x404a6f:
+		jmp	L_0x405857
+
+L_0x404a74:
+		cmp	dword ptr [rbp - 0x50], 0
+L_0x404a78:
+		jne	L_0x404a83
+
+L_0x404a7e:
+		jmp	L_0x404a92
+
+L_0x404a83:
+		cmp	dword ptr [rbp - 0x50], 1
+L_0x404a87:
+		jne	L_0x404fc5
+
+L_0x404a8d:
+
+L_0x404a92:
+		mov	dword ptr [rbp - 0x5c], 0xffffffff
+L_0x404a99:
+		mov	dword ptr [rbp - 0x60], 1
+
+L_0x404aa0:
+
+L_0x404aa5:
+		cmp	dword ptr [rbp - 0x50], 0
+L_0x404aa9:
+		jne	L_0x404abd
+
+L_0x404aaf:
+		mov	eax, dword ptr [rbp - 0x60]
+L_0x404ab2:
+		add	eax, dword ptr [rbp - 0x5c]
+L_0x404ab5:
+		mov	dword ptr [rbp - 0x5c], eax
+L_0x404ab8:
+		jmp	L_0x404ad8
+
+L_0x404abd:
+		cmp	dword ptr [rbp - 0x50], 1
+L_0x404ac1:
+		jne L_cond_dummy
+
+L_0x404ac7:
+		mov	eax, dword ptr [rbp - 0x60]
+L_0x404aca:
+		shl	eax, 1
+L_0x404acd:
+		add	eax, dword ptr [rbp - 0x5c]
+L_0x404ad0:
+		mov	dword ptr [rbp - 0x5c], eax
+L_0x404ad3:
+
+L_0x404ad8:
+		mov	eax, dword ptr [rbp - 0x60]
+L_0x404adb:
+		shl	eax, 1
+L_0x404ade:
+		mov	dword ptr [rbp - 0x60], eax
+L_0x404ae1:
+		cmp	dword ptr [rbp - 0x4c], 0
+L_0x404ae5:
+		jne	L_0x404b95
+
+L_0x404aeb:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x404aee:
+		add	eax, 1
+L_0x404af1:
+		mov	dword ptr [rbp - 0x48], eax
+L_0x404af4:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x404af7:
+		cmp	eax, dword ptr [rbp - 0x40]
+L_0x404afa:
+		jl	L_0x404b0c
+		call L_cond_dummy
+
+L_0x404b0c:
+		mov	dword ptr [rbp - 0x4c], 0x32
+L_0x404b13:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404b17:
+		movsxd	rcx, dword ptr [rbp - 0x48]
+L_0x404b1b:
+		movzx	edx, byte ptr [rax + rcx + 0x1ecc]
+L_0x404b23:
+		mov	dword ptr [rbp - 0x78], edx
+L_0x404b26:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404b2a:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404b2e:
+		mov	edx, dword ptr [rax + rcx*4 + 0xfa0c]
+L_0x404b35:
+		mov	dword ptr [rbp - 0x7c], edx
+L_0x404b38:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404b3c:
+		add	rax, 0xb17c
+L_0x404b42:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404b46:
+		imul	rcx, rcx, 0x408
+L_0x404b4d:
+		add	rax, rcx
+L_0x404b50:
+		mov	qword ptr [rbp - 0x88], rax
+L_0x404b57:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404b5b:
+		add	rax, 0xe1dc
+L_0x404b61:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404b65:
+		imul	rcx, rcx, 0x408
+L_0x404b6c:
+		add	rax, rcx
+L_0x404b6f:
+		mov	qword ptr [rbp - 0x98], rax
+L_0x404b76:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404b7a:
+		add	rax, 0xc9ac
+L_0x404b80:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x404b84:
+		imul	rcx, rcx, 0x408
+L_0x404b8b:
+		add	rax, rcx
+L_0x404b8e:
+		mov	qword ptr [rbp - 0x90], rax
+
+L_0x404b95:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x404b98:
+		add	eax, -1
+L_0x404b9b:
+		mov	dword ptr [rbp - 0x4c], eax
+L_0x404b9e:
+		mov	eax, dword ptr [rbp - 0x7c]
+L_0x404ba1:
+		mov	dword ptr [rbp - 0x6c], eax
+
+L_0x404ba4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404ba8:
+		mov	dword ptr [rax + 8], 0x26
+
+L_0x404baf:
+
+L_0x404bb4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404bb8:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x404bbb:
+		cmp	ecx, dword ptr [rbp - 0x6c]
+L_0x404bbe:
+		jl	L_0x404c0b
+
+L_0x404bc4:
+		mov	eax, 1
+L_0x404bc9:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404bcd:
+		mov	edx, dword ptr [rcx + 0x20]
+L_0x404bd0:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404bd4:
+		mov	esi, dword ptr [rcx + 0x24]
+L_0x404bd7:
+		sub	esi, dword ptr [rbp - 0x6c]
+L_0x404bda:
+		mov	ecx, esi
+L_0x404bdc:
+		shr	edx, cl
+L_0x404bde:
+		mov	ecx, dword ptr [rbp - 0x6c]
+L_0x404be1:
+		shl	eax, cl
+L_0x404be3:
+		sub	eax, 1
+L_0x404be6:
+		and	edx, eax
+L_0x404be8:
+		mov	dword ptr [rbp - 0x120], edx
+L_0x404bee:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x404bf1:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x404bf5:
+		mov	edx, dword ptr [rdi + 0x24]
+L_0x404bf8:
+		sub	edx, eax
+L_0x404bfa:
+		mov	dword ptr [rdi + 0x24], edx
+L_0x404bfd:
+		mov	eax, dword ptr [rbp - 0x120]
+L_0x404c03:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x404c06:
+		jmp	L_0x404cac
+
+L_0x404c0b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c0f:
+		mov	rax, qword ptr [rax]
+L_0x404c12:
+		cmp	dword ptr [rax + 8], 0
+L_0x404c16:
+		jne	L_0x404c28
+
+L_0x404c1c:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x404c23:
+		jmp	L_0x406c8a
+
+L_0x404c28:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c2c:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x404c2f:
+		shl	ecx, 8
+L_0x404c32:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c36:
+		mov	rax, qword ptr [rax]
+L_0x404c39:
+		mov	rax, qword ptr [rax]
+L_0x404c3c:
+		movzx	edx, byte ptr [rax]
+L_0x404c3f:
+		or	ecx, edx
+L_0x404c41:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c45:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x404c48:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c4c:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x404c4f:
+		add	ecx, 8
+L_0x404c52:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x404c55:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c59:
+		mov	rax, qword ptr [rax]
+L_0x404c5c:
+		mov	rsi, qword ptr [rax]
+L_0x404c5f:
+		add	rsi, 1
+L_0x404c63:
+		mov	qword ptr [rax], rsi
+L_0x404c66:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c6a:
+		mov	rax, qword ptr [rax]
+L_0x404c6d:
+		mov	ecx, dword ptr [rax + 8]
+L_0x404c70:
+		add	ecx, -1
+L_0x404c73:
+		mov	dword ptr [rax + 8], ecx
+L_0x404c76:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c7a:
+		mov	rax, qword ptr [rax]
+L_0x404c7d:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x404c80:
+		add	ecx, 1
+L_0x404c83:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x404c86:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404c8a:
+		mov	rax, qword ptr [rax]
+L_0x404c8d:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x404c91:
+		jne	L_0x404ca7
+		call L_cond_dummy
+
+L_0x404ca7:
+		jmp	L_0x404baf
+
+L_0x404cac:
+
+L_0x404cb1:
+
+L_0x404cb6:
+		cmp	dword ptr [rbp - 0x6c], 0x14
+L_0x404cba:
+		jle	L_0x404ccc
+		call L_cond_dummy
+
+L_0x404ccc:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x404ccf:
+		mov	rcx, qword ptr [rbp - 0x88]
+L_0x404cd6:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x404cda:
+		cmp	eax, dword ptr [rcx + rdx*4]
+L_0x404cdd:
+		jg	L_0x404ce8
+
+L_0x404ce3:
+		jmp	L_0x404e06
+
+L_0x404ce8:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x404ceb:
+		add	eax, 1
+L_0x404cee:
+		mov	dword ptr [rbp - 0x6c], eax
+
+L_0x404cf1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404cf5:
+		mov	dword ptr [rax + 8], 0x27
+
+L_0x404cfc:
+
+L_0x404d01:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d05:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x404d09:
+		jl	L_0x404d54
+
+L_0x404d0f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d13:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x404d16:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d1a:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404d1d:
+		sub	edx, 1
+L_0x404d20:
+		mov	dword ptr [rbp - 0x208], ecx
+L_0x404d26:
+		mov	ecx, edx
+L_0x404d28:
+		mov	edx, dword ptr [rbp - 0x208]
+L_0x404d2e:
+		shr	edx, cl
+L_0x404d30:
+		and	edx, 1
+L_0x404d33:
+		mov	dword ptr [rbp - 0x124], edx
+L_0x404d39:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d3d:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x404d40:
+		add	edx, -1
+L_0x404d43:
+		mov	dword ptr [rax + 0x24], edx
+L_0x404d46:
+		mov	edx, dword ptr [rbp - 0x124]
+L_0x404d4c:
+		mov	dword ptr [rbp - 0x74], edx
+L_0x404d4f:
+		jmp	L_0x404df5
+
+L_0x404d54:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d58:
+		mov	rax, qword ptr [rax]
+L_0x404d5b:
+		cmp	dword ptr [rax + 8], 0
+L_0x404d5f:
+		jne	L_0x404d71
+
+L_0x404d65:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x404d6c:
+		jmp	L_0x406c8a
+
+L_0x404d71:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d75:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x404d78:
+		shl	ecx, 8
+L_0x404d7b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d7f:
+		mov	rax, qword ptr [rax]
+L_0x404d82:
+		mov	rax, qword ptr [rax]
+L_0x404d85:
+		movzx	edx, byte ptr [rax]
+L_0x404d88:
+		or	ecx, edx
+L_0x404d8a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d8e:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x404d91:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404d95:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x404d98:
+		add	ecx, 8
+L_0x404d9b:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x404d9e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404da2:
+		mov	rax, qword ptr [rax]
+L_0x404da5:
+		mov	rsi, qword ptr [rax]
+L_0x404da8:
+		add	rsi, 1
+L_0x404dac:
+		mov	qword ptr [rax], rsi
+L_0x404daf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404db3:
+		mov	rax, qword ptr [rax]
+L_0x404db6:
+		mov	ecx, dword ptr [rax + 8]
+L_0x404db9:
+		add	ecx, -1
+L_0x404dbc:
+		mov	dword ptr [rax + 8], ecx
+L_0x404dbf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404dc3:
+		mov	rax, qword ptr [rax]
+L_0x404dc6:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x404dc9:
+		add	ecx, 1
+L_0x404dcc:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x404dcf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404dd3:
+		mov	rax, qword ptr [rax]
+L_0x404dd6:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x404dda:
+		jne	L_0x404df0
+		call L_cond_dummy
+
+L_0x404df0:
+		jmp	L_0x404cfc
+
+L_0x404df5:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x404df8:
+		shl	eax, 1
+L_0x404dfb:
+		or	eax, dword ptr [rbp - 0x74]
+L_0x404dfe:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x404e01:
+		jmp	L_0x404cb1
+
+L_0x404e06:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x404e09:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x404e10:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x404e14:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x404e17:
+		cmp	eax, 0
+L_0x404e1a:
+		jge	L_0x404e2c
+		call L_cond_dummy
+
+L_0x404e2c:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x404e2f:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x404e36:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x404e3a:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x404e3d:
+		cmp	eax, 0x102
+L_0x404e42:
+		jl	L_0x404e54
+		call L_cond_dummy
+
+L_0x404e54:
+
+L_0x404e59:
+		mov	rax, qword ptr [rbp - 0x98]
+L_0x404e60:
+		mov	ecx, dword ptr [rbp - 0x70]
+L_0x404e63:
+		mov	rdx, qword ptr [rbp - 0x90]
+L_0x404e6a:
+		movsxd	rsi, dword ptr [rbp - 0x6c]
+L_0x404e6e:
+		sub	ecx, dword ptr [rdx + rsi*4]
+L_0x404e71:
+		movsxd	rdx, ecx
+L_0x404e74:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x404e77:
+		mov	dword ptr [rbp - 0x50], ecx
+L_0x404e7a:
+		cmp	dword ptr [rbp - 0x50], 0
+L_0x404e7e:
+		je	L_0x404e98
+
+L_0x404e84:
+		cmp	dword ptr [rbp - 0x50], 1
+L_0x404e88:
+		je	L_0x404e93
+
+L_0x404e8e:
+		jmp	L_0x404e9d
+
+L_0x404e93:
+
+L_0x404e98:
+		jmp	L_0x404aa0
+
+L_0x404e9d:
+		mov	eax, dword ptr [rbp - 0x5c]
+L_0x404ea0:
+		add	eax, 1
+L_0x404ea3:
+		mov	dword ptr [rbp - 0x5c], eax
+L_0x404ea6:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404eaa:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x404eae:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x404eb2:
+		movsxd	rsi, dword ptr [rsi + 0x1e8c]
+L_0x404eb9:
+		movzx	eax, byte ptr [rdx + rsi + 0xe8c]
+L_0x404ec1:
+		mov	edx, eax
+L_0x404ec3:
+		mov	dil, byte ptr [rcx + rdx + 0xd8c]
+L_0x404ecb:
+		mov	byte ptr [rbp - 0x11], dil
+L_0x404ecf:
+		mov	eax, dword ptr [rbp - 0x5c]
+L_0x404ed2:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404ed6:
+		movzx	r8d, byte ptr [rbp - 0x11]
+L_0x404edb:
+		mov	edx, r8d
+L_0x404ede:
+		add	eax, dword ptr [rcx + rdx*4 + 0x44]
+L_0x404ee2:
+		mov	dword ptr [rcx + rdx*4 + 0x44], eax
+L_0x404ee6:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404eea:
+		cmp	byte ptr [rcx + 0x2c], 0
+L_0x404eee:
+		je	L_0x404f5d
+		call L_cond_dummy
+
+L_0x404f5d:
+
+L_0x404f62:
+
+L_0x404f67:
+		cmp	dword ptr [rbp - 0x5c], 0
+L_0x404f6b:
+		jg	L_0x404f76
+
+L_0x404f71:
+		jmp	L_0x404fbb
+
+L_0x404f76:
+		mov	eax, dword ptr [rbp - 0x58]
+L_0x404f79:
+		cmp	eax, dword ptr [rbp - 0x54]
+L_0x404f7c:
+		jl	L_0x404f8e
+		call L_cond_dummy
+
+L_0x404f8e:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x404f92:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x404f96:
+		mov	rcx, qword ptr [rcx + 0xc50]
+L_0x404f9d:
+		movsxd	rdx, dword ptr [rbp - 0x58]
+L_0x404fa1:
+		mov	dword ptr [rcx + rdx*4], eax
+L_0x404fa4:
+		mov	eax, dword ptr [rbp - 0x58]
+L_0x404fa7:
+		add	eax, 1
+L_0x404faa:
+		mov	dword ptr [rbp - 0x58], eax
+L_0x404fad:
+		mov	eax, dword ptr [rbp - 0x5c]
+L_0x404fb0:
+		add	eax, -1
+L_0x404fb3:
+		mov	dword ptr [rbp - 0x5c], eax
+L_0x404fb6:
+		jmp	L_0x404f62
+
+L_0x404fbb:
+
+L_0x404fc0:
+		jmp	L_0x404a63
+
+L_0x404fc5:
+		mov	eax, dword ptr [rbp - 0x58]
+L_0x404fc8:
+		cmp	eax, dword ptr [rbp - 0x54]
+L_0x404fcb:
+		jl	L_0x404fdd
+		call L_cond_dummy
+
+L_0x404fdd:
+		mov	eax, dword ptr [rbp - 0x50]
+L_0x404fe0:
+		sub	eax, 1
+L_0x404fe3:
+		mov	dword ptr [rbp - 0x140], eax
+L_0x404fe9:
+		cmp	dword ptr [rbp - 0x140], 0x10
+L_0x404ff0:
+		jae	L_0x4051a3
+
+L_0x404ff6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x404ffa:
+		mov	ecx, dword ptr [rax + 0x1e8c]
+L_0x405000:
+		mov	dword ptr [rbp - 0x134], ecx
+L_0x405006:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40500a:
+		mov	ecx, dword ptr [rbp - 0x134]
+L_0x405010:
+		add	ecx, dword ptr [rbp - 0x140]
+L_0x405016:
+		mov	ecx, ecx
+L_0x405018:
+		mov	edx, ecx
+L_0x40501a:
+		mov	sil, byte ptr [rax + rdx + 0xe8c]
+L_0x405022:
+		mov	byte ptr [rbp - 0x11], sil
+
+L_0x405026:
+
+L_0x40502b:
+		cmp	dword ptr [rbp - 0x140], 3
+L_0x405032:
+		ja	L_0x40503d
+
+L_0x405038:
+		jmp	L_0x40511e
+
+L_0x40503d:
+		mov	eax, dword ptr [rbp - 0x134]
+L_0x405043:
+		add	eax, dword ptr [rbp - 0x140]
+L_0x405049:
+		mov	dword ptr [rbp - 0x144], eax
+L_0x40504f:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405053:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x405059:
+		sub	eax, 1
+L_0x40505c:
+		movsxd	rdx, eax
+L_0x40505f:
+		mov	sil, byte ptr [rcx + rdx + 0xe8c]
+L_0x405067:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40506b:
+		movsxd	rdx, dword ptr [rbp - 0x144]
+L_0x405072:
+		mov	byte ptr [rcx + rdx + 0xe8c], sil
+L_0x40507a:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40507e:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x405084:
+		sub	eax, 2
+L_0x405087:
+		movsxd	rdx, eax
+L_0x40508a:
+		mov	sil, byte ptr [rcx + rdx + 0xe8c]
+L_0x405092:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405096:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x40509c:
+		sub	eax, 1
+L_0x40509f:
+		movsxd	rdx, eax
+L_0x4050a2:
+		mov	byte ptr [rcx + rdx + 0xe8c], sil
+L_0x4050aa:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4050ae:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x4050b4:
+		sub	eax, 3
+L_0x4050b7:
+		movsxd	rdx, eax
+L_0x4050ba:
+		mov	sil, byte ptr [rcx + rdx + 0xe8c]
+L_0x4050c2:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4050c6:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x4050cc:
+		sub	eax, 2
+L_0x4050cf:
+		movsxd	rdx, eax
+L_0x4050d2:
+		mov	byte ptr [rcx + rdx + 0xe8c], sil
+L_0x4050da:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4050de:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x4050e4:
+		sub	eax, 4
+L_0x4050e7:
+		movsxd	rdx, eax
+L_0x4050ea:
+		mov	sil, byte ptr [rcx + rdx + 0xe8c]
+L_0x4050f2:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4050f6:
+		mov	eax, dword ptr [rbp - 0x144]
+L_0x4050fc:
+		sub	eax, 3
+L_0x4050ff:
+		movsxd	rdx, eax
+L_0x405102:
+		mov	byte ptr [rcx + rdx + 0xe8c], sil
+L_0x40510a:
+		mov	eax, dword ptr [rbp - 0x140]
+L_0x405110:
+		sub	eax, 4
+L_0x405113:
+		mov	dword ptr [rbp - 0x140], eax
+L_0x405119:
+		jmp	L_0x405026
+
+L_0x40511e:
+
+L_0x405123:
+
+L_0x405128:
+		cmp	dword ptr [rbp - 0x140], 0
+L_0x40512f:
+		ja	L_0x40513a
+
+L_0x405135:
+		jmp	L_0x405189
+
+L_0x40513a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40513e:
+		mov	ecx, dword ptr [rbp - 0x134]
+L_0x405144:
+		add	ecx, dword ptr [rbp - 0x140]
+L_0x40514a:
+		sub	ecx, 1
+L_0x40514d:
+		mov	ecx, ecx
+L_0x40514f:
+		mov	edx, ecx
+L_0x405151:
+		mov	sil, byte ptr [rax + rdx + 0xe8c]
+L_0x405159:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40515d:
+		mov	ecx, dword ptr [rbp - 0x134]
+L_0x405163:
+		add	ecx, dword ptr [rbp - 0x140]
+L_0x405169:
+		mov	ecx, ecx
+L_0x40516b:
+		mov	edx, ecx
+L_0x40516d:
+		mov	byte ptr [rax + rdx + 0xe8c], sil
+L_0x405175:
+		mov	ecx, dword ptr [rbp - 0x140]
+L_0x40517b:
+		add	ecx, -1
+L_0x40517e:
+		mov	dword ptr [rbp - 0x140], ecx
+L_0x405184:
+		jmp	L_0x405123
+
+L_0x405189:
+		mov	al, byte ptr [rbp - 0x11]
+L_0x40518c:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405190:
+		movsxd	rdx, dword ptr [rbp - 0x134]
+L_0x405197:
+		mov	byte ptr [rcx + rdx + 0xe8c], al
+L_0x40519e:
+		jmp	L_0x40542a
+
+L_0x4051a3:
+		mov	eax, dword ptr [rbp - 0x140]
+L_0x4051a9:
+		shr	eax, 4
+L_0x4051ac:
+		mov	dword ptr [rbp - 0x138], eax
+L_0x4051b2:
+		mov	eax, dword ptr [rbp - 0x140]
+L_0x4051b8:
+		and	eax, 0xf
+L_0x4051bb:
+		mov	dword ptr [rbp - 0x13c], eax
+L_0x4051c1:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4051c5:
+		movsxd	rdx, dword ptr [rbp - 0x138]
+L_0x4051cc:
+		mov	eax, dword ptr [rcx + rdx*4 + 0x1e8c]
+L_0x4051d3:
+		add	eax, dword ptr [rbp - 0x13c]
+L_0x4051d9:
+		mov	dword ptr [rbp - 0x134], eax
+L_0x4051df:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4051e3:
+		movsxd	rdx, dword ptr [rbp - 0x134]
+L_0x4051ea:
+		mov	sil, byte ptr [rcx + rdx + 0xe8c]
+L_0x4051f2:
+		mov	byte ptr [rbp - 0x11], sil
+
+L_0x4051f6:
+
+L_0x4051fb:
+		mov	eax, dword ptr [rbp - 0x134]
+L_0x405201:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405205:
+		movsxd	rdx, dword ptr [rbp - 0x138]
+L_0x40520c:
+		cmp	eax, dword ptr [rcx + rdx*4 + 0x1e8c]
+L_0x405213:
+		jg	L_0x40521e
+
+L_0x405219:
+		jmp	L_0x40525d
+
+L_0x40521e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405222:
+		mov	ecx, dword ptr [rbp - 0x134]
+L_0x405228:
+		sub	ecx, 1
+L_0x40522b:
+		movsxd	rdx, ecx
+L_0x40522e:
+		mov	sil, byte ptr [rax + rdx + 0xe8c]
+L_0x405236:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40523a:
+		movsxd	rdx, dword ptr [rbp - 0x134]
+L_0x405241:
+		mov	byte ptr [rax + rdx + 0xe8c], sil
+L_0x405249:
+		mov	ecx, dword ptr [rbp - 0x134]
+L_0x40524f:
+		add	ecx, -1
+L_0x405252:
+		mov	dword ptr [rbp - 0x134], ecx
+L_0x405258:
+		jmp	L_0x4051f6
+
+L_0x40525d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405261:
+		movsxd	rcx, dword ptr [rbp - 0x138]
+L_0x405268:
+		mov	edx, dword ptr [rax + rcx*4 + 0x1e8c]
+L_0x40526f:
+		add	edx, 1
+L_0x405272:
+		mov	dword ptr [rax + rcx*4 + 0x1e8c], edx
+
+L_0x405279:
+
+L_0x40527e:
+		cmp	dword ptr [rbp - 0x138], 0
+L_0x405285:
+		jg	L_0x405290
+
+L_0x40528b:
+		jmp	L_0x40530b
+
+L_0x405290:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405294:
+		movsxd	rcx, dword ptr [rbp - 0x138]
+L_0x40529b:
+		mov	edx, dword ptr [rax + rcx*4 + 0x1e8c]
+L_0x4052a2:
+		add	edx, -1
+L_0x4052a5:
+		mov	dword ptr [rax + rcx*4 + 0x1e8c], edx
+L_0x4052ac:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4052b0:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4052b4:
+		mov	edx, dword ptr [rbp - 0x138]
+L_0x4052ba:
+		sub	edx, 1
+L_0x4052bd:
+		movsxd	rsi, edx
+L_0x4052c0:
+		mov	edx, dword ptr [rcx + rsi*4 + 0x1e8c]
+L_0x4052c7:
+		add	edx, 0x10
+L_0x4052ca:
+		sub	edx, 1
+L_0x4052cd:
+		movsxd	rcx, edx
+L_0x4052d0:
+		mov	dil, byte ptr [rax + rcx + 0xe8c]
+L_0x4052d8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4052dc:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4052e0:
+		movsxd	rsi, dword ptr [rbp - 0x138]
+L_0x4052e7:
+		movsxd	rcx, dword ptr [rcx + rsi*4 + 0x1e8c]
+L_0x4052ef:
+		mov	byte ptr [rax + rcx + 0xe8c], dil
+L_0x4052f7:
+		mov	edx, dword ptr [rbp - 0x138]
+L_0x4052fd:
+		add	edx, -1
+L_0x405300:
+		mov	dword ptr [rbp - 0x138], edx
+L_0x405306:
+		jmp	L_0x405279
+
+L_0x40530b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40530f:
+		mov	ecx, dword ptr [rax + 0x1e8c]
+L_0x405315:
+		add	ecx, -1
+L_0x405318:
+		mov	dword ptr [rax + 0x1e8c], ecx
+L_0x40531e:
+		mov	dl, byte ptr [rbp - 0x11]
+L_0x405321:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405325:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x405329:
+		movsxd	rsi, dword ptr [rsi + 0x1e8c]
+L_0x405330:
+		mov	byte ptr [rax + rsi + 0xe8c], dl
+L_0x405337:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40533b:
+		cmp	dword ptr [rax + 0x1e8c], 0
+L_0x405342:
+		jne	L_0x405425
+
+L_0x405348:
+		mov	dword ptr [rbp - 0x130], 0xfff
+L_0x405352:
+		mov	dword ptr [rbp - 0x128], 0xf
+
+L_0x40535c:
+
+L_0x405361:
+		cmp	dword ptr [rbp - 0x128], 0
+L_0x405368:
+		jge	L_0x405373
+
+L_0x40536e:
+		jmp	L_0x405420
+
+L_0x405373:
+		mov	dword ptr [rbp - 0x12c], 0xf
+
+L_0x40537d:
+
+L_0x405382:
+		cmp	dword ptr [rbp - 0x12c], 0
+L_0x405389:
+		jge	L_0x405394
+
+L_0x40538f:
+		jmp	L_0x4053f1
+
+L_0x405394:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405398:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40539c:
+		movsxd	rdx, dword ptr [rbp - 0x128]
+L_0x4053a3:
+		mov	esi, dword ptr [rcx + rdx*4 + 0x1e8c]
+L_0x4053aa:
+		add	esi, dword ptr [rbp - 0x12c]
+L_0x4053b0:
+		movsxd	rcx, esi
+L_0x4053b3:
+		mov	dil, byte ptr [rax + rcx + 0xe8c]
+L_0x4053bb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4053bf:
+		movsxd	rcx, dword ptr [rbp - 0x130]
+L_0x4053c6:
+		mov	byte ptr [rax + rcx + 0xe8c], dil
+L_0x4053ce:
+		mov	esi, dword ptr [rbp - 0x130]
+L_0x4053d4:
+		add	esi, -1
+L_0x4053d7:
+		mov	dword ptr [rbp - 0x130], esi
+L_0x4053dd:
+		mov	esi, dword ptr [rbp - 0x12c]
+L_0x4053e3:
+		add	esi, -1
+L_0x4053e6:
+		mov	dword ptr [rbp - 0x12c], esi
+L_0x4053ec:
+		jmp	L_0x40537d
+
+L_0x4053f1:
+		mov	eax, dword ptr [rbp - 0x130]
+L_0x4053f7:
+		add	eax, 1
+L_0x4053fa:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4053fe:
+		movsxd	rdx, dword ptr [rbp - 0x128]
+L_0x405405:
+		mov	dword ptr [rcx + rdx*4 + 0x1e8c], eax
+L_0x40540c:
+		mov	eax, dword ptr [rbp - 0x128]
+L_0x405412:
+		add	eax, -1
+L_0x405415:
+		mov	dword ptr [rbp - 0x128], eax
+L_0x40541b:
+		jmp	L_0x40535c
+
+L_0x405420:
+
+L_0x405425:
+
+L_0x40542a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40542e:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405432:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x405436:
+		mov	esi, edx
+L_0x405438:
+		movzx	edx, byte ptr [rcx + rsi + 0xd8c]
+L_0x405440:
+		mov	ecx, edx
+L_0x405442:
+		mov	edx, dword ptr [rax + rcx*4 + 0x44]
+L_0x405446:
+		add	edx, 1
+L_0x405449:
+		mov	dword ptr [rax + rcx*4 + 0x44], edx
+L_0x40544d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405451:
+		cmp	byte ptr [rax + 0x2c], 0
+L_0x405455:
+		je	L_0x40548c
+		call L_cond_dummy
+
+L_0x40548c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405490:
+		movzx	ecx, byte ptr [rbp - 0x11]
+L_0x405494:
+		mov	edx, ecx
+L_0x405496:
+		movzx	ecx, byte ptr [rax + rdx + 0xd8c]
+L_0x40549e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4054a2:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x4054a9:
+		movsxd	rdx, dword ptr [rbp - 0x58]
+L_0x4054ad:
+		mov	dword ptr [rax + rdx*4], ecx
+L_0x4054b0:
+		mov	eax, dword ptr [rbp - 0x58]
+L_0x4054b3:
+		add	eax, 1
+L_0x4054b6:
+		mov	dword ptr [rbp - 0x58], eax
+L_0x4054b9:
+		cmp	dword ptr [rbp - 0x4c], 0
+L_0x4054bd:
+		jne	L_0x40556d
+
+L_0x4054c3:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x4054c6:
+		add	eax, 1
+L_0x4054c9:
+		mov	dword ptr [rbp - 0x48], eax
+L_0x4054cc:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x4054cf:
+		cmp	eax, dword ptr [rbp - 0x40]
+L_0x4054d2:
+		jl	L_0x4054e4
+		call L_cond_dummy
+
+L_0x4054e4:
+		mov	dword ptr [rbp - 0x4c], 0x32
+L_0x4054eb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4054ef:
+		movsxd	rcx, dword ptr [rbp - 0x48]
+L_0x4054f3:
+		movzx	edx, byte ptr [rax + rcx + 0x1ecc]
+L_0x4054fb:
+		mov	dword ptr [rbp - 0x78], edx
+L_0x4054fe:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405502:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x405506:
+		mov	edx, dword ptr [rax + rcx*4 + 0xfa0c]
+L_0x40550d:
+		mov	dword ptr [rbp - 0x7c], edx
+L_0x405510:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405514:
+		add	rax, 0xb17c
+L_0x40551a:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x40551e:
+		imul	rcx, rcx, 0x408
+L_0x405525:
+		add	rax, rcx
+L_0x405528:
+		mov	qword ptr [rbp - 0x88], rax
+L_0x40552f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405533:
+		add	rax, 0xe1dc
+L_0x405539:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x40553d:
+		imul	rcx, rcx, 0x408
+L_0x405544:
+		add	rax, rcx
+L_0x405547:
+		mov	qword ptr [rbp - 0x98], rax
+L_0x40554e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405552:
+		add	rax, 0xc9ac
+L_0x405558:
+		movsxd	rcx, dword ptr [rbp - 0x78]
+L_0x40555c:
+		imul	rcx, rcx, 0x408
+L_0x405563:
+		add	rax, rcx
+L_0x405566:
+		mov	qword ptr [rbp - 0x90], rax
+
+L_0x40556d:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x405570:
+		add	eax, -1
+L_0x405573:
+		mov	dword ptr [rbp - 0x4c], eax
+L_0x405576:
+		mov	eax, dword ptr [rbp - 0x7c]
+L_0x405579:
+		mov	dword ptr [rbp - 0x6c], eax
+
+L_0x40557c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405580:
+		mov	dword ptr [rax + 8], 0x28
+
+L_0x405587:
+
+L_0x40558c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405590:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x405593:
+		cmp	ecx, dword ptr [rbp - 0x6c]
+L_0x405596:
+		jl	L_0x4055e3
+
+L_0x40559c:
+		mov	eax, 1
+L_0x4055a1:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4055a5:
+		mov	edx, dword ptr [rcx + 0x20]
+L_0x4055a8:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4055ac:
+		mov	esi, dword ptr [rcx + 0x24]
+L_0x4055af:
+		sub	esi, dword ptr [rbp - 0x6c]
+L_0x4055b2:
+		mov	ecx, esi
+L_0x4055b4:
+		shr	edx, cl
+L_0x4055b6:
+		mov	ecx, dword ptr [rbp - 0x6c]
+L_0x4055b9:
+		shl	eax, cl
+L_0x4055bb:
+		sub	eax, 1
+L_0x4055be:
+		and	edx, eax
+L_0x4055c0:
+		mov	dword ptr [rbp - 0x148], edx
+L_0x4055c6:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x4055c9:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4055cd:
+		mov	edx, dword ptr [rdi + 0x24]
+L_0x4055d0:
+		sub	edx, eax
+L_0x4055d2:
+		mov	dword ptr [rdi + 0x24], edx
+L_0x4055d5:
+		mov	eax, dword ptr [rbp - 0x148]
+L_0x4055db:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x4055de:
+		jmp	L_0x405684
+
+L_0x4055e3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4055e7:
+		mov	rax, qword ptr [rax]
+L_0x4055ea:
+		cmp	dword ptr [rax + 8], 0
+L_0x4055ee:
+		jne	L_0x405600
+
+L_0x4055f4:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x4055fb:
+		jmp	L_0x406c8a
+
+L_0x405600:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405604:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x405607:
+		shl	ecx, 8
+L_0x40560a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40560e:
+		mov	rax, qword ptr [rax]
+L_0x405611:
+		mov	rax, qword ptr [rax]
+L_0x405614:
+		movzx	edx, byte ptr [rax]
+L_0x405617:
+		or	ecx, edx
+L_0x405619:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40561d:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x405620:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405624:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x405627:
+		add	ecx, 8
+L_0x40562a:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40562d:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405631:
+		mov	rax, qword ptr [rax]
+L_0x405634:
+		mov	rsi, qword ptr [rax]
+L_0x405637:
+		add	rsi, 1
+L_0x40563b:
+		mov	qword ptr [rax], rsi
+L_0x40563e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405642:
+		mov	rax, qword ptr [rax]
+L_0x405645:
+		mov	ecx, dword ptr [rax + 8]
+L_0x405648:
+		add	ecx, -1
+L_0x40564b:
+		mov	dword ptr [rax + 8], ecx
+L_0x40564e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405652:
+		mov	rax, qword ptr [rax]
+L_0x405655:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x405658:
+		add	ecx, 1
+L_0x40565b:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x40565e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405662:
+		mov	rax, qword ptr [rax]
+L_0x405665:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x405669:
+		jne	L_0x40567f
+		call L_cond_dummy
+
+L_0x40567f:
+		jmp	L_0x405587
+
+L_0x405684:
+
+L_0x405689:
+
+L_0x40568e:
+		cmp	dword ptr [rbp - 0x6c], 0x14
+L_0x405692:
+		jle	L_0x4056a4
+		call L_cond_dummy
+
+L_0x4056a4:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4056a7:
+		mov	rcx, qword ptr [rbp - 0x88]
+L_0x4056ae:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x4056b2:
+		cmp	eax, dword ptr [rcx + rdx*4]
+L_0x4056b5:
+		jg	L_0x4056c0
+
+L_0x4056bb:
+		jmp	L_0x4057de
+
+L_0x4056c0:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x4056c3:
+		add	eax, 1
+L_0x4056c6:
+		mov	dword ptr [rbp - 0x6c], eax
+
+L_0x4056c9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4056cd:
+		mov	dword ptr [rax + 8], 0x29
+
+L_0x4056d4:
+
+L_0x4056d9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4056dd:
+		cmp	dword ptr [rax + 0x24], 1
+L_0x4056e1:
+		jl	L_0x40572c
+
+L_0x4056e7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4056eb:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4056ee:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4056f2:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4056f5:
+		sub	edx, 1
+L_0x4056f8:
+		mov	dword ptr [rbp - 0x20c], ecx
+L_0x4056fe:
+		mov	ecx, edx
+L_0x405700:
+		mov	edx, dword ptr [rbp - 0x20c]
+L_0x405706:
+		shr	edx, cl
+L_0x405708:
+		and	edx, 1
+L_0x40570b:
+		mov	dword ptr [rbp - 0x14c], edx
+L_0x405711:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405715:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x405718:
+		add	edx, -1
+L_0x40571b:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40571e:
+		mov	edx, dword ptr [rbp - 0x14c]
+L_0x405724:
+		mov	dword ptr [rbp - 0x74], edx
+L_0x405727:
+		jmp	L_0x4057cd
+
+L_0x40572c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405730:
+		mov	rax, qword ptr [rax]
+L_0x405733:
+		cmp	dword ptr [rax + 8], 0
+L_0x405737:
+		jne	L_0x405749
+
+L_0x40573d:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x405744:
+		jmp	L_0x406c8a
+
+L_0x405749:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40574d:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x405750:
+		shl	ecx, 8
+L_0x405753:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405757:
+		mov	rax, qword ptr [rax]
+L_0x40575a:
+		mov	rax, qword ptr [rax]
+L_0x40575d:
+		movzx	edx, byte ptr [rax]
+L_0x405760:
+		or	ecx, edx
+L_0x405762:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405766:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x405769:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40576d:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x405770:
+		add	ecx, 8
+L_0x405773:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x405776:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40577a:
+		mov	rax, qword ptr [rax]
+L_0x40577d:
+		mov	rsi, qword ptr [rax]
+L_0x405780:
+		add	rsi, 1
+L_0x405784:
+		mov	qword ptr [rax], rsi
+L_0x405787:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40578b:
+		mov	rax, qword ptr [rax]
+L_0x40578e:
+		mov	ecx, dword ptr [rax + 8]
+L_0x405791:
+		add	ecx, -1
+L_0x405794:
+		mov	dword ptr [rax + 8], ecx
+L_0x405797:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40579b:
+		mov	rax, qword ptr [rax]
+L_0x40579e:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4057a1:
+		add	ecx, 1
+L_0x4057a4:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4057a7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4057ab:
+		mov	rax, qword ptr [rax]
+L_0x4057ae:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4057b2:
+		jne	L_0x4057c8
+		call L_cond_dummy
+
+L_0x4057c8:
+		jmp	L_0x4056d4
+
+L_0x4057cd:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4057d0:
+		shl	eax, 1
+L_0x4057d3:
+		or	eax, dword ptr [rbp - 0x74]
+L_0x4057d6:
+		mov	dword ptr [rbp - 0x70], eax
+L_0x4057d9:
+		jmp	L_0x405689
+
+L_0x4057de:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x4057e1:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x4057e8:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x4057ec:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x4057ef:
+		cmp	eax, 0
+L_0x4057f2:
+		jge	L_0x405804
+		call L_cond_dummy
+
+L_0x405804:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x405807:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x40580e:
+		movsxd	rdx, dword ptr [rbp - 0x6c]
+L_0x405812:
+		sub	eax, dword ptr [rcx + rdx*4]
+L_0x405815:
+		cmp	eax, 0x102
+L_0x40581a:
+		jl	L_0x40582c
+		call L_cond_dummy
+
+L_0x40582c:
+
+L_0x405831:
+		mov	rax, qword ptr [rbp - 0x98]
+L_0x405838:
+		mov	ecx, dword ptr [rbp - 0x70]
+L_0x40583b:
+		mov	rdx, qword ptr [rbp - 0x90]
+L_0x405842:
+		movsxd	rsi, dword ptr [rbp - 0x6c]
+L_0x405846:
+		sub	ecx, dword ptr [rdx + rsi*4]
+L_0x405849:
+		movsxd	rdx, ecx
+L_0x40584c:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40584f:
+		mov	dword ptr [rbp - 0x50], ecx
+L_0x405852:
+		jmp	L_0x404a63
+
+L_0x405857:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40585b:
+		cmp	dword ptr [rax + 0x38], 0
+L_0x40585f:
+		jge	L_0x405871
+		call L_cond_dummy
+
+L_0x405871:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405875:
+		mov	ecx, dword ptr [rax + 0x38]
+L_0x405878:
+		cmp	ecx, dword ptr [rbp - 0x58]
+L_0x40587b:
+		jl	L_0x40588d
+		call L_cond_dummy
+
+L_0x40588d:
+
+L_0x405892:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405896:
+		mov	dword ptr [rax + 0x448], 0
+L_0x4058a0:
+		mov	dword ptr [rbp - 0x2c], 1
+
+L_0x4058a7:
+
+L_0x4058ac:
+		cmp	dword ptr [rbp - 0x2c], 0x100
+L_0x4058b3:
+		jle	L_0x4058be
+
+L_0x4058b9:
+		jmp	L_0x4058ec
+
+L_0x4058be:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4058c2:
+		mov	ecx, dword ptr [rbp - 0x2c]
+L_0x4058c5:
+		sub	ecx, 1
+L_0x4058c8:
+		movsxd	rdx, ecx
+L_0x4058cb:
+		mov	ecx, dword ptr [rax + rdx*4 + 0x44]
+L_0x4058cf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4058d3:
+		movsxd	rdx, dword ptr [rbp - 0x2c]
+L_0x4058d7:
+		mov	dword ptr [rax + rdx*4 + 0x448], ecx
+L_0x4058de:
+		mov	ecx, dword ptr [rbp - 0x2c]
+L_0x4058e1:
+		add	ecx, 1
+L_0x4058e4:
+		mov	dword ptr [rbp - 0x2c], ecx
+L_0x4058e7:
+		jmp	L_0x4058a7
+
+L_0x4058ec:
+		mov	dword ptr [rbp - 0x2c], 1
+
+L_0x4058f3:
+
+L_0x4058f8:
+		cmp	dword ptr [rbp - 0x2c], 0x100
+L_0x4058ff:
+		jle	L_0x40590a
+
+L_0x405905:
+		jmp	L_0x405942
+
+L_0x40590a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40590e:
+		mov	ecx, dword ptr [rbp - 0x2c]
+L_0x405911:
+		sub	ecx, 1
+L_0x405914:
+		movsxd	rdx, ecx
+L_0x405917:
+		mov	ecx, dword ptr [rax + rdx*4 + 0x448]
+L_0x40591e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405922:
+		movsxd	rdx, dword ptr [rbp - 0x2c]
+L_0x405926:
+		add	ecx, dword ptr [rax + rdx*4 + 0x448]
+L_0x40592d:
+		mov	dword ptr [rax + rdx*4 + 0x448], ecx
+L_0x405934:
+		mov	ecx, dword ptr [rbp - 0x2c]
+L_0x405937:
+		add	ecx, 1
+L_0x40593a:
+		mov	dword ptr [rbp - 0x2c], ecx
+L_0x40593d:
+		jmp	L_0x4058f3
+
+L_0x405942:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x405949:
+
+L_0x40594e:
+		cmp	dword ptr [rbp - 0x2c], 0x100
+L_0x405955:
+		jle	L_0x405960
+
+L_0x40595b:
+		jmp	L_0x4059b9
+
+L_0x405960:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405964:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x405968:
+		cmp	dword ptr [rax + rcx*4 + 0x448], 0
+L_0x405970:
+		jge	L_0x405982
+		call L_cond_dummy
+
+L_0x405982:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405986:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x40598a:
+		mov	edx, dword ptr [rax + rcx*4 + 0x448]
+L_0x405991:
+		cmp	edx, dword ptr [rbp - 0x58]
+L_0x405994:
+		jle	L_0x4059a6
+		call L_cond_dummy
+
+L_0x4059a6:
+
+L_0x4059ab:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4059ae:
+		add	eax, 1
+L_0x4059b1:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4059b4:
+		jmp	L_0x405949
+
+L_0x4059b9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4059bd:
+		mov	dword ptr [rax + 0x10], 0
+L_0x4059c4:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4059c8:
+		mov	byte ptr [rax + 0xc], 0
+L_0x4059cc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4059d0:
+		mov	dword ptr [rax + 0xc70], 0xffffffff
+L_0x4059da:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4059de:
+		mov	dword ptr [rax + 8], 2
+L_0x4059e5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4059e9:
+		cmp	dword ptr [rax + 0x34], 2
+L_0x4059ed:
+		jl	L_0x405a12
+		call L_cond_dummy
+
+L_0x405a12:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405a16:
+		cmp	byte ptr [rax + 0x2c], 0
+L_0x405a1a:
+		je	L_0x405f69
+		call L_cond_dummy
+
+L_0x405f69:
+		mov	dword ptr [rbp - 0x2c], 0
+
+L_0x405f70:
+
+L_0x405f75:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x405f78:
+		cmp	eax, dword ptr [rbp - 0x58]
+L_0x405f7b:
+		jl	L_0x405f86
+
+L_0x405f81:
+		jmp	L_0x405ff8
+
+L_0x405f86:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405f8a:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x405f91:
+		movsxd	rcx, dword ptr [rbp - 0x2c]
+L_0x405f95:
+		mov	edx, dword ptr [rax + rcx*4]
+L_0x405f98:
+		and	edx, 0xff
+L_0x405f9e:
+		mov	sil, dl
+L_0x405fa1:
+		mov	byte ptr [rbp - 0x11], sil
+L_0x405fa5:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x405fa8:
+		shl	edx, 8
+L_0x405fab:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405faf:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x405fb6:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x405fba:
+		movzx	edi, byte ptr [rbp - 0x11]
+L_0x405fbe:
+		mov	r8d, edi
+L_0x405fc1:
+		movsxd	rcx, dword ptr [rcx + r8*4 + 0x448]
+L_0x405fc9:
+		or	edx, dword ptr [rax + rcx*4]
+L_0x405fcc:
+		mov	dword ptr [rax + rcx*4], edx
+L_0x405fcf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405fd3:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x405fd7:
+		mov	ecx, edx
+L_0x405fd9:
+		mov	edx, dword ptr [rax + rcx*4 + 0x448]
+L_0x405fe0:
+		add	edx, 1
+L_0x405fe3:
+		mov	dword ptr [rax + rcx*4 + 0x448], edx
+L_0x405fea:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x405fed:
+		add	edx, 1
+L_0x405ff0:
+		mov	dword ptr [rbp - 0x2c], edx
+L_0x405ff3:
+		jmp	L_0x405f70
+
+L_0x405ff8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x405ffc:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x406003:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406007:
+		movsxd	rcx, dword ptr [rcx + 0x38]
+L_0x40600b:
+		mov	edx, dword ptr [rax + rcx*4]
+L_0x40600e:
+		shr	edx, 8
+L_0x406011:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406015:
+		mov	dword ptr [rax + 0x3c], edx
+L_0x406018:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40601c:
+		mov	dword ptr [rax + 0x444], 0
+L_0x406026:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40602a:
+		cmp	byte ptr [rax + 0x14], 0
+L_0x40602e:
+		je	L_0x406164
+		call L_cond_dummy
+
+L_0x406164:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406168:
+		mov	ecx, dword ptr [rax + 0x3c]
+L_0x40616b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40616f:
+		imul	edx, dword ptr [rax + 0x28], 0x186a0
+L_0x406176:
+		cmp	ecx, edx
+L_0x406178:
+		jb	L_0x40618a
+		call L_cond_dummy
+
+L_0x40618a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40618e:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x406195:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406199:
+		mov	edx, dword ptr [rcx + 0x3c]
+L_0x40619c:
+		mov	ecx, edx
+L_0x40619e:
+		mov	edx, dword ptr [rax + rcx*4]
+L_0x4061a1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061a5:
+		mov	dword ptr [rax + 0x3c], edx
+L_0x4061a8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061ac:
+		mov	edx, dword ptr [rax + 0x3c]
+L_0x4061af:
+		and	edx, 0xff
+L_0x4061b5:
+		mov	sil, dl
+L_0x4061b8:
+		movzx	edx, sil
+L_0x4061bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061c0:
+		mov	dword ptr [rax + 0x40], edx
+L_0x4061c3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061c7:
+		mov	edx, dword ptr [rax + 0x3c]
+L_0x4061ca:
+		shr	edx, 8
+L_0x4061cd:
+		mov	dword ptr [rax + 0x3c], edx
+L_0x4061d0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061d4:
+		mov	edx, dword ptr [rax + 0x444]
+L_0x4061da:
+		add	edx, 1
+L_0x4061dd:
+		mov	dword ptr [rax + 0x444], edx
+L_0x4061e3:
+
+L_0x4061e8:
+		mov	dword ptr [rbp - 0x18], 0
+L_0x4061ef:
+		jmp	L_0x406c8a
+
+L_0x4061f4:
+
+L_0x4061f9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4061fd:
+		mov	dword ptr [rax + 8], 0x2a
+
+L_0x406204:
+
+L_0x406209:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40620d:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406211:
+		jl	L_0x406261
+
+L_0x406217:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40621b:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40621e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406222:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406225:
+		sub	edx, 8
+L_0x406228:
+		mov	dword ptr [rbp - 0x218], ecx
+L_0x40622e:
+		mov	ecx, edx
+L_0x406230:
+		mov	edx, dword ptr [rbp - 0x218]
+L_0x406236:
+		shr	edx, cl
+L_0x406238:
+		and	edx, 0xff
+L_0x40623e:
+		mov	dword ptr [rbp - 0x15c], edx
+L_0x406244:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406248:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40624b:
+		sub	edx, 8
+L_0x40624e:
+		mov	dword ptr [rax + 0x24], edx
+L_0x406251:
+		mov	edx, dword ptr [rbp - 0x15c]
+L_0x406257:
+		mov	cl, dl
+L_0x406259:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40625c:
+		jmp	L_0x406302
+
+L_0x406261:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406265:
+		mov	rax, qword ptr [rax]
+L_0x406268:
+		cmp	dword ptr [rax + 8], 0
+L_0x40626c:
+		jne	L_0x40627e
+		call L_cond_dummy
+
+L_0x40627e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406282:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406285:
+		shl	ecx, 8
+L_0x406288:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40628c:
+		mov	rax, qword ptr [rax]
+L_0x40628f:
+		mov	rax, qword ptr [rax]
+L_0x406292:
+		movzx	edx, byte ptr [rax]
+L_0x406295:
+		or	ecx, edx
+L_0x406297:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40629b:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x40629e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4062a2:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4062a5:
+		add	ecx, 8
+L_0x4062a8:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4062ab:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4062af:
+		mov	rax, qword ptr [rax]
+L_0x4062b2:
+		mov	rsi, qword ptr [rax]
+L_0x4062b5:
+		add	rsi, 1
+L_0x4062b9:
+		mov	qword ptr [rax], rsi
+L_0x4062bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4062c0:
+		mov	rax, qword ptr [rax]
+L_0x4062c3:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4062c6:
+		add	ecx, -1
+L_0x4062c9:
+		mov	dword ptr [rax + 8], ecx
+L_0x4062cc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4062d0:
+		mov	rax, qword ptr [rax]
+L_0x4062d3:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4062d6:
+		add	ecx, 1
+L_0x4062d9:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4062dc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4062e0:
+		mov	rax, qword ptr [rax]
+L_0x4062e3:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4062e7:
+		jne	L_0x4062fd
+		call L_cond_dummy
+
+L_0x4062fd:
+		jmp	L_0x406204
+
+L_0x406302:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x406306:
+		cmp	eax, 0x72
+L_0x406309:
+		je	L_0x40631b
+		call L_cond_dummy
+
+L_0x40631b:
+
+L_0x406320:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406324:
+		mov	dword ptr [rax + 8], 0x2b
+
+L_0x40632b:
+
+L_0x406330:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406334:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406338:
+		jl	L_0x406388
+
+L_0x40633e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406342:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406345:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406349:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40634c:
+		sub	edx, 8
+L_0x40634f:
+		mov	dword ptr [rbp - 0x21c], ecx
+L_0x406355:
+		mov	ecx, edx
+L_0x406357:
+		mov	edx, dword ptr [rbp - 0x21c]
+L_0x40635d:
+		shr	edx, cl
+L_0x40635f:
+		and	edx, 0xff
+L_0x406365:
+		mov	dword ptr [rbp - 0x160], edx
+L_0x40636b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40636f:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406372:
+		sub	edx, 8
+L_0x406375:
+		mov	dword ptr [rax + 0x24], edx
+L_0x406378:
+		mov	edx, dword ptr [rbp - 0x160]
+L_0x40637e:
+		mov	cl, dl
+L_0x406380:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x406383:
+		jmp	L_0x406429
+
+L_0x406388:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40638c:
+		mov	rax, qword ptr [rax]
+L_0x40638f:
+		cmp	dword ptr [rax + 8], 0
+L_0x406393:
+		jne	L_0x4063a5
+		call L_cond_dummy
+
+L_0x4063a5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063a9:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4063ac:
+		shl	ecx, 8
+L_0x4063af:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063b3:
+		mov	rax, qword ptr [rax]
+L_0x4063b6:
+		mov	rax, qword ptr [rax]
+L_0x4063b9:
+		movzx	edx, byte ptr [rax]
+L_0x4063bc:
+		or	ecx, edx
+L_0x4063be:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063c2:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4063c5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063c9:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4063cc:
+		add	ecx, 8
+L_0x4063cf:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4063d2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063d6:
+		mov	rax, qword ptr [rax]
+L_0x4063d9:
+		mov	rsi, qword ptr [rax]
+L_0x4063dc:
+		add	rsi, 1
+L_0x4063e0:
+		mov	qword ptr [rax], rsi
+L_0x4063e3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063e7:
+		mov	rax, qword ptr [rax]
+L_0x4063ea:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4063ed:
+		add	ecx, -1
+L_0x4063f0:
+		mov	dword ptr [rax + 8], ecx
+L_0x4063f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4063f7:
+		mov	rax, qword ptr [rax]
+L_0x4063fa:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4063fd:
+		add	ecx, 1
+L_0x406400:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x406403:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406407:
+		mov	rax, qword ptr [rax]
+L_0x40640a:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x40640e:
+		jne	L_0x406424
+		call L_cond_dummy
+
+L_0x406424:
+		jmp	L_0x40632b
+
+L_0x406429:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40642d:
+		cmp	eax, 0x45
+L_0x406430:
+		je	L_0x406442
+		call L_cond_dummy
+
+L_0x406442:
+
+L_0x406447:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40644b:
+		mov	dword ptr [rax + 8], 0x2c
+
+L_0x406452:
+
+L_0x406457:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40645b:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x40645f:
+		jl	L_0x4064af
+
+L_0x406465:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406469:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40646c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406470:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406473:
+		sub	edx, 8
+L_0x406476:
+		mov	dword ptr [rbp - 0x220], ecx
+L_0x40647c:
+		mov	ecx, edx
+L_0x40647e:
+		mov	edx, dword ptr [rbp - 0x220]
+L_0x406484:
+		shr	edx, cl
+L_0x406486:
+		and	edx, 0xff
+L_0x40648c:
+		mov	dword ptr [rbp - 0x164], edx
+L_0x406492:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406496:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406499:
+		sub	edx, 8
+L_0x40649c:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40649f:
+		mov	edx, dword ptr [rbp - 0x164]
+L_0x4064a5:
+		mov	cl, dl
+L_0x4064a7:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4064aa:
+		jmp	L_0x406550
+
+L_0x4064af:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064b3:
+		mov	rax, qword ptr [rax]
+L_0x4064b6:
+		cmp	dword ptr [rax + 8], 0
+L_0x4064ba:
+		jne	L_0x4064cc
+		call L_cond_dummy
+
+L_0x4064cc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064d0:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4064d3:
+		shl	ecx, 8
+L_0x4064d6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064da:
+		mov	rax, qword ptr [rax]
+L_0x4064dd:
+		mov	rax, qword ptr [rax]
+L_0x4064e0:
+		movzx	edx, byte ptr [rax]
+L_0x4064e3:
+		or	ecx, edx
+L_0x4064e5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064e9:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x4064ec:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064f0:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x4064f3:
+		add	ecx, 8
+L_0x4064f6:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x4064f9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4064fd:
+		mov	rax, qword ptr [rax]
+L_0x406500:
+		mov	rsi, qword ptr [rax]
+L_0x406503:
+		add	rsi, 1
+L_0x406507:
+		mov	qword ptr [rax], rsi
+L_0x40650a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40650e:
+		mov	rax, qword ptr [rax]
+L_0x406511:
+		mov	ecx, dword ptr [rax + 8]
+L_0x406514:
+		add	ecx, -1
+L_0x406517:
+		mov	dword ptr [rax + 8], ecx
+L_0x40651a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40651e:
+		mov	rax, qword ptr [rax]
+L_0x406521:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x406524:
+		add	ecx, 1
+L_0x406527:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x40652a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40652e:
+		mov	rax, qword ptr [rax]
+L_0x406531:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x406535:
+		jne	L_0x40654b
+		call L_cond_dummy
+
+L_0x40654b:
+		jmp	L_0x406452
+
+L_0x406550:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x406554:
+		cmp	eax, 0x38
+L_0x406557:
+		je	L_0x406569
+		call L_cond_dummy
+
+L_0x406569:
+
+L_0x40656e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406572:
+		mov	dword ptr [rax + 8], 0x2d
+
+L_0x406579:
+
+L_0x40657e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406582:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406586:
+		jl	L_0x4065d6
+
+L_0x40658c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406590:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406593:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406597:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40659a:
+		sub	edx, 8
+L_0x40659d:
+		mov	dword ptr [rbp - 0x224], ecx
+L_0x4065a3:
+		mov	ecx, edx
+L_0x4065a5:
+		mov	edx, dword ptr [rbp - 0x224]
+L_0x4065ab:
+		shr	edx, cl
+L_0x4065ad:
+		and	edx, 0xff
+L_0x4065b3:
+		mov	dword ptr [rbp - 0x168], edx
+L_0x4065b9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4065bd:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4065c0:
+		sub	edx, 8
+L_0x4065c3:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4065c6:
+		mov	edx, dword ptr [rbp - 0x168]
+L_0x4065cc:
+		mov	cl, dl
+L_0x4065ce:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4065d1:
+		jmp	L_0x406677
+
+L_0x4065d6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4065da:
+		mov	rax, qword ptr [rax]
+L_0x4065dd:
+		cmp	dword ptr [rax + 8], 0
+L_0x4065e1:
+		jne	L_0x4065f3
+		call L_cond_dummy
+
+L_0x4065f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4065f7:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4065fa:
+		shl	ecx, 8
+L_0x4065fd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406601:
+		mov	rax, qword ptr [rax]
+L_0x406604:
+		mov	rax, qword ptr [rax]
+L_0x406607:
+		movzx	edx, byte ptr [rax]
+L_0x40660a:
+		or	ecx, edx
+L_0x40660c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406610:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x406613:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406617:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40661a:
+		add	ecx, 8
+L_0x40661d:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x406620:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406624:
+		mov	rax, qword ptr [rax]
+L_0x406627:
+		mov	rsi, qword ptr [rax]
+L_0x40662a:
+		add	rsi, 1
+L_0x40662e:
+		mov	qword ptr [rax], rsi
+L_0x406631:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406635:
+		mov	rax, qword ptr [rax]
+L_0x406638:
+		mov	ecx, dword ptr [rax + 8]
+L_0x40663b:
+		add	ecx, -1
+L_0x40663e:
+		mov	dword ptr [rax + 8], ecx
+L_0x406641:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406645:
+		mov	rax, qword ptr [rax]
+L_0x406648:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x40664b:
+		add	ecx, 1
+L_0x40664e:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x406651:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406655:
+		mov	rax, qword ptr [rax]
+L_0x406658:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x40665c:
+		jne	L_0x406672
+		call L_cond_dummy
+
+L_0x406672:
+		jmp	L_0x406579
+
+L_0x406677:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40667b:
+		cmp	eax, 0x50
+L_0x40667e:
+		je	L_0x406690
+		call L_cond_dummy
+
+L_0x406690:
+
+L_0x406695:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406699:
+		mov	dword ptr [rax + 8], 0x2e
+
+L_0x4066a0:
+
+L_0x4066a5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4066a9:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x4066ad:
+		jl	L_0x4066fd
+
+L_0x4066b3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4066b7:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4066ba:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4066be:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4066c1:
+		sub	edx, 8
+L_0x4066c4:
+		mov	dword ptr [rbp - 0x228], ecx
+L_0x4066ca:
+		mov	ecx, edx
+L_0x4066cc:
+		mov	edx, dword ptr [rbp - 0x228]
+L_0x4066d2:
+		shr	edx, cl
+L_0x4066d4:
+		and	edx, 0xff
+L_0x4066da:
+		mov	dword ptr [rbp - 0x16c], edx
+L_0x4066e0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4066e4:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4066e7:
+		sub	edx, 8
+L_0x4066ea:
+		mov	dword ptr [rax + 0x24], edx
+L_0x4066ed:
+		mov	edx, dword ptr [rbp - 0x16c]
+L_0x4066f3:
+		mov	cl, dl
+L_0x4066f5:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x4066f8:
+		jmp	L_0x40679e
+
+L_0x4066fd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406701:
+		mov	rax, qword ptr [rax]
+L_0x406704:
+		cmp	dword ptr [rax + 8], 0
+L_0x406708:
+		jne	L_0x40671a
+		call L_cond_dummy
+
+L_0x40671a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40671e:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406721:
+		shl	ecx, 8
+L_0x406724:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406728:
+		mov	rax, qword ptr [rax]
+L_0x40672b:
+		mov	rax, qword ptr [rax]
+L_0x40672e:
+		movzx	edx, byte ptr [rax]
+L_0x406731:
+		or	ecx, edx
+L_0x406733:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406737:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x40673a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40673e:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x406741:
+		add	ecx, 8
+L_0x406744:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x406747:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40674b:
+		mov	rax, qword ptr [rax]
+L_0x40674e:
+		mov	rsi, qword ptr [rax]
+L_0x406751:
+		add	rsi, 1
+L_0x406755:
+		mov	qword ptr [rax], rsi
+L_0x406758:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40675c:
+		mov	rax, qword ptr [rax]
+L_0x40675f:
+		mov	ecx, dword ptr [rax + 8]
+L_0x406762:
+		add	ecx, -1
+L_0x406765:
+		mov	dword ptr [rax + 8], ecx
+L_0x406768:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40676c:
+		mov	rax, qword ptr [rax]
+L_0x40676f:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x406772:
+		add	ecx, 1
+L_0x406775:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x406778:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40677c:
+		mov	rax, qword ptr [rax]
+L_0x40677f:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x406783:
+		jne	L_0x406799
+		call L_cond_dummy
+
+L_0x406799:
+		jmp	L_0x4066a0
+
+L_0x40679e:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x4067a2:
+		cmp	eax, 0x90
+L_0x4067a7:
+		je	L_0x4067b9
+		call L_cond_dummy
+
+L_0x4067b9:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4067bd:
+		mov	dword ptr [rax + 0xc6c], 0
+L_0x4067c7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4067cb:
+		mov	dword ptr [rax + 8], 0x2f
+
+L_0x4067d2:
+
+L_0x4067d7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4067db:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x4067df:
+		jl	L_0x40682f
+
+L_0x4067e5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4067e9:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x4067ec:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4067f0:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x4067f3:
+		sub	edx, 8
+L_0x4067f6:
+		mov	dword ptr [rbp - 0x22c], ecx
+L_0x4067fc:
+		mov	ecx, edx
+L_0x4067fe:
+		mov	edx, dword ptr [rbp - 0x22c]
+L_0x406804:
+		shr	edx, cl
+L_0x406806:
+		and	edx, 0xff
+L_0x40680c:
+		mov	dword ptr [rbp - 0x170], edx
+L_0x406812:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406816:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406819:
+		sub	edx, 8
+L_0x40681c:
+		mov	dword ptr [rax + 0x24], edx
+L_0x40681f:
+		mov	edx, dword ptr [rbp - 0x170]
+L_0x406825:
+		mov	cl, dl
+L_0x406827:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x40682a:
+		jmp	L_0x4068d0
+
+L_0x40682f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406833:
+		mov	rax, qword ptr [rax]
+L_0x406836:
+		cmp	dword ptr [rax + 8], 0
+L_0x40683a:
+		jne	L_0x40684c
+		call L_cond_dummy
+
+L_0x40684c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406850:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406853:
+		shl	ecx, 8
+L_0x406856:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40685a:
+		mov	rax, qword ptr [rax]
+L_0x40685d:
+		mov	rax, qword ptr [rax]
+L_0x406860:
+		movzx	edx, byte ptr [rax]
+L_0x406863:
+		or	ecx, edx
+L_0x406865:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406869:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x40686c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406870:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x406873:
+		add	ecx, 8
+L_0x406876:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x406879:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40687d:
+		mov	rax, qword ptr [rax]
+L_0x406880:
+		mov	rsi, qword ptr [rax]
+L_0x406883:
+		add	rsi, 1
+L_0x406887:
+		mov	qword ptr [rax], rsi
+L_0x40688a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40688e:
+		mov	rax, qword ptr [rax]
+L_0x406891:
+		mov	ecx, dword ptr [rax + 8]
+L_0x406894:
+		add	ecx, -1
+L_0x406897:
+		mov	dword ptr [rax + 8], ecx
+L_0x40689a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40689e:
+		mov	rax, qword ptr [rax]
+L_0x4068a1:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4068a4:
+		add	ecx, 1
+L_0x4068a7:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4068aa:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4068ae:
+		mov	rax, qword ptr [rax]
+L_0x4068b1:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4068b5:
+		jne	L_0x4068cb
+		call L_cond_dummy
+
+L_0x4068cb:
+		jmp	L_0x4067d2
+
+L_0x4068d0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4068d4:
+		mov	ecx, dword ptr [rax + 0xc6c]
+L_0x4068da:
+		shl	ecx, 8
+L_0x4068dd:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x4068e1:
+		or	ecx, edx
+L_0x4068e3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4068e7:
+		mov	dword ptr [rax + 0xc6c], ecx
+L_0x4068ed:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4068f1:
+		mov	dword ptr [rax + 8], 0x30
+
+L_0x4068f8:
+
+L_0x4068fd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406901:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406905:
+		jl	L_0x406955
+
+L_0x40690b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40690f:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406912:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406916:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406919:
+		sub	edx, 8
+L_0x40691c:
+		mov	dword ptr [rbp - 0x230], ecx
+L_0x406922:
+		mov	ecx, edx
+L_0x406924:
+		mov	edx, dword ptr [rbp - 0x230]
+L_0x40692a:
+		shr	edx, cl
+L_0x40692c:
+		and	edx, 0xff
+L_0x406932:
+		mov	dword ptr [rbp - 0x174], edx
+L_0x406938:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40693c:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x40693f:
+		sub	edx, 8
+L_0x406942:
+		mov	dword ptr [rax + 0x24], edx
+L_0x406945:
+		mov	edx, dword ptr [rbp - 0x174]
+L_0x40694b:
+		mov	cl, dl
+L_0x40694d:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x406950:
+		jmp	L_0x4069f6
+
+L_0x406955:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406959:
+		mov	rax, qword ptr [rax]
+L_0x40695c:
+		cmp	dword ptr [rax + 8], 0
+L_0x406960:
+		jne	L_0x406972
+		call L_cond_dummy
+
+L_0x406972:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406976:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406979:
+		shl	ecx, 8
+L_0x40697c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406980:
+		mov	rax, qword ptr [rax]
+L_0x406983:
+		mov	rax, qword ptr [rax]
+L_0x406986:
+		movzx	edx, byte ptr [rax]
+L_0x406989:
+		or	ecx, edx
+L_0x40698b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40698f:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x406992:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406996:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x406999:
+		add	ecx, 8
+L_0x40699c:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40699f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4069a3:
+		mov	rax, qword ptr [rax]
+L_0x4069a6:
+		mov	rsi, qword ptr [rax]
+L_0x4069a9:
+		add	rsi, 1
+L_0x4069ad:
+		mov	qword ptr [rax], rsi
+L_0x4069b0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4069b4:
+		mov	rax, qword ptr [rax]
+L_0x4069b7:
+		mov	ecx, dword ptr [rax + 8]
+L_0x4069ba:
+		add	ecx, -1
+L_0x4069bd:
+		mov	dword ptr [rax + 8], ecx
+L_0x4069c0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4069c4:
+		mov	rax, qword ptr [rax]
+L_0x4069c7:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x4069ca:
+		add	ecx, 1
+L_0x4069cd:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x4069d0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4069d4:
+		mov	rax, qword ptr [rax]
+L_0x4069d7:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x4069db:
+		jne	L_0x4069f1
+		call L_cond_dummy
+
+L_0x4069f1:
+		jmp	L_0x4068f8
+
+L_0x4069f6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4069fa:
+		mov	ecx, dword ptr [rax + 0xc6c]
+L_0x406a00:
+		shl	ecx, 8
+L_0x406a03:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x406a07:
+		or	ecx, edx
+L_0x406a09:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a0d:
+		mov	dword ptr [rax + 0xc6c], ecx
+L_0x406a13:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a17:
+		mov	dword ptr [rax + 8], 0x31
+
+L_0x406a1e:
+
+L_0x406a23:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a27:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406a2b:
+		jl	L_0x406a7b
+
+L_0x406a31:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a35:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406a38:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a3c:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406a3f:
+		sub	edx, 8
+L_0x406a42:
+		mov	dword ptr [rbp - 0x234], ecx
+L_0x406a48:
+		mov	ecx, edx
+L_0x406a4a:
+		mov	edx, dword ptr [rbp - 0x234]
+L_0x406a50:
+		shr	edx, cl
+L_0x406a52:
+		and	edx, 0xff
+L_0x406a58:
+		mov	dword ptr [rbp - 0x178], edx
+L_0x406a5e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a62:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406a65:
+		sub	edx, 8
+L_0x406a68:
+		mov	dword ptr [rax + 0x24], edx
+L_0x406a6b:
+		mov	edx, dword ptr [rbp - 0x178]
+L_0x406a71:
+		mov	cl, dl
+L_0x406a73:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x406a76:
+		jmp	L_0x406b1c
+
+L_0x406a7b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a7f:
+		mov	rax, qword ptr [rax]
+L_0x406a82:
+		cmp	dword ptr [rax + 8], 0
+L_0x406a86:
+		jne	L_0x406a98
+		call L_cond_dummy
+
+L_0x406a98:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406a9c:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406a9f:
+		shl	ecx, 8
+L_0x406aa2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406aa6:
+		mov	rax, qword ptr [rax]
+L_0x406aa9:
+		mov	rax, qword ptr [rax]
+L_0x406aac:
+		movzx	edx, byte ptr [rax]
+L_0x406aaf:
+		or	ecx, edx
+L_0x406ab1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406ab5:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x406ab8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406abc:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x406abf:
+		add	ecx, 8
+L_0x406ac2:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x406ac5:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406ac9:
+		mov	rax, qword ptr [rax]
+L_0x406acc:
+		mov	rsi, qword ptr [rax]
+L_0x406acf:
+		add	rsi, 1
+L_0x406ad3:
+		mov	qword ptr [rax], rsi
+L_0x406ad6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406ada:
+		mov	rax, qword ptr [rax]
+L_0x406add:
+		mov	ecx, dword ptr [rax + 8]
+L_0x406ae0:
+		add	ecx, -1
+L_0x406ae3:
+		mov	dword ptr [rax + 8], ecx
+L_0x406ae6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406aea:
+		mov	rax, qword ptr [rax]
+L_0x406aed:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x406af0:
+		add	ecx, 1
+L_0x406af3:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x406af6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406afa:
+		mov	rax, qword ptr [rax]
+L_0x406afd:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x406b01:
+		jne	L_0x406b17
+		call L_cond_dummy
+
+L_0x406b17:
+		jmp	L_0x406a1e
+
+L_0x406b1c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b20:
+		mov	ecx, dword ptr [rax + 0xc6c]
+L_0x406b26:
+		shl	ecx, 8
+L_0x406b29:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x406b2d:
+		or	ecx, edx
+L_0x406b2f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b33:
+		mov	dword ptr [rax + 0xc6c], ecx
+L_0x406b39:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b3d:
+		mov	dword ptr [rax + 8], 0x32
+
+L_0x406b44:
+
+L_0x406b49:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b4d:
+		cmp	dword ptr [rax + 0x24], 8
+L_0x406b51:
+		jl	L_0x406ba1
+
+L_0x406b57:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b5b:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406b5e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b62:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406b65:
+		sub	edx, 8
+L_0x406b68:
+		mov	dword ptr [rbp - 0x238], ecx
+L_0x406b6e:
+		mov	ecx, edx
+L_0x406b70:
+		mov	edx, dword ptr [rbp - 0x238]
+L_0x406b76:
+		shr	edx, cl
+L_0x406b78:
+		and	edx, 0xff
+L_0x406b7e:
+		mov	dword ptr [rbp - 0x17c], edx
+L_0x406b84:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406b88:
+		mov	edx, dword ptr [rax + 0x24]
+L_0x406b8b:
+		sub	edx, 8
+L_0x406b8e:
+		mov	dword ptr [rax + 0x24], edx
+L_0x406b91:
+		mov	edx, dword ptr [rbp - 0x17c]
+L_0x406b97:
+		mov	cl, dl
+L_0x406b99:
+		mov	byte ptr [rbp - 0x11], cl
+L_0x406b9c:
+		jmp	L_0x406c42
+
+L_0x406ba1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406ba5:
+		mov	rax, qword ptr [rax]
+L_0x406ba8:
+		cmp	dword ptr [rax + 8], 0
+L_0x406bac:
+		jne	L_0x406bbe
+		call L_cond_dummy
+
+L_0x406bbe:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406bc2:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x406bc5:
+		shl	ecx, 8
+L_0x406bc8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406bcc:
+		mov	rax, qword ptr [rax]
+L_0x406bcf:
+		mov	rax, qword ptr [rax]
+L_0x406bd2:
+		movzx	edx, byte ptr [rax]
+L_0x406bd5:
+		or	ecx, edx
+L_0x406bd7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406bdb:
+		mov	dword ptr [rax + 0x20], ecx
+L_0x406bde:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406be2:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x406be5:
+		add	ecx, 8
+L_0x406be8:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x406beb:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406bef:
+		mov	rax, qword ptr [rax]
+L_0x406bf2:
+		mov	rsi, qword ptr [rax]
+L_0x406bf5:
+		add	rsi, 1
+L_0x406bf9:
+		mov	qword ptr [rax], rsi
+L_0x406bfc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c00:
+		mov	rax, qword ptr [rax]
+L_0x406c03:
+		mov	ecx, dword ptr [rax + 8]
+L_0x406c06:
+		add	ecx, -1
+L_0x406c09:
+		mov	dword ptr [rax + 8], ecx
+L_0x406c0c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c10:
+		mov	rax, qword ptr [rax]
+L_0x406c13:
+		mov	ecx, dword ptr [rax + 0xc]
+L_0x406c16:
+		add	ecx, 1
+L_0x406c19:
+		mov	dword ptr [rax + 0xc], ecx
+L_0x406c1c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c20:
+		mov	rax, qword ptr [rax]
+L_0x406c23:
+		cmp	dword ptr [rax + 0xc], 0
+L_0x406c27:
+		jne	L_0x406c3d
+		call L_cond_dummy
+
+L_0x406c3d:
+		jmp	L_0x406b44
+
+L_0x406c42:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c46:
+		mov	ecx, dword ptr [rax + 0xc6c]
+L_0x406c4c:
+		shl	ecx, 8
+L_0x406c4f:
+		movzx	edx, byte ptr [rbp - 0x11]
+L_0x406c53:
+		or	ecx, edx
+L_0x406c55:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c59:
+		mov	dword ptr [rax + 0xc6c], ecx
+L_0x406c5f:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x406c63:
+		mov	dword ptr [rax + 8], 1
+L_0x406c6a:
+		mov	dword ptr [rbp - 0x18], 4
+L_0x406c71:
+
+L_0x406c8a:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x406c8d:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406c91:
+		mov	dword ptr [rcx + 0xfa24], eax
+L_0x406c97:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x406c9a:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406c9e:
+		mov	dword ptr [rcx + 0xfa28], eax
+L_0x406ca4:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x406ca7:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cab:
+		mov	dword ptr [rcx + 0xfa2c], eax
+L_0x406cb1:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x406cb4:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cb8:
+		mov	dword ptr [rcx + 0xfa30], eax
+L_0x406cbe:
+		mov	eax, dword ptr [rbp - 0x3c]
+L_0x406cc1:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cc5:
+		mov	dword ptr [rcx + 0xfa34], eax
+L_0x406ccb:
+		mov	eax, dword ptr [rbp - 0x40]
+L_0x406cce:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cd2:
+		mov	dword ptr [rcx + 0xfa38], eax
+L_0x406cd8:
+		mov	eax, dword ptr [rbp - 0x44]
+L_0x406cdb:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cdf:
+		mov	dword ptr [rcx + 0xfa3c], eax
+L_0x406ce5:
+		mov	eax, dword ptr [rbp - 0x48]
+L_0x406ce8:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cec:
+		mov	dword ptr [rcx + 0xfa40], eax
+L_0x406cf2:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x406cf5:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406cf9:
+		mov	dword ptr [rcx + 0xfa44], eax
+L_0x406cff:
+		mov	eax, dword ptr [rbp - 0x50]
+L_0x406d02:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d06:
+		mov	dword ptr [rcx + 0xfa48], eax
+L_0x406d0c:
+		mov	eax, dword ptr [rbp - 0x54]
+L_0x406d0f:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d13:
+		mov	dword ptr [rcx + 0xfa4c], eax
+L_0x406d19:
+		mov	eax, dword ptr [rbp - 0x58]
+L_0x406d1c:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d20:
+		mov	dword ptr [rcx + 0xfa50], eax
+L_0x406d26:
+		mov	eax, dword ptr [rbp - 0x5c]
+L_0x406d29:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d2d:
+		mov	dword ptr [rcx + 0xfa54], eax
+L_0x406d33:
+		mov	eax, dword ptr [rbp - 0x60]
+L_0x406d36:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d3a:
+		mov	dword ptr [rcx + 0xfa58], eax
+L_0x406d40:
+		mov	eax, dword ptr [rbp - 0x64]
+L_0x406d43:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d47:
+		mov	dword ptr [rcx + 0xfa5c], eax
+L_0x406d4d:
+		mov	eax, dword ptr [rbp - 0x68]
+L_0x406d50:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d54:
+		mov	dword ptr [rcx + 0xfa60], eax
+L_0x406d5a:
+		mov	eax, dword ptr [rbp - 0x6c]
+L_0x406d5d:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d61:
+		mov	dword ptr [rcx + 0xfa64], eax
+L_0x406d67:
+		mov	eax, dword ptr [rbp - 0x70]
+L_0x406d6a:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d6e:
+		mov	dword ptr [rcx + 0xfa68], eax
+L_0x406d74:
+		mov	eax, dword ptr [rbp - 0x74]
+L_0x406d77:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d7b:
+		mov	dword ptr [rcx + 0xfa6c], eax
+L_0x406d81:
+		mov	eax, dword ptr [rbp - 0x78]
+L_0x406d84:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d88:
+		mov	dword ptr [rcx + 0xfa70], eax
+L_0x406d8e:
+		mov	eax, dword ptr [rbp - 0x7c]
+L_0x406d91:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x406d95:
+		mov	dword ptr [rcx + 0xfa74], eax
+L_0x406d9b:
+		mov	rcx, qword ptr [rbp - 0x88]
+L_0x406da2:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x406da6:
+		mov	qword ptr [rdx + 0xfa78], rcx
+L_0x406dad:
+		mov	rcx, qword ptr [rbp - 0x90]
+L_0x406db4:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x406db8:
+		mov	qword ptr [rdx + 0xfa80], rcx
+L_0x406dbf:
+		mov	rcx, qword ptr [rbp - 0x98]
+L_0x406dc6:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x406dca:
+		mov	qword ptr [rdx + 0xfa88], rcx
+L_0x406dd1:
+		mov	eax, dword ptr [rbp - 0x18]
+L_0x406dd4:
+		mov	dword ptr [rbp - 4], eax
+L_0x406dd7:
+		mov	eax, dword ptr [rbp - 4]
+L_0x406dda:
+		add	rsp, 0x240
+L_0x406de1:
+		pop	rbp
+L_0x406de2:
+		ret	
+
+L_0x406df0:
+		push	rbp
+L_0x406df1:
+		mov	rbp, rsp
+L_0x406df4:
+		mov	qword ptr [rbp - 8], rdi
+L_0x406df8:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x406dfc:
+		mov	dword ptr [rdi + 0xc78], 0
+L_0x406e06:
+		mov	dword ptr [rbp - 0xc], 0
+
+L_0x406e0d:
+
+L_0x406e12:
+		cmp	dword ptr [rbp - 0xc], 0x100
+L_0x406e19:
+		jl	L_0x406e24
+
+L_0x406e1f:
+		jmp	L_0x406e76
+
+L_0x406e24:
+		mov	rax, qword ptr [rbp - 8]
+L_0x406e28:
+		movsxd	rcx, dword ptr [rbp - 0xc]
+L_0x406e2c:
+		cmp	byte ptr [rax + rcx + 0xc7c], 0
+L_0x406e34:
+		je L_cond_dummy
+
+L_0x406e3a:
+		mov	eax, dword ptr [rbp - 0xc]
+L_0x406e3d:
+		mov	cl, al
+L_0x406e3f:
+		mov	rdx, qword ptr [rbp - 8]
+L_0x406e43:
+		mov	rsi, qword ptr [rbp - 8]
+L_0x406e47:
+		movsxd	rsi, dword ptr [rsi + 0xc78]
+L_0x406e4e:
+		mov	byte ptr [rdx + rsi + 0xd8c], cl
+L_0x406e55:
+		mov	rdx, qword ptr [rbp - 8]
+L_0x406e59:
+		mov	eax, dword ptr [rdx + 0xc78]
+L_0x406e5f:
+		add	eax, 1
+L_0x406e62:
+		mov	dword ptr [rdx + 0xc78], eax
+L_0x406e68:
+		mov	eax, dword ptr [rbp - 0xc]
+L_0x406e6b:
+		add	eax, 1
+L_0x406e6e:
+		mov	dword ptr [rbp - 0xc], eax
+L_0x406e71:
+		jmp	L_0x406e0d
+
+L_0x406e76:
+		pop	rbp
+L_0x406e77:
+		ret	
+
 L_0x406ef0:
 		push	rbp
 L_0x406ef1:
@@ -1375,11 +10760,7 @@ L_0x406f9b:
 		cmp	dword ptr [rax + 0x294], 1
 L_0x406fa2:
 		jle	L_0x406fb3
-
-L_0x406fa8:
-		mov	rax, qword ptr [rbp - 8]
-L_0x406fac:
-		mov	dword ptr [rax + 0x74], 0
+		call L_cond_dummy
 
 L_0x406fb3:
 		mov	rax, qword ptr [rbp - 8]
@@ -1413,7 +10794,7 @@ L_0x40702b:
 L_0x40702f:
 		cmp	dword ptr [rax + 0x294], 1
 L_0x407036:
-		jne	L_0x40708b
+		jne L_cond_dummy
 
 L_0x40703c:
 		mov	rdi, qword ptr [rbp - 8]
@@ -1547,7 +10928,7 @@ L_0x407132:
 L_0x407137:
 		cmp	byte ptr [rbp - 9], 0
 L_0x40713b:
-		je	L_0x4071e8
+		je L_cond_dummy
 
 L_0x407141:
 		mov	esi, 0x17
@@ -1703,13 +11084,7 @@ L_0x407282:
 		cmp	eax, 0
 L_0x407285:
 		je	L_0x407294
-
-L_0x40728b:
-		mov	eax, dword ptr [rbp - 0x44]
-L_0x40728e:
-		add	eax, 1
-L_0x407291:
-		mov	dword ptr [rbp - 0x44], eax
+		call L_cond_dummy
 
 L_0x407294:
 		mov	rax, qword ptr [rbp - 0x18]
@@ -2476,7 +11851,6 @@ L_0x4079a8:
 		add	esi, 1
 L_0x4079ab:
 		mov	dword ptr [rax + rdx*4 + 0x2a0], esi
-
 L_0x4079b2:
 		mov	eax, dword ptr [rbp - 0x114]
 L_0x4079b8:
@@ -2490,98 +11864,8 @@ L_0x4079c6:
 		cmp	dword ptr [rbp - 0x11c], 0
 L_0x4079cd:
 		jle	L_0x407ab0
+		call L_cond_dummy
 
-L_0x4079d3:
-		mov	eax, dword ptr [rbp - 0x11c]
-L_0x4079d9:
-		add	eax, -1
-L_0x4079dc:
-		mov	dword ptr [rbp - 0x11c], eax
-L_0x4079e2:
-
-L_0x4079e7:
-		mov	eax, dword ptr [rbp - 0x11c]
-L_0x4079ed:
-		and	eax, 1
-L_0x4079f0:
-		cmp	eax, 0
-L_0x4079f3:
-		je	L_0x407a34
-
-L_0x4079f9:
-		mov	rax, qword ptr [rbp - 0x140]
-L_0x407a00:
-		movsxd	rcx, dword ptr [rbp - 0x120]
-L_0x407a07:
-		mov	word ptr [rax + rcx*2], 1
-L_0x407a0d:
-		mov	edx, dword ptr [rbp - 0x120]
-L_0x407a13:
-		add	edx, 1
-L_0x407a16:
-		mov	dword ptr [rbp - 0x120], edx
-L_0x407a1c:
-		mov	rax, qword ptr [rbp - 8]
-L_0x407a20:
-		mov	edx, dword ptr [rax + 0x2a4]
-L_0x407a26:
-		add	edx, 1
-L_0x407a29:
-		mov	dword ptr [rax + 0x2a4], edx
-L_0x407a2f:
-		jmp	L_0x407a6a
-
-L_0x407a34:
-		mov	rax, qword ptr [rbp - 0x140]
-L_0x407a3b:
-		movsxd	rcx, dword ptr [rbp - 0x120]
-L_0x407a42:
-		mov	word ptr [rax + rcx*2], 0
-L_0x407a48:
-		mov	edx, dword ptr [rbp - 0x120]
-L_0x407a4e:
-		add	edx, 1
-L_0x407a51:
-		mov	dword ptr [rbp - 0x120], edx
-L_0x407a57:
-		mov	rax, qword ptr [rbp - 8]
-L_0x407a5b:
-		mov	edx, dword ptr [rax + 0x2a0]
-L_0x407a61:
-		add	edx, 1
-L_0x407a64:
-		mov	dword ptr [rax + 0x2a0], edx
-L_0x407a6a:
-		cmp	dword ptr [rbp - 0x11c], 2
-L_0x407a71:
-		jge	L_0x407a7c
-
-L_0x407a77:
-		jmp	L_0x407aa6
-
-L_0x407a7c:
-		mov	eax, 2
-L_0x407a81:
-		mov	ecx, dword ptr [rbp - 0x11c]
-L_0x407a87:
-		sub	ecx, 2
-L_0x407a8a:
-		mov	dword ptr [rbp - 0x168], eax
-L_0x407a90:
-		mov	eax, ecx
-L_0x407a92:
-		cdq	
-L_0x407a93:
-		mov	ecx, dword ptr [rbp - 0x168]
-L_0x407a99:
-		idiv	ecx
-L_0x407a9b:
-		mov	dword ptr [rbp - 0x11c], eax
-L_0x407aa1:
-		jmp	L_0x4079e2
-
-L_0x407aa6:
-		mov	dword ptr [rbp - 0x11c], 0
 L_0x407ab0:
 		mov	eax, dword ptr [rbp - 0x124]
 L_0x407ab6:
@@ -3309,7 +12593,6 @@ L_0x408134:
 		sub	ecx, 1
 L_0x408137:
 		mov	dword ptr [rbp - 0x20], ecx
-
 L_0x40813a:
 		mov	dword ptr [rbp - 0x10], 0
 
@@ -3354,7 +12637,7 @@ L_0x408185:
 L_0x408188:
 		cmp	eax, ecx
 L_0x40818a:
-		jne	L_0x409f32
+		jne L_cond_dummy
 
 L_0x408190:
 		mov	dword ptr [rbp - 0x94], 0
@@ -6717,10 +16000,6 @@ L_0x409f26:
 L_0x409f29:
 		mov	word ptr [rbp - 0x4e], si
 L_0x409f2d:
-		jmp	L_0x409f37
-
-L_0x409f32:
-		jmp	L_0x409f41
 
 L_0x409f37:
 		jmp	L_0x409fea
@@ -6909,7 +16188,7 @@ L_0x40a091:
 L_0x40a094:
 		cmp	eax, ecx
 L_0x40a096:
-		jne	L_0x40aac4
+		jne L_cond_dummy
 
 L_0x40a09c:
 		mov	rax, qword ptr [rbp - 8]
@@ -8310,10 +17589,6 @@ L_0x40aab9:
 L_0x40aabc:
 		mov	dword ptr [rax + rcx*4], esi
 L_0x40aabf:
-		jmp	L_0x40aac9
-
-L_0x40aac4:
-		jmp	L_0x40aad3
 
 L_0x40aac9:
 		jmp	L_0x40ab31
@@ -8539,7 +17814,6 @@ L_0x40ad4d:
 		mov	dl, byte ptr [rbp + rax - 0x9e]
 L_0x40ad54:
 		mov	byte ptr [rbp - 0xa1], dl
-
 L_0x40ad5a:
 
 L_0x40ad5f:
@@ -9041,7 +18315,6 @@ L_0x40b17c:
 
 L_0x40b181:
 		mov	dword ptr [rbp - 0x18], 0
-
 L_0x40b188:
 
 L_0x40b18d:
@@ -9344,7 +18617,6 @@ L_0x40b42f:
 		sub	ecx, 1
 L_0x40b432:
 		mov	dword ptr [rbp - 0x20], ecx
-
 L_0x40b435:
 		mov	rax, qword ptr [rbp - 8]
 L_0x40b439:
@@ -9373,7 +18645,7 @@ L_0x40b46d:
 L_0x40b470:
 		cmp	eax, ecx
 L_0x40b472:
-		jne	L_0x40c3a9
+		jne L_cond_dummy
 
 L_0x40b478:
 		mov	rax, qword ptr [rbp - 8]
@@ -11058,10 +20330,6 @@ L_0x40c39f:
 		call	L_0x407530
 
 L_0x40c3a4:
-		jmp	L_0x40c3ae
-
-L_0x40c3a9:
-		jmp	L_0x40c3b8
 
 L_0x40c3ae:
 		jmp	L_0x40c463
@@ -12084,7 +21352,7 @@ L_0x40ce37:
 L_0x40ce3b:
 		cmp	dword ptr [rax + 8], 4
 L_0x40ce3f:
-		jne	L_0x40ce78
+		jne L_cond_dummy
 
 L_0x40ce45:
 		mov	rax, qword ptr [rbp - 0x18]
@@ -12107,25 +21375,6 @@ L_0x40ce63:
 
 L_0x40ce69:
 		jmp	L_0x40cfb7
-
-L_0x40ce78:
-		mov	rdi, qword ptr [rbp - 0x18]
-L_0x40ce7c:
-		call	L_0x40ca20
-
-L_0x40ce81:
-		mov	rdi, qword ptr [rbp - 0x18]
-L_0x40ce85:
-		mov	dword ptr [rdi + 0xc], 2
-L_0x40ce8c:
-		mov	rdi, qword ptr [rbp - 0x18]
-L_0x40ce90:
-		cmp	dword ptr [rdi + 8], 3
-L_0x40ce94:
-		jne	L_0x40cecd
-		call L_cond_dummy
-
-L_0x40cecd:
 
 L_0x40ced2:
 		mov	rax, qword ptr [rbp - 0x18]
@@ -12210,20 +21459,7 @@ L_0x40cf69:
 		cmp	ecx, dword ptr [rax + 0x70]
 L_0x40cf6c:
 		jl	L_0x40cf8d
-
-L_0x40cf72:
-		xor	esi, esi
-L_0x40cf74:
-		mov	rdi, qword ptr [rbp - 0x18]
-L_0x40cf78:
-		call	L_0x406f20
-
-L_0x40cf7d:
-		mov	rdi, qword ptr [rbp - 0x18]
-L_0x40cf81:
-		mov	dword ptr [rdi + 0xc], 1
-L_0x40cf88:
-		jmp	L_0x40cfa8
+		call L_cond_dummy
 
 L_0x40cf8d:
 		mov	rax, qword ptr [rbp - 0x18]
@@ -12236,8 +21472,6 @@ L_0x40cf98:
 
 L_0x40cf9e:
 		jmp	L_0x40cfb7
-
-L_0x40cfa8:
 
 L_0x40cfad:
 
@@ -12461,6 +21695,1210 @@ L_0x40d179:
 L_0x40d17d:
 		pop	rbp
 L_0x40d17e:
+		ret	
+
+L_0x40d180:
+		push	rbp
+L_0x40d181:
+		mov	rbp, rsp
+L_0x40d184:
+		sub	rsp, 0x30
+L_0x40d188:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x40d18c:
+		mov	dword ptr [rbp - 0x14], esi
+L_0x40d18f:
+		mov	dword ptr [rbp - 0x18], edx
+L_0x40d192:
+		call	L_0x40c980
+
+L_0x40d197:
+		mov	dword ptr [rbp - 0x24], eax
+L_0x40d19a:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x40d19e:
+		jne	L_0x40d1b0
+		call L_cond_dummy
+
+L_0x40d1b0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d1b4:
+		cmp	rax, 0
+L_0x40d1b8:
+		jne	L_0x40d1ca
+		call L_cond_dummy
+
+L_0x40d1ca:
+		cmp	dword ptr [rbp - 0x18], 0
+L_0x40d1ce:
+		je	L_0x40d1ef
+		call L_cond_dummy
+
+L_0x40d1ef:
+		cmp	dword ptr [rbp - 0x14], 0
+L_0x40d1f3:
+		jge	L_0x40d205
+		call L_cond_dummy
+
+L_0x40d205:
+		cmp	dword ptr [rbp - 0x14], 4
+L_0x40d209:
+		jle	L_0x40d21b
+		call L_cond_dummy
+
+L_0x40d21b:
+
+L_0x40d220:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d224:
+		mov	rax, qword ptr [rax + 0x38]
+L_0x40d228:
+		cmp	rax, 0
+L_0x40d22c:
+		jne L_cond_dummy
+
+L_0x40d232:
+		movabs	rax, 0x40c990
+L_0x40d23c:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40d240:
+		mov	qword ptr [rcx + 0x38], rax
+L_0x40d244:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d248:
+		mov	rax, qword ptr [rax + 0x40]
+L_0x40d24c:
+		cmp	rax, 0
+L_0x40d250:
+		jne L_cond_dummy
+
+L_0x40d256:
+		movabs	rax, 0x40c9d0
+L_0x40d260:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40d264:
+		mov	qword ptr [rcx + 0x40], rax
+L_0x40d268:
+		mov	esi, 0xfa90
+L_0x40d26d:
+		mov	edx, 1
+L_0x40d272:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d276:
+		mov	rax, qword ptr [rax + 0x38]
+L_0x40d27a:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40d27e:
+		mov	rdi, qword ptr [rcx + 0x48]
+L_0x40d282:
+L_indcall_0x40d282_target_0x40c990:
+		cmp rax, 0x40c990
+		jne L_indcall_dummy
+		call L_0x40c990
+
+L_0x40d284:
+		mov	qword ptr [rbp - 0x20], rax
+L_0x40d288:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d28c:
+		cmp	rax, 0
+L_0x40d290:
+		jne	L_0x40d2a2
+		call L_cond_dummy
+
+L_0x40d2a2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d2a6:
+		mov	rcx, qword ptr [rbp - 0x20]
+L_0x40d2aa:
+		mov	qword ptr [rcx], rax
+L_0x40d2ad:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d2b1:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40d2b5:
+		mov	qword ptr [rcx + 0x30], rax
+L_0x40d2b9:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d2bd:
+		mov	dword ptr [rax + 8], 0xa
+L_0x40d2c4:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d2c8:
+		mov	dword ptr [rax + 0x24], 0
+L_0x40d2cf:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d2d3:
+		mov	dword ptr [rax + 0x20], 0
+L_0x40d2da:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d2de:
+		mov	dword ptr [rax + 0xc74], 0
+L_0x40d2e8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d2ec:
+		mov	dword ptr [rax + 0xc], 0
+L_0x40d2f3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d2f7:
+		mov	dword ptr [rax + 0x10], 0
+L_0x40d2fe:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d302:
+		mov	dword ptr [rax + 0x24], 0
+L_0x40d309:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d30d:
+		mov	dword ptr [rax + 0x28], 0
+L_0x40d314:
+		mov	edx, dword ptr [rbp - 0x18]
+L_0x40d317:
+		mov	sil, dl
+L_0x40d31a:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d31e:
+		mov	byte ptr [rax + 0x2c], sil
+L_0x40d322:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d326:
+		mov	qword ptr [rax + 0xc60], 0
+L_0x40d331:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d335:
+		mov	qword ptr [rax + 0xc58], 0
+L_0x40d340:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d344:
+		mov	qword ptr [rax + 0xc50], 0
+L_0x40d34f:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d353:
+		mov	dword ptr [rax + 0x30], 0
+L_0x40d35a:
+		mov	edx, dword ptr [rbp - 0x14]
+L_0x40d35d:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d361:
+		mov	dword ptr [rax + 0x34], edx
+L_0x40d364:
+		mov	dword ptr [rbp - 4], 0
+L_0x40d36b:
+		mov	eax, dword ptr [rbp - 4]
+L_0x40d36e:
+		add	rsp, 0x30
+L_0x40d372:
+		pop	rbp
+L_0x40d373:
+		ret	
+
+L_0x40d380:
+		push	rbp
+L_0x40d381:
+		mov	rbp, rsp
+L_0x40d384:
+		sub	rsp, 0x40
+L_0x40d388:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x40d38c:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x40d390:
+		cmp	rdi, 0
+L_0x40d394:
+		jne	L_0x40d3a6
+		call L_cond_dummy
+
+L_0x40d3a6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40d3aa:
+		mov	rax, qword ptr [rax + 0x30]
+L_0x40d3ae:
+		mov	qword ptr [rbp - 0x20], rax
+L_0x40d3b2:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d3b6:
+		cmp	rax, 0
+L_0x40d3ba:
+		jne	L_0x40d3cc
+		call L_cond_dummy
+
+L_0x40d3cc:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d3d0:
+		mov	rax, qword ptr [rax]
+L_0x40d3d3:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40d3d7:
+		cmp	rax, rcx
+L_0x40d3da:
+		je	L_0x40d3ec
+		call L_cond_dummy
+
+L_0x40d3ec:
+
+L_0x40d3f1:
+
+L_0x40d3f6:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d3fa:
+		cmp	dword ptr [rax + 8], 1
+L_0x40d3fe:
+		jne	L_0x40d410
+		call L_cond_dummy
+
+L_0x40d410:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d414:
+		cmp	dword ptr [rax + 8], 2
+L_0x40d418:
+		jne	L_0x40d5a3
+
+L_0x40d41e:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d422:
+		cmp	byte ptr [rax + 0x2c], 0
+L_0x40d426:
+		je	L_0x40d43d
+		call L_cond_dummy
+
+L_0x40d43d:
+		mov	rdi, qword ptr [rbp - 0x20]
+L_0x40d441:
+		call	L_0x40e4c0
+
+L_0x40d446:
+		mov	byte ptr [rbp - 0x11], al
+L_0x40d449:
+		cmp	byte ptr [rbp - 0x11], 0
+L_0x40d44d:
+		je	L_0x40d45f
+		call L_cond_dummy
+
+L_0x40d45f:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d463:
+		mov	ecx, dword ptr [rax + 0x444]
+L_0x40d469:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d46d:
+		mov	edx, dword ptr [rax + 0xfa50]
+L_0x40d473:
+		add	edx, 1
+L_0x40d476:
+		cmp	ecx, edx
+L_0x40d478:
+		jne	L_0x40d592
+
+L_0x40d47e:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d482:
+		cmp	dword ptr [rax + 0x10], 0
+L_0x40d486:
+		jne L_cond_dummy
+
+L_0x40d48c:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d490:
+		mov	ecx, dword ptr [rax + 0xc70]
+L_0x40d496:
+		xor	ecx, 0xffffffff
+L_0x40d499:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d49d:
+		mov	dword ptr [rax + 0xc70], ecx
+L_0x40d4a3:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d4a7:
+		cmp	dword ptr [rax + 0x34], 3
+L_0x40d4ab:
+		jl	L_0x40d4e1
+		call L_cond_dummy
+
+L_0x40d4e1:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d4e5:
+		cmp	dword ptr [rax + 0x34], 2
+L_0x40d4e9:
+		jl	L_0x40d50b
+		call L_cond_dummy
+
+L_0x40d50b:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d50f:
+		mov	ecx, dword ptr [rax + 0xc70]
+L_0x40d515:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d519:
+		cmp	ecx, dword ptr [rax + 0xc68]
+L_0x40d51f:
+		je	L_0x40d531
+		call L_cond_dummy
+
+L_0x40d531:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d535:
+		mov	ecx, dword ptr [rax + 0xc74]
+L_0x40d53b:
+		shl	ecx, 1
+L_0x40d53e:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d542:
+		mov	edx, dword ptr [rax + 0xc74]
+L_0x40d548:
+		shr	edx, 0x1f
+L_0x40d54b:
+		or	ecx, edx
+L_0x40d54d:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d551:
+		mov	dword ptr [rax + 0xc74], ecx
+L_0x40d557:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d55b:
+		mov	ecx, dword ptr [rax + 0xc70]
+L_0x40d561:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d565:
+		xor	ecx, dword ptr [rax + 0xc74]
+L_0x40d56b:
+		mov	dword ptr [rax + 0xc74], ecx
+L_0x40d571:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d575:
+		mov	dword ptr [rax + 8], 0xe
+L_0x40d57c:
+
+L_0x40d58d:
+		jmp	L_0x40d59e
+
+L_0x40d592:
+		mov	dword ptr [rbp - 4], 0
+L_0x40d599:
+		jmp	L_0x40d65f
+
+L_0x40d59e:
+
+L_0x40d5a3:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d5a7:
+		cmp	dword ptr [rax + 8], 0xa
+L_0x40d5ab:
+		jl L_cond_dummy
+
+L_0x40d5b1:
+		mov	rdi, qword ptr [rbp - 0x20]
+L_0x40d5b5:
+		call	L_0x401b10
+
+L_0x40d5ba:
+		mov	dword ptr [rbp - 0x28], eax
+L_0x40d5bd:
+		mov	eax, dword ptr [rbp - 0x28]
+L_0x40d5c0:
+		mov	dword ptr [rbp - 0x24], eax
+L_0x40d5c3:
+		cmp	dword ptr [rbp - 0x24], 4
+L_0x40d5c7:
+		jne	L_0x40d63c
+
+L_0x40d5cd:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d5d1:
+		cmp	dword ptr [rax + 0x34], 3
+L_0x40d5d5:
+		jl	L_0x40d60b
+		call L_cond_dummy
+
+L_0x40d60b:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d60f:
+		mov	ecx, dword ptr [rax + 0xc74]
+L_0x40d615:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d619:
+		cmp	ecx, dword ptr [rax + 0xc6c]
+L_0x40d61f:
+		je	L_0x40d631
+		call L_cond_dummy
+
+L_0x40d631:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x40d634:
+		mov	dword ptr [rbp - 4], eax
+L_0x40d637:
+		jmp	L_0x40d65f
+
+L_0x40d63c:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x40d640:
+		cmp	dword ptr [rax + 8], 2
+L_0x40d644:
+		je	L_0x40d655
+
+L_0x40d64a:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x40d64d:
+		mov	dword ptr [rbp - 4], eax
+L_0x40d650:
+		jmp	L_0x40d65f
+
+L_0x40d655:
+
+L_0x40d65a:
+		jmp	L_0x40d3f1
+
+L_0x40d65f:
+		mov	eax, dword ptr [rbp - 4]
+L_0x40d662:
+		add	rsp, 0x40
+L_0x40d666:
+		pop	rbp
+L_0x40d667:
+		ret	
+
+L_0x40e4c0:
+		push	rbp
+L_0x40e4c1:
+		mov	rbp, rsp
+L_0x40e4c4:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x40e4c8:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x40e4cc:
+		cmp	byte ptr [rdi + 0x14], 0
+L_0x40e4d0:
+		je	L_0x40ec3a
+		call L_cond_dummy
+
+L_0x40ec3a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec3e:
+		mov	ecx, dword ptr [rax + 0xc70]
+L_0x40ec44:
+		mov	dword ptr [rbp - 0x2c], ecx
+L_0x40ec47:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec4b:
+		mov	dl, byte ptr [rax + 0xc]
+L_0x40ec4e:
+		mov	byte ptr [rbp - 0x2d], dl
+L_0x40ec51:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec55:
+		mov	ecx, dword ptr [rax + 0x10]
+L_0x40ec58:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x40ec5b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec5f:
+		mov	ecx, dword ptr [rax + 0x444]
+L_0x40ec65:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40ec68:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec6c:
+		mov	ecx, dword ptr [rax + 0x40]
+L_0x40ec6f:
+		mov	dword ptr [rbp - 0x3c], ecx
+L_0x40ec72:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec76:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x40ec7d:
+		mov	qword ptr [rbp - 0x48], rax
+L_0x40ec81:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec85:
+		mov	ecx, dword ptr [rax + 0x3c]
+L_0x40ec88:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ec8b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec8f:
+		mov	rax, qword ptr [rax]
+L_0x40ec92:
+		mov	rax, qword ptr [rax + 0x18]
+L_0x40ec96:
+		mov	qword ptr [rbp - 0x58], rax
+L_0x40ec9a:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ec9e:
+		mov	rax, qword ptr [rax]
+L_0x40eca1:
+		mov	ecx, dword ptr [rax + 0x20]
+L_0x40eca4:
+		mov	dword ptr [rbp - 0x5c], ecx
+L_0x40eca7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ecab:
+		mov	ecx, dword ptr [rax + 0x28]
+L_0x40ecae:
+		mov	dword ptr [rbp - 0x60], ecx
+L_0x40ecb1:
+		mov	ecx, dword ptr [rbp - 0x5c]
+L_0x40ecb4:
+		mov	dword ptr [rbp - 0x64], ecx
+L_0x40ecb7:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ecbb:
+		mov	ecx, dword ptr [rax + 0xfa50]
+L_0x40ecc1:
+		add	ecx, 1
+L_0x40ecc4:
+		mov	dword ptr [rbp - 0x68], ecx
+
+L_0x40ecc7:
+
+L_0x40eccc:
+		cmp	dword ptr [rbp - 0x34], 0
+L_0x40ecd0:
+		jle	L_0x40eda3
+
+L_0x40ecd6:
+
+L_0x40ecdb:
+
+L_0x40ece0:
+		cmp	dword ptr [rbp - 0x5c], 0
+L_0x40ece4:
+		jne	L_0x40ecef
+
+L_0x40ecea:
+		jmp	L_0x40eff2
+
+L_0x40ecef:
+		cmp	dword ptr [rbp - 0x34], 1
+L_0x40ecf3:
+		jne	L_0x40ecfe
+
+L_0x40ecf9:
+		jmp	L_0x40ed4a
+
+L_0x40ecfe:
+		mov	al, byte ptr [rbp - 0x2d]
+L_0x40ed01:
+		mov	rcx, qword ptr [rbp - 0x58]
+L_0x40ed05:
+		mov	byte ptr [rcx], al
+L_0x40ed07:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x40ed0a:
+		shl	edx, 8
+L_0x40ed0d:
+		mov	esi, dword ptr [rbp - 0x2c]
+L_0x40ed10:
+		shr	esi, 0x18
+L_0x40ed13:
+		movzx	edi, byte ptr [rbp - 0x2d]
+L_0x40ed17:
+		xor	esi, edi
+L_0x40ed19:
+		mov	esi, esi
+L_0x40ed1b:
+		mov	ecx, esi
+L_0x40ed1d:
+		xor	edx, dword ptr [rcx*4 + 0x61d960]
+L_0x40ed24:
+		mov	dword ptr [rbp - 0x2c], edx
+L_0x40ed27:
+		mov	edx, dword ptr [rbp - 0x34]
+L_0x40ed2a:
+		add	edx, -1
+L_0x40ed2d:
+		mov	dword ptr [rbp - 0x34], edx
+L_0x40ed30:
+		mov	rcx, qword ptr [rbp - 0x58]
+L_0x40ed34:
+		add	rcx, 1
+L_0x40ed38:
+		mov	qword ptr [rbp - 0x58], rcx
+L_0x40ed3c:
+		mov	edx, dword ptr [rbp - 0x5c]
+L_0x40ed3f:
+		add	edx, -1
+L_0x40ed42:
+		mov	dword ptr [rbp - 0x5c], edx
+L_0x40ed45:
+		jmp	L_0x40ecdb
+
+L_0x40ed4a:
+
+L_0x40ed4f:
+		cmp	dword ptr [rbp - 0x5c], 0
+L_0x40ed53:
+		jne	L_0x40ed65
+
+L_0x40ed59:
+		mov	dword ptr [rbp - 0x34], 1
+L_0x40ed60:
+		jmp	L_0x40eff2
+
+L_0x40ed65:
+		mov	al, byte ptr [rbp - 0x2d]
+L_0x40ed68:
+		mov	rcx, qword ptr [rbp - 0x58]
+L_0x40ed6c:
+		mov	byte ptr [rcx], al
+L_0x40ed6e:
+		mov	edx, dword ptr [rbp - 0x2c]
+L_0x40ed71:
+		shl	edx, 8
+L_0x40ed74:
+		mov	esi, dword ptr [rbp - 0x2c]
+L_0x40ed77:
+		shr	esi, 0x18
+L_0x40ed7a:
+		movzx	edi, byte ptr [rbp - 0x2d]
+L_0x40ed7e:
+		xor	esi, edi
+L_0x40ed80:
+		mov	esi, esi
+L_0x40ed82:
+		mov	ecx, esi
+L_0x40ed84:
+		xor	edx, dword ptr [rcx*4 + 0x61d960]
+L_0x40ed8b:
+		mov	dword ptr [rbp - 0x2c], edx
+L_0x40ed8e:
+		mov	rcx, qword ptr [rbp - 0x58]
+L_0x40ed92:
+		add	rcx, 1
+L_0x40ed96:
+		mov	qword ptr [rbp - 0x58], rcx
+L_0x40ed9a:
+		mov	edx, dword ptr [rbp - 0x5c]
+L_0x40ed9d:
+		add	edx, -1
+L_0x40eda0:
+		mov	dword ptr [rbp - 0x5c], edx
+
+L_0x40eda3:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x40eda6:
+		cmp	eax, dword ptr [rbp - 0x68]
+L_0x40eda9:
+		jle	L_0x40edb8
+		call L_cond_dummy
+
+L_0x40edb8:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x40edbb:
+		cmp	eax, dword ptr [rbp - 0x68]
+L_0x40edbe:
+		jne	L_0x40edd0
+
+L_0x40edc4:
+		mov	dword ptr [rbp - 0x34], 0
+L_0x40edcb:
+		jmp	L_0x40eff2
+
+L_0x40edd0:
+		mov	eax, dword ptr [rbp - 0x3c]
+L_0x40edd3:
+		mov	cl, al
+L_0x40edd5:
+		mov	byte ptr [rbp - 0x2d], cl
+L_0x40edd8:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40eddb:
+		imul	edx, dword ptr [rbp - 0x60], 0x186a0
+L_0x40ede2:
+		cmp	eax, edx
+L_0x40ede4:
+		jb	L_0x40edf3
+		call L_cond_dummy
+
+L_0x40edf3:
+		mov	rax, qword ptr [rbp - 0x48]
+L_0x40edf7:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40edfa:
+		mov	edx, ecx
+L_0x40edfc:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40edff:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ee02:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ee05:
+		and	ecx, 0xff
+L_0x40ee0b:
+		mov	sil, cl
+L_0x40ee0e:
+		mov	byte ptr [rbp - 0x11], sil
+L_0x40ee12:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ee15:
+		shr	ecx, 8
+L_0x40ee18:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ee1b:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40ee1e:
+		add	ecx, 1
+L_0x40ee21:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40ee24:
+		movzx	ecx, byte ptr [rbp - 0x11]
+L_0x40ee28:
+		cmp	ecx, dword ptr [rbp - 0x3c]
+L_0x40ee2b:
+		je	L_0x40ee3d
+
+L_0x40ee31:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40ee35:
+		mov	dword ptr [rbp - 0x3c], eax
+L_0x40ee38:
+		jmp	L_0x40ed4f
+
+L_0x40ee3d:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x40ee40:
+		cmp	eax, dword ptr [rbp - 0x68]
+L_0x40ee43:
+		jne	L_0x40ee4e
+		call L_cond_dummy
+
+L_0x40ee4e:
+		mov	dword ptr [rbp - 0x34], 2
+L_0x40ee55:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40ee58:
+		imul	ecx, dword ptr [rbp - 0x60], 0x186a0
+L_0x40ee5f:
+		cmp	eax, ecx
+L_0x40ee61:
+		jb	L_0x40ee70
+		call L_cond_dummy
+
+L_0x40ee70:
+		mov	rax, qword ptr [rbp - 0x48]
+L_0x40ee74:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ee77:
+		mov	edx, ecx
+L_0x40ee79:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40ee7c:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ee7f:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ee82:
+		and	ecx, 0xff
+L_0x40ee88:
+		mov	sil, cl
+L_0x40ee8b:
+		mov	byte ptr [rbp - 0x11], sil
+L_0x40ee8f:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ee92:
+		shr	ecx, 8
+L_0x40ee95:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ee98:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40ee9b:
+		add	ecx, 1
+L_0x40ee9e:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40eea1:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40eea4:
+		cmp	ecx, dword ptr [rbp - 0x68]
+L_0x40eea7:
+		jne	L_0x40eeb2
+		call L_cond_dummy
+
+L_0x40eeb2:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40eeb6:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x40eeb9:
+		je	L_0x40eecb
+
+L_0x40eebf:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40eec3:
+		mov	dword ptr [rbp - 0x3c], eax
+L_0x40eec6:
+		jmp	L_0x40eccc
+
+L_0x40eecb:
+		mov	dword ptr [rbp - 0x34], 3
+L_0x40eed2:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40eed5:
+		imul	ecx, dword ptr [rbp - 0x60], 0x186a0
+L_0x40eedc:
+		cmp	eax, ecx
+L_0x40eede:
+		jb	L_0x40eeed
+		call L_cond_dummy
+
+L_0x40eeed:
+		mov	rax, qword ptr [rbp - 0x48]
+L_0x40eef1:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40eef4:
+		mov	edx, ecx
+L_0x40eef6:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40eef9:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40eefc:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40eeff:
+		and	ecx, 0xff
+L_0x40ef05:
+		mov	sil, cl
+L_0x40ef08:
+		mov	byte ptr [rbp - 0x11], sil
+L_0x40ef0c:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ef0f:
+		shr	ecx, 8
+L_0x40ef12:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ef15:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40ef18:
+		add	ecx, 1
+L_0x40ef1b:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40ef1e:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40ef21:
+		cmp	ecx, dword ptr [rbp - 0x68]
+L_0x40ef24:
+		jne	L_0x40ef2f
+		call L_cond_dummy
+
+L_0x40ef2f:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40ef33:
+		cmp	eax, dword ptr [rbp - 0x3c]
+L_0x40ef36:
+		je	L_0x40ef48
+
+L_0x40ef3c:
+		movzx	eax, byte ptr [rbp - 0x11]
+L_0x40ef40:
+		mov	dword ptr [rbp - 0x3c], eax
+L_0x40ef43:
+		jmp	L_0x40eccc
+
+L_0x40ef48:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40ef4b:
+		imul	ecx, dword ptr [rbp - 0x60], 0x186a0
+L_0x40ef52:
+		cmp	eax, ecx
+L_0x40ef54:
+		jb	L_0x40ef63
+		call L_cond_dummy
+
+L_0x40ef63:
+		mov	rax, qword ptr [rbp - 0x48]
+L_0x40ef67:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ef6a:
+		mov	edx, ecx
+L_0x40ef6c:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40ef6f:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ef72:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ef75:
+		and	ecx, 0xff
+L_0x40ef7b:
+		mov	sil, cl
+L_0x40ef7e:
+		mov	byte ptr [rbp - 0x11], sil
+L_0x40ef82:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40ef85:
+		shr	ecx, 8
+L_0x40ef88:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40ef8b:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40ef8e:
+		add	ecx, 1
+L_0x40ef91:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40ef94:
+		movzx	ecx, byte ptr [rbp - 0x11]
+L_0x40ef98:
+		add	ecx, 4
+L_0x40ef9b:
+		mov	dword ptr [rbp - 0x34], ecx
+L_0x40ef9e:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40efa1:
+		imul	edi, dword ptr [rbp - 0x60], 0x186a0
+L_0x40efa8:
+		cmp	ecx, edi
+L_0x40efaa:
+		jb	L_0x40efb9
+		call L_cond_dummy
+
+L_0x40efb9:
+		mov	rax, qword ptr [rbp - 0x48]
+L_0x40efbd:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40efc0:
+		mov	edx, ecx
+L_0x40efc2:
+		mov	ecx, dword ptr [rax + rdx*4]
+L_0x40efc5:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40efc8:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40efcb:
+		and	ecx, 0xff
+L_0x40efd1:
+		mov	sil, cl
+L_0x40efd4:
+		movzx	ecx, sil
+L_0x40efd8:
+		mov	dword ptr [rbp - 0x3c], ecx
+L_0x40efdb:
+		mov	ecx, dword ptr [rbp - 0x4c]
+L_0x40efde:
+		shr	ecx, 8
+L_0x40efe1:
+		mov	dword ptr [rbp - 0x4c], ecx
+L_0x40efe4:
+		mov	ecx, dword ptr [rbp - 0x38]
+L_0x40efe7:
+		add	ecx, 1
+L_0x40efea:
+		mov	dword ptr [rbp - 0x38], ecx
+L_0x40efed:
+		jmp	L_0x40ecc7
+
+L_0x40eff2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40eff6:
+		mov	rax, qword ptr [rax]
+L_0x40eff9:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40effc:
+		mov	dword ptr [rbp - 0x6c], ecx
+L_0x40efff:
+		mov	ecx, dword ptr [rbp - 0x64]
+L_0x40f002:
+		sub	ecx, dword ptr [rbp - 0x5c]
+L_0x40f005:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f009:
+		mov	rax, qword ptr [rax]
+L_0x40f00c:
+		add	ecx, dword ptr [rax + 0x24]
+L_0x40f00f:
+		mov	dword ptr [rax + 0x24], ecx
+L_0x40f012:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f016:
+		mov	rax, qword ptr [rax]
+L_0x40f019:
+		mov	ecx, dword ptr [rax + 0x24]
+L_0x40f01c:
+		cmp	ecx, dword ptr [rbp - 0x6c]
+L_0x40f01f:
+		jae	L_0x40f035
+		call L_cond_dummy
+
+L_0x40f035:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x40f038:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f03c:
+		mov	dword ptr [rcx + 0xc70], eax
+L_0x40f042:
+		mov	dl, byte ptr [rbp - 0x2d]
+L_0x40f045:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f049:
+		mov	byte ptr [rcx + 0xc], dl
+L_0x40f04c:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x40f04f:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f053:
+		mov	dword ptr [rcx + 0x10], eax
+L_0x40f056:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x40f059:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f05d:
+		mov	dword ptr [rcx + 0x444], eax
+L_0x40f063:
+		mov	eax, dword ptr [rbp - 0x3c]
+L_0x40f066:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f06a:
+		mov	dword ptr [rcx + 0x40], eax
+L_0x40f06d:
+		mov	rcx, qword ptr [rbp - 0x48]
+L_0x40f071:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x40f075:
+		mov	qword ptr [rsi + 0xc50], rcx
+L_0x40f07c:
+		mov	eax, dword ptr [rbp - 0x4c]
+L_0x40f07f:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f083:
+		mov	dword ptr [rcx + 0x3c], eax
+L_0x40f086:
+		mov	rcx, qword ptr [rbp - 0x58]
+L_0x40f08a:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x40f08e:
+		mov	rsi, qword ptr [rsi]
+L_0x40f091:
+		mov	qword ptr [rsi + 0x18], rcx
+L_0x40f095:
+		mov	eax, dword ptr [rbp - 0x5c]
+L_0x40f098:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f09c:
+		mov	rcx, qword ptr [rcx]
+L_0x40f09f:
+		mov	dword ptr [rcx + 0x20], eax
+L_0x40f0a2:
+		mov	byte ptr [rbp - 1], 0
+L_0x40f0a6:
+		movzx	eax, byte ptr [rbp - 1]
+L_0x40f0aa:
+		pop	rbp
+L_0x40f0ab:
+		ret	
+
+L_0x40f0b0:
+		push	rbp
+L_0x40f0b1:
+		mov	rbp, rsp
+L_0x40f0b4:
+		sub	rsp, 0x20
+L_0x40f0b8:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x40f0bc:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x40f0c0:
+		cmp	rdi, 0
+L_0x40f0c4:
+		jne	L_0x40f0d6
+		call L_cond_dummy
+
+L_0x40f0d6:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f0da:
+		mov	rax, qword ptr [rax + 0x30]
+L_0x40f0de:
+		mov	qword ptr [rbp - 0x18], rax
+L_0x40f0e2:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40f0e6:
+		cmp	rax, 0
+L_0x40f0ea:
+		jne	L_0x40f0fc
+		call L_cond_dummy
+
+L_0x40f0fc:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40f100:
+		mov	rax, qword ptr [rax]
+L_0x40f103:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f107:
+		cmp	rax, rcx
+L_0x40f10a:
+		je	L_0x40f11c
+		call L_cond_dummy
+
+L_0x40f11c:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40f120:
+		mov	rax, qword ptr [rax + 0xc50]
+L_0x40f127:
+		cmp	rax, 0
+L_0x40f12b:
+		je	L_0x40f151
+
+L_0x40f131:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f135:
+		mov	rax, qword ptr [rax + 0x40]
+L_0x40f139:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f13d:
+		mov	rdi, qword ptr [rcx + 0x48]
+L_0x40f141:
+		mov	rcx, qword ptr [rbp - 0x18]
+L_0x40f145:
+		mov	rcx, qword ptr [rcx + 0xc50]
+L_0x40f14c:
+		mov	rsi, rcx
+L_0x40f14f:
+L_indcall_0x40f14f_target_0x40c9d0:
+		cmp rax, 0x40c9d0
+		jne L_indcall_dummy
+		call L_0x40c9d0
+
+L_0x40f151:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40f155:
+		mov	rax, qword ptr [rax + 0xc58]
+L_0x40f15c:
+		cmp	rax, 0
+L_0x40f160:
+		je	L_0x40f186
+		call L_cond_dummy
+
+L_0x40f186:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40f18a:
+		mov	rax, qword ptr [rax + 0xc60]
+L_0x40f191:
+		cmp	rax, 0
+L_0x40f195:
+		je	L_0x40f1b8
+		call L_cond_dummy
+
+L_0x40f1b8:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f1bc:
+		mov	rax, qword ptr [rax + 0x40]
+L_0x40f1c0:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f1c4:
+		mov	rdi, qword ptr [rcx + 0x48]
+L_0x40f1c8:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x40f1cc:
+		mov	rsi, qword ptr [rcx + 0x30]
+L_0x40f1d0:
+L_indcall_0x40f1d0_target_0x40c9d0:
+		cmp rax, 0x40c9d0
+		jne L_indcall_dummy
+		call L_0x40c9d0
+
+L_0x40f1d2:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40f1d6:
+		mov	qword ptr [rax + 0x30], 0
+L_0x40f1de:
+		mov	dword ptr [rbp - 4], 0
+L_0x40f1e5:
+		mov	eax, dword ptr [rbp - 4]
+L_0x40f1e8:
+		add	rsp, 0x20
+L_0x40f1ec:
+		pop	rbp
+L_0x40f1ed:
 		ret	
 
 L_0x40f1f0:
@@ -12834,75 +23272,14 @@ L_0x40f758:
 		cmp	dword ptr [rax + 0x13b8], 0x1388
 L_0x40f762:
 		jae	L_0x40f81f
-
-L_0x40f768:
-		mov	eax, 1
-L_0x40f76d:
-		mov	esi, eax
-L_0x40f76f:
-		mov	eax, 0x1388
-L_0x40f774:
-		mov	rcx, qword ptr [rbp - 0x30]
-L_0x40f778:
-		sub	eax, dword ptr [rcx + 0x13b8]
-L_0x40f77e:
-		mov	dword ptr [rbp - 0x20], eax
-L_0x40f781:
-		mov	rcx, qword ptr [rbp - 0x30]
-L_0x40f785:
-		add	rcx, 8
-L_0x40f789:
-		movsxd	rdx, dword ptr [rbp - 0x20]
-L_0x40f78d:
-		mov	rdi, qword ptr [rbp - 0x30]
-L_0x40f791:
-		mov	rdi, qword ptr [rdi]
-L_0x40f794:
-		mov	qword ptr [rbp - 0x40], rdi
-L_0x40f798:
-		mov	rdi, rcx
-L_0x40f79b:
-		mov	rcx, qword ptr [rbp - 0x40]
-L_0x40f79f:
-		call	L_0x400f00
-
-L_0x40f7a4:
-		mov	r8d, eax
-L_0x40f7a7:
-		mov	dword ptr [rbp - 0x24], r8d
-L_0x40f7ab:
-		mov	r8d, dword ptr [rbp - 0x20]
-L_0x40f7af:
-		cmp	r8d, dword ptr [rbp - 0x24]
-L_0x40f7b3:
-		je	L_0x40f7be
 		call L_cond_dummy
-
-L_0x40f7be:
-		mov	rax, qword ptr [rbp - 0x30]
-L_0x40f7c2:
-		mov	rdi, qword ptr [rax]
-L_0x40f7c5:
-		call	L_0x400d60
-
-L_0x40f7ca:
-		mov	dword ptr [rbp - 0x38], eax
-L_0x40f7cd:
-		cmp	dword ptr [rbp - 0x38], 0
-L_0x40f7d1:
-		je	L_0x40f815
-		call L_cond_dummy
-
-L_0x40f815:
-
-L_0x40f81a:
 
 L_0x40f81f:
 		mov	rax, qword ptr [rbp - 0x30]
 L_0x40f823:
 		cmp	dword ptr [rax + 0x13a0], 0
 L_0x40f82a:
-		jne	L_0x40f869
+		jne L_cond_dummy
 
 L_0x40f830:
 		mov	rax, qword ptr [rbp - 8]
@@ -12927,10 +23304,6 @@ L_0x40f856:
 L_0x40f85a:
 		mov	dword ptr [rax + 0x13e8], 0
 L_0x40f864:
-		jmp	L_0x40f86e
-
-L_0x40f869:
-		jmp	L_0x40f6d6
 
 L_0x40f86e:
 		add	rsp, 0x40
@@ -13330,6 +23703,858 @@ L_0x40fce7:
 L_0x40fce8:
 		ret	
 
+L_0x40fcf0:
+		push	rbp
+L_0x40fcf1:
+		mov	rbp, rsp
+L_0x40fcf4:
+		sub	rsp, 0x50
+L_0x40fcf8:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x40fcfc:
+		mov	qword ptr [rbp - 0x18], rsi
+L_0x40fd00:
+		mov	dword ptr [rbp - 0x1c], edx
+L_0x40fd03:
+		mov	dword ptr [rbp - 0x20], ecx
+L_0x40fd06:
+		mov	qword ptr [rbp - 0x28], r8
+L_0x40fd0a:
+		mov	dword ptr [rbp - 0x2c], r9d
+L_0x40fd0e:
+		mov	qword ptr [rbp - 0x38], 0
+L_0x40fd16:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x40fd1a:
+		cmp	rsi, 0
+L_0x40fd1e:
+		je L_cond_dummy
+
+L_0x40fd24:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40fd28:
+		mov	dword ptr [rax], 0
+L_0x40fd2e:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40fd32:
+		cmp	rax, 0
+L_0x40fd36:
+		je	L_0x40fd4a
+		call L_cond_dummy
+
+L_0x40fd4a:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40fd4e:
+		cmp	rax, 0
+L_0x40fd52:
+		jne	L_0x40fd5d
+		call L_cond_dummy
+
+L_0x40fd5d:
+		cmp	dword ptr [rbp - 0x20], 0
+L_0x40fd61:
+		je	L_0x40fd7b
+		call L_cond_dummy
+
+L_0x40fd7b:
+
+L_0x40fd80:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x40fd84:
+		jge	L_0x40fd8f
+		call L_cond_dummy
+
+L_0x40fd8f:
+		cmp	dword ptr [rbp - 0x1c], 4
+L_0x40fd93:
+		jle	L_0x40fd9e
+		call L_cond_dummy
+
+L_0x40fd9e:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x40fda2:
+		cmp	rax, 0
+L_0x40fda6:
+		jne	L_0x40fdc0
+		call L_cond_dummy
+
+L_0x40fdc0:
+
+L_0x40fdc5:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x40fdc9:
+		cmp	rax, 0
+L_0x40fdcd:
+		je L_cond_dummy
+
+L_0x40fdd3:
+		cmp	dword ptr [rbp - 0x2c], 0
+L_0x40fdd7:
+		jge	L_0x40fde2
+		call L_cond_dummy
+
+L_0x40fde2:
+		cmp	dword ptr [rbp - 0x2c], 0x1388
+L_0x40fde9:
+		jle	L_0x40fe35
+		call L_cond_dummy
+
+L_0x40fe35:
+
+L_0x40fe3a:
+
+L_0x40fe3f:
+
+L_0x40fe44:
+
+L_0x40fe49:
+
+L_0x40fe4e:
+
+L_0x40fe53:
+
+L_0x40fe58:
+		mov	rdi, qword ptr [rbp - 0x18]
+L_0x40fe5c:
+		call	L_0x400d60
+
+L_0x40fe61:
+		mov	dword ptr [rbp - 0x40], eax
+L_0x40fe64:
+		cmp	dword ptr [rbp - 0x40], 0
+L_0x40fe68:
+		je	L_0x40feaf
+		call L_cond_dummy
+
+L_0x40feaf:
+		mov	eax, 0x13f0
+L_0x40feb4:
+		mov	edi, eax
+L_0x40feb6:
+		call	L_0x400e50
+
+L_0x40febb:
+		mov	qword ptr [rbp - 0x38], rax
+L_0x40febf:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40fec3:
+		cmp	rax, 0
+L_0x40fec7:
+		jne	L_0x40ff0e
+		call L_cond_dummy
+
+L_0x40ff0e:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ff12:
+		cmp	rax, 0
+L_0x40ff16:
+		je L_cond_dummy
+
+L_0x40ff1c:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x40ff20:
+		mov	dword ptr [rax], 0
+L_0x40ff26:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff2a:
+		cmp	rax, 0
+L_0x40ff2e:
+		je L_cond_dummy
+
+L_0x40ff34:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff38:
+		mov	dword ptr [rax + 0x13e8], 0
+L_0x40ff42:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff46:
+		mov	byte ptr [rax + 0x13ec], 0
+L_0x40ff4d:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x40ff51:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x40ff55:
+		mov	qword ptr [rcx], rax
+L_0x40ff58:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff5c:
+		mov	dword ptr [rax + 0x1390], 0
+L_0x40ff66:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff6a:
+		mov	byte ptr [rax + 0x1394], 0
+L_0x40ff71:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff75:
+		mov	qword ptr [rax + 0x13d0], 0
+L_0x40ff80:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff84:
+		mov	qword ptr [rax + 0x13d8], 0
+L_0x40ff8f:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40ff93:
+		mov	qword ptr [rax + 0x13e0], 0
+L_0x40ff9e:
+
+L_0x40ffa3:
+		cmp	dword ptr [rbp - 0x2c], 0
+L_0x40ffa7:
+		jg L_cond_dummy
+
+L_0x40ffad:
+
+L_0x40fff8:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x40fffc:
+		add	rax, 0x1398
+L_0x410002:
+		mov	esi, dword ptr [rbp - 0x1c]
+L_0x410005:
+		mov	edx, dword ptr [rbp - 0x20]
+L_0x410008:
+		mov	rdi, rax
+L_0x41000b:
+		call	L_0x40d180
+
+L_0x410010:
+		mov	dword ptr [rbp - 0x3c], eax
+L_0x410013:
+		cmp	dword ptr [rbp - 0x3c], 0
+L_0x410017:
+		je	L_0x410068
+		call L_cond_dummy
+
+L_0x410068:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x41006c:
+		mov	ecx, dword ptr [rax + 0x1390]
+L_0x410072:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410076:
+		mov	dword ptr [rax + 0x13a0], ecx
+L_0x41007c:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410080:
+		add	rax, 8
+L_0x410084:
+		mov	rdx, qword ptr [rbp - 0x38]
+L_0x410088:
+		mov	qword ptr [rdx + 0x1398], rax
+L_0x41008f:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410093:
+		mov	byte ptr [rax + 0x13ec], 1
+L_0x41009a:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x41009e:
+		mov	qword ptr [rbp - 8], rax
+L_0x4100a2:
+		mov	rax, qword ptr [rbp - 8]
+L_0x4100a6:
+		add	rsp, 0x50
+L_0x4100aa:
+		pop	rbp
+L_0x4100ab:
+		ret	
+
+L_0x4100b0:
+		push	rbp
+L_0x4100b1:
+		mov	rbp, rsp
+L_0x4100b4:
+		sub	rsp, 0x20
+L_0x4100b8:
+		mov	qword ptr [rbp - 8], rdi
+L_0x4100bc:
+		mov	qword ptr [rbp - 0x10], rsi
+L_0x4100c0:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x4100c4:
+		mov	qword ptr [rbp - 0x18], rsi
+L_0x4100c8:
+		mov	rsi, qword ptr [rbp - 8]
+L_0x4100cc:
+		cmp	rsi, 0
+L_0x4100d0:
+		je L_cond_dummy
+
+L_0x4100d6:
+		mov	rax, qword ptr [rbp - 8]
+L_0x4100da:
+		mov	dword ptr [rax], 0
+L_0x4100e0:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x4100e4:
+		cmp	rax, 0
+L_0x4100e8:
+		je L_cond_dummy
+
+L_0x4100ee:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x4100f2:
+		mov	dword ptr [rax + 0x13e8], 0
+L_0x4100fc:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x410100:
+		cmp	rax, 0
+L_0x410104:
+		jne	L_0x410143
+		call L_cond_dummy
+
+L_0x410143:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x410147:
+		cmp	byte ptr [rax + 0x1394], 0
+L_0x41014e:
+		je	L_0x41018d
+		call L_cond_dummy
+
+L_0x41018d:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x410191:
+		cmp	byte ptr [rax + 0x13ec], 0
+L_0x410198:
+		je L_cond_dummy
+
+L_0x41019e:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x4101a2:
+		add	rax, 0x1398
+L_0x4101a8:
+		mov	rdi, rax
+L_0x4101ab:
+		call	L_0x40f0b0
+
+L_0x4101b0:
+		mov	dword ptr [rbp - 0x1c], eax
+L_0x4101b3:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x4101b7:
+		mov	rdi, rax
+L_0x4101ba:
+		call	L_0x400d00
+
+L_0x4101bf:
+		add	rsp, 0x20
+L_0x4101c3:
+		pop	rbp
+L_0x4101c4:
+		ret	
+
+L_0x4101d0:
+		push	rbp
+L_0x4101d1:
+		mov	rbp, rsp
+L_0x4101d4:
+		sub	rsp, 0x50
+L_0x4101d8:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x4101dc:
+		mov	qword ptr [rbp - 0x18], rsi
+L_0x4101e0:
+		mov	qword ptr [rbp - 0x20], rdx
+L_0x4101e4:
+		mov	dword ptr [rbp - 0x24], ecx
+L_0x4101e7:
+		mov	rdx, qword ptr [rbp - 0x18]
+L_0x4101eb:
+		mov	qword ptr [rbp - 0x38], rdx
+L_0x4101ef:
+		mov	rdx, qword ptr [rbp - 0x10]
+L_0x4101f3:
+		cmp	rdx, 0
+L_0x4101f7:
+		je L_cond_dummy
+
+L_0x4101fd:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x410201:
+		mov	dword ptr [rax], 0
+L_0x410207:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x41020b:
+		cmp	rax, 0
+L_0x41020f:
+		je L_cond_dummy
+
+L_0x410215:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410219:
+		mov	dword ptr [rax + 0x13e8], 0
+L_0x410223:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410227:
+		cmp	rax, 0
+L_0x41022b:
+		jne	L_0x410236
+		call L_cond_dummy
+
+L_0x410236:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x41023a:
+		cmp	rax, 0
+L_0x41023e:
+		jne	L_0x410249
+		call L_cond_dummy
+
+L_0x410249:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x41024d:
+		jge	L_0x410298
+		call L_cond_dummy
+
+L_0x410298:
+
+L_0x41029d:
+
+L_0x4102a2:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4102a6:
+		cmp	byte ptr [rax + 0x1394], 0
+L_0x4102ad:
+		je	L_0x4102f3
+		call L_cond_dummy
+
+L_0x4102f3:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x4102f7:
+		jne	L_0x41033d
+		call L_cond_dummy
+
+L_0x41033d:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x410340:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x410344:
+		mov	dword ptr [rcx + 0x13b8], eax
+L_0x41034a:
+		mov	rcx, qword ptr [rbp - 0x20]
+L_0x41034e:
+		mov	rdx, qword ptr [rbp - 0x38]
+L_0x410352:
+		mov	qword ptr [rdx + 0x13b0], rcx
+
+L_0x410359:
+
+L_0x41035e:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410362:
+		mov	rdi, qword ptr [rax]
+L_0x410365:
+		call	L_0x400d60
+
+L_0x41036a:
+		mov	dword ptr [rbp - 0x3c], eax
+L_0x41036d:
+		cmp	dword ptr [rbp - 0x3c], 0
+L_0x410371:
+		je	L_0x4103b7
+		call L_cond_dummy
+
+L_0x4103b7:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4103bb:
+		cmp	dword ptr [rax + 0x13a0], 0
+L_0x4103c2:
+		jne	L_0x4104a7
+
+L_0x4103c8:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4103cc:
+		mov	rdi, qword ptr [rax]
+L_0x4103cf:
+		call	L_0x410660
+
+L_0x4103d4:
+		mov	byte ptr [rbp - 0x41], al
+L_0x4103d7:
+		cmp	byte ptr [rbp - 0x41], 0
+L_0x4103db:
+		jne L_cond_dummy
+
+L_0x4103e1:
+		mov	eax, 1
+L_0x4103e6:
+		mov	esi, eax
+L_0x4103e8:
+		mov	eax, 0x1388
+L_0x4103ed:
+		mov	edx, eax
+L_0x4103ef:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x4103f3:
+		add	rcx, 8
+L_0x4103f7:
+		mov	rdi, qword ptr [rbp - 0x38]
+L_0x4103fb:
+		mov	rdi, qword ptr [rdi]
+L_0x4103fe:
+		mov	qword ptr [rbp - 0x50], rdi
+L_0x410402:
+		mov	rdi, rcx
+L_0x410405:
+		mov	rcx, qword ptr [rbp - 0x50]
+L_0x410409:
+		call	L_0x400d80
+
+L_0x41040e:
+		mov	r8d, eax
+L_0x410411:
+		mov	dword ptr [rbp - 0x28], r8d
+L_0x410415:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410419:
+		mov	rdi, qword ptr [rax]
+L_0x41041c:
+		call	L_0x400d60
+
+L_0x410421:
+		mov	dword ptr [rbp - 0x40], eax
+L_0x410424:
+		cmp	dword ptr [rbp - 0x40], 0
+L_0x410428:
+		je	L_0x41046e
+		call L_cond_dummy
+
+L_0x41046e:
+		mov	eax, dword ptr [rbp - 0x28]
+L_0x410471:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x410475:
+		mov	dword ptr [rcx + 0x1390], eax
+L_0x41047b:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x41047f:
+		mov	eax, dword ptr [rcx + 0x1390]
+L_0x410485:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x410489:
+		mov	dword ptr [rcx + 0x13a0], eax
+L_0x41048f:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x410493:
+		add	rcx, 8
+L_0x410497:
+		mov	rdx, qword ptr [rbp - 0x38]
+L_0x41049b:
+		mov	qword ptr [rdx + 0x1398], rcx
+L_0x4104a2:
+
+L_0x4104a7:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4104ab:
+		add	rax, 0x1398
+L_0x4104b1:
+		mov	rdi, rax
+L_0x4104b4:
+		call	L_0x40d380
+
+L_0x4104b9:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x4104bc:
+		cmp	dword ptr [rbp - 0x2c], 0
+L_0x4104c0:
+		je	L_0x410513
+
+L_0x4104c6:
+		cmp	dword ptr [rbp - 0x2c], 4
+L_0x4104ca:
+		je	L_0x41050e
+
+L_0x4104d0:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4104d4:
+		cmp	rax, 0
+L_0x4104d8:
+		je L_cond_dummy
+
+L_0x4104de:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4104e1:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4104e5:
+		mov	dword ptr [rcx], eax
+L_0x4104e7:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4104eb:
+		cmp	rax, 0
+L_0x4104ef:
+		je L_cond_dummy
+
+L_0x4104f5:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4104f8:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x4104fc:
+		mov	dword ptr [rcx + 0x13e8], eax
+L_0x410502:
+		mov	dword ptr [rbp - 4], 0
+L_0x410509:
+		jmp	L_0x41064f
+
+L_0x41050e:
+
+L_0x410513:
+		cmp	dword ptr [rbp - 0x2c], 0
+L_0x410517:
+		jne	L_0x4105a7
+
+L_0x41051d:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410521:
+		mov	rdi, qword ptr [rax]
+L_0x410524:
+		call	L_0x410660
+
+L_0x410529:
+		mov	byte ptr [rbp - 0x42], al
+L_0x41052c:
+		cmp	byte ptr [rbp - 0x42], 0
+L_0x410530:
+		je	L_0x4105a2
+
+L_0x410536:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x41053a:
+		cmp	dword ptr [rax + 0x13a0], 0
+L_0x410541:
+		jne	L_0x41059d
+		call L_cond_dummy
+
+L_0x41059d:
+
+L_0x4105a2:
+
+L_0x4105a7:
+		cmp	dword ptr [rbp - 0x2c], 4
+L_0x4105ab:
+		jne	L_0x4105fa
+
+L_0x4105b1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4105b5:
+		cmp	rax, 0
+L_0x4105b9:
+		je L_cond_dummy
+
+L_0x4105bf:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4105c3:
+		mov	dword ptr [rax], 4
+L_0x4105c9:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4105cd:
+		cmp	rax, 0
+L_0x4105d1:
+		je L_cond_dummy
+
+L_0x4105d7:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4105db:
+		mov	dword ptr [rax + 0x13e8], 4
+L_0x4105e5:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x4105e8:
+		mov	rcx, qword ptr [rbp - 0x38]
+L_0x4105ec:
+		sub	eax, dword ptr [rcx + 0x13b8]
+L_0x4105f2:
+		mov	dword ptr [rbp - 4], eax
+L_0x4105f5:
+		jmp	L_0x41064f
+
+L_0x4105fa:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x4105fe:
+		cmp	dword ptr [rax + 0x13b8], 0
+L_0x410605:
+		jne	L_0x41064a
+
+L_0x41060b:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x41060f:
+		cmp	rax, 0
+L_0x410613:
+		je L_cond_dummy
+
+L_0x410619:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x41061d:
+		mov	dword ptr [rax], 0
+L_0x410623:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410627:
+		cmp	rax, 0
+L_0x41062b:
+		je L_cond_dummy
+
+L_0x410631:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x410635:
+		mov	dword ptr [rax + 0x13e8], 0
+L_0x41063f:
+		mov	eax, dword ptr [rbp - 0x24]
+L_0x410642:
+		mov	dword ptr [rbp - 4], eax
+L_0x410645:
+		jmp	L_0x41064f
+
+L_0x41064a:
+		jmp	L_0x410359
+
+L_0x41064f:
+		mov	eax, dword ptr [rbp - 4]
+L_0x410652:
+		add	rsp, 0x50
+L_0x410656:
+		pop	rbp
+L_0x410657:
+		ret	
+
+L_0x410660:
+		push	rbp
+L_0x410661:
+		mov	rbp, rsp
+L_0x410664:
+		sub	rsp, 0x20
+L_0x410668:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x41066c:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x410670:
+		call	L_0x400dd0
+
+L_0x410675:
+		mov	dword ptr [rbp - 0x18], eax
+L_0x410678:
+		mov	eax, dword ptr [rbp - 0x18]
+L_0x41067b:
+		mov	dword ptr [rbp - 0x14], eax
+L_0x41067e:
+		cmp	dword ptr [rbp - 0x14], -1
+L_0x410682:
+		jne	L_0x410691
+
+L_0x410688:
+		mov	byte ptr [rbp - 1], 1
+L_0x41068c:
+		jmp	L_0x4106a4
+
+L_0x410691:
+		mov	edi, dword ptr [rbp - 0x14]
+L_0x410694:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x410698:
+		call	L_0x400e70
+
+L_0x41069d:
+		mov	byte ptr [rbp - 1], 0
+L_0x4106a1:
+		mov	dword ptr [rbp - 0x1c], eax
+
+L_0x4106a4:
+		movzx	eax, byte ptr [rbp - 1]
+L_0x4106a8:
+		add	rsp, 0x20
+L_0x4106ac:
+		pop	rbp
+L_0x4106ad:
+		ret	
+
+L_0x4106b0:
+		push	rbp
+L_0x4106b1:
+		mov	rbp, rsp
+L_0x4106b4:
+		mov	qword ptr [rbp - 8], rdi
+L_0x4106b8:
+		mov	qword ptr [rbp - 0x10], rsi
+L_0x4106bc:
+		mov	qword ptr [rbp - 0x18], rdx
+L_0x4106c0:
+		mov	qword ptr [rbp - 0x20], rcx
+L_0x4106c4:
+		mov	rcx, qword ptr [rbp - 0x10]
+L_0x4106c8:
+		mov	qword ptr [rbp - 0x28], rcx
+L_0x4106cc:
+		mov	rcx, qword ptr [rbp - 0x28]
+L_0x4106d0:
+		cmp	rcx, 0
+L_0x4106d4:
+		jne	L_0x410713
+		call L_cond_dummy
+
+L_0x410713:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x410717:
+		cmp	dword ptr [rax + 0x13e8], 4
+L_0x41071e:
+		je	L_0x41075d
+		call L_cond_dummy
+
+L_0x41075d:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x410761:
+		cmp	rax, 0
+L_0x410765:
+		jne	L_0x410770
+		call L_cond_dummy
+
+L_0x410770:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x410774:
+		cmp	rax, 0
+L_0x410778:
+		jne	L_0x4107bc
+		call L_cond_dummy
+
+L_0x4107bc:
+
+L_0x4107c1:
+		mov	rax, qword ptr [rbp - 8]
+L_0x4107c5:
+		cmp	rax, 0
+L_0x4107c9:
+		je L_cond_dummy
+
+L_0x4107cf:
+		mov	rax, qword ptr [rbp - 8]
+L_0x4107d3:
+		mov	dword ptr [rax], 0
+L_0x4107d9:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x4107dd:
+		cmp	rax, 0
+L_0x4107e1:
+		je L_cond_dummy
+
+L_0x4107e7:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x4107eb:
+		mov	dword ptr [rax + 0x13e8], 0
+L_0x4107f5:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x4107f9:
+		mov	ecx, dword ptr [rax + 0x13a0]
+L_0x4107ff:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x410803:
+		mov	dword ptr [rax], ecx
+L_0x410805:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x410809:
+		mov	rax, qword ptr [rax + 0x1398]
+L_0x410810:
+		mov	rdx, qword ptr [rbp - 0x18]
+L_0x410814:
+		mov	qword ptr [rdx], rax
+L_0x410817:
+		pop	rbp
+L_0x410818:
+		ret	
+
 L_0x410820:
 		push	rbp
 L_0x410821:
@@ -13575,7 +24800,7 @@ L_0x410a91:
 L_0x410a94:
 		cmp	ecx, 0x2d
 L_0x410a97:
-		jne L_cond_dummy
+		jne	L_0x410ab1
 
 L_0x410a9d:
 		cmp	byte ptr [rbp - 0x31], 0
@@ -13583,6 +24808,46 @@ L_0x410aa1:
 		je L_cond_dummy
 
 L_0x410aa7:
+		jmp	L_0x410b01
+
+L_0x410ab1:
+		mov	eax, dword ptr [0x61e6d0]
+L_0x410ab8:
+		add	eax, 1
+L_0x410abb:
+		mov	dword ptr [0x61e6d0], eax
+L_0x410ac2:
+		mov	rcx, qword ptr [rbp - 0x30]
+L_0x410ac6:
+		mov	rdi, qword ptr [rcx]
+L_0x410ac9:
+		call	L_0x400db0
+
+L_0x410ace:
+		mov	qword ptr [rbp - 0x40], rax
+L_0x410ad2:
+		mov	edx, dword ptr [0x61e6d4]
+L_0x410ad9:
+		mov	rax, qword ptr [rbp - 0x40]
+L_0x410add:
+		mov	esi, eax
+L_0x410adf:
+		cmp	edx, esi
+L_0x410ae1:
+		jge L_cond_dummy
+
+L_0x410ae7:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410aeb:
+		mov	rdi, qword ptr [rax]
+L_0x410aee:
+		call	L_0x400db0
+
+L_0x410af3:
+		mov	ecx, eax
+L_0x410af5:
+		mov	dword ptr [0x61e6d4], ecx
+L_0x410afc:
 
 L_0x410b01:
 		mov	rax, qword ptr [rbp - 0x30]
@@ -13596,12 +24861,15 @@ L_0x410b0d:
 L_0x410b12:
 		cmp	dword ptr [0x61e6d0], 0
 L_0x410b1a:
-		jne L_cond_dummy
+		jne	L_0x410b30
 
 L_0x410b20:
 		mov	dword ptr [0x61e6d8], 1
 L_0x410b2b:
+		jmp	L_0x410b3b
 
+L_0x410b30:
+		mov	dword ptr [0x61e6d8], 3
 L_0x410b3b:
 		movabs	rsi, 0x419c8d
 L_0x410b45:
@@ -13759,7 +25027,7 @@ L_0x410d04:
 L_0x410d07:
 		cmp	ecx, 0x2d
 L_0x410d0a:
-		jne L_cond_dummy
+		jne	L_0x41114d
 
 L_0x410d10:
 		mov	rax, qword ptr [rbp - 0x30]
@@ -13804,13 +25072,112 @@ L_0x410d58:
 L_0x410d5c:
 		cmp	edx, 0x63
 L_0x410d5f:
-		jne L_cond_dummy
+		jne	L_0x410d6a
 
 L_0x410d65:
+		jmp	L_0x410fb3
+
+L_0x410d6a:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410d6e:
+		mov	rax, qword ptr [rax]
+L_0x410d71:
+		movsxd	rcx, dword ptr [rbp - 0x18]
+L_0x410d75:
+		movsx	edx, byte ptr [rax + rcx]
+L_0x410d79:
+		cmp	edx, 0x64
+L_0x410d7c:
+		jne	L_0x410d87
+
+L_0x410d82:
+		jmp	L_0x410fc3
+
+L_0x410d87:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410d8b:
+		mov	rax, qword ptr [rax]
+L_0x410d8e:
+		movsxd	rcx, dword ptr [rbp - 0x18]
+L_0x410d92:
+		movsx	edx, byte ptr [rax + rcx]
+L_0x410d96:
+		cmp	edx, 0x7a
+L_0x410d99:
+		jne	L_0x410da4
+		call L_cond_dummy
+
+L_0x410da4:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410da8:
+		mov	rax, qword ptr [rax]
+L_0x410dab:
+		movsxd	rcx, dword ptr [rbp - 0x18]
+L_0x410daf:
+		movsx	edx, byte ptr [rax + rcx]
+L_0x410db3:
+		cmp	edx, 0x66
+L_0x410db6:
+		jne	L_0x410dc1
+
+L_0x410dbc:
+		jmp	L_0x410fe3
+
+L_0x410dc1:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410dc5:
+		mov	rax, qword ptr [rax]
+L_0x410dc8:
+		movsxd	rcx, dword ptr [rbp - 0x18]
+L_0x410dcc:
+		movsx	edx, byte ptr [rax + rcx]
+L_0x410dd0:
+		cmp	edx, 0x74
+L_0x410dd3:
+		jne	L_0x410dde
+
+L_0x410dd9:
+		jmp	L_0x410ff0
+
+L_0x410dde:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x410de2:
+		mov	rax, qword ptr [rax]
+L_0x410de5:
+		movsxd	rcx, dword ptr [rbp - 0x18]
+L_0x410de9:
+		movsx	edx, byte ptr [rax + rcx]
+L_0x410ded:
+		cmp	edx, 0x6b
+L_0x410df0:
+		jne L_cond_dummy
+
+L_0x410df6:
+		jmp	L_0x411000
 
 L_0x410fb3:
 		mov	dword ptr [0x61e6d8], 2
 L_0x410fbe:
+		jmp	L_0x411135
+
+L_0x410fc3:
+		mov	dword ptr [0x61ef10], 2
+L_0x410fce:
+		jmp	L_0x411135
+
+L_0x410fe3:
+		mov	byte ptr [0x61ef0b], 1
+L_0x410feb:
+		jmp	L_0x411135
+
+L_0x410ff0:
+		mov	dword ptr [0x61ef10], 3
+L_0x410ffb:
+		jmp	L_0x411135
+
+L_0x411000:
+		mov	byte ptr [0x61e6dc], 1
+L_0x411008:
 
 L_0x411135:
 		mov	eax, dword ptr [rbp - 0x18]
@@ -14266,7 +25633,7 @@ L_0x411604:
 L_0x411615:
 		cmp	dword ptr [0x61ef10], 1
 L_0x41161d:
-		jne L_cond_dummy
+		jne	L_0x411654
 
 L_0x411623:
 		cmp	byte ptr [0x61e6c4], 0
@@ -14280,12 +25647,19 @@ L_0x411654:
 		cmp	dword ptr [0x61ef10], 3
 L_0x41165c:
 		jne	L_0x4116a6
+
+L_0x411662:
+		cmp	dword ptr [0x61e6d8], 2
+L_0x41166a:
+		jne	L_0x4116a1
 		call L_cond_dummy
+
+L_0x4116a1:
 
 L_0x4116a6:
 		cmp	dword ptr [0x61e6d8], 2
 L_0x4116ae:
-		jne L_cond_dummy
+		jne	L_0x4116d2
 
 L_0x4116b4:
 		cmp	dword ptr [0x61e6d0], 0
@@ -14300,23 +25674,50 @@ L_0x4116d2:
 		cmp	dword ptr [0x61ef10], 1
 L_0x4116da:
 		je	L_0x4116eb
-		call L_cond_dummy
 
+L_0x4116e0:
+		mov	dword ptr [0x61e6e0], 0
 L_0x4116eb:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x4116f3:
 		jne	L_0x41174a
-		call L_cond_dummy
 
+L_0x4116f9:
+		mov	edi, 2
+L_0x4116fe:
+		movabs	rsi, offset L_0x411f80
+L_0x411708:
+		call	L_0x400e10
+
+L_0x41170d:
+		mov	edi, 0xf
+L_0x411712:
+		movabs	rsi, offset L_0x411f80
+L_0x41171c:
+		mov	qword ptr [rbp - 0x120], rax
+L_0x411723:
+		call	L_0x400e10
+
+L_0x411728:
+		mov	edi, 1
+L_0x41172d:
+		movabs	rsi, offset L_0x411f80
+L_0x411737:
+		mov	qword ptr [rbp - 0x128], rax
+L_0x41173e:
+		call	L_0x400e10
+
+L_0x411743:
+		mov	qword ptr [rbp - 0x130], rax
 L_0x41174a:
 		cmp	dword ptr [0x61ef10], 1
 L_0x411752:
-		jne L_cond_dummy
+		jne	L_0x411826
 
 L_0x411758:
 		cmp	dword ptr [0x61e6d8], 1
 L_0x411760:
-		jne L_cond_dummy
+		jne	L_0x411774
 
 L_0x411766:
 		xor	eax, eax
@@ -14326,8 +25727,245 @@ L_0x41176a:
 		call	L_0x411fc0
 
 L_0x41176f:
+		jmp	L_0x411821
+
+L_0x411774:
+		mov	byte ptr [rbp - 0x31], 1
+L_0x411778:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x41177c:
+		mov	qword ptr [rbp - 0x30], rax
+
+L_0x411780:
+
+L_0x411785:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x411789:
+		cmp	rax, 0
+L_0x41178d:
+		jne	L_0x411798
+
+L_0x411793:
+		jmp	L_0x41181c
+
+L_0x411798:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x41179c:
+		mov	rdi, qword ptr [rax]
+L_0x41179f:
+		mov	ecx, 0x419c8a
+L_0x4117a4:
+		mov	esi, ecx
+L_0x4117a6:
+		call	L_0x400e00
+
+L_0x4117ab:
+		mov	dword ptr [rbp - 0xc4], eax
+L_0x4117b1:
+		cmp	dword ptr [rbp - 0xc4], 0
+L_0x4117b8:
+		jne	L_0x4117c7
+		call L_cond_dummy
+
+L_0x4117c7:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x4117cb:
+		mov	rax, qword ptr [rax]
+L_0x4117ce:
+		movsx	ecx, byte ptr [rax]
+L_0x4117d1:
+		cmp	ecx, 0x2d
+L_0x4117d4:
+		jne	L_0x4117ee
+
+L_0x4117da:
+		cmp	byte ptr [rbp - 0x31], 0
+L_0x4117de:
+		je L_cond_dummy
+
+L_0x4117e4:
+		jmp	L_0x41180b
+
+L_0x4117ee:
+		mov	eax, dword ptr [0x61e6c0]
+L_0x4117f5:
+		add	eax, 1
+L_0x4117f8:
+		mov	dword ptr [0x61e6c0], eax
+L_0x4117ff:
+		mov	rcx, qword ptr [rbp - 0x30]
+L_0x411803:
+		mov	rdi, qword ptr [rcx]
+L_0x411806:
+		call	L_0x411fc0
+
+L_0x41180b:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x41180f:
+		mov	rax, qword ptr [rax + 8]
+L_0x411813:
+		mov	qword ptr [rbp - 0x30], rax
+L_0x411817:
+		jmp	L_0x411780
+
+L_0x41181c:
 
 L_0x411821:
+		jmp	L_0x411a5f
+
+L_0x411826:
+		cmp	dword ptr [0x61ef10], 2
+L_0x41182e:
+		jne	L_0x41192e
+
+L_0x411834:
+		mov	byte ptr [0x61ef0a], 0
+L_0x41183c:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x411844:
+		jne L_cond_dummy
+
+L_0x41184a:
+		xor	eax, eax
+L_0x41184c:
+		mov	edi, eax
+L_0x41184e:
+		call	L_0x412a40
+
+L_0x411853:
+
+L_0x411905:
+		cmp	byte ptr [0x61ef0a], 0
+L_0x41190d:
+		je	L_0x411929
+		call L_cond_dummy
+
+L_0x411929:
+		jmp	L_0x411a5a
+
+L_0x41192e:
+		mov	byte ptr [0x61eafa], 0
+L_0x411936:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x41193e:
+		jne	L_0x411952
+		call L_cond_dummy
+
+L_0x411952:
+		mov	byte ptr [rbp - 0x31], 1
+L_0x411956:
+		mov	rax, qword ptr [rbp - 0x28]
+L_0x41195a:
+		mov	qword ptr [rbp - 0x30], rax
+
+L_0x41195e:
+
+L_0x411963:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x411967:
+		cmp	rax, 0
+L_0x41196b:
+		jne	L_0x411976
+
+L_0x411971:
+		jmp	L_0x4119fa
+
+L_0x411976:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x41197a:
+		mov	rdi, qword ptr [rax]
+L_0x41197d:
+		mov	ecx, 0x419c8a
+L_0x411982:
+		mov	esi, ecx
+L_0x411984:
+		call	L_0x400e00
+
+L_0x411989:
+		mov	dword ptr [rbp - 0xcc], eax
+L_0x41198f:
+		cmp	dword ptr [rbp - 0xcc], 0
+L_0x411996:
+		jne	L_0x4119a5
+		call L_cond_dummy
+
+L_0x4119a5:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x4119a9:
+		mov	rax, qword ptr [rax]
+L_0x4119ac:
+		movsx	ecx, byte ptr [rax]
+L_0x4119af:
+		cmp	ecx, 0x2d
+L_0x4119b2:
+		jne	L_0x4119cc
+
+L_0x4119b8:
+		cmp	byte ptr [rbp - 0x31], 0
+L_0x4119bc:
+		je L_cond_dummy
+
+L_0x4119c2:
+		jmp	L_0x4119e9
+
+L_0x4119cc:
+		mov	eax, dword ptr [0x61e6c0]
+L_0x4119d3:
+		add	eax, 1
+L_0x4119d6:
+		mov	dword ptr [0x61e6c0], eax
+L_0x4119dd:
+		mov	rcx, qword ptr [rbp - 0x30]
+L_0x4119e1:
+		mov	rdi, qword ptr [rcx]
+L_0x4119e4:
+		call	L_0x4135a0
+
+L_0x4119e9:
+		mov	rax, qword ptr [rbp - 0x30]
+L_0x4119ed:
+		mov	rax, qword ptr [rax + 8]
+L_0x4119f1:
+		mov	qword ptr [rbp - 0x30], rax
+L_0x4119f5:
+		jmp	L_0x41195e
+
+L_0x4119fa:
+
+L_0x4119ff:
+		cmp	byte ptr [0x61eafa], 0
+L_0x411a07:
+		je	L_0x411a55
+
+L_0x411a0d:
+		cmp	byte ptr [0x61e6e8], 0
+L_0x411a15:
+		je L_cond_dummy
+
+L_0x411a1b:
+		movabs	rsi, 0x41a867
+L_0x411a25:
+		mov	rdi, qword ptr [0x61de00]
+L_0x411a2d:
+		mov	al, 0
+L_0x411a2f:
+		call	L_0x400e20
+
+L_0x411a34:
+		mov	edi, 2
+L_0x411a39:
+		mov	dword ptr [rbp - 0x134], eax
+L_0x411a3f:
+		call	L_0x413570
+
+L_0x411a44:
+		mov	edi, dword ptr [0x61e6e4]
+L_0x411a4b:
+		call	L_0x400ef0
+
+L_0x411a55:
+
+L_0x411a5a:
 
 L_0x411a5f:
 		mov	rax, qword ptr [rbp - 0x28]
@@ -14485,7 +26123,7 @@ L_0x411df0:
 L_0x411df4:
 		cmp	rsi, 0
 L_0x411df8:
-		jne L_cond_dummy
+		jne	L_0x411e55
 
 L_0x411dfe:
 		call	L_0x415d50
@@ -14534,6 +26172,42 @@ L_0x411e48:
 L_0x411e4c:
 		mov	qword ptr [rbp - 0x40], rax
 L_0x411e50:
+		jmp	L_0x411eab
+
+L_0x411e55:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x411e59:
+		mov	qword ptr [rbp - 0x38], rax
+L_0x411e5d:
+
+L_0x411e62:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x411e66:
+		mov	rax, qword ptr [rax + 8]
+L_0x411e6a:
+		cmp	rax, 0
+L_0x411e6e:
+		jne L_cond_dummy
+
+L_0x411e74:
+
+L_0x411e8a:
+		mov	rax, qword ptr [rbp - 0x38]
+L_0x411e8e:
+		mov	rdi, qword ptr [rax + 8]
+L_0x411e92:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x411e96:
+		call	L_0x411de0
+
+L_0x411e9b:
+		mov	rsi, qword ptr [rbp - 0x38]
+L_0x411e9f:
+		mov	qword ptr [rsi + 8], rax
+L_0x411ea3:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x411ea7:
+		mov	qword ptr [rbp - 8], rax
 
 L_0x411eab:
 		mov	rax, qword ptr [rbp - 8]
@@ -14559,7 +26233,7 @@ L_0x411fd7:
 L_0x411fdb:
 		cmp	rdi, 0
 L_0x411fdf:
-		jne L_cond_dummy
+		jne	L_0x412007
 
 L_0x411fe5:
 		cmp	dword ptr [0x61e6d8], 1
@@ -14572,9 +26246,18 @@ L_0x412002:
 L_0x412007:
 		cmp	dword ptr [0x61e6d8], 1
 L_0x41200f:
-		jne L_cond_dummy
+		jne	L_0x41201a
 
 L_0x412015:
+		jmp	L_0x412045
+
+L_0x41201a:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x412022:
+		jne L_cond_dummy
+
+L_0x412028:
+		jmp	L_0x41207c
 
 L_0x412045:
 		movabs	rdi, 0x61eb00
@@ -14591,18 +26274,72 @@ L_0x412072:
 		call	L_0x411b80
 
 L_0x412077:
+		jmp	L_0x4120f3
+
+L_0x41207c:
+		movabs	rdi, 0x61eb00
+L_0x412086:
+		mov	rsi, qword ptr [rbp - 8]
+L_0x41208a:
+		call	L_0x411b80
+
+L_0x41208f:
+		movabs	rdi, 0x61e6f0
+L_0x412099:
+		mov	rsi, qword ptr [rbp - 8]
+L_0x41209d:
+		call	L_0x411b80
+
+L_0x4120a2:
+		movabs	rdi, 0x61e6f0
+L_0x4120ac:
+		movabs	rsi, 0x419c5f
+L_0x4120b6:
+		call	L_0x400ee0
+
+L_0x4120bb:
+		mov	qword ptr [rbp - 0x178], rax
+L_0x4120c2:
 
 L_0x4120f3:
 		cmp	dword ptr [0x61e6d8], 1
 L_0x4120fb:
 		je	L_0x412176
+
+L_0x412101:
+		movabs	rdi, 0x61eb00
+L_0x41210b:
+		call	L_0x415e60
+
+L_0x412110:
+		mov	byte ptr [rbp - 0xb1], al
+L_0x412116:
+		cmp	byte ptr [rbp - 0xb1], 0
+L_0x41211d:
+		je	L_0x412171
 		call L_cond_dummy
+
+L_0x412171:
 
 L_0x412176:
 		cmp	dword ptr [0x61e6d8], 1
 L_0x41217e:
 		je	L_0x412213
+
+L_0x412184:
+		movabs	rdi, 0x61eb00
+L_0x41218e:
+		call	L_0x415e80
+
+L_0x412193:
+		mov	byte ptr [rbp - 0xc9], al
+L_0x412199:
+		cmp	byte ptr [rbp - 0xc9], 0
+L_0x4121a0:
+		jne	L_0x41220e
 		call L_cond_dummy
+
+L_0x41220e:
 
 L_0x412213:
 		mov	dword ptr [rbp - 0x20], 0
@@ -14647,7 +26384,9 @@ L_0x4122c4:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x4122cc:
 		jne	L_0x4122d7
-		call L_cond_dummy
+
+L_0x4122d2:
+		jmp	L_0x4122ea
 
 L_0x4122d7:
 		cmp	dword ptr [0x61e6d8], 2
@@ -14655,38 +26394,134 @@ L_0x4122df:
 		jne	L_0x412363
 		call L_cond_dummy
 
+L_0x4122ea:
+		movabs	rdi, 0x61eb00
+L_0x4122f4:
+		lea	rsi, [rbp - 0xb0]
+L_0x4122fb:
+		call	L_0x419550
+
+L_0x412300:
+		mov	ecx, dword ptr [rbp - 0x98]
+L_0x412306:
+		and	ecx, 0xf000
+L_0x41230c:
+		cmp	ecx, 0x4000
+L_0x412312:
+		mov	dword ptr [rbp - 0x188], eax
+L_0x412318:
+		jne	L_0x41235e
+		call L_cond_dummy
+
+L_0x41235e:
+
 L_0x412363:
 
 L_0x412368:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x412370:
 		jne	L_0x4123fe
+
+L_0x412376:
+		cmp	byte ptr [0x61ef0b], 0
+L_0x41237e:
+		jne	L_0x4123f9
+
+L_0x412384:
+		movabs	rdi, 0x61eb00
+L_0x41238e:
+		call	L_0x415f90
+
+L_0x412393:
+		mov	byte ptr [rbp - 0xcb], al
+L_0x412399:
+		cmp	byte ptr [rbp - 0xcb], 0
+L_0x4123a0:
+		je	L_0x4123f4
 		call L_cond_dummy
+
+L_0x4123f4:
+
+L_0x4123f9:
 
 L_0x4123fe:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x412406:
 		jne	L_0x4124a0
+
+L_0x41240c:
+		movabs	rdi, 0x61e6f0
+L_0x412416:
+		call	L_0x415e80
+
+L_0x41241b:
+		mov	byte ptr [rbp - 0xcc], al
+L_0x412421:
+		cmp	byte ptr [rbp - 0xcc], 0
+L_0x412428:
+		je	L_0x41249b
 		call L_cond_dummy
+
+L_0x41249b:
 
 L_0x4124a0:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x4124a8:
 		jne	L_0x41255e
+
+L_0x4124ae:
+		cmp	byte ptr [0x61ef0b], 0
+L_0x4124b6:
+		jne	L_0x412559
+
+L_0x4124bc:
+		movabs	rdi, 0x61eb00
+L_0x4124c6:
+		call	L_0x416000
+
+L_0x4124cb:
+		mov	dword ptr [rbp - 0x1c], eax
+L_0x4124ce:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x4124d2:
+		jle	L_0x412554
 		call L_cond_dummy
+
+L_0x412554:
+
+L_0x412559:
 
 L_0x41255e:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x412566:
 		jne	L_0x41257b
-		call L_cond_dummy
+
+L_0x41256c:
+		movabs	rdi, 0x61eb00
+L_0x412576:
+		call	L_0x416060
 
 L_0x41257b:
 		cmp	dword ptr [0x61e6d8], 1
 L_0x412583:
-		jne L_cond_dummy
+		jne	L_0x41258e
 
 L_0x412589:
+		jmp	L_0x4125b9
+
+L_0x41258e:
+		cmp	dword ptr [0x61e6d8], 2
+L_0x412596:
+		jne	L_0x4125a1
+		call L_cond_dummy
+
+L_0x4125a1:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x4125a9:
+		jne L_cond_dummy
+
+L_0x4125af:
+		jmp	L_0x4127c3
 
 L_0x4125b9:
 		mov	rax, qword ptr [0x61ddf0]
@@ -14717,6 +26552,43 @@ L_0x4125fc:
 		call L_cond_dummy
 
 L_0x412667:
+		jmp	L_0x412937
+
+L_0x4127c3:
+		movabs	rdi, 0x61eb00
+L_0x4127cd:
+		movabs	rsi, 0x41b226
+L_0x4127d7:
+		call	L_0x400e30
+
+L_0x4127dc:
+		movabs	rdi, 0x61e6f0
+L_0x4127e6:
+		movabs	rsi, 0x41b229
+L_0x4127f0:
+		mov	qword ptr [rbp - 0x10], rax
+L_0x4127f4:
+		call	L_0x4160a0
+
+L_0x4127f9:
+		mov	qword ptr [rbp - 0x18], rax
+L_0x4127fd:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x412801:
+		cmp	rax, 0
+L_0x412805:
+		jne	L_0x412890
+		call L_cond_dummy
+
+L_0x412890:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x412894:
+		cmp	rax, 0
+L_0x412898:
+		jne	L_0x412923
+		call L_cond_dummy
+
+L_0x412923:
 
 L_0x412937:
 		cmp	dword ptr [0x61e2ac], 1
@@ -14743,7 +26615,39 @@ L_0x4129bd:
 		cmp	dword ptr [0x61e6d8], 3
 L_0x4129c5:
 		jne	L_0x412a2d
+
+L_0x4129cb:
+		movabs	rdi, 0x61e6f0
+L_0x4129d5:
+		call	L_0x4166a0
+
+L_0x4129da:
+		mov	byte ptr [0x61ef0c], 0
+L_0x4129e2:
+		cmp	byte ptr [0x61e6dc], 0
+L_0x4129ea:
+		jne	L_0x412a28
+
+L_0x4129f0:
+		movabs	rdi, 0x61eb00
+L_0x4129fa:
+		call	L_0x400d30
+
+L_0x4129ff:
+		mov	dword ptr [rbp - 0x120], eax
+L_0x412a05:
+		mov	eax, dword ptr [rbp - 0x120]
+L_0x412a0b:
+		mov	dword ptr [rbp - 0x11c], eax
+L_0x412a11:
+		cmp	dword ptr [rbp - 0x11c], 0
+L_0x412a18:
+		je	L_0x412a23
 		call L_cond_dummy
+
+L_0x412a23:
+
+L_0x412a28:
 
 L_0x412a2d:
 		mov	byte ptr [0x61ef0c], 0
@@ -14752,6 +26656,430 @@ L_0x412a35:
 L_0x412a3c:
 		pop	rbp
 L_0x412a3d:
+		ret	
+
+L_0x412a40:
+		push	rbp
+L_0x412a41:
+		mov	rbp, rsp
+L_0x412a44:
+		sub	rsp, 0x1e0
+L_0x412a4b:
+		mov	qword ptr [rbp - 8], rdi
+L_0x412a4f:
+		mov	byte ptr [0x61ef0c], 0
+L_0x412a57:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x412a5b:
+		cmp	rdi, 0
+L_0x412a5f:
+		jne L_cond_dummy
+
+L_0x412a65:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x412a6d:
+		je	L_0x412a82
+		call L_cond_dummy
+
+L_0x412a82:
+
+L_0x412a87:
+		mov	byte ptr [rbp - 0x22], 0
+L_0x412a8b:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x412a93:
+		jne L_cond_dummy
+
+L_0x412a99:
+
+L_0x412ac9:
+		movabs	rdi, 0x61eb00
+L_0x412ad3:
+		movabs	rsi, 0x41b0b5
+L_0x412add:
+		call	L_0x411b80
+
+L_0x412ae2:
+		movabs	rdi, 0x61e6f0
+L_0x412aec:
+		movabs	rsi, 0x41b0bd
+L_0x412af6:
+		call	L_0x411b80
+
+L_0x412afb:
+
+L_0x412be3:
+
+L_0x412be8:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x412bf0:
+		je	L_0x412c6b
+		call L_cond_dummy
+
+L_0x412c6b:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x412c73:
+		je	L_0x412d08
+		call L_cond_dummy
+
+L_0x412d08:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x412d10:
+		jne	L_0x412d1b
+		call L_cond_dummy
+
+L_0x412d1b:
+		cmp	dword ptr [0x61e6d8], 2
+L_0x412d23:
+		jne	L_0x412da7
+		call L_cond_dummy
+
+L_0x412da7:
+
+L_0x412dac:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x412db4:
+		jne	L_0x412e42
+		call L_cond_dummy
+
+L_0x412e42:
+		cmp	byte ptr [rbp - 0x22], 0
+L_0x412e46:
+		je	L_0x412e9a
+		call L_cond_dummy
+
+L_0x412e9a:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x412ea2:
+		jne	L_0x412f3c
+		call L_cond_dummy
+
+L_0x412f3c:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x412f44:
+		jne	L_0x412ffa
+		call L_cond_dummy
+
+L_0x412ffa:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x413002:
+		jne	L_0x413017
+		call L_cond_dummy
+
+L_0x413017:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x41301f:
+		jne L_cond_dummy
+
+L_0x413025:
+
+L_0x413055:
+		mov	rax, qword ptr [0x61ddf0]
+L_0x41305d:
+		mov	qword ptr [rbp - 0x10], rax
+L_0x413061:
+		mov	rax, qword ptr [0x61dde0]
+L_0x413069:
+		mov	qword ptr [rbp - 0x18], rax
+L_0x41306d:
+		mov	rdi, qword ptr [0x61ddf0]
+L_0x413075:
+		call	L_0x400e40
+
+L_0x41307a:
+		mov	dword ptr [rbp - 0xe4], eax
+L_0x413080:
+		mov	edi, dword ptr [rbp - 0xe4]
+L_0x413086:
+		call	L_0x400d70
+
+L_0x41308b:
+		mov	dword ptr [rbp - 0xe8], eax
+L_0x413091:
+		cmp	dword ptr [rbp - 0xe8], 0
+L_0x413098:
+		je	L_0x413103
+		call L_cond_dummy
+
+L_0x413103:
+
+L_0x41333d:
+		cmp	dword ptr [0x61e2ac], 1
+L_0x413345:
+		jl	L_0x413396
+		call L_cond_dummy
+
+L_0x413396:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x41339a:
+		mov	qword ptr [0x61e6c8], rax
+L_0x4133a2:
+		mov	byte ptr [0x61ef0c], 1
+L_0x4133aa:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4133ae:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x4133b2:
+		call	L_0x416bb0
+
+L_0x4133b7:
+		mov	byte ptr [rbp - 0x21], al
+L_0x4133ba:
+		mov	qword ptr [0x61e6c8], 0
+L_0x4133c6:
+		cmp	byte ptr [rbp - 0x21], 0
+L_0x4133ca:
+		je L_cond_dummy
+
+L_0x4133d0:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x4133d8:
+		jne	L_0x413440
+		call L_cond_dummy
+
+L_0x413440:
+
+L_0x4134a0:
+		mov	byte ptr [0x61ef0c], 0
+L_0x4134a8:
+		cmp	byte ptr [rbp - 0x21], 0
+L_0x4134ac:
+		je L_cond_dummy
+
+L_0x4134b2:
+		cmp	dword ptr [0x61e2ac], 1
+L_0x4134ba:
+		jl	L_0x4134df
+		call L_cond_dummy
+
+L_0x4134df:
+
+L_0x413556:
+
+L_0x41355b:
+		add	rsp, 0x1e0
+L_0x413562:
+		pop	rbp
+L_0x413563:
+		ret	
+
+L_0x413570:
+		push	rbp
+L_0x413571:
+		mov	rbp, rsp
+L_0x413574:
+		mov	dword ptr [rbp - 4], edi
+L_0x413577:
+		mov	edi, dword ptr [rbp - 4]
+L_0x41357a:
+		cmp	edi, dword ptr [0x61e6e4]
+L_0x413581:
+		jle L_cond_dummy
+
+L_0x413587:
+		mov	eax, dword ptr [rbp - 4]
+L_0x41358a:
+		mov	dword ptr [0x61e6e4], eax
+L_0x413591:
+		pop	rbp
+L_0x413592:
+		ret	
+
+L_0x4135a0:
+		push	rbp
+L_0x4135a1:
+		mov	rbp, rsp
+L_0x4135a4:
+		sub	rsp, 0x130
+L_0x4135ab:
+		mov	qword ptr [rbp - 8], rdi
+L_0x4135af:
+		mov	byte ptr [0x61ef0c], 0
+L_0x4135b7:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x4135bb:
+		cmp	rdi, 0
+L_0x4135bf:
+		jne	L_0x4135e7
+		call L_cond_dummy
+
+L_0x4135e7:
+		movabs	rdi, 0x61e6f0
+L_0x4135f1:
+		movabs	rsi, 0x419c78
+L_0x4135fb:
+		call	L_0x411b80
+
+L_0x413600:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x413608:
+		jne	L_0x413613
+		call L_cond_dummy
+
+L_0x413613:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x41361b:
+		jne L_cond_dummy
+
+L_0x413621:
+
+L_0x41365c:
+		movabs	rdi, 0x61eb00
+L_0x413666:
+		mov	rsi, qword ptr [rbp - 8]
+L_0x41366a:
+		call	L_0x411b80
+
+L_0x41366f:
+
+L_0x413687:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x41368f:
+		je L_cond_dummy
+
+L_0x413695:
+		movabs	rdi, 0x61eb00
+L_0x41369f:
+		call	L_0x415e60
+
+L_0x4136a4:
+		mov	byte ptr [rbp - 0xa9], al
+L_0x4136aa:
+		cmp	byte ptr [rbp - 0xa9], 0
+L_0x4136b1:
+		je	L_0x413705
+		call L_cond_dummy
+
+L_0x413705:
+
+L_0x41370a:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x413712:
+		je L_cond_dummy
+
+L_0x413718:
+		movabs	rdi, 0x61eb00
+L_0x413722:
+		call	L_0x415e80
+
+L_0x413727:
+		mov	byte ptr [rbp - 0xc1], al
+L_0x41372d:
+		cmp	byte ptr [rbp - 0xc1], 0
+L_0x413734:
+		jne	L_0x4137a2
+		call L_cond_dummy
+
+L_0x4137a2:
+
+L_0x4137a7:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x4137af:
+		je L_cond_dummy
+
+L_0x4137b5:
+		movabs	rdi, 0x61eb00
+L_0x4137bf:
+		lea	rsi, [rbp - 0xa8]
+L_0x4137c6:
+		call	L_0x419550
+
+L_0x4137cb:
+		mov	ecx, dword ptr [rbp - 0x90]
+L_0x4137d1:
+		and	ecx, 0xf000
+L_0x4137d7:
+		cmp	ecx, 0x4000
+L_0x4137dd:
+		mov	dword ptr [rbp - 0x114], eax
+L_0x4137e3:
+		jne	L_0x413829
+		call L_cond_dummy
+
+L_0x413829:
+
+L_0x41382e:
+		cmp	dword ptr [0x61e6d8], 1
+L_0x413836:
+		jne	L_0x413841
+		call L_cond_dummy
+
+L_0x413841:
+		cmp	dword ptr [0x61e6d8], 2
+L_0x413849:
+		jne	L_0x413854
+		call L_cond_dummy
+
+L_0x413854:
+		cmp	dword ptr [0x61e6d8], 3
+L_0x41385c:
+		jne L_cond_dummy
+
+L_0x413862:
+
+L_0x413913:
+
+L_0x413918:
+		movabs	rdi, 0x61eb00
+L_0x413922:
+		movabs	rsi, 0x41b226
+L_0x41392c:
+		call	L_0x400e30
+
+L_0x413931:
+		mov	qword ptr [rbp - 0x10], rax
+L_0x413935:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x413939:
+		cmp	rax, 0
+L_0x41393d:
+		jne	L_0x4139ab
+		call L_cond_dummy
+
+L_0x4139ab:
+
+L_0x4139bf:
+		cmp	dword ptr [0x61e2ac], 1
+L_0x4139c7:
+		jl	L_0x413a18
+		call L_cond_dummy
+
+L_0x413a18:
+		mov	qword ptr [0x61e6c8], 0
+L_0x413a24:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x413a28:
+		call	L_0x417250
+
+L_0x413a2d:
+		mov	byte ptr [rbp - 0x11], al
+L_0x413a30:
+		cmp	byte ptr [rbp - 0x11], 0
+L_0x413a34:
+		je	L_0x413a6c
+
+L_0x413a3a:
+		cmp	dword ptr [0x61e2ac], 1
+L_0x413a42:
+		jl	L_0x413a67
+		call L_cond_dummy
+
+L_0x413a67:
+
+L_0x413a6c:
+		cmp	byte ptr [rbp - 0x11], 0
+L_0x413a70:
+		jne	L_0x413a7e
+
+L_0x413a76:
+		mov	byte ptr [0x61eafa], 1
+L_0x413a7e:
+
+L_0x413a83:
+		add	rsp, 0x130
+L_0x413a8a:
+		pop	rbp
+L_0x413a8b:
 		ret	
 
 L_0x413a90:
@@ -15156,7 +27484,6 @@ L_0x413e53:
 
 L_0x413e58:
 		mov	dword ptr [rbp - 0x834], 1
-
 L_0x413e62:
 
 L_0x413e67:
@@ -15207,13 +27534,12 @@ L_0x413ee8:
 L_0x413eea:
 		cmp	edx, 0
 L_0x413eed:
-		je	L_0x413eff
+		je L_cond_dummy
 
 L_0x413ef3:
 		mov	eax, dword ptr [rbp - 0x838]
 L_0x413ef9:
 		mov	dword ptr [rbp - 0x83c], eax
-
 L_0x413eff:
 		mov	rax, qword ptr [rbp - 8]
 L_0x413f03:
@@ -15257,7 +27583,6 @@ L_0x413f5d:
 		mov	dword ptr [rbp - 0x854], 0
 L_0x413f67:
 		mov	dword ptr [rbp - 0x848], 0xffffffff
-
 L_0x413f71:
 
 L_0x413f76:
@@ -15266,7 +27591,6 @@ L_0x413f7c:
 		add	eax, 1
 L_0x413f7f:
 		mov	dword ptr [rbp - 0x840], eax
-
 L_0x413f85:
 
 L_0x413f8a:
@@ -15294,7 +27618,7 @@ L_0x413faf:
 L_0x413fb1:
 		cmp	edx, 0
 L_0x413fb4:
-		je	L_0x413fd6
+		je L_cond_dummy
 
 L_0x413fba:
 		mov	eax, dword ptr [rbp - 0x840]
@@ -15303,25 +27627,9 @@ L_0x413fc0:
 L_0x413fc3:
 		cmp	eax, 0
 L_0x413fc6:
-		jne	L_0x413fd1
+		jne L_cond_dummy
 
 L_0x413fcc:
-		jmp	L_0x413fef
-
-L_0x413fd1:
-		jmp	L_0x413fdb
-
-L_0x413fd6:
-		jmp	L_0x413fef
-
-L_0x413fdb:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x413fe1:
-		add	eax, 1
-L_0x413fe4:
-		mov	dword ptr [rbp - 0x840], eax
-L_0x413fea:
-		jmp	L_0x413f85
 
 L_0x413fef:
 		mov	eax, 1
@@ -15348,7 +27656,7 @@ L_0x414014:
 L_0x414016:
 		cmp	edx, 0
 L_0x414019:
-		je	L_0x4140b4
+		je L_cond_dummy
 
 L_0x41401f:
 
@@ -15365,19 +27673,9 @@ L_0x414036:
 L_0x414039:
 		cmp	dword ptr [rax + rdx*4], -1
 L_0x41403d:
-		je	L_0x414048
+		je L_cond_dummy
 
 L_0x414043:
-		jmp	L_0x41405c
-
-L_0x414048:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x41404e:
-		add	eax, 0x20
-L_0x414051:
-		mov	dword ptr [rbp - 0x840], eax
-L_0x414057:
-		jmp	L_0x414024
 
 L_0x41405c:
 
@@ -15435,286 +27733,9 @@ L_0x4140c3:
 L_0x4140c9:
 		cmp	eax, dword ptr [rbp - 0x1c]
 L_0x4140cc:
-		jl	L_0x4140d7
+		jl L_cond_dummy
 
 L_0x4140d2:
-		jmp	L_0x414325
-
-L_0x4140d7:
-
-L_0x4140dc:
-
-L_0x4140e1:
-		mov	eax, 1
-L_0x4140e6:
-		mov	rcx, qword ptr [rbp - 0x18]
-L_0x4140ea:
-		mov	edx, dword ptr [rbp - 0x840]
-L_0x4140f0:
-		sar	edx, 5
-L_0x4140f3:
-		movsxd	rsi, edx
-L_0x4140f6:
-		mov	edx, dword ptr [rcx + rsi*4]
-L_0x4140f9:
-		mov	edi, dword ptr [rbp - 0x840]
-L_0x4140ff:
-		and	edi, 0x1f
-L_0x414102:
-		mov	ecx, edi
-L_0x414104:
-		shl	eax, cl
-L_0x414106:
-		and	edx, eax
-L_0x414108:
-		cmp	edx, 0
-L_0x41410b:
-		jne L_cond_dummy
-
-L_0x414111:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x414117:
-		and	eax, 0x1f
-L_0x41411a:
-		cmp	eax, 0
-L_0x41411d:
-		jne	L_0x414128
-
-L_0x414123:
-		jmp	L_0x414146
-
-L_0x414128:
-
-L_0x414132:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x414138:
-		add	eax, 1
-L_0x41413b:
-		mov	dword ptr [rbp - 0x840], eax
-L_0x414141:
-		jmp	L_0x4140dc
-
-L_0x414146:
-		mov	eax, 1
-L_0x41414b:
-		mov	rcx, qword ptr [rbp - 0x18]
-L_0x41414f:
-		mov	edx, dword ptr [rbp - 0x840]
-L_0x414155:
-		sar	edx, 5
-L_0x414158:
-		movsxd	rsi, edx
-L_0x41415b:
-		mov	edx, dword ptr [rcx + rsi*4]
-L_0x41415e:
-		mov	edi, dword ptr [rbp - 0x840]
-L_0x414164:
-		and	edi, 0x1f
-L_0x414167:
-		mov	ecx, edi
-L_0x414169:
-		shl	eax, cl
-L_0x41416b:
-		and	edx, eax
-L_0x41416d:
-		cmp	edx, 0
-L_0x414170:
-		jne L_cond_dummy
-
-L_0x414176:
-
-L_0x41417b:
-
-L_0x414180:
-		mov	rax, qword ptr [rbp - 0x18]
-L_0x414184:
-		mov	ecx, dword ptr [rbp - 0x840]
-L_0x41418a:
-		sar	ecx, 5
-L_0x41418d:
-		movsxd	rdx, ecx
-L_0x414190:
-		cmp	dword ptr [rax + rdx*4], 0
-L_0x414194:
-		je	L_0x41419f
-
-L_0x41419a:
-		jmp	L_0x4141b3
-
-L_0x41419f:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x4141a5:
-		add	eax, 0x20
-L_0x4141a8:
-		mov	dword ptr [rbp - 0x840], eax
-L_0x4141ae:
-		jmp	L_0x41417b
-
-L_0x4141b3:
-
-L_0x4141b8:
-
-L_0x4141bd:
-		mov	eax, 1
-L_0x4141c2:
-		mov	rcx, qword ptr [rbp - 0x18]
-L_0x4141c6:
-		mov	edx, dword ptr [rbp - 0x840]
-L_0x4141cc:
-		sar	edx, 5
-L_0x4141cf:
-		movsxd	rsi, edx
-L_0x4141d2:
-		mov	edx, dword ptr [rcx + rsi*4]
-L_0x4141d5:
-		mov	edi, dword ptr [rbp - 0x840]
-L_0x4141db:
-		and	edi, 0x1f
-L_0x4141de:
-		mov	ecx, edi
-L_0x4141e0:
-		shl	eax, cl
-L_0x4141e2:
-		and	edx, eax
-L_0x4141e4:
-		cmp	edx, 0
-L_0x4141e7:
-		je	L_0x4141f2
-
-L_0x4141ed:
-		jmp	L_0x414206
-
-L_0x4141f2:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x4141f8:
-		add	eax, 1
-L_0x4141fb:
-		mov	dword ptr [rbp - 0x840], eax
-L_0x414201:
-		jmp	L_0x4141b8
-
-L_0x414206:
-
-L_0x41420b:
-		mov	eax, dword ptr [rbp - 0x840]
-L_0x414211:
-		sub	eax, 1
-L_0x414214:
-		mov	dword ptr [rbp - 0x848], eax
-L_0x41421a:
-		mov	eax, dword ptr [rbp - 0x848]
-L_0x414220:
-		cmp	eax, dword ptr [rbp - 0x1c]
-L_0x414223:
-		jl	L_0x41422e
-		call L_cond_dummy
-
-L_0x41422e:
-		mov	eax, dword ptr [rbp - 0x848]
-L_0x414234:
-		cmp	eax, dword ptr [rbp - 0x844]
-L_0x41423a:
-		jle L_cond_dummy
-
-L_0x414240:
-		mov	eax, dword ptr [rbp - 0x848]
-L_0x414246:
-		sub	eax, dword ptr [rbp - 0x844]
-L_0x41424c:
-		add	eax, 1
-L_0x41424f:
-		add	eax, dword ptr [rbp - 0x854]
-L_0x414255:
-		mov	dword ptr [rbp - 0x854], eax
-L_0x41425b:
-		mov	rdi, qword ptr [rbp - 8]
-L_0x41425f:
-		mov	rsi, qword ptr [rbp - 0x10]
-L_0x414263:
-		mov	edx, dword ptr [rbp - 0x844]
-L_0x414269:
-		mov	ecx, dword ptr [rbp - 0x848]
-L_0x41426f:
-		call	L_0x417670
-
-L_0x414274:
-		mov	dword ptr [rbp - 0x84c], 0xffffffff
-L_0x41427e:
-		mov	eax, dword ptr [rbp - 0x844]
-L_0x414284:
-		mov	dword ptr [rbp - 0x838], eax
-
-L_0x41428a:
-
-L_0x41428f:
-		mov	eax, dword ptr [rbp - 0x838]
-L_0x414295:
-		cmp	eax, dword ptr [rbp - 0x848]
-L_0x41429b:
-		jle	L_0x4142a6
-
-L_0x4142a1:
-		jmp	L_0x41431b
-
-L_0x4142a6:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x4142aa:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x4142ae:
-		movsxd	rdx, dword ptr [rbp - 0x838]
-L_0x4142b5:
-		mov	esi, dword ptr [rcx + rdx*4]
-L_0x4142b8:
-		mov	ecx, esi
-L_0x4142ba:
-		mov	esi, dword ptr [rax + rcx*4]
-L_0x4142bd:
-		mov	dword ptr [rbp - 0x850], esi
-L_0x4142c3:
-		mov	esi, dword ptr [rbp - 0x84c]
-L_0x4142c9:
-		cmp	esi, dword ptr [rbp - 0x850]
-L_0x4142cf:
-		je	L_0x414307
-
-L_0x4142d5:
-		mov	eax, 1
-L_0x4142da:
-		mov	ecx, dword ptr [rbp - 0x838]
-L_0x4142e0:
-		and	ecx, 0x1f
-L_0x4142e3:
-		shl	eax, cl
-L_0x4142e5:
-		mov	rdx, qword ptr [rbp - 0x18]
-L_0x4142e9:
-		mov	esi, dword ptr [rbp - 0x838]
-L_0x4142ef:
-		sar	esi, 5
-L_0x4142f2:
-		movsxd	rdi, esi
-L_0x4142f5:
-		or	eax, dword ptr [rdx + rdi*4]
-L_0x4142f8:
-		mov	dword ptr [rdx + rdi*4], eax
-L_0x4142fb:
-		mov	eax, dword ptr [rbp - 0x850]
-L_0x414301:
-		mov	dword ptr [rbp - 0x84c], eax
-
-L_0x414307:
-		mov	eax, dword ptr [rbp - 0x838]
-L_0x41430d:
-		add	eax, 1
-L_0x414310:
-		mov	dword ptr [rbp - 0x838], eax
-L_0x414316:
-		jmp	L_0x41428a
-
-L_0x41431b:
-
-L_0x414320:
-		jmp	L_0x413f71
 
 L_0x414325:
 		cmp	dword ptr [rbp - 0x20], 4
@@ -15734,20 +27755,14 @@ L_0x414369:
 		cmp	eax, dword ptr [rbp - 0x1c]
 L_0x41436c:
 		jle	L_0x414377
-
-L_0x414372:
-		jmp	L_0x414393
+		call L_cond_dummy
 
 L_0x414377:
 		cmp	dword ptr [rbp - 0x854], 0
 L_0x41437e:
-		jne	L_0x414389
-		call L_cond_dummy
+		jne L_cond_dummy
 
-L_0x414389:
-
-L_0x41438e:
-		jmp	L_0x413e62
+L_0x414384:
 
 L_0x414393:
 		cmp	dword ptr [rbp - 0x20], 4
@@ -17177,13 +29192,7 @@ L_0x414f3d:
 		cmp	dword ptr [rbp - 0x3c], 0
 L_0x414f41:
 		jge	L_0x414f50
-
-L_0x414f47:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x414f4a:
-		add	eax, dword ptr [rbp - 0x3c]
-L_0x414f4d:
-		mov	dword ptr [rbp - 0x3c], eax
+		call L_cond_dummy
 
 L_0x414f50:
 		mov	rax, qword ptr [rbp - 0x10]
@@ -17344,19 +29353,9 @@ L_0x4150ec:
 L_0x4150ee:
 		cmp	eax, 0xfffe
 L_0x4150f3:
-		jg	L_0x4150fe
+		jg L_cond_dummy
 
 L_0x4150f9:
-		jmp	L_0x415112
-
-L_0x4150fe:
-		mov	eax, dword ptr [rbp - 0xd80]
-L_0x415104:
-		add	eax, 1
-L_0x415107:
-		mov	dword ptr [rbp - 0xd80], eax
-L_0x41510d:
-		jmp	L_0x4150db
 
 L_0x415112:
 		mov	eax, dword ptr [rbp - 0xd7c]
@@ -17691,9 +29690,7 @@ L_0x4153c3:
 		cmp	ecx, dword ptr [rax + 0x70]
 L_0x4153c6:
 		jl	L_0x4153d1
-
-L_0x4153cc:
-		jmp	L_0x415581
+		call L_cond_dummy
 
 L_0x4153d1:
 		mov	rax, qword ptr [rbp - 8]
@@ -17834,8 +29831,7 @@ L_0x4154cd:
 		cmp	dword ptr [rax + 0x60], 0xff
 L_0x4154d4:
 		jne	L_0x415513
-
-L_0x4154da:
+		call L_cond_dummy
 
 L_0x4154df:
 		mov	rax, qword ptr [rbp - 8]
@@ -18415,6 +30411,82 @@ L_0x415dc3:
 L_0x415dc4:
 		ret	
 
+L_0x415e60:
+		push	rbp
+L_0x415e61:
+		mov	rbp, rsp
+L_0x415e64:
+		xor	eax, eax
+L_0x415e66:
+		mov	cl, al
+L_0x415e68:
+		mov	qword ptr [rbp - 8], rdi
+L_0x415e6c:
+		movzx	eax, cl
+L_0x415e6f:
+		pop	rbp
+L_0x415e70:
+		ret	
+
+L_0x415e80:
+		push	rbp
+L_0x415e81:
+		mov	rbp, rsp
+L_0x415e84:
+		sub	rsp, 0x20
+L_0x415e88:
+		movabs	rsi, 0x41b226
+L_0x415e92:
+		mov	qword ptr [rbp - 8], rdi
+L_0x415e96:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x415e9a:
+		call	L_0x400e30
+
+L_0x415e9f:
+		mov	qword ptr [rbp - 0x18], rax
+L_0x415ea3:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x415ea7:
+		mov	qword ptr [rbp - 0x10], rax
+L_0x415eab:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x415eaf:
+		cmp	rax, 0
+L_0x415eb3:
+		setne	cl
+L_0x415eb6:
+		and	cl, 1
+L_0x415eb9:
+		movzx	edx, cl
+L_0x415ebc:
+		mov	cl, dl
+L_0x415ebe:
+		mov	byte ptr [rbp - 0x19], cl
+L_0x415ec1:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x415ec5:
+		cmp	rax, 0
+L_0x415ec9:
+		je	L_0x415edb
+
+L_0x415ecf:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x415ed3:
+		call	L_0x400d90
+
+L_0x415ed8:
+		mov	dword ptr [rbp - 0x20], eax
+
+L_0x415edb:
+		movzx	eax, byte ptr [rbp - 0x19]
+L_0x415edf:
+		add	rsp, 0x20
+L_0x415ee3:
+		pop	rbp
+L_0x415ee4:
+		ret	
+
 L_0x415ef0:
 		push	rbp
 L_0x415ef1:
@@ -18499,6 +30571,182 @@ L_0x415f80:
 L_0x415f84:
 		pop	rbp
 L_0x415f85:
+		ret	
+
+L_0x415f90:
+		push	rbp
+L_0x415f91:
+		mov	rbp, rsp
+L_0x415f94:
+		sub	rsp, 0xb0
+L_0x415f9b:
+		lea	rsi, [rbp - 0xa8]
+L_0x415fa2:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x415fa6:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x415faa:
+		call	L_0x419560
+
+L_0x415faf:
+		mov	dword ptr [rbp - 0x14], eax
+L_0x415fb2:
+		cmp	dword ptr [rbp - 0x14], 0
+L_0x415fb6:
+		je	L_0x415fc5
+		call L_cond_dummy
+
+L_0x415fc5:
+		mov	eax, dword ptr [rbp - 0x90]
+L_0x415fcb:
+		and	eax, 0xf000
+L_0x415fd0:
+		cmp	eax, 0x8000
+L_0x415fd5:
+		jne L_cond_dummy
+
+L_0x415fdb:
+		mov	byte ptr [rbp - 1], 0
+L_0x415fdf:
+
+L_0x415fe8:
+		movzx	eax, byte ptr [rbp - 1]
+L_0x415fec:
+		add	rsp, 0xb0
+L_0x415ff3:
+		pop	rbp
+L_0x415ff4:
+		ret	
+
+L_0x416000:
+		push	rbp
+L_0x416001:
+		mov	rbp, rsp
+L_0x416004:
+		sub	rsp, 0xb0
+L_0x41600b:
+		lea	rsi, [rbp - 0xa8]
+L_0x416012:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x416016:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x41601a:
+		call	L_0x419560
+
+L_0x41601f:
+		mov	dword ptr [rbp - 0x14], eax
+L_0x416022:
+		cmp	dword ptr [rbp - 0x14], 0
+L_0x416026:
+		je	L_0x416038
+		call L_cond_dummy
+
+L_0x416038:
+		mov	rax, qword ptr [rbp - 0x98]
+L_0x41603f:
+		sub	rax, 1
+L_0x416043:
+		mov	ecx, eax
+L_0x416045:
+		mov	dword ptr [rbp - 4], ecx
+L_0x416048:
+		mov	eax, dword ptr [rbp - 4]
+L_0x41604b:
+		add	rsp, 0xb0
+L_0x416052:
+		pop	rbp
+L_0x416053:
+		ret	
+
+L_0x416060:
+		push	rbp
+L_0x416061:
+		mov	rbp, rsp
+L_0x416064:
+		sub	rsp, 0x10
+L_0x416068:
+		movabs	rsi, 0x61de10
+L_0x416072:
+		mov	qword ptr [rbp - 8], rdi
+L_0x416076:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x41607a:
+		call	L_0x419550
+
+L_0x41607f:
+		mov	dword ptr [rbp - 0xc], eax
+L_0x416082:
+		cmp	dword ptr [rbp - 0xc], 0
+L_0x416086:
+		je	L_0x416091
+		call L_cond_dummy
+
+L_0x416091:
+		add	rsp, 0x10
+L_0x416095:
+		pop	rbp
+L_0x416096:
+		ret	
+
+L_0x4160a0:
+		push	rbp
+L_0x4160a1:
+		mov	rbp, rsp
+L_0x4160a4:
+		sub	rsp, 0x30
+L_0x4160a8:
+		mov	eax, 0xc1
+L_0x4160ad:
+		mov	edx, 0x180
+L_0x4160b2:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x4160b6:
+		mov	qword ptr [rbp - 0x18], rsi
+L_0x4160ba:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4160be:
+		mov	esi, eax
+L_0x4160c0:
+		mov	al, 0
+L_0x4160c2:
+		call	L_0x400ea0
+
+L_0x4160c7:
+		mov	dword ptr [rbp - 0x24], eax
+L_0x4160ca:
+		cmp	dword ptr [rbp - 0x24], -1
+L_0x4160ce:
+		jne	L_0x4160e1
+		call L_cond_dummy
+
+L_0x4160e1:
+		mov	edi, dword ptr [rbp - 0x24]
+L_0x4160e4:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x4160e8:
+		call	L_0x400e80
+
+L_0x4160ed:
+		mov	qword ptr [rbp - 0x20], rax
+L_0x4160f1:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x4160f5:
+		cmp	rax, 0
+L_0x4160f9:
+		jne	L_0x41610a
+		call L_cond_dummy
+
+L_0x41610a:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x41610e:
+		mov	qword ptr [rbp - 8], rax
+L_0x416112:
+		mov	rax, qword ptr [rbp - 8]
+L_0x416116:
+		add	rsp, 0x30
+L_0x41611a:
+		pop	rbp
+L_0x41611b:
 		ret	
 
 L_0x4161c0:
@@ -18701,7 +30949,45 @@ L_0x4163cd:
 		cmp	rax, rcx
 L_0x4163d0:
 		je	L_0x416440
+
+L_0x4163d6:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4163da:
+		call	L_0x400e40
+
+L_0x4163df:
+		mov	dword ptr [rbp - 0x13dc], eax
+L_0x4163e5:
+		mov	eax, dword ptr [rbp - 0x13dc]
+L_0x4163eb:
+		mov	dword ptr [rbp - 0x13d8], eax
+L_0x4163f1:
+		cmp	dword ptr [rbp - 0x13d8], 0
+L_0x4163f8:
+		jge	L_0x416403
 		call L_cond_dummy
+
+L_0x416403:
+		mov	edi, dword ptr [rbp - 0x13d8]
+L_0x416409:
+		call	L_0x416790
+
+L_0x41640e:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x416412:
+		call	L_0x400d90
+
+L_0x416417:
+		mov	dword ptr [rbp - 0x13c0], eax
+L_0x41641d:
+		mov	qword ptr [0x61e6c8], 0
+L_0x416429:
+		cmp	dword ptr [rbp - 0x13c0], -1
+L_0x416430:
+		jne	L_0x41643b
+		call L_cond_dummy
+
+L_0x41643b:
 
 L_0x416440:
 		mov	qword ptr [0x61e6c8], 0
@@ -18742,6 +31028,44 @@ L_0x4165ff:
 L_0x416606:
 		pop	rbp
 L_0x416607:
+		ret	
+
+L_0x4166a0:
+		push	rbp
+L_0x4166a1:
+		mov	rbp, rsp
+L_0x4166a4:
+		sub	rsp, 0x20
+L_0x4166a8:
+		lea	rsi, [rbp - 0x20]
+L_0x4166ac:
+		mov	qword ptr [rbp - 8], rdi
+L_0x4166b0:
+		mov	rdi, qword ptr [0x61de58]
+L_0x4166b8:
+		mov	qword ptr [rbp - 0x20], rdi
+L_0x4166bc:
+		mov	rdi, qword ptr [0x61de68]
+L_0x4166c4:
+		mov	qword ptr [rbp - 0x18], rdi
+L_0x4166c8:
+		mov	rdi, qword ptr [rbp - 8]
+L_0x4166cc:
+		call	L_0x400cf0
+
+L_0x4166d1:
+		mov	dword ptr [rbp - 0xc], eax
+L_0x4166d4:
+		cmp	dword ptr [rbp - 0xc], 0
+L_0x4166d8:
+		je	L_0x4166e3
+		call L_cond_dummy
+
+L_0x4166e3:
+		add	rsp, 0x20
+L_0x4166e7:
+		pop	rbp
+L_0x4166e8:
 		ret	
 
 L_0x416740:
@@ -18794,1076 +31118,705 @@ L_0x41678c:
 L_0x41678d:
 		ret	
 
-L_0x417670:
+L_0x416790:
 		push	rbp
-L_0x417671:
+L_0x416791:
 		mov	rbp, rsp
-L_0x417674:
-		sub	rsp, 0x3c0
-L_0x41767b:
-		mov	qword ptr [rbp - 8], rdi
-L_0x41767f:
-		mov	qword ptr [rbp - 0x10], rsi
-L_0x417683:
-		mov	dword ptr [rbp - 0x14], edx
-L_0x417686:
-		mov	dword ptr [rbp - 0x18], ecx
-L_0x417689:
-		mov	dword ptr [rbp - 0x44], 0
-L_0x417690:
-		mov	dword ptr [rbp - 0x34], 0
-L_0x417697:
-		mov	ecx, dword ptr [rbp - 0x14]
-L_0x41769a:
-		movsxd	rsi, dword ptr [rbp - 0x34]
-L_0x41769e:
-		mov	dword ptr [rbp + rsi*4 - 0x1e0], ecx
-L_0x4176a5:
-		mov	ecx, dword ptr [rbp - 0x18]
-L_0x4176a8:
-		movsxd	rsi, dword ptr [rbp - 0x34]
-L_0x4176ac:
-		mov	dword ptr [rbp + rsi*4 - 0x370], ecx
-L_0x4176b3:
-		mov	ecx, dword ptr [rbp - 0x34]
-L_0x4176b6:
-		add	ecx, 1
-L_0x4176b9:
-		mov	dword ptr [rbp - 0x34], ecx
+L_0x416794:
+		sub	rsp, 0x10
+L_0x416798:
+		mov	dword ptr [rbp - 4], edi
+L_0x41679b:
+		mov	edi, dword ptr [rbp - 4]
+L_0x41679e:
+		mov	esi, dword ptr [0x61de28]
+L_0x4167a5:
+		call	L_0x400e90
 
-L_0x4176bc:
-
-L_0x4176c1:
-		cmp	dword ptr [rbp - 0x34], 0
-L_0x4176c5:
-		jg	L_0x4176d0
-
-L_0x4176cb:
-		jmp	L_0x417c35
-
-L_0x4176d0:
-		cmp	dword ptr [rbp - 0x34], 0x63
-L_0x4176d4:
-		jl	L_0x4176e4
+L_0x4167aa:
+		mov	dword ptr [rbp - 8], eax
+L_0x4167ad:
+		cmp	dword ptr [rbp - 8], 0
+L_0x4167b1:
+		je	L_0x4167bc
 		call L_cond_dummy
 
-L_0x4176e4:
-		mov	eax, dword ptr [rbp - 0x34]
-L_0x4176e7:
-		add	eax, -1
-L_0x4176ea:
-		mov	dword ptr [rbp - 0x34], eax
-L_0x4176ed:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x4176f1:
-		mov	eax, dword ptr [rbp + rcx*4 - 0x1e0]
-L_0x4176f8:
-		mov	dword ptr [rbp - 0x38], eax
-L_0x4176fb:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x4176ff:
-		mov	eax, dword ptr [rbp + rcx*4 - 0x370]
-L_0x417706:
-		mov	dword ptr [rbp - 0x3c], eax
-L_0x417709:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x41770c:
-		sub	eax, dword ptr [rbp - 0x38]
-L_0x41770f:
-		cmp	eax, 0xa
-L_0x417712:
-		jge	L_0x417730
+L_0x4167bc:
+		mov	edi, dword ptr [rbp - 4]
+L_0x4167bf:
+		mov	esi, dword ptr [0x61de2c]
+L_0x4167c6:
+		mov	edx, dword ptr [0x61de30]
+L_0x4167cd:
+		call	L_0x400eb0
 
-L_0x417718:
-		mov	rdi, qword ptr [rbp - 8]
-L_0x41771c:
-		mov	rsi, qword ptr [rbp - 0x10]
-L_0x417720:
-		mov	edx, dword ptr [rbp - 0x38]
-L_0x417723:
-		mov	ecx, dword ptr [rbp - 0x3c]
-L_0x417726:
-		call	L_0x417c40
-
-L_0x41772b:
-		jmp	L_0x4176c1
-
-L_0x417730:
-		mov	eax, 3
-L_0x417735:
-		imul	ecx, dword ptr [rbp - 0x44], 0x1dc5
-L_0x41773c:
-		add	ecx, 1
-L_0x41773f:
-		and	ecx, 0x7fff
-L_0x417745:
-		mov	dword ptr [rbp - 0x44], ecx
-L_0x417748:
-		mov	ecx, dword ptr [rbp - 0x44]
-L_0x41774b:
-		mov	dword ptr [rbp - 0x3b4], eax
-L_0x417751:
-		mov	eax, ecx
-L_0x417753:
-		xor	edx, edx
-L_0x417755:
-		mov	ecx, dword ptr [rbp - 0x3b4]
-L_0x41775b:
-		div	ecx
-L_0x41775d:
-		mov	dword ptr [rbp - 0x48], edx
-L_0x417760:
-		cmp	dword ptr [rbp - 0x48], 0
-L_0x417764:
-		jne	L_0x417786
-
-L_0x41776a:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x41776e:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x417772:
-		movsxd	rdx, dword ptr [rbp - 0x38]
-L_0x417776:
-		mov	esi, dword ptr [rcx + rdx*4]
-L_0x417779:
-		mov	ecx, esi
-L_0x41777b:
-		mov	esi, dword ptr [rax + rcx*4]
-L_0x41777e:
-		mov	dword ptr [rbp - 0x40], esi
-L_0x417781:
-		jmp	L_0x4177d0
-
-L_0x417786:
-		cmp	dword ptr [rbp - 0x48], 1
-L_0x41778a:
-		jne	L_0x4177b4
-
-L_0x417790:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x417794:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x417798:
-		mov	edx, dword ptr [rbp - 0x38]
-L_0x41779b:
-		add	edx, dword ptr [rbp - 0x3c]
-L_0x41779e:
-		sar	edx, 1
-L_0x4177a1:
-		movsxd	rsi, edx
-L_0x4177a4:
-		mov	edx, dword ptr [rcx + rsi*4]
-L_0x4177a7:
-		mov	ecx, edx
-L_0x4177a9:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x4177ac:
-		mov	dword ptr [rbp - 0x40], edx
-L_0x4177af:
-		jmp	L_0x4177cb
-
-L_0x4177b4:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x4177b8:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x4177bc:
-		movsxd	rdx, dword ptr [rbp - 0x3c]
-L_0x4177c0:
-		mov	esi, dword ptr [rcx + rdx*4]
-L_0x4177c3:
-		mov	ecx, esi
-L_0x4177c5:
-		mov	esi, dword ptr [rax + rcx*4]
-L_0x4177c8:
-		mov	dword ptr [rbp - 0x40], esi
-
-L_0x4177cb:
-
-L_0x4177d0:
-		mov	eax, dword ptr [rbp - 0x38]
-L_0x4177d3:
-		mov	dword ptr [rbp - 0x24], eax
-L_0x4177d6:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x4177d9:
-		mov	dword ptr [rbp - 0x1c], eax
-L_0x4177dc:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x4177df:
-		mov	dword ptr [rbp - 0x28], eax
-L_0x4177e2:
-		mov	eax, dword ptr [rbp - 0x28]
-L_0x4177e5:
-		mov	dword ptr [rbp - 0x20], eax
-
-L_0x4177e8:
-
-L_0x4177ed:
-
-L_0x4177f2:
-
-L_0x4177f7:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x4177fa:
-		cmp	eax, dword ptr [rbp - 0x20]
-L_0x4177fd:
-		jle	L_0x417808
-
-L_0x417803:
-		jmp	L_0x417898
-
-L_0x417808:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x41780c:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x417810:
-		movsxd	rdx, dword ptr [rbp - 0x1c]
-L_0x417814:
-		mov	esi, dword ptr [rcx + rdx*4]
-L_0x417817:
-		mov	ecx, esi
-L_0x417819:
-		mov	esi, dword ptr [rax + rcx*4]
-L_0x41781c:
-		sub	esi, dword ptr [rbp - 0x40]
-L_0x41781f:
-		mov	dword ptr [rbp - 0x2c], esi
-L_0x417822:
-		cmp	dword ptr [rbp - 0x2c], 0
-L_0x417826:
-		jne	L_0x41787b
-
-L_0x41782c:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417830:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x417834:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417837:
-		mov	dword ptr [rbp - 0x374], edx
-L_0x41783d:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417841:
-		movsxd	rcx, dword ptr [rbp - 0x24]
-L_0x417845:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417848:
-		mov	rax, qword ptr [rbp - 8]
-L_0x41784c:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x417850:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417853:
-		mov	edx, dword ptr [rbp - 0x374]
-L_0x417859:
-		mov	rax, qword ptr [rbp - 8]
-L_0x41785d:
-		movsxd	rcx, dword ptr [rbp - 0x24]
-L_0x417861:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417864:
-		mov	edx, dword ptr [rbp - 0x24]
-L_0x417867:
-		add	edx, 1
-L_0x41786a:
-		mov	dword ptr [rbp - 0x24], edx
-L_0x41786d:
-		mov	edx, dword ptr [rbp - 0x1c]
-L_0x417870:
-		add	edx, 1
-L_0x417873:
-		mov	dword ptr [rbp - 0x1c], edx
-L_0x417876:
-		jmp	L_0x4177f7
-
-L_0x41787b:
-		cmp	dword ptr [rbp - 0x2c], 0
-L_0x41787f:
-		jle	L_0x41788a
-
-L_0x417885:
-		jmp	L_0x417898
-
-L_0x41788a:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x41788d:
-		add	eax, 1
-L_0x417890:
-		mov	dword ptr [rbp - 0x1c], eax
-L_0x417893:
-		jmp	L_0x4177f2
-
-L_0x417898:
-
-L_0x41789d:
-
-L_0x4178a2:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x4178a5:
-		cmp	eax, dword ptr [rbp - 0x20]
-L_0x4178a8:
-		jle	L_0x4178b3
-
-L_0x4178ae:
-		jmp	L_0x417943
-
-L_0x4178b3:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x4178b7:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x4178bb:
-		movsxd	rdx, dword ptr [rbp - 0x20]
-L_0x4178bf:
-		mov	esi, dword ptr [rcx + rdx*4]
-L_0x4178c2:
-		mov	ecx, esi
-L_0x4178c4:
-		mov	esi, dword ptr [rax + rcx*4]
-L_0x4178c7:
-		sub	esi, dword ptr [rbp - 0x40]
-L_0x4178ca:
-		mov	dword ptr [rbp - 0x2c], esi
-L_0x4178cd:
-		cmp	dword ptr [rbp - 0x2c], 0
-L_0x4178d1:
-		jne	L_0x417926
-
-L_0x4178d7:
-		mov	rax, qword ptr [rbp - 8]
-L_0x4178db:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x4178df:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x4178e2:
-		mov	dword ptr [rbp - 0x378], edx
-L_0x4178e8:
-		mov	rax, qword ptr [rbp - 8]
-L_0x4178ec:
-		movsxd	rcx, dword ptr [rbp - 0x28]
-L_0x4178f0:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x4178f3:
-		mov	rax, qword ptr [rbp - 8]
-L_0x4178f7:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x4178fb:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x4178fe:
-		mov	edx, dword ptr [rbp - 0x378]
-L_0x417904:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417908:
-		movsxd	rcx, dword ptr [rbp - 0x28]
-L_0x41790c:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x41790f:
-		mov	edx, dword ptr [rbp - 0x28]
-L_0x417912:
-		add	edx, -1
-L_0x417915:
-		mov	dword ptr [rbp - 0x28], edx
-L_0x417918:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x41791b:
-		add	edx, -1
-L_0x41791e:
-		mov	dword ptr [rbp - 0x20], edx
-L_0x417921:
-		jmp	L_0x4178a2
-
-L_0x417926:
-		cmp	dword ptr [rbp - 0x2c], 0
-L_0x41792a:
-		jge	L_0x417935
-
-L_0x417930:
-		jmp	L_0x417943
-
-L_0x417935:
-		mov	eax, dword ptr [rbp - 0x20]
-L_0x417938:
-		add	eax, -1
-L_0x41793b:
-		mov	dword ptr [rbp - 0x20], eax
-L_0x41793e:
-		jmp	L_0x41789d
-
-L_0x417943:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417946:
-		cmp	eax, dword ptr [rbp - 0x20]
-L_0x417949:
-		jle	L_0x417954
-
-L_0x41794f:
-		jmp	L_0x4179a3
-
-L_0x417954:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417958:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x41795c:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x41795f:
-		mov	dword ptr [rbp - 0x37c], edx
-L_0x417965:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417969:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x41796d:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417970:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417974:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x417978:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x41797b:
-		mov	edx, dword ptr [rbp - 0x37c]
-L_0x417981:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417985:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x417989:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x41798c:
-		mov	edx, dword ptr [rbp - 0x1c]
-L_0x41798f:
-		add	edx, 1
-L_0x417992:
-		mov	dword ptr [rbp - 0x1c], edx
-L_0x417995:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x417998:
-		add	edx, -1
-L_0x41799b:
-		mov	dword ptr [rbp - 0x20], edx
-L_0x41799e:
-		jmp	L_0x4177e8
-
-L_0x4179a3:
-		mov	eax, dword ptr [rbp - 0x28]
-L_0x4179a6:
-		cmp	eax, dword ptr [rbp - 0x24]
-L_0x4179a9:
-		jge	L_0x4179b4
-
-L_0x4179af:
-		jmp	L_0x4176c1
-
-L_0x4179b4:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x4179b7:
-		sub	eax, dword ptr [rbp - 0x38]
-L_0x4179ba:
-		mov	ecx, dword ptr [rbp - 0x1c]
-L_0x4179bd:
-		sub	ecx, dword ptr [rbp - 0x24]
-L_0x4179c0:
-		cmp	eax, ecx
-L_0x4179c2:
-		jge	L_0x4179d6
-
-L_0x4179c8:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x4179cb:
-		sub	eax, dword ptr [rbp - 0x38]
-L_0x4179ce:
-		mov	dword ptr [rbp - 0x2c], eax
-L_0x4179d1:
-		jmp	L_0x4179df
-
-L_0x4179d6:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x4179d9:
-		sub	eax, dword ptr [rbp - 0x24]
-L_0x4179dc:
-		mov	dword ptr [rbp - 0x2c], eax
-
-L_0x4179df:
-		mov	eax, dword ptr [rbp - 0x38]
-L_0x4179e2:
-		mov	dword ptr [rbp - 0x380], eax
-L_0x4179e8:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x4179eb:
-		sub	eax, dword ptr [rbp - 0x2c]
-L_0x4179ee:
-		mov	dword ptr [rbp - 0x384], eax
-L_0x4179f4:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x4179f7:
-		mov	dword ptr [rbp - 0x388], eax
-
-L_0x4179fd:
-
-L_0x417a02:
-		cmp	dword ptr [rbp - 0x388], 0
-L_0x417a09:
-		jg	L_0x417a14
-
-L_0x417a0f:
-		jmp	L_0x417a8a
-
-L_0x417a14:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417a18:
-		movsxd	rcx, dword ptr [rbp - 0x380]
-L_0x417a1f:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417a22:
-		mov	dword ptr [rbp - 0x38c], edx
-L_0x417a28:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417a2c:
-		movsxd	rcx, dword ptr [rbp - 0x384]
-L_0x417a33:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417a36:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417a3a:
-		movsxd	rcx, dword ptr [rbp - 0x380]
-L_0x417a41:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417a44:
-		mov	edx, dword ptr [rbp - 0x38c]
-L_0x417a4a:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417a4e:
-		movsxd	rcx, dword ptr [rbp - 0x384]
-L_0x417a55:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417a58:
-		mov	edx, dword ptr [rbp - 0x380]
-L_0x417a5e:
-		add	edx, 1
-L_0x417a61:
-		mov	dword ptr [rbp - 0x380], edx
-L_0x417a67:
-		mov	edx, dword ptr [rbp - 0x384]
-L_0x417a6d:
-		add	edx, 1
-L_0x417a70:
-		mov	dword ptr [rbp - 0x384], edx
-L_0x417a76:
-		mov	edx, dword ptr [rbp - 0x388]
-L_0x417a7c:
-		add	edx, -1
-L_0x417a7f:
-		mov	dword ptr [rbp - 0x388], edx
-L_0x417a85:
-		jmp	L_0x4179fd
-
-L_0x417a8a:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417a8d:
-		sub	eax, dword ptr [rbp - 0x28]
-L_0x417a90:
-		mov	ecx, dword ptr [rbp - 0x28]
-L_0x417a93:
-		sub	ecx, dword ptr [rbp - 0x20]
-L_0x417a96:
-		cmp	eax, ecx
-L_0x417a98:
-		jge	L_0x417aac
-
-L_0x417a9e:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417aa1:
-		sub	eax, dword ptr [rbp - 0x28]
-L_0x417aa4:
-		mov	dword ptr [rbp - 0x30], eax
-L_0x417aa7:
-		jmp	L_0x417ab5
-
-L_0x417aac:
-		mov	eax, dword ptr [rbp - 0x28]
-L_0x417aaf:
-		sub	eax, dword ptr [rbp - 0x20]
-L_0x417ab2:
-		mov	dword ptr [rbp - 0x30], eax
-
-L_0x417ab5:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417ab8:
-		mov	dword ptr [rbp - 0x390], eax
-L_0x417abe:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417ac1:
-		sub	eax, dword ptr [rbp - 0x30]
-L_0x417ac4:
-		add	eax, 1
-L_0x417ac7:
-		mov	dword ptr [rbp - 0x394], eax
-L_0x417acd:
-		mov	eax, dword ptr [rbp - 0x30]
-L_0x417ad0:
-		mov	dword ptr [rbp - 0x398], eax
-
-L_0x417ad6:
-
-L_0x417adb:
-		cmp	dword ptr [rbp - 0x398], 0
-L_0x417ae2:
-		jg	L_0x417aed
-
-L_0x417ae8:
-		jmp	L_0x417b63
-
-L_0x417aed:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417af1:
-		movsxd	rcx, dword ptr [rbp - 0x390]
-L_0x417af8:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417afb:
-		mov	dword ptr [rbp - 0x39c], edx
-L_0x417b01:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417b05:
-		movsxd	rcx, dword ptr [rbp - 0x394]
-L_0x417b0c:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417b0f:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417b13:
-		movsxd	rcx, dword ptr [rbp - 0x390]
-L_0x417b1a:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417b1d:
-		mov	edx, dword ptr [rbp - 0x39c]
-L_0x417b23:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417b27:
-		movsxd	rcx, dword ptr [rbp - 0x394]
-L_0x417b2e:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417b31:
-		mov	edx, dword ptr [rbp - 0x390]
-L_0x417b37:
-		add	edx, 1
-L_0x417b3a:
-		mov	dword ptr [rbp - 0x390], edx
-L_0x417b40:
-		mov	edx, dword ptr [rbp - 0x394]
-L_0x417b46:
-		add	edx, 1
-L_0x417b49:
-		mov	dword ptr [rbp - 0x394], edx
-L_0x417b4f:
-		mov	edx, dword ptr [rbp - 0x398]
-L_0x417b55:
-		add	edx, -1
-L_0x417b58:
-		mov	dword ptr [rbp - 0x398], edx
-L_0x417b5e:
-		jmp	L_0x417ad6
-
-L_0x417b63:
-		mov	eax, dword ptr [rbp - 0x38]
-L_0x417b66:
-		add	eax, dword ptr [rbp - 0x1c]
-L_0x417b69:
-		sub	eax, dword ptr [rbp - 0x24]
-L_0x417b6c:
-		sub	eax, 1
-L_0x417b6f:
-		mov	dword ptr [rbp - 0x2c], eax
-L_0x417b72:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417b75:
-		mov	ecx, dword ptr [rbp - 0x28]
-L_0x417b78:
-		sub	ecx, dword ptr [rbp - 0x20]
-L_0x417b7b:
-		sub	eax, ecx
-L_0x417b7d:
-		add	eax, 1
-L_0x417b80:
-		mov	dword ptr [rbp - 0x30], eax
-L_0x417b83:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x417b86:
-		sub	eax, dword ptr [rbp - 0x38]
-L_0x417b89:
-		mov	ecx, dword ptr [rbp - 0x3c]
-L_0x417b8c:
-		sub	ecx, dword ptr [rbp - 0x30]
-L_0x417b8f:
-		cmp	eax, ecx
-L_0x417b91:
-		jle	L_0x417be6
-
-L_0x417b97:
-		mov	eax, dword ptr [rbp - 0x38]
-L_0x417b9a:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417b9e:
-		mov	dword ptr [rbp + rcx*4 - 0x1e0], eax
-L_0x417ba5:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x417ba8:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417bac:
-		mov	dword ptr [rbp + rcx*4 - 0x370], eax
-L_0x417bb3:
-		mov	eax, dword ptr [rbp - 0x34]
-L_0x417bb6:
-		add	eax, 1
-L_0x417bb9:
-		mov	dword ptr [rbp - 0x34], eax
-L_0x417bbc:
-		mov	eax, dword ptr [rbp - 0x30]
-L_0x417bbf:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417bc3:
-		mov	dword ptr [rbp + rcx*4 - 0x1e0], eax
-L_0x417bca:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417bcd:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417bd1:
-		mov	dword ptr [rbp + rcx*4 - 0x370], eax
-L_0x417bd8:
-		mov	eax, dword ptr [rbp - 0x34]
-L_0x417bdb:
-		add	eax, 1
-L_0x417bde:
-		mov	dword ptr [rbp - 0x34], eax
-L_0x417be1:
-		jmp	L_0x417c30
-
-L_0x417be6:
-		mov	eax, dword ptr [rbp - 0x30]
-L_0x417be9:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417bed:
-		mov	dword ptr [rbp + rcx*4 - 0x1e0], eax
-L_0x417bf4:
-		mov	eax, dword ptr [rbp - 0x3c]
-L_0x417bf7:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417bfb:
-		mov	dword ptr [rbp + rcx*4 - 0x370], eax
-L_0x417c02:
-		mov	eax, dword ptr [rbp - 0x34]
-L_0x417c05:
-		add	eax, 1
-L_0x417c08:
-		mov	dword ptr [rbp - 0x34], eax
-L_0x417c0b:
-		mov	eax, dword ptr [rbp - 0x38]
-L_0x417c0e:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417c12:
-		mov	dword ptr [rbp + rcx*4 - 0x1e0], eax
-L_0x417c19:
-		mov	eax, dword ptr [rbp - 0x2c]
-L_0x417c1c:
-		movsxd	rcx, dword ptr [rbp - 0x34]
-L_0x417c20:
-		mov	dword ptr [rbp + rcx*4 - 0x370], eax
-L_0x417c27:
-		mov	eax, dword ptr [rbp - 0x34]
-L_0x417c2a:
-		add	eax, 1
-L_0x417c2d:
-		mov	dword ptr [rbp - 0x34], eax
-
-L_0x417c30:
-		jmp	L_0x4176bc
-
-L_0x417c35:
-		add	rsp, 0x3c0
-L_0x417c3c:
+L_0x4167d2:
+		mov	dword ptr [rbp - 0xc], eax
+L_0x4167d5:
+		add	rsp, 0x10
+L_0x4167d9:
 		pop	rbp
-L_0x417c3d:
+L_0x4167da:
 		ret	
 
-L_0x417c40:
+L_0x416bb0:
 		push	rbp
-L_0x417c41:
+L_0x416bb1:
 		mov	rbp, rsp
-L_0x417c44:
-		mov	qword ptr [rbp - 8], rdi
-L_0x417c48:
-		mov	qword ptr [rbp - 0x10], rsi
-L_0x417c4c:
-		mov	dword ptr [rbp - 0x14], edx
-L_0x417c4f:
-		mov	dword ptr [rbp - 0x18], ecx
-L_0x417c52:
-		mov	ecx, dword ptr [rbp - 0x14]
-L_0x417c55:
-		cmp	ecx, dword ptr [rbp - 0x18]
-L_0x417c58:
-		jne	L_0x417c63
+L_0x416bb4:
+		sub	rsp, 0x27f0
+L_0x416bbb:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x416bbf:
+		mov	qword ptr [rbp - 0x18], rsi
+L_0x416bc3:
+		mov	qword ptr [rbp - 0x20], 0
+L_0x416bcb:
+		mov	dword ptr [rbp - 0x2754], 0
+L_0x416bd5:
+		mov	dword ptr [rbp - 0x34], 0
+L_0x416bdc:
+		mov	rdi, qword ptr [rbp - 0x18]
+L_0x416be0:
+		call	L_0x400d60
 
-L_0x417c5e:
-		jmp	L_0x417e12
+L_0x416be5:
+		mov	dword ptr [rbp - 0x276c], eax
+L_0x416beb:
+		cmp	dword ptr [rbp - 0x276c], 0
+L_0x416bf2:
+		je	L_0x416bfd
+		call L_cond_dummy
 
-L_0x417c63:
-		mov	eax, dword ptr [rbp - 0x18]
-L_0x417c66:
-		sub	eax, dword ptr [rbp - 0x14]
-L_0x417c69:
-		cmp	eax, 3
-L_0x417c6c:
-		jle	L_0x417d42
+L_0x416bfd:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x416c01:
+		call	L_0x400d60
 
-L_0x417c72:
-		mov	eax, dword ptr [rbp - 0x18]
-L_0x417c75:
-		sub	eax, 4
-L_0x417c78:
-		mov	dword ptr [rbp - 0x1c], eax
+L_0x416c06:
+		mov	dword ptr [rbp - 0x2770], eax
+L_0x416c0c:
+		cmp	dword ptr [rbp - 0x2770], 0
+L_0x416c13:
+		je	L_0x416c1e
+		call L_cond_dummy
 
-L_0x417c7b:
+L_0x416c1e:
 
-L_0x417c80:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417c83:
-		cmp	eax, dword ptr [rbp - 0x14]
-L_0x417c86:
-		jge	L_0x417c91
+L_0x416c23:
 
-L_0x417c8c:
-		jmp	L_0x417d3d
+L_0x416c28:
+		lea	rdi, [rbp - 0x24]
+L_0x416c2c:
+		lea	r8, [rbp - 0x2750]
+L_0x416c33:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x416c37:
+		mov	edx, dword ptr [0x61e2ac]
+L_0x416c3e:
+		movzx	ecx, byte ptr [0x61e6c4]
+L_0x416c46:
+		mov	r9d, dword ptr [rbp - 0x2754]
+L_0x416c4d:
+		call	L_0x40fcf0
 
-L_0x417c91:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417c95:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x417c99:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417c9c:
-		mov	dword ptr [rbp - 0x24], edx
-L_0x417c9f:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x417ca3:
-		movsxd	rcx, dword ptr [rbp - 0x24]
-L_0x417ca7:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417caa:
-		mov	dword ptr [rbp - 0x28], edx
-L_0x417cad:
-		mov	edx, dword ptr [rbp - 0x1c]
-L_0x417cb0:
-		add	edx, 4
-L_0x417cb3:
-		mov	dword ptr [rbp - 0x20], edx
+L_0x416c52:
+		mov	qword ptr [rbp - 0x20], rax
+L_0x416c56:
+		mov	rax, qword ptr [rbp - 0x20]
+L_0x416c5a:
+		cmp	rax, 0
+L_0x416c5e:
+		jne	L_0x416c69
+		call L_cond_dummy
 
-L_0x417cb6:
+L_0x416c69:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x416c6d:
+		je	L_0x416c78
+		call L_cond_dummy
 
-L_0x417cbb:
-		mov	eax, dword ptr [rbp - 0x20]
-L_0x417cbe:
-		cmp	eax, dword ptr [rbp - 0x18]
-L_0x417cc1:
-		jg	L_0x417cee
+L_0x416c78:
 
-L_0x417cc7:
-		mov	eax, dword ptr [rbp - 0x28]
-L_0x417cca:
-		mov	rcx, qword ptr [rbp - 0x10]
-L_0x417cce:
-		mov	rdx, qword ptr [rbp - 8]
-L_0x417cd2:
-		movsxd	rsi, dword ptr [rbp - 0x20]
-L_0x417cd6:
-		mov	edi, dword ptr [rdx + rsi*4]
-L_0x417cd9:
-		mov	edx, edi
-L_0x417cdb:
-		cmp	eax, dword ptr [rcx + rdx*4]
-L_0x417cde:
-		ja	L_0x417ce9
+L_0x416c7d:
+		mov	eax, dword ptr [rbp - 0x34]
+L_0x416c80:
+		add	eax, 1
+L_0x416c83:
+		mov	dword ptr [rbp - 0x34], eax
 
-L_0x417ce4:
-		jmp	L_0x417d1c
+L_0x416c86:
 
-L_0x417ce9:
-		jmp	L_0x417cf3
+L_0x416c8b:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x416c8f:
+		je	L_0x416c9a
 
-L_0x417cee:
-		jmp	L_0x417d1c
+L_0x416c95:
+		jmp	L_0x416d3f
 
-L_0x417cf3:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417cf7:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x417cfb:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417cfe:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417d02:
-		mov	esi, dword ptr [rbp - 0x20]
-L_0x417d05:
-		sub	esi, 4
-L_0x417d08:
-		movsxd	rcx, esi
-L_0x417d0b:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417d0e:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x417d11:
-		add	edx, 4
-L_0x417d14:
-		mov	dword ptr [rbp - 0x20], edx
-L_0x417d17:
-		jmp	L_0x417cb6
+L_0x416c9a:
+		lea	rdi, [rbp - 0x24]
+L_0x416c9e:
+		mov	ecx, 0x1388
+L_0x416ca3:
+		lea	rdx, [rbp - 0x13c0]
+L_0x416caa:
+		mov	rsi, qword ptr [rbp - 0x20]
+L_0x416cae:
+		call	L_0x4101d0
 
-L_0x417d1c:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x417d1f:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x417d23:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x417d26:
-		sub	edx, 4
-L_0x417d29:
-		movsxd	rsi, edx
-L_0x417d2c:
-		mov	dword ptr [rcx + rsi*4], eax
-L_0x417d2f:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417d32:
-		add	eax, -1
-L_0x417d35:
-		mov	dword ptr [rbp - 0x1c], eax
-L_0x417d38:
-		jmp	L_0x417c7b
+L_0x416cb3:
+		mov	dword ptr [rbp - 0x30], eax
+L_0x416cb6:
+		cmp	dword ptr [rbp - 0x24], -5
+L_0x416cba:
+		jne	L_0x416cc5
+		call L_cond_dummy
 
-L_0x417d3d:
+L_0x416cc5:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x416cc9:
+		jne	L_0x416cd4
 
-L_0x417d42:
-		mov	eax, dword ptr [rbp - 0x18]
-L_0x417d45:
-		sub	eax, 1
-L_0x417d48:
-		mov	dword ptr [rbp - 0x1c], eax
+L_0x416ccf:
+		jmp	L_0x416ce3
 
-L_0x417d4b:
+L_0x416cd4:
+		cmp	dword ptr [rbp - 0x24], 4
+L_0x416cd8:
+		jne L_cond_dummy
 
-L_0x417d50:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417d53:
-		cmp	eax, dword ptr [rbp - 0x14]
-L_0x417d56:
-		jge	L_0x417d61
+L_0x416cde:
 
-L_0x417d5c:
-		jmp	L_0x417e0d
+L_0x416ce3:
+		cmp	dword ptr [rbp - 0x30], 0
+L_0x416ce7:
+		jle L_cond_dummy
 
-L_0x417d61:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417d65:
-		movsxd	rcx, dword ptr [rbp - 0x1c]
-L_0x417d69:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417d6c:
-		mov	dword ptr [rbp - 0x24], edx
-L_0x417d6f:
-		mov	rax, qword ptr [rbp - 0x10]
-L_0x417d73:
-		movsxd	rcx, dword ptr [rbp - 0x24]
-L_0x417d77:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417d7a:
-		mov	dword ptr [rbp - 0x28], edx
-L_0x417d7d:
-		mov	edx, dword ptr [rbp - 0x1c]
-L_0x417d80:
-		add	edx, 1
-L_0x417d83:
-		mov	dword ptr [rbp - 0x20], edx
+L_0x416ced:
+		mov	eax, 1
+L_0x416cf2:
+		mov	esi, eax
+L_0x416cf4:
+		lea	rdi, [rbp - 0x13c0]
+L_0x416cfb:
+		movsxd	rdx, dword ptr [rbp - 0x30]
+L_0x416cff:
+		mov	rcx, qword ptr [rbp - 0x18]
+L_0x416d03:
+		call	L_0x400f00
 
-L_0x417d86:
+L_0x416d08:
+		mov	qword ptr [rbp - 0x27d0], rax
+L_0x416d0f:
 
-L_0x417d8b:
-		mov	eax, dword ptr [rbp - 0x20]
-L_0x417d8e:
-		cmp	eax, dword ptr [rbp - 0x18]
-L_0x417d91:
-		jg	L_0x417dbe
+L_0x416d14:
 
-L_0x417d97:
-		mov	eax, dword ptr [rbp - 0x28]
-L_0x417d9a:
-		mov	rcx, qword ptr [rbp - 0x10]
-L_0x417d9e:
-		mov	rdx, qword ptr [rbp - 8]
-L_0x417da2:
-		movsxd	rsi, dword ptr [rbp - 0x20]
-L_0x417da6:
-		mov	edi, dword ptr [rdx + rsi*4]
-L_0x417da9:
-		mov	edx, edi
-L_0x417dab:
-		cmp	eax, dword ptr [rcx + rdx*4]
-L_0x417dae:
-		ja	L_0x417db9
+L_0x416d19:
+		mov	rdi, qword ptr [rbp - 0x18]
+L_0x416d1d:
+		call	L_0x400d60
 
-L_0x417db4:
-		jmp	L_0x417dec
+L_0x416d22:
+		mov	dword ptr [rbp - 0x2774], eax
+L_0x416d28:
+		cmp	dword ptr [rbp - 0x2774], 0
+L_0x416d2f:
+		je	L_0x416d3a
+		call L_cond_dummy
 
-L_0x417db9:
-		jmp	L_0x417dc3
+L_0x416d3a:
+		jmp	L_0x416c86
 
-L_0x417dbe:
-		jmp	L_0x417dec
+L_0x416d3f:
+		cmp	dword ptr [rbp - 0x24], 4
+L_0x416d43:
+		je	L_0x416d4e
+		call L_cond_dummy
 
-L_0x417dc3:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417dc7:
-		movsxd	rcx, dword ptr [rbp - 0x20]
-L_0x417dcb:
-		mov	edx, dword ptr [rax + rcx*4]
-L_0x417dce:
-		mov	rax, qword ptr [rbp - 8]
-L_0x417dd2:
-		mov	esi, dword ptr [rbp - 0x20]
-L_0x417dd5:
-		sub	esi, 1
-L_0x417dd8:
-		movsxd	rcx, esi
-L_0x417ddb:
-		mov	dword ptr [rax + rcx*4], edx
-L_0x417dde:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x417de1:
-		add	edx, 1
-L_0x417de4:
-		mov	dword ptr [rbp - 0x20], edx
-L_0x417de7:
-		jmp	L_0x417d86
+L_0x416d4e:
+		lea	rdi, [rbp - 0x24]
+L_0x416d52:
+		lea	rdx, [rbp - 0x2760]
+L_0x416d59:
+		lea	rcx, [rbp - 0x2754]
+L_0x416d60:
+		mov	rsi, qword ptr [rbp - 0x20]
+L_0x416d64:
+		call	L_0x4106b0
 
-L_0x417dec:
-		mov	eax, dword ptr [rbp - 0x24]
-L_0x417def:
-		mov	rcx, qword ptr [rbp - 8]
-L_0x417df3:
-		mov	edx, dword ptr [rbp - 0x20]
-L_0x417df6:
-		sub	edx, 1
-L_0x417df9:
-		movsxd	rsi, edx
-L_0x417dfc:
-		mov	dword ptr [rcx + rsi*4], eax
-L_0x417dff:
-		mov	eax, dword ptr [rbp - 0x1c]
-L_0x417e02:
-		add	eax, -1
-L_0x417e05:
-		mov	dword ptr [rbp - 0x1c], eax
-L_0x417e08:
-		jmp	L_0x417d4b
+L_0x416d69:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x416d6d:
+		je	L_0x416d82
+		call L_cond_dummy
 
-L_0x417e0d:
+L_0x416d82:
+		mov	rax, qword ptr [rbp - 0x2760]
+L_0x416d89:
+		mov	qword ptr [rbp - 0x2768], rax
+L_0x416d90:
+		mov	dword ptr [rbp - 0x38], 0
+L_0x416d97:
 
-L_0x417e12:
+L_0x416d9c:
+		mov	eax, dword ptr [rbp - 0x38]
+L_0x416d9f:
+		cmp	eax, dword ptr [rbp - 0x2754]
+L_0x416da5:
+		jl L_cond_dummy
+
+L_0x416dab:
+
+L_0x416dd7:
+		lea	rdi, [rbp - 0x24]
+L_0x416ddb:
+		mov	rsi, qword ptr [rbp - 0x20]
+L_0x416ddf:
+		call	L_0x4100b0
+
+L_0x416de4:
+		cmp	dword ptr [rbp - 0x24], 0
+L_0x416de8:
+		je	L_0x416dfd
+		call L_cond_dummy
+
+L_0x416dfd:
+		cmp	dword ptr [rbp - 0x2754], 0
+L_0x416e04:
+		jne L_cond_dummy
+
+L_0x416e0a:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x416e0e:
+		call	L_0x416740
+
+L_0x416e13:
+		mov	byte ptr [rbp - 0x2775], al
+L_0x416e19:
+		cmp	byte ptr [rbp - 0x2775], 0
+L_0x416e20:
+		je L_cond_dummy
+
+L_0x416e26:
+
+L_0x416e35:
+
+L_0x416e3a:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x416e3e:
+		call	L_0x400d60
+
+L_0x416e43:
+		mov	dword ptr [rbp - 0x277c], eax
+L_0x416e49:
+		cmp	dword ptr [rbp - 0x277c], 0
+L_0x416e50:
+		je	L_0x416e5b
+		call L_cond_dummy
+
+L_0x416e5b:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x416e5f:
+		mov	rcx, qword ptr [0x61dde0]
+L_0x416e67:
+		cmp	rax, rcx
+L_0x416e6a:
+		je	L_0x416ea8
+		call L_cond_dummy
+
+L_0x416ea8:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x416eac:
+		call	L_0x400d90
+
+L_0x416eb1:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x416eb4:
+		cmp	dword ptr [rbp - 0x2c], -1
+L_0x416eb8:
+		jne	L_0x416ec3
+		call L_cond_dummy
+
+L_0x416ec3:
+		mov	rdi, qword ptr [rbp - 0x18]
+L_0x416ec7:
+		call	L_0x400d60
+
+L_0x416ecc:
+		mov	dword ptr [rbp - 0x2788], eax
+L_0x416ed2:
+		cmp	dword ptr [rbp - 0x2788], 0
+L_0x416ed9:
+		je	L_0x416ee4
+		call L_cond_dummy
+
+L_0x416ee4:
+		mov	rdi, qword ptr [rbp - 0x18]
+L_0x416ee8:
+		call	L_0x400e60
+
+L_0x416eed:
+		mov	dword ptr [rbp - 0x2c], eax
+L_0x416ef0:
+		cmp	dword ptr [rbp - 0x2c], 0
+L_0x416ef4:
+		je	L_0x416eff
+		call L_cond_dummy
+
+L_0x416eff:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x416f03:
+		mov	rcx, qword ptr [0x61dde0]
+L_0x416f0b:
+		cmp	rax, rcx
+L_0x416f0e:
+		je	L_0x416f40
+		call L_cond_dummy
+
+L_0x416f40:
+		mov	qword ptr [0x61e6c8], 0
+L_0x416f4c:
+		cmp	dword ptr [0x61e2ac], 2
+L_0x416f54:
+		jl	L_0x416f79
+		call L_cond_dummy
+
+L_0x416f79:
+		mov	byte ptr [rbp - 1], 1
+L_0x416f7d:
+
+L_0x41719d:
+		movzx	eax, byte ptr [rbp - 1]
+L_0x4171a1:
+		add	rsp, 0x27f0
+L_0x4171a8:
 		pop	rbp
-L_0x417e13:
+L_0x4171a9:
+		ret	
+
+L_0x417250:
+		push	rbp
+L_0x417251:
+		mov	rbp, rsp
+L_0x417254:
+		sub	rsp, 0x27d0
+L_0x41725b:
+		mov	qword ptr [rbp - 0x10], rdi
+L_0x41725f:
+		mov	qword ptr [rbp - 0x18], 0
+L_0x417267:
+		mov	dword ptr [rbp - 0x2754], 0
+L_0x417271:
+		mov	dword ptr [rbp - 0x2c], 0
+L_0x417278:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x41727c:
+		call	L_0x400d60
+
+L_0x417281:
+		mov	dword ptr [rbp - 0x276c], eax
+L_0x417287:
+		cmp	dword ptr [rbp - 0x276c], 0
+L_0x41728e:
+		je	L_0x417299
+		call L_cond_dummy
+
+L_0x417299:
+
+L_0x41729e:
+
+L_0x4172a3:
+		lea	rdi, [rbp - 0x1c]
+L_0x4172a7:
+		lea	r8, [rbp - 0x2750]
+L_0x4172ae:
+		mov	rsi, qword ptr [rbp - 0x10]
+L_0x4172b2:
+		mov	edx, dword ptr [0x61e2ac]
+L_0x4172b9:
+		movzx	ecx, byte ptr [0x61e6c4]
+L_0x4172c1:
+		mov	r9d, dword ptr [rbp - 0x2754]
+L_0x4172c8:
+		call	L_0x40fcf0
+
+L_0x4172cd:
+		mov	qword ptr [rbp - 0x18], rax
+L_0x4172d1:
+		mov	rax, qword ptr [rbp - 0x18]
+L_0x4172d5:
+		cmp	rax, 0
+L_0x4172d9:
+		jne	L_0x4172e4
+		call L_cond_dummy
+
+L_0x4172e4:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x4172e8:
+		je	L_0x4172f3
+		call L_cond_dummy
+
+L_0x4172f3:
+
+L_0x4172f8:
+		mov	eax, dword ptr [rbp - 0x2c]
+L_0x4172fb:
+		add	eax, 1
+L_0x4172fe:
+		mov	dword ptr [rbp - 0x2c], eax
+
+L_0x417301:
+
+L_0x417306:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x41730a:
+		je	L_0x417315
+
+L_0x417310:
+		jmp	L_0x417345
+
+L_0x417315:
+		lea	rdi, [rbp - 0x1c]
+L_0x417319:
+		mov	ecx, 0x1388
+L_0x41731e:
+		lea	rdx, [rbp - 0x13c0]
+L_0x417325:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x417329:
+		call	L_0x4101d0
+
+L_0x41732e:
+		mov	dword ptr [rbp - 0x28], eax
+L_0x417331:
+		cmp	dword ptr [rbp - 0x1c], -5
+L_0x417335:
+		jne	L_0x417340
+
+L_0x41733b:
+		jmp	L_0x4174ad
+
+L_0x417340:
+		jmp	L_0x417301
+
+L_0x417345:
+		cmp	dword ptr [rbp - 0x1c], 4
+L_0x417349:
+		je	L_0x417354
+		call L_cond_dummy
+
+L_0x417354:
+		lea	rdi, [rbp - 0x1c]
+L_0x417358:
+		lea	rdx, [rbp - 0x2760]
+L_0x41735f:
+		lea	rcx, [rbp - 0x2754]
+L_0x417366:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x41736a:
+		call	L_0x4106b0
+
+L_0x41736f:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x417373:
+		je	L_0x417388
+		call L_cond_dummy
+
+L_0x417388:
+		mov	rax, qword ptr [rbp - 0x2760]
+L_0x41738f:
+		mov	qword ptr [rbp - 0x2768], rax
+L_0x417396:
+		mov	dword ptr [rbp - 0x30], 0
+L_0x41739d:
+
+L_0x4173a2:
+		mov	eax, dword ptr [rbp - 0x30]
+L_0x4173a5:
+		cmp	eax, dword ptr [rbp - 0x2754]
+L_0x4173ab:
+		jl L_cond_dummy
+
+L_0x4173b1:
+
+L_0x4173dd:
+		lea	rdi, [rbp - 0x1c]
+L_0x4173e1:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x4173e5:
+		call	L_0x4100b0
+
+L_0x4173ea:
+		cmp	dword ptr [rbp - 0x1c], 0
+L_0x4173ee:
+		je	L_0x417403
+		call L_cond_dummy
+
+L_0x417403:
+		cmp	dword ptr [rbp - 0x2754], 0
+L_0x41740a:
+		jne L_cond_dummy
+
+L_0x417410:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x417414:
+		call	L_0x416740
+
+L_0x417419:
+		mov	byte ptr [rbp - 0x276d], al
+L_0x41741f:
+		cmp	byte ptr [rbp - 0x276d], 0
+L_0x417426:
+		je L_cond_dummy
+
+L_0x41742c:
+
+L_0x41743b:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x41743f:
+		call	L_0x400d60
+
+L_0x417444:
+		mov	dword ptr [rbp - 0x2774], eax
+L_0x41744a:
+		cmp	dword ptr [rbp - 0x2774], 0
+L_0x417451:
+		je	L_0x41745c
+		call L_cond_dummy
+
+L_0x41745c:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x417460:
+		call	L_0x400d90
+
+L_0x417465:
+		mov	dword ptr [rbp - 0x24], eax
+L_0x417468:
+		cmp	dword ptr [rbp - 0x24], -1
+L_0x41746c:
+		jne	L_0x417477
+		call L_cond_dummy
+
+L_0x417477:
+		cmp	dword ptr [0x61e2ac], 2
+L_0x41747f:
+		jl	L_0x4174a4
+		call L_cond_dummy
+
+L_0x4174a4:
+		mov	byte ptr [rbp - 1], 1
+L_0x4174a8:
+		jmp	L_0x417657
+
+L_0x4174ad:
+		lea	rdi, [rbp - 0x20]
+L_0x4174b1:
+		mov	rsi, qword ptr [rbp - 0x18]
+L_0x4174b5:
+		call	L_0x4100b0
+
+L_0x4174ba:
+		cmp	dword ptr [0x61e2ac], 0
+L_0x4174c2:
+		jne L_cond_dummy
+
+L_0x4174c8:
+		movabs	rsi, 0x41b683
+L_0x4174d2:
+		movabs	rcx, 0x61eb00
+L_0x4174dc:
+		mov	rdi, qword ptr [0x61de00]
+L_0x4174e4:
+		mov	rdx, qword ptr [0x61ef18]
+L_0x4174ec:
+		mov	al, 0
+L_0x4174ee:
+		call	L_0x400e20
+
+L_0x4174f3:
+		mov	dword ptr [rbp - 0x27b0], eax
+L_0x4174f9:
+		cmp	dword ptr [rbp - 0x1c], -9
+L_0x4174fd:
+		jne	L_0x417508
+		call L_cond_dummy
+
+L_0x417508:
+		cmp	dword ptr [rbp - 0x1c], -6
+L_0x41750c:
+		jne	L_0x417517
+		call L_cond_dummy
+
+L_0x417517:
+		cmp	dword ptr [rbp - 0x1c], -4
+L_0x41751b:
+		jne	L_0x417526
+		call L_cond_dummy
+
+L_0x417526:
+		cmp	dword ptr [rbp - 0x1c], -3
+L_0x41752a:
+		jne	L_0x417535
+		call L_cond_dummy
+
+L_0x417535:
+		cmp	dword ptr [rbp - 0x1c], -7
+L_0x417539:
+		jne	L_0x417544
+		call L_cond_dummy
+
+L_0x417544:
+		cmp	dword ptr [rbp - 0x1c], -5
+L_0x417548:
+		jne L_cond_dummy
+
+L_0x41754e:
+
+L_0x4175bc:
+		mov	rax, qword ptr [rbp - 0x10]
+L_0x4175c0:
+		mov	rcx, qword ptr [0x61ddf0]
+L_0x4175c8:
+		cmp	rax, rcx
+L_0x4175cb:
+		je L_cond_dummy
+
+L_0x4175d1:
+		mov	rdi, qword ptr [rbp - 0x10]
+L_0x4175d5:
+		call	L_0x400d90
+
+L_0x4175da:
+		mov	dword ptr [rbp - 0x27bc], eax
+L_0x4175e0:
+		cmp	dword ptr [rbp - 0x2c], 1
+L_0x4175e4:
+		jne L_cond_dummy
+
+L_0x4175ea:
+		movabs	rsi, 0x41b6c8
+L_0x4175f4:
+		mov	rdi, qword ptr [0x61de00]
+L_0x4175fc:
+		mov	al, 0
+L_0x4175fe:
+		call	L_0x400e20
+
+L_0x417603:
+		mov	byte ptr [rbp - 1], 0
+L_0x417607:
+		mov	dword ptr [rbp - 0x27c0], eax
+L_0x41760d:
+
+L_0x417657:
+		movzx	eax, byte ptr [rbp - 1]
+L_0x41765b:
+		add	rsp, 0x27d0
+L_0x417662:
+		pop	rbp
+L_0x417663:
 		ret	
 
 L_0x417e20:
@@ -23129,13 +35082,13 @@ L_0x4194d7:
 L_0x4194d9:
 		push	r12
 L_0x4194db:
-		lea	r12, [rip + RIP_L_45 + 0x61ce10]
-L_45:
+		lea	r12, [rip + RIP_L_69 + 0x61ce10]
+L_69:
 L_0x4194e2:
 		push	rbp
 L_0x4194e3:
-		lea	rbp, [rip + RIP_L_46 + 0x61ce18]
-L_46:
+		lea	rbp, [rip + RIP_L_70 + 0x61ce18]
+L_70:
 L_0x4194ea:
 		push	rbx
 L_0x4194eb:
@@ -23195,6 +35148,24 @@ L_0x419532:
 		pop	r15
 L_0x419534:
 		ret	
+
+L_0x419550:
+		mov	rdx, rsi
+L_0x419553:
+		mov	rsi, rdi
+L_0x419556:
+		mov	edi, 1
+L_0x41955b:
+		jmp	L_0x400da0
+
+L_0x419560:
+		mov	rdx, rsi
+L_0x419563:
+		mov	rsi, rdi
+L_0x419566:
+		mov	edi, 1
+L_0x41956b:
+		jmp	L_0x400ed0
 
 L_0x419570:
 		sub	rsp, 8
