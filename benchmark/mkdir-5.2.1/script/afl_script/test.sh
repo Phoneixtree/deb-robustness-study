@@ -7,7 +7,7 @@ cnt=0
 limit=13
 limit_min=-1
 for paras in ${para[@]}; do
-    if [ $cnt -le $limit ]
+    if [ $cnt -lt $limit ]
     then
         echo  ${para[${cnt}]} == ${cnt}
         let "cnt++"
@@ -21,12 +21,10 @@ do
     if [ $num -lt $limit ] && [ $num -gt $limit_min ]
     then
         echo option is
-        cat ${afl_seed}${num}/para
-        rm -r result_${num}
-        mkdir result_${num}
+        cat ${afl_seed}${num}/test
         mkdir temp${num}
         cd temp${num}
-        afl-fuzz -i ${afl_seed}${num} -o ../result_${num} ${bins}/afl_bin
+        afl-fuzz -i ${afl_seed}${num} -o ${afl_result}/result_${num} ${bins}/afl_bin
         cd ..
         rm -rf temp${cnt}
         break

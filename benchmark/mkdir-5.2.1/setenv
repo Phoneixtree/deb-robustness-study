@@ -7,5 +7,5 @@ export afl_seed=${home_folder}/fuzzed_input/afl_seed/
 export bins=${home_folder}/original_files_and_refs
 export ORIGIN_BIN=${bins}/${name}.origin
 export REDUCED_BIN=${bins}/${name}.reduced
-
+export afl_result=${home_folder}/afl_result
 
