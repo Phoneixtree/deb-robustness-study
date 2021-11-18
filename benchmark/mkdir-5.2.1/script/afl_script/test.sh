@@ -9,6 +9,10 @@ limit_min=-1
 for paras in ${para[@]}; do
     if [ $cnt -lt $limit ]
     then
+        cd ${afl_seed}
+        mkdir $cnt
+        cd $cnt
+        echo ${para[${cnt}]} > test
         echo  ${para[${cnt}]} == ${cnt}
         let "cnt++"
     fi
