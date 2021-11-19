@@ -2,6 +2,10 @@
 
 Please run `. setenv` first and then u can run the test scripts in each sub dirctionaries
 
+# PLEASE PAY ATTENTION
+
+Some of afl-fuzz process will generate lots of trash files or dirs in the fuzz dir. 
+
 ## Seven small programs from SIR benchmark
 
 We have 7 small SIR programs: `printtokens`, `printtokens2`, `replace`, `schedule`, `schedule2`, `tcas`, `totinfo`. Each of these programs has less than 25 functions and is located under `benchmark`.
