@@ -1,0 +1,20 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-8.16.reduced.afl @@
+
+If you crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-8.16.reduced.afl @@
+
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+memory limit. The limit used for this fuzzing session was 50.0 MB.
+
+Need a tool to minimize test c`ses before investigati ng the 󠀲crashes or sending
+them to a vendor? Check out the afl-tminimize test c`ses before investigati ng the 󠀲crashes or sending
+them to a vendor? Check out the same
+memory limit. The limit used for this fuzzing session was 50.0 MB.
+
+Need a tool to minimize test c`ses before investigati ng the 󠀲crashes or sendng session was 50.0 MB.
+
+Need a tool to minimize test c`s󠀨es before investigati ng the 󠀲crashes or sending
+them to a vendor? Check out the afl-tmin 󠀰thanks :-)
