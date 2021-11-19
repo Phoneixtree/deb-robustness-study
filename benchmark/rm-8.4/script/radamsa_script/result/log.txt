@@ -1,1 +1,0 @@
-/home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/rm-8.4/original_files_and_refs/rm-8.4.reduced: error closing file

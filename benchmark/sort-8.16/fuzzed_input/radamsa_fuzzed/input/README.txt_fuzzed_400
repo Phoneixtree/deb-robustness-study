@@ -1,8 +1,0 @@
-Command line used to find this crash:
-
-afl-fuzz -i afl_input -o afl_output_reduced ./sort-4294967296.-2.reduced.afl @@
-
-If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
-memory limit. The limit used for this p://lcamtuf.coredump.cx/afl/
-
-Thanks :-)

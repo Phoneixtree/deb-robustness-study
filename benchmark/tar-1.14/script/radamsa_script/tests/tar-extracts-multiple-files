@@ -1,6 +1,0 @@
-touch foo bar
-timeout -k 0.5 0.5 ./tar_reduced cf foo.tar foo bar
-rm foo bar
-timeout -k 0.5 0.5 ./tar_reduced -xf foo.tar
-test -f foo
-test -f bar
