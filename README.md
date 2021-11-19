@@ -4,7 +4,7 @@ Please run `. setenv` first and then u can run the test scripts in each sub dirc
 
 # PLEASE PAY ATTENTION
 
-Some of afl-fuzz process will generate lots of trash files or dirs in the fuzz dir. 
+Some of afl-fuzz process(mkdir&tar) will generate lots of trash files or dirs in the fuzz dir. 
 
 ## Seven small programs from SIR benchmark
 
