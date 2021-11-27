@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-afl-fuzz -i /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/gzip-1.2.4/fuzzed_input/afl_seed//input_1_option_d -o result /home/cytmo/Documents/CHISEL_TEST/chisel-bench-master/benchmark/gzip-1.2.4/benchmark/gzip-1.2.4/original_files_and_refs/gzip_afl_bin -d @@
+afl-fuzz -i /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel/gzip-1.2.4/fuzzed_input/afl_seed//input_1_option_d -o result /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel/gzip-1.2.4/original_files_and_refs/gzip_afl_bin -d @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 50.0 MB.
@@ -9,9 +9,7 @@ Need a tool to minimize test cases before investigating the crashes or sending
 them to a vendor? Check out the afl-tmin that comes with the fuzzer!
 
 Found any cool bugs in open-source tools using afl-fuzz? If yes, please drop
-me a mail at <lcamtuf@coredump.cx> once the issues are fixed - I'd love to
-add your finds to the gallery at:
+an mail at <afl-users@googlegroups.com> once the issues are fixed
 
-  http://lcamtuf.coredump.cx/afl/
+  https://github.com/vanhauser-thc/AFLplusplus
 
-Thanks :-)
