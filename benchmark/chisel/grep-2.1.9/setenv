@@ -6,3 +6,4 @@ export afl_seed=${home_folder}/fuzzed_input/afl_seed
 export bins=${home_folder}/original_files_and_refs
 export origin=${bins}/grep-2.19.origin
 export reduced=${bins}/grep-2.19.reduced
+export debloat=${bins}/afl_bin
