@@ -1,7 +1,7 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
-  cd script/radamsa_script/script_input6&66
+  cd script/radamsa_script/"script_input6&66"
   
   debloat=${reduced}.$1
   

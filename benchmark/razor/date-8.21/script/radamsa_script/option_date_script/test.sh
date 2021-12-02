@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/radamsa_script/option_date_script

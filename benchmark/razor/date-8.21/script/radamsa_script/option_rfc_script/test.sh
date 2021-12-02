@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/radamsa_script/option_rfc_script
@@ -15,7 +15,7 @@
   { timeout -k 0.5 0.5 ${origin} < ${rad_files4date}/rfc_fuzzed/rfc_${cnt}; } >/dev/null
   echo $? >> result/log_origin
    
-  { timeout -k 0.5 0.5 ${debloat} < ${rad_files4date}/rfc_fuzzed/rfc_${cnt}; } >/dev/null
+  { timeout -k 0.5 0.5 ${debloat} < ${rad_files4grep}/rfc_fuzzed/rfc_${cnt}; } >/dev/null
   echo $? >> result/log_reduced
 
   

@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/radamsa_script/option_u_script
@@ -15,7 +15,7 @@
   { timeout -k 0.5 0.5 ${origin} < ${rad_files4date}/u_fuzzed/u_${cnt}; } >/dev/null
   echo $? >> result/log_origin
    
-  { timeout -k 0.5 0.5 ${debloat} < ${rad_files4date}/u_fuzzed/u_${cnt}; } >/dev/null
+  { timeout -k 0.5 0.5 ${debloat} < ${rad_files4grep}/u_fuzzed/u_${cnt}; } >/dev/null
   echo $? >> result/log_reduced
 
   

@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/afl_script/option_date_script
@@ -9,7 +9,7 @@
   cd result
   rm *
   cd ..
-  afl-fuzz -i ${afl_seed}/input_option_date -o result ${bins}/${debloat} @@
+  afl-fuzz -Q -i ${afl_seed}/input_option_date -o result ${debloat} --date @@
 
 
   

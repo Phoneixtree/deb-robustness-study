@@ -10,4 +10,4 @@ mkdir result
 cd result
 rm *
 cd ..
-afl-fuzz -Q -i ${afl_seed}/input_2_option_f -o result ${bins}/${debloat} -f @@
+afl-fuzz -Q -i ${afl_seed}/input_2_option_f -o result ${debloat} -f @@

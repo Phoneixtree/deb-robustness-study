@@ -1,14 +1,27 @@
-  #/bin/bash
+  #!/bin/bash
+  cd ../../..
+  . setenv
+  cd script/radamsa_script/script_3_option_t_foo
+
+  debloat=${reduce}.$1
   mkdir result
+  echo "clean" > result/log_origin
   echo "clean" > result/log_reduced
-  
   cnt=0
-  while((${cnt} < 500))
-  do
-  { timeout -k 0.5 0.5 ./gzip.razor.debloated -t foo_fuzzed/foo_${cnt}; } >&/dev/null
+  
+  debloat=${reduced}.$1
+  
+  
+while((${cnt} < 500))
+do
+  { timeout -k 0.5 0.5 ${origin} -t ${rad_files4gzip}/foo_fuzzed/foo_${cnt} ; } 
+  echo $? >> result/log_origin
+
+  { timeout -k 0.5 0.5 ${debloat} -t ${rad_files4gzip}/foo_fuzzed/foo_${cnt} ; } 
   echo $? >> result/log_reduced
-  #rm -f foo_fuzzed1/foo_${cnt}.gz
-  let "cnt++"
-  done
-  grep -cw "0" result/log_reduced
-  grep -cw "1" result/log_reduced
+
+  let "cnt++" 
+done
+
+./result_analysis.sh
+  

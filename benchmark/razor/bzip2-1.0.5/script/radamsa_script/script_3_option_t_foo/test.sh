@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/radamsa_script/script_3_option_t_foo
@@ -19,11 +19,8 @@
   echo $? >> result/log_reduced
   rm foo_${cnt}.bz2
   
-  #rm -f foo_fuzzed/foo_${cnt}.bz2
   let "cnt++"
   done
   
-  #grep -c "0" result/log_reduced
-  #grep -c "2" result/log_reduced
   ./result_analysis.sh
   

@@ -1,15 +1,28 @@
-  #/bin/bash
+#!/bin/bash
+  cd ../../..
+  . setenv
+  cd script/radamsa_script/script_1_option_d
+
+
+  debloat=${reduced}.$1
   mkdir result
+  echo "clean" > result/log_origin
   echo "clean" > result/log_reduced
-  
-  cnt=0
-  while((${cnt} < 500))
-  do
-  { timeout -k 0.5 0.5 ./gzip.razor.debloated -d <sample1.gz_fuzzed/sample1.gz_${cnt}>sample1.tst; } >&/dev/null
+
+
+cnt=0
+while(( $cnt<=499 )) 
+do
+  { timeout -k 0.5 0.5 ${origin} -d < ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.gz > ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.tst ; } 2>/dev/null
+  echo $? >> result/log_origin
+    rm ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.tst
+  { timeout -k 0.5 0.5 ${debloat} -d < ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.gz > ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.tst ; } 2>/dev/null
   echo $? >> result/log_reduced
-  #rm -f foo_fuzzed1/foo_${cnt}.gz
+  rm ${rad_files4gzip}/sample1.gz_fuzzed/sample1_${cnt}.tst
   let "cnt++"
-  done
-  rm -rf sample1.tst
-  grep -cw "0" result/log_reduced
-  grep -cw "1" result/log_reduced
+done
+
+./result_analysis.sh
+
+
+

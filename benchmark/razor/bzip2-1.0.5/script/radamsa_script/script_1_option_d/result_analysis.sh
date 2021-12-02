@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 rm result/result
 origin_call=`grep -o '2' result/log_origin | wc -l`
 reduced_call=`grep -o '2' result/log_reduced | wc -l`
@@ -7,9 +7,9 @@ reduced_hang=`grep -o '124' result/log_reduced | wc -l`
 origin_exc=`grep -o '136' result/log_origin | wc -l`
 reduced_exc=`grep -o '136' result/log_reduced | wc -l`
 origin_beh=`grep -o '0' result/log_origin | wc -l`
-origin_beh=${origin_beh}+${origin_call}
+origin_beh=`expr ${origin_beh} + ${origin_call} `
 reduced_beh=`grep -o '0' result/log_reduced | wc -l`
-reduced_beh=${reduced_beh}+${reduced_call}
+reduced_beh=`expr ${reduced_beh} + ${reduced_call} `
 echo  "origin_bin hang "${origin_hang}" times" >> result/result
 echo -e "reduced_bin hang "${reduced_hang}" times\n" >> result/result
 

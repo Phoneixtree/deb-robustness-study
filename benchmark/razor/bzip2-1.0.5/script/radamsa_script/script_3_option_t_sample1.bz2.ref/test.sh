@@ -1,4 +1,4 @@
-  #/bin/bash
+  #!/bin/bash
   cd ../../..
   . setenv
   cd script/radamsa_script/script_3_option_t_sample1.bz2.ref
@@ -19,12 +19,8 @@
   { timeout -k 0.5 0.5 ${debloat} -t ${rad_files4bzip2}/sample1.bz2.ref_fuzzed/sample1_${cnt}.bz2.ref ; } >/dev/null
   echo $? >> result/log_reduced
 
-  
-  #rm -f foo_fuzzed/foo_${cnt}.bz2
   let "cnt++"
   done
-  
-  #grep -c "0" result/log_reduced
-  #grep -c "2" result/log_reduced
+
   ./result_analysis.sh
   

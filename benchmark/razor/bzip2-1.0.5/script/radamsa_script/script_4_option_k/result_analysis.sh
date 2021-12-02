@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 rm result/result
 origin_hang=`grep -o '124' result/log_origin | wc -l`
 reduced_hang=`grep -o '124' result/log_reduced | wc -l`
