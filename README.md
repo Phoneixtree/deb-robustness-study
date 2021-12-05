@@ -44,3 +44,6 @@ gcc/clang -w -o $BIN $SRC -lm
 
 ### Online spreadsheet for result-sharing
 https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
+
+### Online spreadsheet for findings-sharing
+https://docs.qq.com/doc/DSlBWSXpCaHV6bHVa?scene=4eb76aced5bf2dfb0f1b00a8Enjwm1
