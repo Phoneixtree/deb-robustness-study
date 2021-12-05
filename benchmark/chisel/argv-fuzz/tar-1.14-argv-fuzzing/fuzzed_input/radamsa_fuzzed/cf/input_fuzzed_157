@@ -1,0 +1,10 @@
+cf foobar.tar foo bar
+cf foobar.tar foo bar.tar foo bar
+cf foobar.tar foo bar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar
+cf foobar.tar foo bar

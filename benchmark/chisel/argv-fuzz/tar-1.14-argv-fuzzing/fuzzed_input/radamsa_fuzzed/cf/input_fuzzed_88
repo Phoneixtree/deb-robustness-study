@@ -1,0 +1,3 @@
+Cf foobar.t foobar.tar foo bar
+ar foo bar
+ar foo bar

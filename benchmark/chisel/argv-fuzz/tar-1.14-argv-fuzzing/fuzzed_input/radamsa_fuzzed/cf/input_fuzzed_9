@@ -1,0 +1,4 @@
+cf foobar.tar foo bar
+cf bar
+c
+c

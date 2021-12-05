@@ -1,0 +1,9 @@
+-u datta.txt
+-u data.txt
+t
+-u data.txt
+-u data.txt
+t
+-u data.txt
+t
+-u data.txt

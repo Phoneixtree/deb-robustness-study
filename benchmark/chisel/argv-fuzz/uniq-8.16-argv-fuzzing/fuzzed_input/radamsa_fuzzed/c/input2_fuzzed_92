@@ -1,0 +1,5 @@
+-ct
+-ct
+npu i-c-ct
+-c i-c inut
+-c input

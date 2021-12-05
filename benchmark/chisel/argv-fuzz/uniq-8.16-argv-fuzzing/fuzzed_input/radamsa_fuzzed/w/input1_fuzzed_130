@@ -1,0 +1,4 @@
+"-w 1" data.txt
+"-w 1" data.txt
+"-w 32768" data.txt
+"-w 65536" data.txt
