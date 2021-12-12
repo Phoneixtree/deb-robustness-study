@@ -1,0 +1,1 @@
+-E "free[^שּׁ[:space:]]+" "free[^שּׁ[:space:]]+" train_input_dir/input2

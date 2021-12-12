@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-afl-fuzz -i /home/cytmo/Documents/chisel_work/chisel/argv-fuzz/tar-1.14-argv-fuzzing/fuzzed_input/afl_seed//options-cf -o ../resultcf /home/cytmo/Documents/chisel_work/chisel/argv-fuzz/tar-1.14-argv-fuzzing/original_files_and_refs/afl_bin
+afl-fuzz -i /home/cytmo/Documents/chisel_work/chisel/radamsa-argv-fuzz/tar-1.14-argv-fuzzing/fuzzed_input/afl_seed//options-cf -o ../resultcf /home/cytmo/Documents/chisel_work/chisel/radamsa-argv-fuzz/tar-1.14-argv-fuzzing/original_files_and_refs/afl_bin
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 50.0 MB.

@@ -1,0 +1,1 @@
+-E "free[^[:space:]]+" train_input/inut-1

@@ -1,0 +1,1 @@
+-c < train_input/sraind/sample18446744073709551615.gz > sample0.sts

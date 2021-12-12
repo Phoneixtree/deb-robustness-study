@@ -1,0 +1,2 @@
+clang -w grep-2.19.c.origin.c -D "__msan unpoison(s.z)" -lpcre -o grep-2.19.origin
+
