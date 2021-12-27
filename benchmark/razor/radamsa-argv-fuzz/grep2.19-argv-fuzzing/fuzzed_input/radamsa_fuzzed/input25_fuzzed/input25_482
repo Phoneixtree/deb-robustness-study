@@ -1,0 +1,1 @@
+-E "free[^[:space:]]+" tain_input/input_dir/input1

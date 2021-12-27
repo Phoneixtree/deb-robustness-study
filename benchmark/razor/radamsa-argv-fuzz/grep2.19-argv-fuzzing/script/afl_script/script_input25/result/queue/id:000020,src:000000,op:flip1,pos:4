@@ -1,0 +1,1 @@
+-E "æree[^[:space:]]+" t_dir/input2

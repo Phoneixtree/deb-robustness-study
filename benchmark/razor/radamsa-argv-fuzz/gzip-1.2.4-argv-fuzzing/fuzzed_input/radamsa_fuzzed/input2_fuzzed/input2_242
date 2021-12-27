@@ -1,0 +1,1 @@
+-c < train_input/rain_input/traind/sample1.gz > sample0.gz > sample1.gz > sample2147483646.tst

@@ -1,0 +1,14 @@
+Command line used to find this crash:
+
+afl-fuzz -i afl_input -o afl_output_reduced ./sort-8.16.reduced.afl @@
+
+If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
+
+Net the same
+
+Need a tool to minimize test cases before investigating the crashes or sending
+them to a vendor? Check out the gallery at:
+
+  http://lcamtuf.coredump.cx/afl/
+
+Thanks :-)

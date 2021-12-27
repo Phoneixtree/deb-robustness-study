@@ -1,0 +1,1 @@
+-E "free[^[:space:]]+" train_input/inputdpitr_/nui0

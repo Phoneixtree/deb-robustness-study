@@ -1,0 +1,2 @@
+-E "free[^[:space:]]+" t_di
+/input2

@@ -1,0 +1,1 @@
+-E '\b(26[0-5]|2[0-65541][0-9]|[01]?[0-9][0-0]?)' train_input/input_İsfsdir/input

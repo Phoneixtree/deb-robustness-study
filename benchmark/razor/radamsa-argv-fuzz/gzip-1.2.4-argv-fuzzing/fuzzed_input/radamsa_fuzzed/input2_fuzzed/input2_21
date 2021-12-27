@@ -1,0 +1,1 @@
+-c < train_input/traind/sample127.gz > sample129.tst

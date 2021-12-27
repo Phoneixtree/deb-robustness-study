@@ -1,0 +1,1 @@
+-c < train_input/trainc/sample1.ref > sample18446744073709551616.ref > sample100.rb2

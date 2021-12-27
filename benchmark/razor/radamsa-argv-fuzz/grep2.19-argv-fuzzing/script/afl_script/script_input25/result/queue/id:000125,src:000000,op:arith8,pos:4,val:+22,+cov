@@ -1,0 +1,1 @@
+-E "|ree[^[:space:]]+" t_dir/input2

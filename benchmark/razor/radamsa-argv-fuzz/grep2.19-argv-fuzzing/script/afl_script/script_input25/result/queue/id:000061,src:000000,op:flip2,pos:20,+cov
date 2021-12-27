@@ -1,0 +1,1 @@
+-E "free[^[:space:]]3" t_dir/input2

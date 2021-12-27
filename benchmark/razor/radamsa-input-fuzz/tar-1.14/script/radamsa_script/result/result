@@ -1,0 +1,50 @@
+-e tar-archives-multiple-files count = 500 
+
+-e reduced_bin -cf hang 0 times (total 500)
+
+-e reduced_bin -cf has 0 exceptions (total 500)
+
+-e reduced_bin successfully executed 0 times (total 1000)
+
+-e reduced_bin -xf hang 0 times
+
+-e reduced_bin -xf has 0 exceptions
+
+-e tar-complains-about-missing-file count = 1 
+
+-e reduced_bin -cf hang 0 times
+
+-e reduced_bin -cf has 0 exceptions 
+
+-e reduced_bin -xf hang 0 times
+
+-e reduced_bin -xf has 0 exceptions
+
+-e tar-extracts-to-standard-output count = 500 
+
+-e reduced_bin -cf hang 0 times (total 500)
+
+-e reduced_bin -cf has 0 exceptions (total 500)
+
+-e reduced_bin successfully executed 0 times (total 500)
+
+-e tar-handles-cz-options count = 500 
+
+-e reduced_bin -czf hang 0 times (total 500)
+
+-e reduced_bin -czf has 0 exceptions (total 500)
+
+-e reduced_bin successfully executed 0 times (total 500)
+
+-e reduced_bin -xzf hang 0 times (total 500)
+
+-e reduced_bin -xzf has 0 exceptions (total 500)
+
+-e tar-handles-exclude-and-extract-lists count = 500 
+
+-e reduced_bin -xf hang 0 times (total 500)
+
+-e reduced_bin -xf has 0 exceptions (total 500)
+
+-e reduced_bin successfully executed 0 times (total 500)
+

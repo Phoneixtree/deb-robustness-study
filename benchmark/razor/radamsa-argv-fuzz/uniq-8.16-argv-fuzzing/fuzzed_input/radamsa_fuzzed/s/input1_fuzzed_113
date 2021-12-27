@@ -1,0 +1,3 @@
+-s -256 data.txt
+-s -32769 data.txt
+-s 1 data.txt

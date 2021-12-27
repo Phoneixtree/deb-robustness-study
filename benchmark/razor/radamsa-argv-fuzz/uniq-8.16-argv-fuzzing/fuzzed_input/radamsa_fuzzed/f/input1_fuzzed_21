@@ -1,0 +1,6 @@
+-g 4294967295 data.txt
+-g -g 0 data.txt
+-g 0 data.txt
+-g 0 data.txt
+-g 0 data.txt
+-g 0 data.txt

@@ -1,0 +1,6 @@
+-r -f dir
+-r -f dir
+-r -f dir
+-r -f$dir
+-r -f dir
+-r -f$dir

@@ -1,0 +1,4 @@
+-r in-r t
+-r input
+put
+-r input

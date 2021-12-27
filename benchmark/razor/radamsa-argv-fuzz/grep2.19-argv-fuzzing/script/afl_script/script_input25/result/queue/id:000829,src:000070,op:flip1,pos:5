@@ -1,0 +1,1 @@
+-y "fsee[^[:space:]]+" t_dir/input2

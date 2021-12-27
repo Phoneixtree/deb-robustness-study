@@ -1,0 +1,3 @@
+-f -256 data.txt
+-f -32769 data.txt
+-f 1 data.txt

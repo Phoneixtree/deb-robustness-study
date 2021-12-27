@@ -1,0 +1,17 @@
+# FEATURE: CONFIG_FEATURE_TAR_CREATE
+
+DRRUN=../../../tracers/dynamorio/bin64/drrun
+CLIENT=./logs/libcbr_indcall.so
+
+
+echo "foo foo" > foo.orig
+cp foo.orig foo
+echo "bar " > bar.orig
+cp bar.orig bar
+${DRRUN} -c -- ./tar.orig cf ${CLIENT} foo.tar foo bar
+rm foo bar
+${DRRUN} -c -- ./tar.orig xf ${CLIENT} foo.tar
+cat foo
+cat bar
+diff -q foo.orig foo || exit 1
+diff -q bar.orig bar || exit 1
