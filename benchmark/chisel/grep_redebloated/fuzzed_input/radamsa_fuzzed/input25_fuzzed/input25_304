@@ -1,0 +1,1 @@
+-E "free[^[:space:]]+" train_input/it/input_dir𐀀/input2

@@ -1,0 +1,1 @@
+"randomtext" -r tr train_input_dir -c
