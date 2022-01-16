@@ -45,8 +45,10 @@ gcc/clang -w -o $BIN $SRC -lm
 ### Online spreadsheet for result-sharing
 https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
 
-### Online spreadsheet for findings-sharing
+### Online document for findings-sharing
  (Edit, Need login) https://www.yuque.com/g/cytmo/gi9oz5/pbcgnq/collaborator/join?token=HgMjDpgDslYlfzqU&goto=%2Fcytmo%2Fgi9oz5%2Fpbcgnq%2Fedit
  
  (Read only) https://www.yuque.com/cytmo/gi9oz5/pbcgnq#IHGF2
  
+### Online document about grep_redebloat(add failed testcases back)
+https://www.yuque.com/cytmo/gi9oz5/hhgqeb
