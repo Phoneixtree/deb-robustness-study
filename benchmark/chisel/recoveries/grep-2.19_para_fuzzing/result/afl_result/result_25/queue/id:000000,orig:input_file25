@@ -1,0 +1,1 @@
+-E "free[^[:e:]]+" tnput_dir/input2
