@@ -1,8 +1,8 @@
-start_time        : 1639279632
-last_update       : 1639279632
-fuzzer_pid        : 4553
-cycles_done       : 0
-execs_done        : 8
+start_time        : 1641876810
+last_update       : 1641876812
+fuzzer_pid        : 2394960
+cycles_done       : 8
+execs_done        : 3349
 execs_per_sec     : 0.00
 paths_total       : 1
 paths_favored     : 1
@@ -10,19 +10,19 @@ paths_found       : 0
 paths_imported    : 0
 max_depth         : 1
 cur_path          : 0
-pending_favs      : 1
-pending_total     : 1
+pending_favs      : 0
+pending_total     : 0
 variable_paths    : 0
-stability         : 0.00%
-bitmap_cvg        : 0.00%
+stability         : 100.00%
+bitmap_cvg        : 0.68%
 unique_crashes    : 0
 unique_hangs      : 0
 last_path         : 0
 last_crash        : 0
 last_hang         : 0
-execs_since_crash : 8
-exec_timeout      : 20
+execs_since_crash : 3349
+exec_timeout      : 40
 afl_banner        : bzip2.razor.0
 afl_version       : 2.52b
 target_mode       : qemu 
-command_line      : afl-fuzz -Q -i /home/ardoon/LAB/gitt/bzip2_cmd/fuzzed_input/afl_seed/input_1 -o ../result /home/ardoon/LAB/gitt/bzip2_cmd/original_files_and_refs/bzip2.razor.0 @@
+command_line      : afl-fuzz -Q -i /home/ardoon/git/benchmark/razor/radamsa-argv-fuzz/bzip2-1.0.5-argv-fuzzing/fuzzed_input/afl_seed/input_1 -o ../result /home/ardoon/git/benchmark/razor/radamsa-argv-fuzz/bzip2-1.0.5-argv-fuzzing/original_files_and_refs/bzip2.razor.0 @@

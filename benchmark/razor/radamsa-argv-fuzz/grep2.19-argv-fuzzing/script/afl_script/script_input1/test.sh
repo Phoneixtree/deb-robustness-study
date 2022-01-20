@@ -10,4 +10,4 @@ mkdir result
 cd result
 rm *
 cd ..
-afl-fuzz -Q -i ${afl_seed}/input_1 -o result ${debloat} @@
+afl-fuzz -Q -i ${afl_seed}/input_1 -o result ${debloat}  @@

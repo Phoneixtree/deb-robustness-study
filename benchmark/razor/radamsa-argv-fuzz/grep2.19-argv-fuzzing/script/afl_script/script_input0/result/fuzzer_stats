@@ -1,8 +1,8 @@
-start_time        : 1639279757
-last_update       : 1639279761
-fuzzer_pid        : 4710
-cycles_done       : 0
-execs_done        : 1260
+start_time        : 1642671342
+last_update       : 1642671346
+fuzzer_pid        : 12891
+cycles_done       : 4
+execs_done        : 2468
 execs_per_sec     : 0.00
 paths_total       : 1
 paths_favored     : 1
@@ -10,8 +10,8 @@ paths_found       : 0
 paths_imported    : 0
 max_depth         : 1
 cur_path          : 0
-pending_favs      : 1
-pending_total     : 1
+pending_favs      : 0
+pending_total     : 0
 variable_paths    : 0
 stability         : 100.00%
 bitmap_cvg        : 0.15%
@@ -20,9 +20,9 @@ unique_hangs      : 0
 last_path         : 0
 last_crash        : 0
 last_hang         : 0
-execs_since_crash : 1260
-exec_timeout      : 60
+execs_since_crash : 2468
+exec_timeout      : 40
 afl_banner        : grep.razor.0
 afl_version       : 2.52b
 target_mode       : qemu 
-command_line      : afl-fuzz -Q -i /home/ardoon/LAB/gitt/grep_cmd/fuzzed_input/afl_seed/input_0 -o result /home/ardoon/LAB/gitt/grep_cmd/original_files_and_refs/grep.razor.0 @@
+command_line      : afl-fuzz -Q -i /home/ardoon/git/benchmark/razor/radamsa-argv-fuzz/grep2.19-argv-fuzzing/fuzzed_input/afl_seed/input_0 -o result /home/ardoon/git/benchmark/razor/radamsa-argv-fuzz/grep2.19-argv-fuzzing/original_files_and_refs/grep.razor.0 @@
