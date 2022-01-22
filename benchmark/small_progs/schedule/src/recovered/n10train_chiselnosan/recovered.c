@@ -75,8 +75,8 @@ Ele *new_ele(int new_num )
   {
   tmp = malloc(sizeof(Ele ));
   ele = (Ele *)tmp;
-  ele->next = (struct _job *)0;
-  ele->prev = (struct _job *)0;
+                               
+                               
   ele->val = new_num;
   }
   return (ele);
@@ -91,9 +91,9 @@ List *new_list(void)
   {
   tmp = malloc(sizeof(List ));
   list = (List *)tmp;
-  list->first = (Ele *)0;
-  list->last = (Ele *)0;
-  list->mem_count = 0;
+                         
+                        
+                      
   }
   return (list);
 }
@@ -102,11 +102,14 @@ List *append_ele(List *a_list , Ele *a_ele )
 { 
 
 
-  {
+   
+
   if (! a_list) {
-    {
+     
+
     a_list = new_list();
-    }
+     
+
   }
   a_ele->prev = a_list->last;
   if (a_list->last) {
@@ -118,7 +121,8 @@ List *append_ele(List *a_list , Ele *a_ele )
   a_ele->next = (struct _job *)0;
   (a_list->mem_count) ++;
   return (a_list);
-}
+ 
+
 }
 Ele *find_nth(List *f_list , int n ) 
 { 
@@ -126,21 +130,21 @@ Ele *find_nth(List *f_list , int n )
   int i ;
 
   {
-  if (! f_list) {
-    return ((Ele *)0);
-  }
+                 
+                      
+   
   f_ele = f_list->first;
   i = 1;
   {
   while (1) {
-    while_continue: /* CIL Label */ ;
-    if (f_ele) {
+                                     ;
+               {
       if (! (i < n)) {
         goto while_break;
       }
-    } else {
-      goto while_break;
-    }
+    }       
+                       
+     
     f_ele = f_ele->next;
     i ++;
   }
@@ -153,14 +157,15 @@ List *del_ele(List *d_list , Ele *d_ele )
 { 
 
 
-  {
-  if (! d_list) {
-    return ((List *)0);
-  } else { //Added block
-  if (! d_ele) {
-    return ((List *)0);
-  }
-  }
+   
+
+                 
+                       
+                        
+                
+                       
+   
+   
   if (d_ele->next) {
     (d_ele->next)->prev = d_ele->prev;
   } else {
@@ -173,20 +178,23 @@ List *del_ele(List *d_list , Ele *d_ele )
   }
   (d_list->mem_count) --;
   return (d_list);
-}
+ 
+
 }
 extern int free() ;
-void free_ele(Ele *ptr ) 
-{ 
+                         
+  
 
 
-  {
-  {
-  free(ptr);
-  }
-  return;
-}
-}
+   
+
+   
+            
+   
+         
+ 
+
+ 
 int alloc_proc_num  ;
 int num_processes  ;
 Ele *cur_proc  ;
@@ -197,19 +205,23 @@ void finish_process(void)
 { 
 
 
-  {
+   
+
   {
   schedule();
   }
   if (cur_proc) {
-    {
+     
+
     fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"%d ", cur_proc->val);
-    free_ele(cur_proc);
-    num_processes --;
-    }
+                       
+                     
+     
+
   }
-  return;
-}
+         
+ 
+
 }
 void finish_all_processes(void) 
 { 
@@ -221,7 +233,7 @@ void finish_all_processes(void)
   i = 0;
   {
   while (1) {
-    while_continue: /* CIL Label */ ;
+                                     ;
     if (! (i < total)) {
       goto while_break;
     }
@@ -232,7 +244,7 @@ void finish_all_processes(void)
   }
   while_break: /* CIL Label */ ;
   }
-  return;
+         
 }
 }
 void schedule(void) 
@@ -244,7 +256,7 @@ void schedule(void)
   i = 3;
   {
   while (1) {
-    while_continue: /* CIL Label */ ;
+                                     ;
     if (! (i > 0)) {
       goto while_break;
     }
@@ -259,7 +271,7 @@ void schedule(void)
   }
   while_break: /* CIL Label */ ;
   }
-  return;
+         
 }
 }
 void upgrade_process_prio(int prio , float ratio ) 
@@ -271,26 +283,28 @@ void upgrade_process_prio(int prio , float ratio )
   List *dest_queue ;
 
   {
-  if (prio >= 3) {
-    return;
-  }
+                  
+           
+   
   src_queue = prio_queue[prio];
   dest_queue = prio_queue[prio + 1];
   count = src_queue->mem_count;
-  if (count > 0) {
+                 {
     {
     n = (int )((float )count * ratio + (float )1);
     proc = find_nth(src_queue, n);
     }
     if (proc) {
-      {
+       
+
       src_queue = del_ele(src_queue, proc);
-      proc->priority = (short )prio;
+                                    
       dest_queue = append_ele(dest_queue, proc);
-      }
+       
+
     }
   }
-  return;
+         
 }
 }
 void unblock_process(float ratio ) 
@@ -308,14 +322,16 @@ void unblock_process(float ratio )
     proc = find_nth(block_queue, n);
     }
     if (proc) {
-      {
+       
+
       block_queue = del_ele(block_queue, proc);
       prio = (int )proc->priority;
       prio_queue[prio] = append_ele(prio_queue[prio], proc);
-      }
+       
+
     }
   }
-  return;
+         
 }
 }
 void quantum_expire(void) 
@@ -327,29 +343,35 @@ void quantum_expire(void)
   schedule();
   }
   if (cur_proc) {
-    {
+     
+
     prio = (int )cur_proc->priority;
     prio_queue[prio] = append_ele(prio_queue[prio], cur_proc);
-    }
+     
+
   }
-  return;
+         
 }
 }
 void block_process(void) 
 { 
 
 
-  {
+   
+
   {
   schedule();
   }
   if (cur_proc) {
-    {
+     
+
     block_queue = append_ele(block_queue, cur_proc);
-    }
+     
+
   }
-  return;
-}
+         
+ 
+
 }
 Ele *new_process(int prio ) 
 { 
@@ -372,11 +394,13 @@ void add_process(int prio )
   Ele *proc ;
 
   {
-  {
+   
+
   proc = new_process(prio);
   prio_queue[prio] = append_ele(prio_queue[prio], proc);
-  }
-  return;
+   
+
+         
 }
 }
 void init_prio_queue(int prio , int num_proc ) 
@@ -392,7 +416,7 @@ void init_prio_queue(int prio , int num_proc )
   }
   {
   while (1) {
-    while_continue: /* CIL Label */ ;
+                                     ;
     if (! (i < num_proc)) {
       goto while_break;
     }
@@ -405,19 +429,21 @@ void init_prio_queue(int prio , int num_proc )
   while_break: /* CIL Label */ ;
   }
   prio_queue[prio] = queue;
-  return;
+         
 }
 }
-void initialize(void) 
-{ 
+                      
+  
 
 
-  {
-  alloc_proc_num = 0;
-  num_processes = 0;
-  return;
-}
-}
+   
+
+                     
+                    
+         
+ 
+
+ 
 extern int atoi() ;
 void main(int argc , char **argv ) 
 { 
@@ -435,12 +461,12 @@ void main(int argc , char **argv )
     return;
   }
   {
-  initialize();
+               
   prio = 3;
   }
   {
   while (1) {
-    while_continue: /* CIL Label */ ;
+                                     ;
     if (! (prio >= 1)) {
       goto while_break;
     }
@@ -452,16 +478,16 @@ void main(int argc , char **argv )
   }
   while_break: /* CIL Label */ ;
   }
-  {
-  status = fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%d", & command);
-  }
+   
+                                                                                            
+   
   {
   while (1) {
-    while_continue___0: /* CIL Label */ ;
+                                         ;
     if (status != -1) {
-      if (! status) {
-        goto while_break___0;
-      }
+                     
+                             
+       
     } else {
       goto while_break___0;
     }
@@ -514,7 +540,7 @@ void main(int argc , char **argv )
     fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%d", & prio);
     fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%f", & ratio);
     }
-    if (prio > 3) { // No.1, Level 1: related to "invalid" & "print"
+    if (prio > 3) {  // No.1, Level 1: related to "invalid" & "print"
       {
       fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"** invalid priority\n");
       }
@@ -558,7 +584,7 @@ void main(int argc , char **argv )
     {
     finish_all_processes();
     }
-    goto switch_break;
+                      
     switch_break: /* CIL Label */ ;
     }
     {
@@ -568,6 +594,6 @@ void main(int argc , char **argv )
   }
   while_break___0: /* CIL Label */ ;
   }
-  return;
+         
 }
 }
