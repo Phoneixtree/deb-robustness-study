@@ -1,0 +1,1 @@
+-E "free[^[:e:]             ]+" r/in                     ]+" tnput_dir/i
