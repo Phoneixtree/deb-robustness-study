@@ -514,7 +514,7 @@ void main(int argc , char **argv )
     fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%d", & prio);
     fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%f", & ratio);
     }
-    if (prio > 3) {
+    if (prio > 3) { // No.1, Level 1: related to "invalid" & "print"
       {
       fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"** invalid priority\n");
       }
@@ -530,13 +530,13 @@ void main(int argc , char **argv )
       upgrade_process_prio(prio, ratio);
       }
     }
-    }
+    } // END
     goto switch_break;
     case_1: /* CIL Label */ 
     {
     fscanf((FILE * __restrict  )stdin, (char const   * __restrict  )"%d", & prio);
     }
-    if (prio > 3) {
+    if (prio > 3) { // No.2, Level 1: related to "invalid" & "print"
       {
       fprintf((FILE * __restrict  )stdout, (char const   * __restrict  )"** invalid priority\n");
       }
@@ -552,7 +552,7 @@ void main(int argc , char **argv )
       add_process(prio);
       }
     }
-    }
+    } // END
     goto switch_break;
     case_7: /* CIL Label */ 
     {
