@@ -52,4 +52,4 @@ https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
  
 ### Online document about prog_redebloat(add failed testcases back)
  currently gzip_input and grep_argv
-https://www.yuque.com/cytmo/gi9oz5/hhgqeb
+https://www.yuque.com/cytmo/gi9oz5
