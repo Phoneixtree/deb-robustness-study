@@ -1,0 +1,1 @@
+./test.sh: line 52: 32300 Killed                  timeout $TIMEOUT $REDUCED_BIN -f $file

@@ -1,0 +1,9 @@
+origin_bin hang 0 times
+reduced_bin hang 0 times
+
+origin_bin has executed 1 exceptions
+reduced_bin has 478 exceptions
+
+origin_bin successfully executed 478 times
+reduced_bin successfully executed 22 times
+
