@@ -1,0 +1,1 @@
+-E "freu[^[:space:]]+" t_dir/input2

@@ -1,0 +1,1 @@
+-E "free[^[:space:]]$'%d%#x󠀢$0$'\n\r+" train_input/input_ddir/input1

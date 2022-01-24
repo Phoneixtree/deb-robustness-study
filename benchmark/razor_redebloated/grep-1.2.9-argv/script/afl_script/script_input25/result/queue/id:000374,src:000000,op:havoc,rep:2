@@ -1,0 +1,1 @@
+-E "frfe[^[:space:]]rfe[^[:space:]]++" t_dir/input2

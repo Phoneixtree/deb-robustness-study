@@ -1,0 +1,1 @@
+-E "eree[^[:space:]]+" t_dir/input2

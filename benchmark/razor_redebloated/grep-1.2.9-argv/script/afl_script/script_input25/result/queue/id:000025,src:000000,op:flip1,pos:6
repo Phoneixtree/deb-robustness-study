@@ -1,0 +1,1 @@
+-E "fråe[^[:space:]]+" t_dir/input2

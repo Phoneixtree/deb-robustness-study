@@ -1,0 +1,1 @@
+-E "free[^[:space:]]+"8t_dir/input2
