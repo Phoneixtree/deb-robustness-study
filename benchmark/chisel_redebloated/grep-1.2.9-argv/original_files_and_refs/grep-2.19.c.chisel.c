@@ -1,3 +1,4 @@
+#include "argv-fuzz-inl.h"
 enum strtol_error {
   LONGINT_OK = 0,
   LONGINT_OVERFLOW = 1,
@@ -185,10 +186,10 @@ typedef unsigned int __uid_t;
 typedef unsigned int __gid_t;
 typedef unsigned long __ino_t;
 typedef unsigned long __nlink_t;
-struct __anonstruct___fsid_t_1 {
+struct __anonstruct___fsid_t___1 {
   int __val[2];
 };
-typedef struct __anonstruct___fsid_t_1 __fsid_t;
+typedef struct __anonstruct___fsid_t___1 __fsid_t__;
 typedef long __time_t;
 typedef long __blksize_t;
 typedef long __blkcnt_t;
@@ -300,7 +301,7 @@ struct statfs {
   __fsblkcnt_t f_bavail;
   __fsfilcnt_t f_files;
   __fsfilcnt_t f_ffree;
-  __fsid_t f_fsid;
+  __fsid_t__ f_fsid;
   __fsword_t f_namelen;
   __fsword_t f_frsize;
   __fsword_t f_flags;
@@ -651,7 +652,7 @@ extern __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1)))
     __attribute__((__pure__));
 extern __attribute__((__nothrow__, __noreturn__)) void abort(void);
 extern void error(int __status, int __errnum, char const *__format, ...);
-int volatile exit_failure;
+
 extern __attribute__((__nothrow__)) char *gettext(char const *__msgid)
     __attribute__((__format_arg__(1)));
 extern __attribute__((__nothrow__)) intmax_t
@@ -668,7 +669,7 @@ void *xnmalloc(size_t n, size_t s)
 void *xnmalloc(size_t n, size_t s)
     __attribute__((__malloc__, __alloc_size__(1, 2)));
 void *xnmalloc(size_t n, size_t s) {
-
+  int tmp;
   void *tmp___0;
 
   {
@@ -682,7 +683,7 @@ void *xnrealloc(void *p, size_t n, size_t s)
 void *xnrealloc(void *p, size_t n, size_t s)
     __attribute__((__alloc_size__(2, 3)));
 void *xnrealloc(void *p, size_t n, size_t s) {
-
+  int tmp;
   void *tmp___0;
 
   {
@@ -708,7 +709,21 @@ void *x2nrealloc(void *p, size_t *pn, size_t s) {
 }
 char *xcharalloc(size_t n) __attribute__((__malloc__, __alloc_size__(1)));
 char *xcharalloc(size_t n) __attribute__((__malloc__, __alloc_size__(1)));
+char *xcharalloc(size_t n) {
+  void *tmp;
+  void *tmp___0;
+  void *tmp___1;
 
+  {
+    {
+
+      tmp = xmalloc(n);
+      tmp___1 = tmp;
+    }
+
+    return ((char *)tmp___1);
+  }
+}
 void *xzalloc(size_t s) __attribute__((__malloc__, __alloc_size__(1)));
 void *xcalloc(size_t n, size_t s)
     __attribute__((__malloc__, __alloc_size__(1, 2)));
@@ -744,10 +759,7 @@ void *xmalloc(size_t n) {
       tmp = malloc(n);
       p = tmp;
     }
-    if (!p) {
 
-      xalloc_die();
-    }
     return (p);
   }
 }
@@ -790,15 +802,7 @@ void *xmemdup(void const *p, size_t s) {
 char *xstrdup(char const *string) __attribute__((__malloc__));
 
 __attribute__((__noreturn__)) void xalloc_die(void);
-void xalloc_die(void) {
-  char *tmp;
 
-  {
-
-    tmp = gettext("memory exhausted");
-    error((int)exit_failure, 0, "%s", tmp);
-  }
-}
 extern
     __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
                                      strcmp)(char const *__s1, char const *__s2)
@@ -855,21 +859,25 @@ extern ssize_t read(int __fd, void *__buf, size_t __nbytes);
 size_t safe_read(int fd, void *buf, size_t count) {
   ssize_t result;
   ssize_t tmp;
+  int *tmp___0;
+  int *tmp___1;
 
   {
-
     {
-      ;
       {
-        tmp = read(fd, buf, count);
-        result = tmp;
-      }
-      {
-        return ((size_t)result);
-      }
+      while_continue: /* CIL Label */;
+        {
+          tmp = read(fd, buf, count);
+          result = tmp;
+        }
+        { return ((size_t)result); }
 
-      ;
-    };
+      __Cont:;
+      }
+    while_break: /* CIL Label */;
+    }
+
+    return (0UL);
   }
 }
 
@@ -889,20 +897,177 @@ extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
     __attribute__((__pure__));
 extern __attribute__((__nothrow__)) int iswprint(wint_t __wc);
 
+static char const *gettext_quote(char const *msgid, enum quoting_style s) {
+  char const *translation;
+  char const *tmp;
+  char const *locale_code;
+  char const *tmp___0;
+  int tmp___1;
+  char const *tmp___2;
+  int tmp___3;
+  char const *tmp___4;
+  char *__cil_tmp20;
+  char *__cil_tmp21;
+  char *__cil_tmp22;
+  char *__cil_tmp23;
+  char *__cil_tmp24;
+  char *__cil_tmp25;
+  char *__cil_tmp26;
+  char *__cil_tmp27;
+
+  {
+
+    { tmp___4 = "\'"; }
+    return (tmp___4);
+  }
+}
+static size_t
+quotearg_buffer_restyled(char *buffer___0, size_t buffersize, char const *arg,
+                         size_t argsize, enum quoting_style quoting_style,
+                         int flags, unsigned int const *quote_these_too,
+                         char const *left_quote, char const *right_quote) {
+  size_t i;
+  size_t len;
+  char const *quote_string;
+  size_t quote_string_len;
+  _Bool backslash_escapes;
+  _Bool unibyte_locale;
+  size_t tmp;
+  _Bool elide_outer_quotes;
+  unsigned char c;
+  unsigned char esc;
+  _Bool is_right_quote;
+  size_t tmp___0;
+  int tmp___1;
+  int tmp___2;
+  size_t m;
+  _Bool printable;
+  unsigned short const **tmp___3;
+  mbstate_t mbstate;
+  wchar_t w;
+  size_t bytes;
+  size_t tmp___4;
+  size_t j;
+  int tmp___5;
+  int tmp___6;
+  size_t ilim;
+  int tmp___7;
+  size_t tmp___8;
+  void *__cil_tmp42;
+  char *__cil_tmp43;
+  char *__cil_tmp44;
+  char *__cil_tmp45;
+  char *__cil_tmp46;
+
+  {
+    { len = (size_t)0; }
+
+  case_6 : { left_quote = gettext_quote("`", quoting_style); }
+    {
+      quote_string = left_quote;
+      {
+
+        if (len < buffersize) {
+          *(buffer___0 + len) = (char)*quote_string;
+        }
+        len++;
+      }
+    }
+
+  switch_break:
+    i = (size_t)0;
+    {
+      while (1) {
+
+        {
+          tmp___7 = (int const) * (arg + i) == 0;
+        }
+
+        if (tmp___7) {
+          goto while_break___3;
+        }
+
+        c = (unsigned char)*(arg + i);
+
+      switch_default___2 : {
+
+        tmp___3 = __ctype_b_loc();
+        printable = (_Bool)(((int const) * (*tmp___3 + (int)c) & 16384) != 0);
+      }
+
+        {
+
+          if (!printable) {
+
+            {
+
+              { *(buffer___0 + len) = (char)'\\'; }
+              len++;
+            }
+
+            {
+
+              { *(buffer___0 + len) = (char)(48 + ((int)c >> 6)); }
+              len++;
+            }
+
+            {
+
+              { *(buffer___0 + len) = (char)(48 + (((int)c >> 3) & 7)); }
+              len++;
+            }
+          while_break___20:
+            c = (unsigned char)(48 + ((int)c & 7));
+          }
+        }
+
+      store_c : {
+
+        if (len < buffersize) {
+          *(buffer___0 + len) = (char)c;
+        }
+        len++;
+      }
+
+      __Cont:
+        i++;
+      }
+    }
+  while_break___3:;
+
+    {
+
+      if (len < buffersize) {
+        *(buffer___0 + len) = (char)*quote_string;
+      }
+      len++;
+    }
+    if (len < buffersize) {
+      *(buffer___0 + len) = (char)'\000';
+    }
+    return (len);
+  }
+}
 static char slot0[256];
 static unsigned int nslots = 1U;
 static struct slotvec slotvec0 = {sizeof(slot0), slot0};
 static struct slotvec *slotvec = &slotvec0;
 static char *quotearg_n_options(int n, char const *arg, size_t argsize,
                                 struct quoting_options const *options) {
-
+  int e;
+  int *tmp;
   unsigned int n0;
   struct slotvec *sv;
   size_t n1;
-
+  _Bool preallocated;
+  int tmp___0;
   struct slotvec *tmp___1;
-
+  size_t size;
   char *val;
+  int flags;
+  size_t qsize;
+  size_t tmp___2;
+  int *tmp___3;
 
   {
     {
@@ -920,15 +1085,40 @@ static char *quotearg_n_options(int n, char const *arg, size_t argsize,
 
       { memset((void *)(sv + nslots), 0, (n1 - (size_t)nslots) * sizeof(*sv)); }
     }
-    { val = (sv + n)->val; }
+    {
+      size = (sv + n)->size;
+      val = (sv + n)->val;
+      flags = (int)(options->flags | 1);
+      tmp___2 = quotearg_buffer_restyled(
+          val, size, arg, argsize, (enum quoting_style)options->style, flags,
+          (unsigned int const *)(options->quote_these_too),
+          (char const *)options->left_quote,
+          (char const *)options->right_quote);
+      qsize = tmp___2;
+    }
+    {
+      size = qsize + 1UL;
+
+      {
+        val = xcharalloc(size);
+
+        quotearg_buffer_restyled(
+            val, size, arg, argsize, (enum quoting_style)options->style, flags,
+            (unsigned int const *)(options->quote_these_too),
+            (char const *)options->left_quote,
+            (char const *)options->right_quote);
+      }
+    }
 
     return (val);
   }
 }
 char *quotearg_n_style(int n, enum quoting_style s, char const *arg) {
   struct quoting_options o;
-
+  struct quoting_options tmp;
   char *tmp___0;
+  void *__cil_tmp9;
+  void *__cil_tmp10;
 
   {
     {
@@ -939,35 +1129,7 @@ char *quotearg_n_style(int n, enum quoting_style s, char const *arg) {
     return (tmp___0);
   }
 }
-char *quotearg_char_mem(char const *arg, size_t argsize, char ch) {
-  struct quoting_options options;
-  char *tmp;
 
-  {
-    {
-
-      tmp = quotearg_n_options(0, arg, argsize,
-                               (struct quoting_options const *)(&options));
-    }
-    return (tmp);
-  }
-}
-char *quotearg_char(char const *arg, char ch) {
-  char *tmp;
-
-  {
-    { tmp = quotearg_char_mem(arg, (size_t)-1, ch); }
-    return (tmp);
-  }
-}
-char *quotearg_colon(char const *arg) {
-  char *tmp;
-
-  {
-    { tmp = quotearg_char(arg, (char)':'); }
-    return (tmp);
-  }
-}
 struct quoting_options quote_quoting_options = {(enum quoting_style)6,
                                                 0,
                                                 {0U},
@@ -993,7 +1155,14 @@ char const *quote_n(int n, char const *arg) {
     return (tmp);
   }
 }
+char const *quote(char const *arg) {
+  char const *tmp;
 
+  {
+    { tmp = quote_n(0, arg); }
+    return (tmp);
+  }
+}
 char const *proper_name(char const *name);
 extern __attribute__((__nothrow__)) int
 sprintf(char *__restrict __s, char const *__restrict __format, ...);
@@ -1003,6 +1172,7 @@ char *(__attribute__((__nonnull__(1, 2))) mbsstr)(char const *haystack,
 extern __attribute__((__nothrow__)) int iswalnum(wint_t __wc);
 
 void set_program_name(char const *argv0);
+extern char *program_invocation_name;
 
 extern struct _IO_FILE *stderr;
 extern int fputs(char const *__restrict __s, FILE *__restrict __stream);
@@ -1014,7 +1184,14 @@ extern __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1)))
                                            strrchr)(char const *__s, int __c)
     __attribute__((__pure__));
 char const *program_name = (char const *)((void *)0);
+void set_program_name(char const *argv0) {
+  char const *slash;
+  char const *base;
+  int tmp;
+  int tmp___0;
 
+  { program_invocation_name = (char *)argv0; }
+}
 int fd_safer(int fd);
 extern DIR *fdopendir(int __fd);
 extern int(__attribute__((__nonnull__(1))) closedir)(DIR *__dirp);
@@ -1026,7 +1203,7 @@ extern int(__attribute__((__nonnull__(2))) openat)(int __fd, char const *__file,
                                                    int __oflag, ...);
 int openat_safer(int fd, char const *file, int flags, ...) {
   mode_t mode___0;
-
+  va_list ap;
   int tmp;
   int tmp___0;
 
@@ -1138,38 +1315,6 @@ static _Bool is_prime(size_t candidate) __attribute__((__const__));
 static size_t next_prime(size_t candidate) __attribute__((__const__));
 static size_t next_prime(size_t candidate) __attribute__((__const__));
 
-static size_t __attribute__((__pure__))
-compute_bucket_size(size_t candidate, Hash_tuning const *tuning) {
-
-  return ((size_t __attribute__((__pure__)))candidate);
-}
-Hash_table *(__attribute__((__warn_unused_result__))
-             hash_initialize)(size_t candidate, Hash_tuning const *tuning,
-                              size_t (*hasher)(void const *, size_t),
-                              _Bool (*comparator)(void const *, void const *),
-                              void (*data_freer)(void *)) {
-  Hash_table *table;
-
-  {
-
-    { table = (Hash_table *)malloc(sizeof(*table)); }
-
-    { table->n_buckets = (size_t)compute_bucket_size(candidate, tuning); }
-
-    {
-      table->bucket = (struct hash_entry *)calloc(table->n_buckets,
-                                                  sizeof(*(table->bucket)));
-    }
-
-    return (table);
-  }
-}
-void hash_free(Hash_table *table) {
-
-  free((void *)table->bucket);
-  free((void *)table);
-}
-
 extern struct dirent *(__attribute__((__nonnull__(1))) readdir)(DIR *__dirp);
 extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
                                         stat)(char const *__restrict __file,
@@ -1209,43 +1354,14 @@ static unsigned short fts_stat(FTS *sp, FTSENT *p, _Bool follow);
 static int fts_safe_changedir(FTS *sp, FTSENT *p, int fd, char const *dir);
 void cycle_check_init(struct cycle_check_state *state);
 _Bool cycle_check(struct cycle_check_state *state, struct stat const *sb);
-static _Bool AD_compare(void const *x, void const *y) {
-
-  int tmp;
-
-  {
-
-    { tmp = 1; }
-
-    return ((_Bool)tmp);
-  }
-}
-static size_t AD_hash(void const *x, size_t table_size) {
-  struct Active_dir const *ax;
-
-  {
-    ax = (struct Active_dir const *)x;
-    return ((uintmax_t)ax->ino % table_size);
-  }
-}
-static _Bool setup_dir(FTS *fts) {
-
-  {
-
-    fts->fts_cycle.ht =
-        hash_initialize((size_t)31, (Hash_tuning const *)((void *)0), &AD_hash,
-                        &AD_compare, &free);
-  }
-
-  return ((_Bool)1);
-}
-
-static void free_dir(FTS *sp) { hash_free(sp->fts_cycle.ht); }
 
 static DIR *opendirat(int fd, char const *dir, int extra_flags, int *pdir_fd) {
   int new_fd;
   int tmp;
   DIR *dirp;
+  int saved_errno;
+  int *tmp___0;
+  int *tmp___1;
 
   {
     {
@@ -1260,8 +1376,11 @@ static DIR *opendirat(int fd, char const *dir, int extra_flags, int *pdir_fd) {
   }
 }
 static void cwd_advance_fd(FTS *sp, int fd, _Bool chdir_down_one) {
+  int old;
+  int prev_fd_in_slot;
+  int tmp;
 
-  sp->fts_cwd_fd = fd;
+  { sp->fts_cwd_fd = fd; }
 }
 
 __attribute__((__nothrow__))
@@ -1274,19 +1393,28 @@ FTS *(__attribute__((__warn_unused_result__))
   register FTS *sp;
   register FTSENT *p;
   register FTSENT *root;
-
+  register size_t nitems;
   FTSENT *parent;
-
+  FTSENT *tmp;
+  _Bool defer_stat;
+  int *tmp___0;
+  int *tmp___1;
+  int *tmp___2;
   size_t maxarglen;
   size_t tmp___5;
   size_t tmp___6;
   _Bool tmp___7;
-
+  int tmp___8;
   size_t len;
   size_t tmp___9;
-
+  char const *v;
   struct _ftsent *tmp___10;
   _Bool tmp___11;
+  int tmp___12;
+  void *__cil_tmp31;
+  char *__cil_tmp32;
+  char *__cil_tmp33;
+  char *__cil_tmp34;
 
   {
 
@@ -1304,35 +1432,20 @@ FTS *(__attribute__((__warn_unused_result__))
     { tmp___7 = fts_palloc(sp, tmp___6); }
 
     {
-      { parent = fts_alloc(sp, "", (size_t)0); }
 
-      parent->fts_level = (ptrdiff_t)-1;
-    }
-
-    root = (FTSENT *)((void *)0);
-
-    {
       {
-        ;
+        tmp___9 = strlen((char const *)*argv);
+        len = tmp___9;
+      }
 
-        {
-          tmp___9 = strlen((char const *)*argv);
-          len = tmp___9;
-        }
+      { p = fts_alloc(sp, (char const *)*argv, len); }
 
-        { p = fts_alloc(sp, (char const *)*argv, len); }
+      p->fts_level = (ptrdiff_t)0;
 
-        p->fts_level = (ptrdiff_t)0;
-        p->fts_parent = parent;
-        p->fts_accpath = p->fts_name;
-        { p->fts_info = fts_stat(sp, p, (_Bool)0); }
+      p->fts_accpath = p->fts_name;
 
-        {
-          p->fts_link = root;
-          root = p;
-        }
-      };
-    };
+      { root = p; }
+    }
 
     {
       tmp___10 = fts_alloc(sp, "", (size_t)0);
@@ -1342,7 +1455,6 @@ FTS *(__attribute__((__warn_unused_result__))
     {
       (sp->fts_cur)->fts_link = root;
       (sp->fts_cur)->fts_info = (unsigned short)9;
-      tmp___11 = setup_dir(sp);
     }
 
     return (sp);
@@ -1350,8 +1462,9 @@ FTS *(__attribute__((__warn_unused_result__))
 }
 static void fts_load(FTS *sp, FTSENT *p) {
   register size_t len;
-
+  register char *cp;
   size_t tmp;
+  char *tmp___0;
 
   {
 
@@ -1363,15 +1476,7 @@ static void fts_load(FTS *sp, FTSENT *p) {
 }
 __attribute__((__nothrow__)) int(__attribute__((__warn_unused_result__))
                                  fts_close)(FTS *sp);
-int(__attribute__((__warn_unused_result__)) fts_close)(FTS *sp) {
 
-  {
-    free_dir(sp);
-    free((void *)sp);
-  }
-
-  return (0);
-}
 extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(2)))
                                         fstatfs)(int __fildes,
                                                  struct statfs *__buf);
@@ -1381,17 +1486,38 @@ FTSENT *(__attribute__((__warn_unused_result__)) fts_read)(FTS *sp);
 FTSENT *(__attribute__((__warn_unused_result__)) fts_read)(FTS *sp) {
   register FTSENT *p;
   register FTSENT *tmp;
-
+  register unsigned short instr;
   register char *t;
-
+  int *tmp___0;
+  int tmp___1;
+  int *tmp___2;
+  int tmp___3;
   struct _ftsent *tmp___4;
-
+  int tmp___5;
+  int *tmp___6;
+  int tmp___7;
   size_t tmp___8;
   char *tmp___9;
-
+  FTSENT *parent;
+  _Bool tmp___10;
+  int *tmp___11;
+  _Bool tmp___12;
+  int *tmp___13;
   struct _ftsent *tmp___14;
-
+  int *tmp___15;
+  int tmp___16;
+  int saved_errno;
+  int *tmp___17;
+  int *tmp___18;
+  int *tmp___19;
+  int tmp___20;
+  int tmp___21;
+  int *tmp___22;
+  int tmp___23;
   FTSENT *tmp___24;
+  char *__cil_tmp36;
+  char *__cil_tmp37;
+  char *__cil_tmp38;
 
   {
 
@@ -1409,14 +1535,9 @@ FTSENT *(__attribute__((__warn_unused_result__)) fts_read)(FTS *sp) {
       goto name;
     }
 
-    tmp = p;
-
     p = p->fts_link;
     if ((unsigned long)p != (unsigned long)((void *)0)) {
-      {
 
-        free((void *)tmp);
-      }
       if (p->fts_level == 0L) {
 
         {
@@ -1440,26 +1561,16 @@ FTSENT *(__attribute__((__warn_unused_result__)) fts_read)(FTS *sp) {
       }
     check_for_dir:
       sp->fts_cur = p;
+      {
+
+      _L___4 : { p->fts_info = fts_stat(sp, p, (_Bool)0); }
+      }
 
       return (p);
     }
-    {
-      p = tmp->fts_parent;
-      sp->fts_cur = p;
-      free((void *)tmp);
-    }
-    if (p->fts_level == -1L) {
-      {
-        free((void *)p);
 
-        tmp___14 = (struct _ftsent *)((void *)0);
-      }
-      return (tmp___14);
-    }
+    { tmp___24 = (FTSENT *)((void *)0); }
 
-    { p->fts_info = (unsigned short)6; }
-
-    { tmp___24 = p; }
     return (tmp___24);
   }
 }
@@ -1469,24 +1580,54 @@ __attribute__((__nothrow__)) int fts_set(FTS *sp __attribute__((__unused__)),
 static FTSENT *fts_build(FTS *sp, int type) {
   register FTSENT *p;
   register FTSENT *head;
-
+  register size_t nitems;
   FTSENT *tail;
-
+  void *oldaddr;
+  int saved_errno;
+  _Bool descend;
+  _Bool doadjust;
   ptrdiff_t level;
-
+  nlink_t nlinks;
+  _Bool nostat;
+  size_t len;
+  size_t maxlen;
+  size_t new_len;
+  char *cp;
   int dir_fd;
   FTSENT *cur;
-
+  _Bool continue_readdir;
+  DIR *dp;
+  int *tmp;
+  int *tmp___0;
   DIR *tmp___1;
   int tmp___2;
   int tmp___3;
   int tmp___4;
-
+  int *tmp___5;
+  _Bool tmp___6;
+  size_t max_entries;
+  unsigned long tmp___7;
+  int tmp___8;
+  int *tmp___9;
   int tmp___10;
-
+  char *tmp___11;
+  _Bool is_dir;
   size_t d_namelen;
   struct dirent *dp___0;
   struct dirent *tmp___12;
+  int *tmp___13;
+  int *tmp___14;
+  _Bool tmp___15;
+  int *tmp___16;
+  _Bool skip_stat;
+  int tmp___17;
+  int tmp___18;
+  int tmp___19;
+  int tmp___20;
+  int tmp___21;
+  int tmp___22;
+  _Bool tmp___23;
+  char *__cil_tmp53;
 
   {
     cur = sp->fts_cur;
@@ -1507,12 +1648,7 @@ static FTSENT *fts_build(FTS *sp, int type) {
   }
 }
 
-{
-
-  { dir_fd = dup_safer(dir_fd); }
-
-  { tmp___10 = fts_safe_changedir(sp, cur, dir_fd, (char const *)((void *)0)); }
-}
+{ tmp___10 = fts_safe_changedir(sp, cur, dir_fd, (char const *)((void *)0)); }
 
 level = cur->fts_level + 1L;
 
@@ -1520,7 +1656,7 @@ head = (FTSENT *)((void *)0);
 
 {
   while (1) {
-    ;
+
   while_continue___2:;
 
     {
@@ -1551,8 +1687,6 @@ head = (FTSENT *)((void *)0);
 
     { p->fts_accpath = p->fts_name; }
 
-    { p->fts_info = (unsigned short)11; }
-
     p->fts_link = (struct _ftsent *)((void *)0);
     if ((unsigned long)head == (unsigned long)((void *)0)) {
       tail = p;
@@ -1560,24 +1694,43 @@ head = (FTSENT *)((void *)0);
     } else {
       tail->fts_link = p;
     }
-  };
+  }
 }
 while_break___2:;
-{
-  {
-    {
-      ;
-      { closedir(cur->fts_dirp); }
-    };
-  };
-}
 
 return (head);
 }
 }
 static unsigned short fts_stat(FTS *sp, FTSENT *p, _Bool follow) {
+  struct stat *sbp;
+  int saved_errno;
+  int *tmp;
+  int *tmp___0;
+  int *tmp___1;
+  int tmp___2;
+  int tmp___3;
+  int *tmp___4;
+  int tmp___5;
+  int tmp___6;
+  int tmp___7;
 
-  return ((unsigned short)1);
+  {
+    sbp = p->fts_statp;
+
+    {
+
+      tmp___5 = fstatat(
+          sp->fts_cwd_fd,
+          (char const * /* __restrict  */)((char const *)p->fts_accpath),
+          (struct stat * /* __restrict  */) sbp, 256);
+    }
+    if ((sbp->st_mode & 61440U) == 16384U) {
+
+      return ((unsigned short)1);
+    }
+
+    return ((unsigned short)3);
+  }
 }
 
 static FTSENT *fts_alloc(FTS *sp, char const *name, size_t namelen) {
@@ -1605,6 +1758,7 @@ static FTSENT *fts_alloc(FTS *sp, char const *name, size_t namelen) {
 static _Bool fts_palloc(FTS *sp, size_t more) {
   char *p;
   size_t new_len;
+  int *tmp;
 
   {
     new_len = (sp->fts_pathlen + more) + 256UL;
@@ -1620,7 +1774,7 @@ static _Bool fts_palloc(FTS *sp, size_t more) {
 }
 
 static size_t __attribute__((__pure__)) fts_maxarglen(char *const *argv) {
-
+  size_t len;
   size_t max;
 
   {
@@ -1630,10 +1784,21 @@ static size_t __attribute__((__pure__)) fts_maxarglen(char *const *argv) {
   }
 }
 static int fts_safe_changedir(FTS *sp, FTSENT *p, int fd, char const *dir) {
-
+  int ret;
   _Bool is_dotdot;
-
+  int tmp;
+  int tmp___0;
   int newfd;
+  int parent_fd;
+  _Bool tmp___1;
+  struct stat sb;
+  int tmp___2;
+  int *tmp___3;
+  int tmp___4;
+  int oerrno;
+  int *tmp___5;
+  int *tmp___6;
+  void *__cil_tmp20;
 
   {
 
@@ -1651,72 +1816,17 @@ extern
                                         mempcpy)(void *__restrict __dest,
                                                  void const *__restrict __src,
                                                  size_t __n);
-int fd_safer(int fd) { return (fd); }
+int fd_safer(int fd) {
+  int f;
+  int tmp;
+  int e;
+  int *tmp___0;
+  int *tmp___1;
+
+  { return (fd); }
+}
 extern int fcntl(int __fd, int __cmd, ...);
 int rpl_fcntl(int fd, int action, ...);
-static int have_dupfd_cloexec = 0;
-int rpl_fcntl(int fd, int action, ...) {
-  va_list arg;
-  int result;
-  int target;
-  int tmp;
-
-  int flags;
-  int tmp___1;
-  int saved_errno;
-  int *tmp___2;
-  int *tmp___3;
-  int tmp___4;
-  void *p;
-  void *tmp___5;
-
-  {
-    {
-      result = -1;
-      __builtin_va_start(arg, action);
-    }
-    { goto case_1030; }
-    goto switch_default;
-  case_1030 : {
-    tmp = __builtin_va_arg(arg, int);
-    target = tmp;
-  }
-    {{result = fcntl(fd, action, target);
-  }
-  { have_dupfd_cloexec = 1; }
-}
-
-{
-
-  {
-    tmp___1 = fcntl(result, 1);
-    flags = tmp___1;
-  }
-
-  {
-    { tmp___4 = fcntl(result, 2, flags | 1); }
-    if (tmp___4 == -1) {
-
-      tmp___2 = __errno_location();
-      saved_errno = *tmp___2;
-      close(result);
-      tmp___3 = __errno_location();
-      *tmp___3 = saved_errno;
-      result = -1;
-    }
-  }
-}
-goto switch_break;
-switch_default : {
-  tmp___5 = __builtin_va_arg(arg, void *);
-  p = tmp___5;
-  result = fcntl(fd, action, p);
-}
-goto switch_break;
-switch_break : { __builtin_va_end(arg); }
-return (result);
-}
-}
 
 extern FILE *fopen(char const *__restrict __filename,
                    char const *__restrict __modes);
@@ -1745,15 +1855,6 @@ extern int fnmatch(char const *__pattern, char const *__name, int __flags);
 _Bool fnmatch_pattern_has_wildcards(char const *str, int options)
     __attribute__((__pure__));
 
-int dup_safer(int fd) {
-  int tmp;
-
-  {
-    { tmp = rpl_fcntl(fd, 0, 3); }
-    return (tmp);
-  }
-}
-
 int should_colorize(void);
 void init_colorize(void);
 void print_start_colorize(char const *sgr_start___0, char const *sgr_seq);
@@ -1762,53 +1863,39 @@ void print_end_colorize(char const *sgr_end___0);
 void close_stdout(void);
 extern __attribute__((__noreturn__)) void _exit(int __status);
 int close_stream(FILE *stream);
-static char const *file_name;
 
 void close_stdout(void) {
   char const *write_error;
   char const *tmp;
   char *tmp___0;
   int *tmp___1;
-
+  int *tmp___2;
   int tmp___3;
+  int *tmp___4;
+  int tmp___5;
+  char *__cil_tmp11;
 
   {
     { tmp___3 = close_stream(stdout); }
-    if (tmp___3 != 0) {
 
-      {
-        tmp = (char const *)gettext("write error");
-        write_error = tmp;
-      }
-      {
-
-        tmp___0 = quotearg_colon(file_name);
-        tmp___1 = __errno_location();
-        error(0, *tmp___1, "%s: %s", tmp___0, write_error);
-      }
-    }
+    { tmp___5 = close_stream(stderr); }
   }
 }
 extern __attribute__((__nothrow__)) size_t __fpending(FILE *__fp);
 int close_stream(FILE *stream) {
-
+  _Bool some_pending;
+  size_t tmp;
+  _Bool prev_fail;
+  int tmp___0;
   _Bool fclose_fail;
   int tmp___1;
+  int *tmp___2;
+  int *tmp___3;
 
   {
-    {
+    { tmp___1 = fclose(stream); }
 
-      tmp___1 = fclose(stream);
-      fclose_fail = (_Bool)(tmp___1 != 0);
-    }
-
-    {
-      if (fclose_fail) {
-
-        return (-1);
-      }
-    }
-    return (0);
+    { return (-1); }
   }
 }
 
@@ -1837,15 +1924,20 @@ ptrdiff_t __xargmatch_internal(char const *context, char const *arg,
                                size_t valsize, void (*exit_fn)(void));
 extern int putc_unlocked(int __c, FILE *__stream);
 __attribute__((__noreturn__)) void usage(int status);
-static void __argmatch_die(void) {}
+static void __argmatch_die(void) { usage(1); }
 void (*argmatch_die)(void) = &__argmatch_die;
 ptrdiff_t argmatch(char const *arg, char const *const *arglist,
                    char const *vallist, size_t valsize)
     __attribute__((__pure__));
 ptrdiff_t argmatch(char const *arg, char const *const *arglist,
                    char const *vallist, size_t valsize) {
-
+  size_t i;
+  size_t arglen;
   ptrdiff_t matchind;
+  _Bool ambiguous;
+  int tmp;
+  size_t tmp___0;
+  int tmp___1;
 
   {
     { matchind = (ptrdiff_t)-1; }
@@ -1857,10 +1949,12 @@ void argmatch_invalid(char const *context, char const *value,
                       ptrdiff_t problem) {
   char const *format;
   char *tmp;
-
+  char *tmp___0;
   char *tmp___1;
   char const *tmp___2;
   char *tmp___3;
+  char *__cil_tmp12;
+  char *__cil_tmp13;
 
   {
     {
@@ -1877,7 +1971,43 @@ void argmatch_invalid(char const *context, char const *value,
     }
   }
 }
+void argmatch_valid(char const *const *arglist, char const *vallist,
+                    size_t valsize) {
+  size_t i;
+  char const *last_val;
+  char *tmp;
+  char const *tmp___0;
+  char const *tmp___1;
+  int tmp___2;
+  char *__cil_tmp11;
 
+  {
+    {
+
+      tmp = gettext("Valid arguments are:");
+      fputs_unlocked((char const * /* __restrict  */)((char const *)tmp),
+                     (FILE * /* __restrict  */) stderr);
+      i = (size_t)0;
+    }
+    {
+      while (1) {
+
+        if (!*(arglist + i)) {
+          goto while_break;
+        }
+        {
+
+          tmp___0 = quote((char const *)*(arglist + i));
+          fprintf((FILE * /* __restrict  */) stderr,
+                  (char const * /* __restrict  */) "\n  - %s", tmp___0);
+        }
+
+        i++;
+      }
+    }
+  while_break : { putc_unlocked('\n', stderr); }
+  }
+}
 ptrdiff_t __xargmatch_internal(char const *context, char const *arg,
                                char const *const *arglist, char const *vallist,
                                size_t valsize, void (*exit_fn)(void)) {
@@ -1890,7 +2020,11 @@ ptrdiff_t __xargmatch_internal(char const *context, char const *arg,
       res = tmp;
     }
 
-    { argmatch_invalid(context, arg, res); }
+    {
+      argmatch_invalid(context, arg, res);
+      argmatch_valid(arglist, vallist, valsize);
+      (*exit_fn)();
+    }
     return ((ptrdiff_t)-1);
   }
 }
@@ -1915,8 +2049,7 @@ ptrdiff_t __xargmatch_internal(char const *context, char const *arg,
 #pragma weak pthread_self
 #pragma weak pthread_cancel
 int match_icase;
-int match_words;
-int match_lines;
+
 unsigned char eolbyte;
 int using_utf8(void);
 void Pcompile(char const *pattern, size_t size);
@@ -1933,16 +2066,62 @@ extern pcre_jit_stack *pcre_jit_stack_alloc(int, int);
 extern void pcre_assign_jit_stack(pcre_extra *, pcre_jit_stack *(*)(void *),
                                   void *);
 
-void Pcompile(char const *pattern, size_t size) {}
+void Pcompile(char const *pattern, size_t size) {
+  int e = 0;
+  char const *ep = 0;
+  char *re;
+  char *tmp;
+  int flags;
+  int tmp___0;
+  int tmp___2;
+  int tmp___3;
+  char const *patlim;
+  char *n;
+  char const *p;
+  char const *pnul;
+  char *tmp___4;
+  void *tmp___5;
+  size_t tmp___6;
+  unsigned char const *tmp___7;
+  char *tmp___8;
+  int tmp___9;
+  char *tmp___10;
+  char *__cil_tmp32;
+  char *__cil_tmp33;
+  char *__cil_tmp34;
+  char *__cil_tmp35;
+  char *__cil_tmp36;
+  char *__cil_tmp37;
+  char *__cil_tmp38;
+  char *__cil_tmp39;
+}
 size_t Pexecute(char const *buf, size_t size, size_t *match_size,
                 char const *start_ptr) {
   int sub[300] = {0};
+  char const *line_buf;
+  char const *line_end;
+  char const *line_next;
+  int e;
+  ptrdiff_t start_ofs;
+  long tmp;
+  char *tmp___0;
+  ptrdiff_t tmp___1;
+  char *tmp___2;
+  char *tmp___3;
+  char *tmp___4;
+  char *tmp___5;
+  char const *beg;
+  char const *end;
+  char const *buflim___0;
+  char eol;
+  void *__cil_tmp30;
+  char *__cil_tmp31;
+  char *__cil_tmp32;
+  char *__cil_tmp33;
+  char *__cil_tmp34;
+  char *__cil_tmp35;
 
-  {
-
-    ;
-    { return ((size_t)-1); }
-  }
+  { return ((size_t)-1); }
 }
 void kwsincr(kwset_t kwset___1, char const *text, size_t len);
 void kwsprep(kwset_t kwset___1);
@@ -1958,403 +2137,60 @@ void Fcompile(char const *pattern, size_t size);
 size_t Fexecute(char const *buf, size_t size, size_t *match_size,
                 char const *start_ptr);
 
-static kwset_t kwset;
 void Fcompile(char const *pattern, size_t size) {
   size_t total;
-
+  mb_len_map_t *map;
   char const *pat;
-
+  char *tmp___0;
   char const *tmp___1;
-
+  size_t tmp___2;
   char const *p;
   size_t len;
-
-  {
-    total = size;
-
-    { tmp___1 = pattern; }
-
-    {
-      pat = tmp___1;
-      kwsinit(&kwset);
-      p = pat;
-    }
-    {
-      {
-        ;
-
-        { len = total; }
-
-        { kwsincr(kwset, p, len); }
-      };
-    }
-    { kwsprep(kwset); }
-  }
+  char const *sep;
+  char const *tmp___3;
+  char *buf;
 }
 
 size_t Fexecute(char const *buf, size_t size, size_t *match_size,
                 char const *start_ptr) {
   char const *beg;
-
+  char const *try
+    ;
   char const *end;
-
+  char const *mb_start;
   size_t len;
   char eol;
   struct kwsmatch kwsmatch;
   size_t ret_val;
-
+  mb_len_map_t *map;
+  char *case_buf;
+  char *tmp;
+  size_t tmp___0;
   size_t offset;
   size_t tmp___1;
-
+  size_t tmp___2;
+  int tmp___3;
+  ptrdiff_t tmp___4;
+  wint_t tmp___5;
+  _Bool tmp___6;
+  wint_t tmp___7;
+  _Bool tmp___8;
   size_t off;
+  void *__cil_tmp30;
+  void *__cil_tmp31;
 
   {
-    { eol = (char)eolbyte; }
 
-    { beg = buf; }
-
-    {
-      {
-        ;
-
-        {
-          tmp___1 = kwsexec(kwset, beg - match_lines,
-                            (size_t)(((buf + size) - beg) + (long)match_lines),
-                            &kwsmatch);
-          offset = tmp___1;
-        }
-
-        len = kwsmatch.size[0] - (size_t)match_lines;
-
-        beg += offset;
-      };
-    };
-
-    {
-      end = (char const *)memchr((void const *)(beg + len), (int)eol,
-                                 (size_t)((buf + size) - (beg + len)));
-    }
-    { end++; }
-
-    len = (size_t)(end - beg);
-    {
-      off = (size_t)(beg - buf);
-
-      *match_size = len;
-      ret_val = off;
-    }
-    return (ret_val);
+  failure:
+    return ((size_t)-1);
   }
 }
 kwset_t kwsalloc(char const *trans___0);
-static unsigned char to_uchar(char ch) { return ((unsigned char)ch); }
+
 extern void _obstack_newchunk(struct obstack *, int);
 extern int _obstack_begin(struct obstack *, int, int, void *(*)(long),
                           void (*)(void *));
 
-kwset_t kwsalloc(char const *trans___0) {
-  struct kwset *kwset___1;
-  struct kwset *tmp;
-  struct obstack *__h;
-  struct obstack *__o;
-  int __len;
-  struct obstack *__o1;
-  void *__value;
-
-  {
-    {
-      tmp = (struct kwset *)xmalloc(sizeof(*kwset___1));
-      kwset___1 = tmp;
-      _obstack_begin(&kwset___1->obstack, 0, 0, (void *(*)(long))(&xmalloc),
-                     &free);
-
-      __h = &kwset___1->obstack;
-      __o = __h;
-      __len = (int)sizeof(*(kwset___1->trie));
-    }
-
-    __o->next_free += __len;
-    __o1 = __h;
-    __value = (void *)__o1->object_base;
-
-    __o1->object_base = __o1->next_free;
-    kwset___1->trie = (struct trie *)__value;
-
-    (kwset___1->trie)->depth = 0;
-
-    return (kwset___1);
-  }
-}
-void kwsincr(kwset_t kwset___1, char const *text, size_t len) {
-  struct trie *trie;
-
-  unsigned char uc;
-  unsigned char label___0;
-  int tmp;
-  struct tree *kwset_link;
-  struct tree *links[12];
-
-  int depth___0;
-
-  struct obstack *__h;
-  struct obstack *__o;
-  int __len;
-  struct obstack *__o1;
-  void *__value;
-
-  struct obstack *__h___0;
-  struct obstack *__o___0;
-  int __len___0;
-  struct obstack *__o1___0;
-  void *__value___0;
-
-  size_t tmp___8;
-
-  {
-    trie = kwset___1->trie;
-
-    text += len;
-    {
-      while (1) {
-        ;
-        tmp___8 = len;
-        len--;
-        if (!tmp___8) {
-          goto while_break;
-        }
-        text--;
-        uc = (unsigned char)*text;
-
-        { tmp = (int)uc; }
-        label___0 = (unsigned char)tmp;
-
-        links[0] = (struct tree *)(&trie->links);
-
-        depth___0 = 1;
-
-        {
-          __h = &kwset___1->obstack;
-          __o = __h;
-          __len = (int)sizeof(*kwset_link);
-
-          __o->next_free += __len;
-          __o1 = __h;
-          __value = (void *)__o1->object_base;
-
-          __o1->object_base = __o1->next_free;
-          kwset_link = (struct tree *)__value;
-
-          __h___0 = &kwset___1->obstack;
-          __o___0 = __h___0;
-          __len___0 = (int)sizeof(*(kwset_link->trie));
-
-          __o___0->next_free += __len___0;
-          __o1___0 = __h___0;
-          __value___0 = (void *)__o1___0->object_base;
-
-          __o1___0->object_base = __o1___0->next_free;
-          kwset_link->trie = (struct trie *)__value___0;
-
-          (kwset_link->trie)->links = (struct tree *)((void *)0);
-
-          (kwset_link->trie)->next = (struct trie *)((void *)0);
-
-          (kwset_link->trie)->depth = trie->depth + 1;
-
-          kwset_link->label = label___0;
-
-          depth___0--;
-          { (links[depth___0])->llink = kwset_link; }
-        }
-        trie = kwset_link->trie;
-      };
-    }
-  while_break:;
-
-    { kwset___1->mind = trie->depth; }
-  }
-}
-static void enqueue(struct tree *tree, struct trie **last) {
-  struct trie *tmp;
-
-  {
-    if (!tree) {
-      return;
-    }
-    {
-
-      tmp = tree->trie;
-      (*last)->next = tmp;
-      *last = tmp;
-    }
-  }
-}
-
-static void treedelta(struct tree const *tree, unsigned int depth___0,
-                      unsigned char *delta) {
-
-  if (!tree) {
-    return;
-  }
-
-  { *(delta + (int const)tree->label) = (unsigned char)depth___0; }
-}
-
-void kwsprep(kwset_t kwset___1) {
-
-  unsigned char deltabuf[256];
-  unsigned char *delta;
-  unsigned char *tmp;
-  int tmp___0;
-  struct trie *curr;
-  struct trie *last;
-
-  {
-
-    { tmp = kwset___1->delta; }
-    delta = tmp;
-    { tmp___0 = kwset___1->mind; }
-
-    {
-      memset((void *)delta, tmp___0, sizeof(deltabuf));
-      last = kwset___1->trie;
-      curr = last;
-    }
-    {
-      while (1) {
-        ;
-
-        if (!curr) {
-          goto while_break;
-        }
-        {
-          enqueue(curr->links, &last);
-
-          treedelta((struct tree const *)curr->links, (unsigned int)curr->depth,
-                    delta);
-        }
-
-        curr = curr->next;
-      };
-    }
-  while_break:
-    curr = (kwset___1->trie)->next;
-  }
-}
-static _Bool bm_delta2_search(char const **tpp, char const *ep, char const *sp,
-                              int len, char const *trans___0, char gc1,
-                              char gc2, unsigned char const *d1,
-                              kwset_t kwset___1) {
-  char const *tp;
-
-  {
-    tp = *tpp;
-
-    {
-      {
-        ;
-
-        {
-
-          *tpp = tp - len;
-          return ((_Bool)1);
-        }
-      };
-    }
-  }
-}
-
-static size_t __attribute__((__pure__))
-bmexec_trans(kwset_t kwset___1, char const *text, size_t size) {
-  unsigned char const *d1;
-  char const *ep;
-  char const *sp;
-  char const *tp;
-  int d;
-  int len;
-  char const *trans___0;
-
-  char gc1;
-  char gc2;
-
-  unsigned char tmp___11;
-  unsigned char tmp___12;
-  _Bool tmp___13;
-
-  {
-    len = kwset___1->mind;
-    trans___0 = kwset___1->trans;
-
-    d1 = (unsigned char const *)(kwset___1->delta);
-    sp = (char const *)(kwset___1->target + len);
-    tp = text + len;
-    gc1 = kwset___1->gc1;
-    gc2 = kwset___1->gc2;
-
-    {
-      ep = text + size;
-      tmp___11 = to_uchar((char)*(tp + -1));
-      d = (int)*(d1 + (int)tmp___11);
-    }
-    {
-      {
-        ;
-      while_continue___0:;
-        if (!((long)d <= ep - tp)) {
-          goto while_break___0;
-        }
-        {
-          tp += d;
-          tmp___12 = to_uchar((char)*(tp + -1));
-          d = (int)*(d1 + (int)tmp___12);
-        }
-        if (d != 0) {
-          goto while_continue___0;
-        }
-        {
-          tmp___13 =
-              bm_delta2_search(&tp, ep, sp, len, trans___0, gc1, gc2,
-                               (unsigned char const *)((void *)0), kwset___1);
-        }
-        { return ((size_t __attribute__((__pure__)))(tp - text)); }
-      };
-    }
-  while_break___0:;
-    return ((size_t __attribute__((__pure__))) - 1);
-  }
-}
-static size_t bmexec(kwset_t kwset___1, char const *text, size_t size) {
-  size_t __attribute__((__pure__)) tmp;
-
-  size_t __attribute__((__pure__)) tmp___1;
-
-  {
-    {
-
-      tmp = bmexec_trans(kwset___1, text, size);
-      tmp___1 = tmp;
-    }
-
-    return ((size_t)tmp___1);
-  }
-}
-
-size_t(__attribute__((__nonnull__(4))) kwsexec)(kwset_t kwset___1,
-                                                char const *text, size_t size,
-                                                struct kwsmatch *kwsmatch) {
-  size_t ret;
-  size_t tmp;
-
-  {
-
-    {
-      tmp = bmexec(kwset___1, text, size);
-      ret = tmp;
-    }
-    { kwsmatch->size[0] = (size_t)kwset___1->mind; }
-    return (ret);
-  }
-}
 extern reg_syntax_t re_set_syntax(reg_syntax_t __syntax);
 extern char const *re_compile_pattern(char const *__pattern, size_t __length,
                                       struct re_pattern_buffer *__buffer);
@@ -2387,42 +2223,29 @@ static size_t pcount;
 __attribute__((__noreturn__)) void dfaerror(char const *mesg);
 void dfaerror(char const *mesg) {}
 
-void dfawarn(char const *mesg) {}
+void dfawarn(char const *mesg) {
+  char *tmp___0;
+  char *__cil_tmp4;
+}
 
-static char const line_beg_bk[4] = {(char const)'^', (char const)'\\',
-                                    (char const)'(', (char const)'\000'};
-static char const line_end_bk[4] = {(char const)'\\', (char const)')',
-                                    (char const)'$', (char const)'\000'};
-static char const word_beg_bk[23] = {
-    (char const)'\\', (char const)'(', (char const)'^',   (char const)'\\',
-    (char const)'|',  (char const)'[', (char const)'^',   (char const)'[',
-    (char const)':',  (char const)'a', (char const)'l',   (char const)'n',
-    (char const)'u',  (char const)'m', (char const)':',   (char const)']',
-    (char const)'_',  (char const)']', (char const)'\\',  (char const)')',
-    (char const)'\\', (char const)'(', (char const)'\000'};
-static char const word_end_bk[23] = {
-    (char const)'\\', (char const)')',  (char const)'\\',  (char const)'(',
-    (char const)'[',  (char const)'^',  (char const)'[',   (char const)':',
-    (char const)'a',  (char const)'l',  (char const)'n',   (char const)'u',
-    (char const)'m',  (char const)':',  (char const)']',   (char const)'_',
-    (char const)']',  (char const)'\\', (char const)'|',   (char const)'$',
-    (char const)'\\', (char const)')',  (char const)'\000'};
 void GEAcompile(char const *pattern, size_t size,
                 reg_syntax_t syntax_bits___0) {
   size_t total;
   char *motif;
   char const *p;
   size_t len;
-
+  char const *sep;
+  char const *tmp;
+  char const *err;
   char const *tmp___0;
-
+  int bk;
   char *n;
   char *tmp___1;
   char const *tmp___2;
-
+  char const *tmp___3;
   char const *tmp___4;
   char const *tmp___5;
-
+  char const *tmp___6;
   char const *tmp___7;
   size_t tmp___8;
 
@@ -2430,64 +2253,26 @@ void GEAcompile(char const *pattern, size_t size,
     total = size;
 
     {
-
+      re_set_syntax(syntax_bits___0);
       dfasyntax(syntax_bits___0, match_icase, eolbyte);
       p = pattern;
     }
     {
+
+      { len = total; }
       {
-        ;
+        patterns = (struct patterns *)xnrealloc((void *)patterns, pcount + 1UL,
+                                                sizeof(*patterns));
+        *(patterns + pcount) = patterns0;
+        tmp___0 = re_compile_pattern(p, len, &(patterns + pcount)->regexbuf);
+        err = tmp___0;
+      }
+      if (err) {
 
-        { len = total; }
-        {
-          patterns = (struct patterns *)xnrealloc(
-              (void *)patterns, pcount + 1UL, sizeof(*patterns));
-          *(patterns + pcount) = patterns0;
-          tmp___0 = re_compile_pattern(p, len, &(patterns + pcount)->regexbuf);
-        }
-      };
-    };
-
-    {
-      if (match_lines) {
-        {
-
-          tmp___1 = (char *)xmalloc(((sizeof(word_beg_bk) - 1UL) + size) +
-                                    sizeof(word_end_bk));
-          n = tmp___1;
-        }
-        {
-          { tmp___2 = line_beg_bk; }
-
-          tmp___4 = tmp___2;
-        }
-
-        {
-          strcpy((char * /* __restrict  */)n,
-                 (char const * /* __restrict  */)tmp___4);
-          total = strlen((char const *)n);
-          memcpy((void * /* __restrict  */)((void *)(n + total)),
-                 (void const * /* __restrict  */)((void const *)pattern), size);
-          total += size;
-        }
-        {
-          { tmp___5 = line_end_bk; }
-
-          tmp___7 = tmp___5;
-        }
-
-        {
-          strcpy((char * /* __restrict  */)(n + total),
-                 (char const * /* __restrict  */)tmp___7);
-          tmp___8 = strlen((char const *)(n + total));
-          total += tmp___8;
-          motif = n;
-          pattern = (char const *)motif;
-          size = total;
-        }
-      } else {
+        error(2, 0, "%s", err);
       }
     }
+
     {
       dfa = dfaalloc();
       dfacomp(pattern, size, dfa, 1);
@@ -2500,19 +2285,42 @@ size_t EGexecute(char const *buf, size_t size, size_t *match_size,
   char const *beg;
   char const *end;
   char const *ptr;
-
+  char const *match;
+  char const *best_match;
+  char const *mb_start;
   char eol;
   int backref;
   regoff_t start;
   size_t len;
-
+  size_t best_len;
+  struct kwsmatch kwsm;
   size_t i;
-
+  struct dfa *superset;
+  struct dfa *tmp;
+  _Bool dfafast;
+  _Bool tmp___0;
   char const *next_beg;
   char const *dfa_beg;
   size_t count;
-
+  _Bool exact_kwset_match;
+  char const *prev_beg;
+  size_t offset;
+  size_t tmp___1;
+  long tmp___4;
+  char const *tmp___5;
+  long tmp___6;
+  long tmp___7;
+  size_t tmp___8;
+  int tmp___9;
+  ptrdiff_t tmp___10;
+  regoff_t shorter_len;
+  wint_t tmp___11;
+  _Bool tmp___12;
+  wint_t tmp___13;
+  _Bool tmp___14;
   size_t off;
+  void *__cil_tmp53;
+  void *__cil_tmp54;
 
   {
     {
@@ -2523,114 +2331,111 @@ size_t EGexecute(char const *buf, size_t size, size_t *match_size,
       beg = end;
     }
     {
-      {
-        ;
 
-        end = buflim___0;
-        if (!start_ptr) {
-          dfa_beg = beg;
-          count = (size_t)0;
+      end = buflim___0;
+      if (!start_ptr) {
+        dfa_beg = beg;
+        count = (size_t)0;
 
-          {
-            next_beg = (char const *)dfaexec(dfa, dfa_beg, (char *)end, 0,
-                                             &count, &backref);
-          }
-          if ((unsigned long)next_beg == (unsigned long)((void *)0)) {
-            goto __Cont;
-          } else {
-          }
-          if (count != 0UL) {
-
-            beg = (char const *)memrchr((void const *)buf, (int)eol,
-                                        (size_t)(next_beg - buf));
-            beg++;
-          }
-          {
-            end = (char const *)memchr((void const *)next_beg, (int)eol,
-                                       (size_t)(buflim___0 - next_beg));
-          }
-          { end++; }
-
-          { goto success; }
-
-        } else {
-          ptr = start_ptr;
-        }
-
-        i = (size_t)0;
         {
-          {
-            ;
+          next_beg = (char const *)dfaexec(dfa, dfa_beg, (char *)end, 0, &count,
+                                           &backref);
+        }
+        if ((unsigned long)next_beg == (unsigned long)((void *)0)) {
+          goto __Cont;
+        } else {
+        }
+        if (count != 0UL) {
 
-            {
+          beg = (char const *)memrchr((void const *)buf, (int)eol,
+                                      (size_t)(next_beg - buf));
+          beg++;
+        }
+        {
+          end = (char const *)memchr((void const *)next_beg, (int)eol,
+                                     (size_t)(buflim___0 - next_beg));
+        }
+        { end++; }
+
+        { goto success; }
+
+      } else {
+        ptr = start_ptr;
+      }
+
+      i = (size_t)0;
+      {
+
+          {
 
               start = re_search(
                   &(patterns + i)->regexbuf, beg,
                   (__re_idx_t)((end - beg) - 1L), (__re_idx_t)(ptr - beg),
                   (regoff_t)((end - ptr) - 1L), &(patterns + i)->regs);
-            }
+    }
 
-            { len = (size_t)(*((patterns + i)->regs.end + 0) - start); }
-          };
-        };
-        { goto success_in_len; }
-      __Cont:
-        beg = end;
-      };
-    };
-
-  success:
-    len = (size_t)(end - beg);
-  success_in_len:
-    off = (size_t)(beg - buf);
-    *match_size = len;
-    return (off);
+    { len = (size_t)(*((patterns + i)->regs.end + 0) - start); }
   }
+
+  { goto success_in_len; }
+__Cont:
+  beg = end;
+}
+
+success : len = (size_t)(end - beg);
+success_in_len : off = (size_t)(beg - buf);
+*match_size = len;
+return (off);
+}
 }
 void dfafree(struct dfa *d);
 void dfainit(struct dfa *d);
 void dfaparse(char const *s, size_t len, struct dfa *d);
 void dfaanalyze(struct dfa *d, int searchflag);
 void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0);
-extern __attribute__((__nothrow__)) int isalnum(int);
-extern __attribute__((__nothrow__)) int isalpha(int);
-extern __attribute__((__nothrow__)) int iscntrl(int);
-extern __attribute__((__nothrow__)) int isdigit(int);
-extern __attribute__((__nothrow__)) int islower(int);
-extern __attribute__((__nothrow__)) int isgraph(int);
-extern __attribute__((__nothrow__)) int isprint(int);
-extern __attribute__((__nothrow__)) int ispunct(int);
-extern __attribute__((__nothrow__)) int isspace(int);
-extern __attribute__((__nothrow__)) int isupper(int);
-extern __attribute__((__nothrow__)) int isxdigit(int);
-extern __attribute__((__nothrow__)) int toupper(int __c);
-extern __attribute__((__nothrow__)) int isblank(int);
-extern
-    __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2)))
-                                        strncpy)(char *__restrict __dest,
-                                                 char const *__restrict __src,
-                                                 size_t __n);
-extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
-                                        strcoll)(char const *__s1,
-                                                 char const *__s2)
-    __attribute__((__pure__));
-extern __attribute__((__nothrow__)) char *setlocale(int __category,
-                                                    char const *__locale);
-extern __attribute__((__nothrow__)) int wctob(wint_t __c);
-extern __attribute__((__nothrow__)) size_t
-wcrtomb(char *__restrict __s, wchar_t __wc, mbstate_t *__restrict __ps);
-extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
-extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
-extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t __desc);
-extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
+// extern __attribute__((__nothrow__)) int isalnum(int);
+// extern __attribute__((__nothrow__)) int isalpha(int);
+// extern __attribute__((__nothrow__)) int iscntrl(int);
+// extern __attribute__((__nothrow__)) int isdigit(int);
+// extern __attribute__((__nothrow__)) int islower(int);
+// extern __attribute__((__nothrow__)) int isgraph(int);
+// extern __attribute__((__nothrow__)) int isprint(int);
+// extern __attribute__((__nothrow__)) int ispunct(int);
+// extern __attribute__((__nothrow__)) int isspace(int);
+// extern __attribute__((__nothrow__)) int isupper(int);
+// extern __attribute__((__nothrow__)) int isxdigit(int);
+// extern __attribute__((__nothrow__)) int toupper(int __c);
+// extern __attribute__((__nothrow__)) int isblank(int);
+// extern __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2)))
+// strncpy)(char *__restrict __dest,
+//                                                                                        char const *__restrict __src,
+//                                                                                        size_t __n);
+// extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
+// strcoll)(char const *__s1,
+//                                                                                     char const *__s2) __attribute__((__pure__));
+// extern __attribute__((__nothrow__)) char *setlocale(int __category, char
+// const *__locale); extern __attribute__((__nothrow__)) int wctob(wint_t __c);
+// extern __attribute__((__nothrow__)) size_t wcrtomb(char *__restrict __s,
+// wchar_t __wc,
+//                                                    mbstate_t *__restrict
+//                                                    __ps);
+// extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
+// extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
+// extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t
+// __desc); extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
 static unsigned char to_uchar___0(char ch) { return ((unsigned char)ch); }
 static void dfamust(struct dfa *d);
 static void regexp(void);
 
 static size_t mbs_to_wchar(wint_t *pwc, char const *s, size_t n,
                            struct dfa *d) {
+  unsigned char uc;
+  wint_t wc;
+  wchar_t wch;
+  size_t nbytes;
+  size_t tmp;
 
-  return ((size_t)1);
+  { return ((size_t)1); }
 }
 
 static void setbit(unsigned int b, charclass_word *c) {
@@ -2648,25 +2453,7 @@ static void zeroset(charclass_word *s) {
 
   memset((void *)s, 0, sizeof(charclass));
 }
-static void notset(charclass_word *s) {
-  int i;
-
-  {
-    i = 0;
-    {
-      while (1) {
-        ;
-
-        if (!(i < 8)) {
-          goto while_break;
-        }
-        *(s + i) = (((1U << 31) << 1) - 1U) & ~*(s + i);
-        i++;
-      };
-    }
-  while_break:;
-  }
-}
+static void notset(charclass_word *s) { int i; }
 static _Bool equal(charclass_word *const s1, charclass_word *const s2) {
   int tmp;
 
@@ -2681,28 +2468,25 @@ static void *maybe_realloc(void *ptr, size_t nitems, size_t *nalloc,
 
   {
 
-    {
-      *nalloc = nitems;
-      tmp = x2nrealloc(ptr, nalloc, itemsize);
-    }
+    { tmp = x2nrealloc(ptr, nalloc, itemsize); }
     return (tmp);
   }
 }
 static size_t dfa_charclass_index(struct dfa *d, charclass_word *const s) {
   size_t i;
+  _Bool tmp;
 
   {
     i = (size_t)0;
     {
       while (1) {
-        ;
 
         if (!(i < d->cindex)) {
           goto while_break;
         }
 
         i++;
-      };
+      }
     }
   while_break : {
     d->charclasses =
@@ -2727,41 +2511,14 @@ static reg_syntax_t syntax_bits;
 
 static _Bool case_fold;
 static unsigned char eolbyte___0;
-static int sbit[256];
+
 static charclass letters;
 static charclass newline;
-static int char_context(unsigned char c) {
-
-  if ((int)c == (int)eolbyte___0) {
-    return (4);
-  }
-
-  return (1);
-}
 
 void dfasyntax(reg_syntax_t bits, int fold, unsigned char eol) {
   unsigned int i;
 
-  {
-
-    syntax_bits = bits;
-    case_fold = (_Bool)(fold != 0);
-    eolbyte___0 = eol;
-    i = 0U;
-    {
-      while (1) {
-        ;
-
-        if (!(i < 256U)) {
-          goto while_break;
-        }
-        { sbit[i] = char_context((unsigned char)i); }
-
-        i++;
-      };
-    }
-  while_break:;
-  }
+  { eolbyte___0 = eol; }
 }
 
 static void setbit_case_fold_c(int b, charclass_word *c) {
@@ -2769,35 +2526,10 @@ static void setbit_case_fold_c(int b, charclass_word *c) {
   int tmp;
   int i;
   int tmp___0;
-
-  {
-    {
-      tmp = toupper(b);
-      ub = tmp;
-      i = 0;
-    }
-    {
-      while (1) {
-        ;
-
-        if (!(i < 256)) {
-          goto while_break;
-        }
-        { tmp___0 = toupper(i); }
-        if (tmp___0 == ub) {
-
-          setbit((unsigned int)i, c);
-        }
-        i++;
-      };
-    }
-  while_break:;
-  }
 }
 
 static _Bool using_simple_locale(void);
-static int unibyte_c = -1;
-static _Bool using_simple_locale(void) { return ((_Bool)unibyte_c); }
+
 static char const *lexptr;
 static size_t lexleft;
 static token lasttok;
@@ -2825,10 +2557,10 @@ static struct dfa_ctype const prednames[13] = {
 static struct dfa_ctype const *__attribute__((__pure__))
 find_pred(char const *str) {
   unsigned int i;
+  int tmp;
 
   {
 
-    ;
     return ((struct dfa_ctype const * /* __attribute__((__pure__)) */)(
         &prednames[i]));
   }
@@ -2852,30 +2584,35 @@ static token parse_bracket_exp(void) {
   size_t equivs_al;
   size_t coll_elems_al;
   size_t tmp;
-
+  char *tmp___0;
+  char *tmp___1;
   wint_t _wc;
   size_t nbytes;
   size_t tmp___2;
   unsigned char tmp___3;
-
+  char *tmp___4;
+  char *tmp___5;
   wint_t _wc___0;
   size_t nbytes___0;
   size_t tmp___6;
   unsigned char tmp___7;
-
+  char *tmp___8;
+  char *tmp___9;
   wint_t _wc___1;
   size_t nbytes___1;
   size_t tmp___10;
   unsigned char tmp___11;
   char str[33];
   size_t len;
-
+  char *tmp___12;
+  char *tmp___13;
   wint_t _wc___2;
   size_t nbytes___2;
   size_t tmp___14;
   unsigned char tmp___15;
   size_t tmp___16;
-
+  char *tmp___17;
+  char *tmp___18;
   wint_t _wc___3;
   size_t nbytes___3;
   size_t tmp___19;
@@ -2883,7 +2620,7 @@ static token parse_bracket_exp(void) {
   char const *class;
   char const *tmp___23;
   int tmp___24;
-
+  int tmp___25;
   struct dfa_ctype const *pred;
   struct dfa_ctype const *tmp___26;
   char *tmp___27;
@@ -2891,24 +2628,42 @@ static token parse_bracket_exp(void) {
   wctype_t tmp___28;
   size_t tmp___29;
   int tmp___30;
-
+  char *tmp___31;
+  char *tmp___32;
   wint_t _wc___4;
   size_t nbytes___4;
   size_t tmp___33;
   unsigned char tmp___34;
   char *tmp___35;
   char *tmp___36;
-
+  wint_t _wc___5;
+  size_t nbytes___5;
+  size_t tmp___37;
+  unsigned char tmp___38;
   char *tmp___39;
   char *tmp___40;
-
+  wint_t _wc___6;
+  size_t nbytes___6;
+  size_t tmp___41;
+  unsigned char tmp___42;
+  char *tmp___43;
+  char *tmp___44;
   wint_t _wc___7;
   size_t nbytes___7;
   size_t tmp___45;
   unsigned char tmp___46;
   char *tmp___47;
   char *tmp___48;
-
+  wint_t _wc___8;
+  size_t nbytes___8;
+  size_t tmp___49;
+  unsigned char tmp___50;
+  wint_t tmp___51;
+  size_t tmp___52;
+  wint_t tmp___53;
+  size_t tmp___54;
+  int tmp___55;
+  int tmp___56;
   int uc;
   int tmp___57;
   int uc2;
@@ -2916,17 +2671,53 @@ static token parse_bracket_exp(void) {
   int uc1;
   int tmp___59;
   _Bool tmp___60;
-
+  char *tmp___61;
+  char *tmp___62;
   wint_t _wc___9;
   size_t nbytes___9;
   size_t tmp___63;
   unsigned char tmp___64;
   int tmp___65;
-
+  wchar_t folded[22];
+  int i;
+  int n;
+  int tmp___66;
+  int tmp___67;
+  size_t tmp___68;
+  _Bool tmp___69;
   char *tmp___70;
-
+  size_t tmp___72;
   _Bool tmp___73;
   size_t tmp___74;
+  void *__cil_tmp161;
+  void *__cil_tmp162;
+  void *__cil_tmp163;
+  char *__cil_tmp164;
+  char *__cil_tmp165;
+  char *__cil_tmp166;
+  char *__cil_tmp167;
+  char *__cil_tmp168;
+  char *__cil_tmp169;
+  char *__cil_tmp170;
+  char *__cil_tmp171;
+  char *__cil_tmp172;
+  char *__cil_tmp173;
+  char *__cil_tmp174;
+  char *__cil_tmp175;
+  char *__cil_tmp176;
+  char *__cil_tmp177;
+  char *__cil_tmp178;
+  char *__cil_tmp179;
+  char *__cil_tmp180;
+  char *__cil_tmp181;
+  char *__cil_tmp182;
+  char *__cil_tmp183;
+  char *__cil_tmp184;
+  char *__cil_tmp185;
+  char *__cil_tmp186;
+  char *__cil_tmp187;
+  char *__cil_tmp188;
+  char *__cil_tmp189;
 
   {
     known_bracket_exp = (_Bool)1;
@@ -2950,7 +2741,7 @@ static token parse_bracket_exp(void) {
     { memset((void *)(ccl), 0, sizeof(ccl)); }
     {
       {
-        ;
+      while_continue: /* CIL Label */;
 
         {
           {
@@ -2969,50 +2760,22 @@ static token parse_bracket_exp(void) {
           lexleft -= nbytes;
         }
         goto while_break;
-      };
+      }
+    while_break___16: /* CIL Label */;
     }
   while_break:;
-    if (c == 94) {
-      {
-        {
-          ;
 
-          {
-            {
-              tmp___6 = mbs_to_wchar(&_wc___0, lexptr, lexleft, dfa___0);
-              nbytes___0 = tmp___6;
-              cur_mb_len = (int)nbytes___0;
-              wc = _wc___0;
-            }
-            {
-
-              tmp___7 = to_uchar___0((char)*lexptr);
-              c = (int)tmp___7;
-            }
-
-            lexptr += nbytes___0;
-            lexleft -= nbytes___0;
-          }
-          goto while_break___0;
-        };
-      }
-    while_break___0 : {
-      invert = (_Bool)1;
-      known_bracket_exp = using_simple_locale();
-    }
-    } else {
-      invert = (_Bool)0;
-    }
+    { invert = (_Bool)0; }
     colon_warning_state = c == 58;
     {
       while (1) {
-        ;
+      while_continue___1: /* CIL Label */;
         c1 = 256;
         colon_warning_state &= -3;
         {
           {
             {
-              ;
+            while_continue___2: /* CIL Label */;
 
               {
                 {
@@ -3031,332 +2794,298 @@ static token parse_bracket_exp(void) {
                 lexleft -= nbytes___1;
               }
               goto while_break___2;
-            };
+            }
+          while_break___19: /* CIL Label */;
           }
         while_break___2:;
 
           {
+          _L___1 :
 
+          {
             if (c1 == 61) {
-
+            _L___0:
               len = (size_t)0;
               {
                 {
-                  ;
+                while_continue___3: /* CIL Label */;
 
                   {
                     {
-                      ;
+                    while_continue___4: /* CIL Label */;
 
                       {
-                        {
-                          tmp___14 =
-                              mbs_to_wchar(&_wc___2, lexptr, lexleft, dfa___0);
-                          nbytes___2 = tmp___14;
-                          cur_mb_len = (int)nbytes___2;
-                          wc = _wc___2;
-                        }
+                        { tmp___13 = gettext("unbalanced ["); }
                         {
 
-                          tmp___15 = to_uchar___0((char)*lexptr);
-                          c = (int)tmp___15;
+                          tmp___12 = gettext("unbalanced [");
+                          dfaerror((char const *)tmp___12);
                         }
-
-                        lexptr += nbytes___2;
-                        lexleft -= nbytes___2;
                       }
+
                       goto while_break___4;
-                    };
+                    }
+                  while_break___21: /* CIL Label */;
                   }
                 while_break___4:;
-                  { goto while_break___3; }
 
-                  {
-                    tmp___16 = len;
-                    len++;
-                    str[tmp___16] = (char)c;
-                  }
-                };
-              }
-            while_break___3:
-              str[len] = (char)'\000';
-              {
-                {
-                  ;
-
-                  {
-                    {
-                      tmp___19 =
-                          mbs_to_wchar(&_wc___3, lexptr, lexleft, dfa___0);
-                      nbytes___3 = tmp___19;
-                      cur_mb_len = (int)nbytes___3;
-                      wc = _wc___3;
-                    }
-                    {
-
-                      tmp___20 = to_uchar___0((char)*lexptr);
-                      c = (int)tmp___20;
-                    }
-
-                    lexptr += nbytes___3;
-                    lexleft -= nbytes___3;
-                  }
-                  goto while_break___5;
-                };
-              }
-            while_break___5:;
-              { {{tmp___24 = strcmp((char const *)(str), "upper"); }
-              { tmp___23 = "alpha"; }
-            }
-
-            {
-              class = tmp___23;
-              tmp___26 = (struct dfa_ctype const *)find_pred(class);
-              pred = tmp___26;
-            }
-            {
-
-              tmp___27 = gettext("invalid character class");
-              dfaerror((char const *)tmp___27);
-            }
-            {
-
-              tmp___28 = wctype(class);
-              wt = tmp___28;
-              work_mbc->ch_classes = (wctype_t *)maybe_realloc(
-                  (void *)work_mbc->ch_classes, work_mbc->nch_classes,
-                  &ch_classes_al, sizeof(*(work_mbc->ch_classes)));
-              tmp___29 = work_mbc->nch_classes;
-              (work_mbc->nch_classes)++;
-              *(work_mbc->ch_classes + tmp___29) = wt;
-            }
-            c2 = 0;
-            {
-              {
-                ;
-
-                { goto while_break___6; }
-                { tmp___30 = (*(pred->func))(c2); }
-                { setbit((unsigned int)c2, ccl); }
-                c2++;
-              };
-            }
-          while_break___6:;
-          }
-
-          colon_warning_state |= 8;
-          {
-            {
-              ;
-
-              {
-                {
-                  tmp___33 = mbs_to_wchar(&_wc___4, lexptr, lexleft, dfa___0);
-                  nbytes___4 = tmp___33;
-                  cur_mb_len = (int)nbytes___4;
-                  wc1 = _wc___4;
+                  {_L : {goto while_break___3;
                 }
-                {
-
-                  tmp___34 = to_uchar___0((char)*lexptr);
-                  c1 = (int)tmp___34;
-                }
-
-                lexptr += nbytes___4;
-                lexleft -= nbytes___4;
               }
-              goto while_break___7;
-            };
-          }
-        while_break___7:;
-          goto __Cont;
-        }
-      }
-    }
-    {
-      if (syntax_bits & 1UL) {
-        {
-          {
-            ;
-
-            {
-              { tmp___36 = gettext("unbalanced ["); }
               {
-
-                tmp___35 = gettext("unbalanced [");
-                dfaerror((char const *)tmp___35);
+                tmp___16 = len;
+                len++;
+                str[tmp___16] = (char)c;
               }
             }
-
-            goto while_break___8;
-          };
-        }
-      while_break___8:;
-      }
-    }
-    if (c1 == 256) {
-      {
-        {
-          ;
-
-          {
-            { tmp___40 = gettext("unbalanced ["); }
-            {
-
-              tmp___39 = gettext("unbalanced [");
-              dfaerror((char const *)tmp___39);
-            }
+          while_break___20: /* CIL Label */;
           }
-
-          goto while_break___9;
-        };
-      }
-    while_break___9:;
-    }
-    if (c1 == 45) {
-      {
-        {
-          ;
-
-          {
-            {
-              tmp___45 = mbs_to_wchar(&_wc___7, lexptr, lexleft, dfa___0);
-              nbytes___7 = tmp___45;
-              cur_mb_len = (int)nbytes___7;
-              wc2 = _wc___7;
-            }
-            {
-
-              tmp___46 = to_uchar___0((char)*lexptr);
-              c2 = (int)tmp___46;
-            }
-
-            lexptr += nbytes___7;
-            lexleft -= nbytes___7;
-          }
-          goto while_break___10;
-        };
-      }
-    while_break___10:;
-      {
-        if ((int const) * lexptr == 46) {
-          known_bracket_exp = (_Bool)0;
-          c2 = ']';
-        }
-      }
-      {
-        {
-          if (syntax_bits & 1UL) {
+          while_break___3:
+            str[len] = (char)'\000';
             {
               {
-                ;
+              while_continue___5: /* CIL Label */;
 
                 {
-                  { tmp___48 = gettext("unbalanced ["); }
+                  { tmp___18 = gettext("unbalanced ["); }
                   {
 
-                    tmp___47 = gettext("unbalanced [");
-                    dfaerror((char const *)tmp___47);
+                    tmp___17 = gettext("unbalanced [");
+                    dfaerror((char const *)tmp___17);
                   }
                 }
 
-                goto while_break___11;
-              };
+                goto while_break___5;
+              }
+            while_break___22: /* CIL Label */;
             }
-          while_break___11:;
+          while_break___5:;
+            { {{tmp___24 = strcmp((char const *)(str), "upper"); }
+            { tmp___23 = "alpha"; }
           }
-        }
 
-        {
-          { tmp___60 = using_simple_locale(); }
           {
-            c1 = c;
-            {
-              {
-                ;
-
-                { goto while_break___12; }
-                {
-                  setbit((unsigned int)c1, ccl);
-                  c1++;
-                }
-              };
-            }
-          while_break___12:;
-            {
-              {
-                tmp___57 = toupper(c);
-                uc = tmp___57;
-                tmp___58 = toupper(c2);
-                uc2 = tmp___58;
-                c1 = 0;
-              }
-              {
-                while (1) {
-                  ;
-
-                  if (!(c1 < 256)) {
-                    goto while_break___13;
-                  }
-                  {
-                    tmp___59 = toupper(c1);
-                    uc1 = tmp___59;
-                  }
-                  { setbit((unsigned int)c1, ccl); }
-                  c1++;
-                };
-              }
-            while_break___13:;
-            }
+            class = tmp___23;
+            tmp___26 = (struct dfa_ctype const *)find_pred(class);
+            pred = tmp___26;
           }
+          {
+
+            tmp___27 = gettext("invalid character class");
+            dfaerror((char const *)tmp___27);
+          }
+          {
+
+            tmp___28 = wctype(class);
+            wt = tmp___28;
+            work_mbc->ch_classes = (wctype_t *)maybe_realloc(
+                (void *)work_mbc->ch_classes, work_mbc->nch_classes,
+                &ch_classes_al, sizeof(*(work_mbc->ch_classes)));
+            tmp___29 = work_mbc->nch_classes;
+            (work_mbc->nch_classes)++;
+            *(work_mbc->ch_classes + tmp___29) = wt;
+          }
+          c2 = 0;
+          {
+            {
+            while_continue___6: /* CIL Label */;
+
+              { goto while_break___6; }
+              { tmp___30 = (*(pred->func))(c2); }
+              { setbit((unsigned int)c2, ccl); }
+              c2++;
+            }
+          while_break___23: /* CIL Label */;
+          }
+        while_break___6:;
         }
+
         colon_warning_state |= 8;
         {
           {
-            ;
+          while_continue___7: /* CIL Label */;
 
             {
-              {
-                tmp___63 = mbs_to_wchar(&_wc___9, lexptr, lexleft, dfa___0);
-                nbytes___9 = tmp___63;
-                cur_mb_len = (int)nbytes___9;
-                wc1 = _wc___9;
-              }
+              { tmp___32 = gettext("unbalanced ["); }
               {
 
-                tmp___64 = to_uchar___0((char)*lexptr);
-                c1 = (int)tmp___64;
+                tmp___31 = gettext("unbalanced [");
+                dfaerror((char const *)tmp___31);
               }
-
-              lexptr += nbytes___9;
-              lexleft -= nbytes___9;
             }
-            goto while_break___14;
-          };
+
+            goto while_break___7;
+          }
+        while_break___24: /* CIL Label */;
         }
-      while_break___14:;
+      while_break___7:;
         goto __Cont;
       }
-      lexptr -= cur_mb_len;
-      lexleft += (size_t)cur_mb_len;
     }
-    { tmp___65 = 2; }
+  }
+}
+{
+  if (syntax_bits & 1UL) {
+    {
+      {
+      while_continue___8: /* CIL Label */;
 
-    colon_warning_state |= tmp___65;
+        {
+          { tmp___36 = gettext("unbalanced ["); }
+          {
+
+            tmp___35 = gettext("unbalanced [");
+            dfaerror((char const *)tmp___35);
+          }
+        }
+
+        goto while_break___8;
+      }
+    while_break___25: /* CIL Label */;
+    }
+  while_break___8:;
+  }
+}
+if (c1 == 256) {
+  {
+    {
+    while_continue___9: /* CIL Label */;
+
+      {
+        { tmp___40 = gettext("unbalanced ["); }
+        {
+
+          tmp___39 = gettext("unbalanced [");
+          dfaerror((char const *)tmp___39);
+        }
+      }
+
+      goto while_break___9;
+    }
+  while_break___26: /* CIL Label */;
+  }
+while_break___9:;
+}
+if (c1 == 45) {
+  {
+    {
+    while_continue___10: /* CIL Label */;
+
+      {
+        { tmp___44 = gettext("unbalanced ["); }
+        {
+
+          tmp___43 = gettext("unbalanced [");
+          dfaerror((char const *)tmp___43);
+        }
+      }
+
+      goto while_break___10;
+    }
+  while_break___27: /* CIL Label */;
+  }
+while_break___10:;
+  {
+
+    known_bracket_exp = (_Bool)0;
+    c2 = ']';
+  }
+  {
     {
 
-      { setbit((unsigned int)c, ccl); }
-      goto __Cont;
-    }
-    { known_bracket_exp = (_Bool)0; }
+      {
+        {
+        while_continue___11: /* CIL Label */;
 
-  __Cont:
-    wc = wc1;
-    c = c1;
-    if (!(c != 93)) {
-      goto while_break___1;
+          {
+            { tmp___48 = gettext("unbalanced ["); }
+            {
+
+              tmp___47 = gettext("unbalanced [");
+              dfaerror((char const *)tmp___47);
+            }
+          }
+
+          goto while_break___11;
+        }
+      while_break___28: /* CIL Label */;
+      }
+    while_break___11:;
     }
-  };
+    {
+
+      {
+        work_mbc->ranges = (struct __anonstruct_ranges_39 *)maybe_realloc(
+            (void *)work_mbc->ranges, work_mbc->nranges + 2UL, &ranges_al,
+            sizeof(*(work_mbc->ranges)));
+      }
+      {
+
+        tmp___51 = towlower(wc);
+        (work_mbc->ranges + work_mbc->nranges)->beg = (wchar_t)tmp___51;
+      }
+
+      tmp___52 = work_mbc->nranges;
+      (work_mbc->nranges)++;
+      {
+
+        tmp___53 = towlower(wc2);
+        (work_mbc->ranges + tmp___52)->end = (wchar_t)tmp___53;
+      }
+
+      {
+        { tmp___55 = iswalpha(wc); }
+        {
+
+          (work_mbc->ranges + work_mbc->nranges)->beg = (wchar_t)towupper(wc);
+          tmp___54 = work_mbc->nranges;
+          (work_mbc->nranges)++;
+          (work_mbc->ranges + tmp___54)->end = (wchar_t)towupper(wc2);
+        }
+      }
+    }
+
+    colon_warning_state |= 8;
+    {
+      {
+      while_continue___14: /* CIL Label */;
+
+        {
+          { tmp___62 = gettext("unbalanced ["); }
+          {
+
+            tmp___61 = gettext("unbalanced [");
+            dfaerror((char const *)tmp___61);
+          }
+        }
+
+        goto while_break___14;
+      }
+    while_break___31: /* CIL Label */;
+    }
+  while_break___14:;
+    goto __Cont;
+  }
+  lexptr -= cur_mb_len;
+  lexleft += (size_t)cur_mb_len;
+}
+{ tmp___65 = 2; }
+
+colon_warning_state |= tmp___65;
+{
+
+  { setbit((unsigned int)c, ccl); }
+  goto __Cont;
+}
+{ known_bracket_exp = (_Bool)0; }
+
+__Cont : wc = wc1;
+c = c1;
+if (!(c != 93)) {
+  goto while_break___1;
+}
+}
+while_break___18: /* CIL Label */;
 }
 while_break___1:;
 {
@@ -3378,7 +3107,7 @@ if (dfa___0->multibyte) {
   return ((token)273);
 }
 if (invert) {
-  if (!(!dfa___0->multibyte)) {
+  {
 
     __assert_fail("!dfa->multibyte",
                   "/home/khheo/project/benchmark/grep-2.19/src/dfa.c", 1232U,
@@ -3402,7 +3131,12 @@ static token lex(void) {
   size_t tmp;
   unsigned char tmp___0;
   char *tmp___1;
-
+  int tmp___2;
+  int tmp___3;
+  int tmp___4;
+  int tmp___5;
+  int tmp___6;
+  int tmp___7;
   char const *p;
   char const *lim;
   char *tmp___8;
@@ -3418,20 +3152,26 @@ static token lex(void) {
   size_t tmp___16;
   size_t tmp___17;
   unsigned short const **tmp___18;
+  void *__cil_tmp38;
+  char *__cil_tmp39;
+  char *__cil_tmp40;
+  char *__cil_tmp41;
+  char *__cil_tmp42;
+  char *__cil_tmp43;
 
   {
     backslash = (_Bool)0;
     i = 0;
     {
       while (1) {
-        ;
+      while_continue: /* CIL Label */;
 
         if (!(i < 2)) {
           goto while_break;
         }
         {
           {
-            ;
+          while_continue___0: /* CIL Label */;
 
             if (!lexleft) {
               lasttok = (token)-1;
@@ -3453,7 +3193,8 @@ static token lex(void) {
               lexleft -= nbytes;
             }
             goto while_break___0;
-          };
+          }
+        while_break___7: /* CIL Label */;
         }
       while_break___0:;
         if (c == 92) {
@@ -3584,13 +3325,12 @@ static token lex(void) {
         }
 
         goto normal_char;
-      case_49:
-        if (backslash) {
+      case_49 : {
 
-          laststart = (_Bool)0;
-          lasttok = (token)257;
-          return (lasttok);
-        }
+        laststart = (_Bool)0;
+        lasttok = (token)257;
+        return (lasttok);
+      }
         goto normal_char;
       case_96 : {
 
@@ -3598,12 +3338,11 @@ static token lex(void) {
         return (lasttok);
       }
         goto normal_char;
-      case_39:
-        if (backslash) {
+      case_39 : {
 
-          lasttok = (token)259;
-          return (lasttok);
-        }
+        lasttok = (token)259;
+        return (lasttok);
+      }
         goto normal_char;
       case_60 : {
 
@@ -3624,27 +3363,15 @@ static token lex(void) {
           return (lasttok);
         }
         goto normal_char;
-      case_66:
-        if (backslash) {
+      case_66 : {
 
-          lasttok = (token)263;
-          return (lasttok);
-        }
+        lasttok = (token)263;
+        return (lasttok);
+      }
         goto normal_char;
-      case_63:
-        if (syntax_bits &
-            ((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-             << 1)) {
-          goto normal_char;
-        }
-        if ((int)backslash != ((syntax_bits & (1UL << 1)) != 0UL)) {
-          goto normal_char;
-        }
-        {
-          if (laststart) {
-            goto normal_char;
-          }
-        }
+      case_63 : { goto normal_char; }
+        { goto normal_char; }
+        { goto normal_char; }
         lasttok = (token)264;
         return (lasttok);
       case_42:
@@ -3658,301 +3385,206 @@ static token lex(void) {
         }
         lasttok = (token)265;
         return (lasttok);
-      case_43:
-        if (syntax_bits &
-            ((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-             << 1)) {
-          goto normal_char;
-        }
-        if ((int)backslash != ((syntax_bits & (1UL << 1)) != 0UL)) {
-          goto normal_char;
-        }
-        {
-          if (laststart) {
-            goto normal_char;
-          }
-        }
+      case_43 : { goto normal_char; }
+        { goto normal_char; }
+        { goto normal_char; }
         lasttok = (token)266;
         return (lasttok);
-      case_123:
-        if (!(syntax_bits &
-              (((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-               << 1))) {
-          goto normal_char;
-        }
-        if ((int)backslash !=
-            ((syntax_bits &
-              ((((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-                  << 1)
-                 << 1)
-                << 1)
-               << 1)) == 0UL)) {
-          goto normal_char;
-        }
-        {
-          if (laststart) {
-            goto normal_char;
-          }
-        }
+      case_123 : { goto normal_char; }
+        { goto normal_char; }
+        { goto normal_char; }
         p = lexptr;
         lim = p + lexleft;
         maxrep = -1;
         minrep = maxrep;
         {
           {
-            ;
+          while_continue___1: /* CIL Label */;
 
-            {
-              if (!((unsigned int)*p - 48U <= 9U)) {
-                goto while_break___1;
-              }
-            }
+            { goto while_break___1; }
 
             { minrep = (int)((int const) * p - 48); }
 
             p++;
-          };
+          }
+        while_break___8: /* CIL Label */;
         }
       while_break___1:;
         { maxrep = minrep; }
-        if (!backslash) {
-          goto _L___3;
-        } else {
-          if ((unsigned long)p != (unsigned long)lim) {
-            tmp___9 = p;
-            p++;
-            {
-            _L___3 : {
-              tmp___10 = p;
-              p++;
-              {
-
-                if (!(minrep <= maxrep)) {
-                  goto _L___4;
-                }
-              }
-            }
-            }
-
-          } else {
-          _L___4 : { goto normal_char; }
-            {
-              tmp___8 = gettext("Invalid content of \\{\\}");
-              dfaerror((char const *)tmp___8);
-            }
-          }
-        }
-        if (32767 < maxrep) {
-
-          tmp___11 = gettext("Regular expression too big");
-          dfaerror((char const *)tmp___11);
-        }
-        lexptr = p;
-        lexleft = (size_t)(lim - p);
-        laststart = (_Bool)0;
-        lasttok = (token)267;
-        return (lasttok);
-      case_124:
-        if (syntax_bits &
-            ((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-             << 1)) {
-          goto normal_char;
-        }
-        if ((int)backslash !=
-            ((syntax_bits &
-              (((((((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-                     << 1)
-                    << 1)
-                   << 1)
-                  << 1)
-                 << 1)
-                << 1)
-               << 1)) == 0UL)) {
-          goto normal_char;
-        }
-        laststart = (_Bool)1;
-        lasttok = (token)269;
-        return (lasttok);
-      case_10 : { goto normal_char; }
-
-        laststart = (_Bool)1;
-        lasttok = (token)269;
-        return (lasttok);
-      case_40:
-        if ((int)backslash !=
-            ((syntax_bits &
-              (((((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-                   << 1)
-                  << 1)
-                 << 1)
-                << 1)
-               << 1)) == 0UL)) {
-          goto normal_char;
-        }
-        parens++;
-        laststart = (_Bool)1;
-        lasttok = (token)270;
-        return (lasttok);
-      case_41:
-        if ((int)backslash !=
-            ((syntax_bits &
-              (((((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-                   << 1)
-                  << 1)
-                 << 1)
-                << 1)
-               << 1)) == 0UL)) {
-          goto normal_char;
-        }
-        {
-          if (syntax_bits &
-              (((((((((((((((((1UL << 1) << 1) << 1) << 1) << 1) << 1) << 1)
-                        << 1)
-                       << 1)
-                      << 1)
-                     << 1)
-                    << 1)
-                   << 1)
-                  << 1)
-                 << 1)
-                << 1)
-               << 1)) {
-            goto normal_char;
-          }
-        }
-        parens--;
-        laststart = (_Bool)0;
-        lasttok = (token)271;
-        return (lasttok);
-      case_46:
-        if (backslash) {
-          goto normal_char;
-        }
-        {
-          laststart = (_Bool)0;
-          lasttok = (token)272;
-          return (lasttok);
-        }
-        {
-          zeroset(ccl);
-          notset(ccl);
-        }
-        { clrbit((unsigned int)eolbyte___0, ccl); }
-        { clrbit((unsigned int)'\000', ccl); }
-        {
-          laststart = (_Bool)0;
-          tmp___12 = charclass_index((charclass_word * /* const  */)(ccl));
-          lasttok = (token)(275UL + tmp___12);
-        }
-        return (lasttok);
-      case_115 : { goto normal_char; }
 
         {
-          {
-            zeroset(ccl);
-            c2 = 0;
-          }
-          {
-            {
-              ;
 
-              { goto while_break___3; }
-              { tmp___13 = __ctype_b_loc(); }
-              { setbit((unsigned int)c2, ccl); }
-              c2++;
-            };
-          }
-        while_break___3:;
-          { notset(ccl); }
-          {
-            laststart = (_Bool)0;
-            tmp___14 = charclass_index((charclass_word * /* const  */)(ccl));
-            lasttok = (token)(275UL + tmp___14);
-          }
-          return (lasttok);
-        }
-        {
-          {
-            ;
-            lexptr_saved = lexptr;
-            lexleft_saved = lexleft;
-            { lexptr = "[:space:]]"; }
-
-            {
-              lexleft = strlen(lexptr);
-              lasttok = parse_bracket_exp();
-              lexptr = lexptr_saved;
-              lexleft = lexleft_saved;
-            }
-            goto while_break___4;
-          };
-        }
-      while_break___4:
-        laststart = (_Bool)0;
-        return (lasttok);
-      case_119 : { goto normal_char; }
-
-        {
-          zeroset(ccl);
-          c2 = 0;
-        }
-        {
-          {
-            ;
-
-            { goto while_break___5; }
-            { tmp___15 = __ctype_b_loc(); }
-            { setbit((unsigned int)c2, ccl); }
-
-            c2++;
-          };
-        }
-      while_break___5:;
-        { notset(ccl); }
-        {
-          laststart = (_Bool)0;
-          tmp___16 = charclass_index((charclass_word * /* const  */)(ccl));
-          lasttok = (token)(275UL + tmp___16);
-        }
-        return (lasttok);
-      case_91:
-        if (backslash) {
-          goto normal_char;
-        }
-        {
-          laststart = (_Bool)0;
-          lasttok = parse_bracket_exp();
-        }
-        return (lasttok);
-      normal_char:
-        laststart = (_Bool)0;
-        if (dfa___0->multibyte) {
-          lasttok = (token)274;
-          return (lasttok);
-        }
-        if (case_fold) {
-          {
-            tmp___18 = __ctype_b_loc();
-          }
-          {
-            {
-              zeroset(ccl);
-              setbit_case_fold_c(c, ccl);
-              tmp___17 = charclass_index((charclass_word * /* const  */)(ccl));
-              lasttok = (token)(275UL + tmp___17);
-            }
-            return (lasttok);
-          }
-        }
-        lasttok = (token)c;
-        return (lasttok);
-      switch_break:
-        i++;
-      };
+          _L___4 : {goto normal_char;
+      }
+      {
+        tmp___8 = gettext("Invalid content of \\{\\}");
+        dfaerror((char const *)tmp___8);
+      }
     }
-  while_break : { abort(); }
-    return ((token)-1);
+    {
+
+      tmp___11 = gettext("Regular expression too big");
+      dfaerror((char const *)tmp___11);
+    }
+    lexptr = p;
+    lexleft = (size_t)(lim - p);
+    laststart = (_Bool)0;
+    lasttok = (token)267;
+    return (lasttok);
+  case_124 : { goto normal_char; }
+    { goto normal_char; }
+    laststart = (_Bool)1;
+    lasttok = (token)269;
+    return (lasttok);
+  case_10 : { goto normal_char; }
+
+    laststart = (_Bool)1;
+    lasttok = (token)269;
+    return (lasttok);
+  case_40 : { goto normal_char; }
+    parens++;
+    laststart = (_Bool)1;
+    lasttok = (token)270;
+    return (lasttok);
+  case_41 : { goto normal_char; }
+    { goto normal_char; }
+    parens--;
+    laststart = (_Bool)0;
+    lasttok = (token)271;
+    return (lasttok);
+  case_46:
+    if (backslash) {
+      goto normal_char;
+    }
+    {
+      laststart = (_Bool)0;
+      lasttok = (token)272;
+      return (lasttok);
+    }
+    {
+      zeroset(ccl);
+      notset(ccl);
+    }
+    { clrbit((unsigned int)eolbyte___0, ccl); }
+    { clrbit((unsigned int)'\000', ccl); }
+    {
+      laststart = (_Bool)0;
+      tmp___12 = charclass_index((charclass_word * /* const  */)(ccl));
+      lasttok = (token)(275UL + tmp___12);
+    }
+    return (lasttok);
+  case_115 : { goto normal_char; }
+
+    {
+      {
+        zeroset(ccl);
+        c2 = 0;
+      }
+      {
+        {
+        while_continue___3: /* CIL Label */;
+
+          { goto while_break___3; }
+          { tmp___13 = __ctype_b_loc(); }
+          { setbit((unsigned int)c2, ccl); }
+          c2++;
+        }
+      while_break___10: /* CIL Label */;
+      }
+    while_break___3:;
+      { notset(ccl); }
+      {
+        laststart = (_Bool)0;
+        tmp___14 = charclass_index((charclass_word * /* const  */)(ccl));
+        lasttok = (token)(275UL + tmp___14);
+      }
+      return (lasttok);
+    }
+    {
+      {
+      while_continue___4: /* CIL Label */;
+        lexptr_saved = lexptr;
+        lexleft_saved = lexleft;
+        { lexptr = "[:space:]]"; }
+
+        {
+          lexleft = strlen(lexptr);
+          lasttok = parse_bracket_exp();
+          lexptr = lexptr_saved;
+          lexleft = lexleft_saved;
+        }
+        goto while_break___4;
+      }
+    while_break___11: /* CIL Label */;
+    }
+  while_break___4:
+    laststart = (_Bool)0;
+    return (lasttok);
+  case_119 : { goto normal_char; }
+
+    {
+      zeroset(ccl);
+      c2 = 0;
+    }
+    {
+      {
+      while_continue___5: /* CIL Label */;
+
+        { goto while_break___5; }
+        { tmp___15 = __ctype_b_loc(); }
+        { setbit((unsigned int)c2, ccl); }
+
+        c2++;
+      }
+    while_break___12: /* CIL Label */;
+    }
+  while_break___5:;
+    { notset(ccl); }
+    {
+      laststart = (_Bool)0;
+      tmp___16 = charclass_index((charclass_word * /* const  */)(ccl));
+      lasttok = (token)(275UL + tmp___16);
+    }
+    return (lasttok);
+  case_91:
+    if (backslash) {
+      goto normal_char;
+    }
+    {
+      laststart = (_Bool)0;
+      lasttok = parse_bracket_exp();
+    }
+    return (lasttok);
+  normal_char:
+    laststart = (_Bool)0;
+    if (dfa___0->multibyte) {
+      lasttok = (token)274;
+      return (lasttok);
+    }
+    if (case_fold) {
+      {
+        tmp___18 = __ctype_b_loc();
+      }
+      {
+        {
+          zeroset(ccl);
+          setbit_case_fold_c(c, ccl);
+          tmp___17 = charclass_index((charclass_word * /* const  */)(ccl));
+          lasttok = (token)(275UL + tmp___17);
+        }
+        return (lasttok);
+      }
+    }
+    lasttok = (token)c;
+    return (lasttok);
+  switch_break:
+    i++;
   }
+while_break___6: /* CIL Label */;
+}
+while_break : { abort(); }
+return ((token)-1);
+}
 }
 static token tok;
 static size_t depth;
@@ -3971,15 +3603,22 @@ static void addtok_mb(token t, int mbprop) {
     (dfa___0->tindex)++;
     *(dfa___0->tokens + tmp) = t;
 
+  switch_default:
     (dfa___0->nleaves)++;
-
+  case_256:
     depth++;
 
     { dfa___0->depth = depth; }
   }
 }
 static void addtok_wc(wint_t wc);
-static void addtok(token t) { addtok_mb(t, 3); }
+static void addtok(token t) {
+  _Bool need_or;
+  struct mb_char_classes *work_mbc;
+  size_t i;
+
+  { addtok_mb(t, 3); }
+}
 
 static void add_utf8_anychar(void);
 static charclass const utf8_classes[5] = {
@@ -4003,6 +3642,7 @@ static void add_utf8_anychar(void) {
   unsigned int i;
   charclass c;
   size_t tmp;
+  void *__cil_tmp6;
 
   {
     n = (unsigned int)(sizeof(utf8_classes) / sizeof(utf8_classes[0]));
@@ -4010,7 +3650,7 @@ static void add_utf8_anychar(void) {
       i = 0U;
       {
         while (1) {
-          ;
+        while_continue: /* CIL Label */;
 
           if (!(i < n)) {
             goto while_break;
@@ -4027,14 +3667,15 @@ static void add_utf8_anychar(void) {
         dfa___0->utf8_anychar_classes[i] = (token)(275UL + tmp);
         i++;
       }
-    };
+    }
+  while_break___2: /* CIL Label */;
   }
 while_break:;
 }
 i = 1U;
 {
   {
-    ;
+  while_continue___0: /* CIL Label */;
 
     if (!(i < n)) {
       goto while_break___0;
@@ -4043,12 +3684,13 @@ i = 1U;
       addtok(dfa___0->utf8_anychar_classes[i]);
       i++;
     }
-  };
+  }
+while_break___3: /* CIL Label */;
 }
 while_break___0:;
 {
   {
-    ;
+  while_continue___1: /* CIL Label */;
     i--;
     { goto while_break___1; }
     {
@@ -4056,189 +3698,118 @@ while_break___0:;
       addtok((token)268);
       addtok((token)269);
     }
-  };
+  }
+while_break___4: /* CIL Label */;
 }
 while_break___1:;
 return;
 }
 }
 static void atom(void) {
-
-  if (tok == 272L) {
-
-    add_utf8_anychar();
-    tok = lex();
-
-  } else {
-
-    if (tok >= 0L) {
-      if (tok < 256L) {
-
-        addtok(tok);
-        tok = lex();
-
-      } else {
-        goto _L;
-      }
-    } else {
-    _L:
-      if (tok >= 275L) {
-
-        addtok(tok);
-        tok = lex();
-
-      } else {
-
-        if (tok == 258L) {
-
-          addtok(tok);
-          tok = lex();
-
-        } else {
-          if (tok == 259L) {
-
-            addtok(tok);
-            tok = lex();
-
-          } else {
-
-            if (tok == 262L) {
-
-              addtok(tok);
-              tok = lex();
-
-            } else {
-
-              if (tok == 270L) {
-                {
-                  tok = lex();
-                  regexp();
-                }
-
-                { tok = lex(); }
-              } else {
-
-                addtok((token)256);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-static size_t __attribute__((__pure__)) nsubtoks(size_t tindex) {
-  size_t ntoks1;
-
-  size_t __attribute__((__pure__)) tmp___0;
+  wchar_t folded[21];
+  int i;
+  int n;
+  int tmp;
+  char *tmp___0;
+  int tmp___1;
+  void *__cil_tmp9;
+  char *__cil_tmp10;
 
   {
 
-    {
-      ntoks1 = (size_t)nsubtoks(tindex - 1UL);
-      tmp___0 = nsubtoks((tindex - 1UL) - ntoks1);
+    if (tok == 272L) {
+
+      add_utf8_anychar();
+      tok = lex();
+
+    } else {
+    _L___0 : {
+
+      addtok(tok);
+      tok = lex();
     }
-    return (
-        (size_t __attribute__((__pure__)))((1UL + ntoks1) + (size_t)tmp___0));
+    }
   }
 }
 
 static void closure(void) {
+  int i;
+  size_t tindex;
+  size_t ntokens;
+  size_t __attribute__((__pure__)) tmp;
 
-  { atom(); }
   {
+    { atom(); }
     {
-      ;
 
-      if (!(tok == 264L)) {
+      {
         if (!(tok == 265L)) {
-          if (!(tok == 266L)) {
-            if (!(tok == 267L)) {
-              goto while_break;
-            }
-          }
+
+          goto while_break;
         }
       }
-      if (tok == 267L) {
 
-        tok = lex();
+      {
+      _L :
 
-      } else {
+      {
 
-        addtok(tok);
         tok = lex();
       }
-    };
+      }
+    }
+  while_break:;
   }
-while_break:;
 }
 static void branch(void) {
 
   { closure(); }
   {
     while (1) {
-      ;
 
-      if (tok != 271L) {
-        if (tok != 269L) {
-          if (!(tok >= 0L)) {
-            goto while_break;
-          }
-        } else {
+      {
+
+        if (!(tok >= 0L)) {
           goto while_break;
         }
-      } else {
-        goto while_break;
       }
+
       {
         closure();
         addtok((token)268);
       }
-    };
+    }
   }
 while_break:;
 }
-static void regexp(void) {
-
-  { branch(); }
-  {
-    while (1) {
-      ;
-
-      if (!(tok == 269L)) {
-        goto while_break;
-      }
-      {
-        tok = lex();
-        branch();
-        addtok((token)269);
-      }
-    };
-  }
-while_break:;
-}
+static void regexp(void) { branch(); }
 void dfaparse(char const *s, size_t len, struct dfa *d) {
-
-  dfa___0 = d;
-  lexptr = s;
-  lexleft = len;
-
-  {
-    tok = lex();
-
-    regexp();
-  }
+  char *tmp;
+  char *tmp___0;
+  char *__cil_tmp8;
+  char *__cil_tmp9;
 
   {
-    addtok((token)(0xffffffffffffffffUL - d->nregexps));
-    addtok((token)268);
+    dfa___0 = d;
+    lexptr = s;
+    lexleft = len;
+
+    {
+      tok = lex();
+
+      regexp();
+    }
+
+    {
+      addtok((token)(0xffffffffffffffffUL - d->nregexps));
+      addtok((token)268);
+    }
   }
 }
 static void copy(position_set const *src, position_set *dst) {
 
   {
 
-    free((void *)dst->elems);
     dst->alloc = (size_t)src->nelem;
     dst->elems =
         (position *)x2nrealloc((void *)0, &dst->alloc, sizeof(*(dst->elems)));
@@ -4255,13 +3826,25 @@ static void alloc_position_set(position_set *s, size_t size) {
   s->elems = (position *)xnmalloc(size, sizeof(*(s->elems)));
 }
 static void insert(position p, position_set *s) {
-
+  size_t count;
   size_t lo;
+  size_t hi;
+  size_t i;
+  size_t mid;
 
   {
-
+    count = s->nelem;
     lo = (size_t)0;
 
+    { i = count; }
+    {
+
+      if (!(i > lo)) {
+        goto while_break___0;
+      }
+      *(s->elems + i) = *(s->elems + (i - 1UL));
+    }
+  while_break___0:
     *(s->elems + lo) = p;
     (s->nelem)++;
   }
@@ -4270,7 +3853,13 @@ static void merge(position_set const *s1, position_set const *s2,
                   position_set *m) {
   size_t i;
   size_t j;
-
+  size_t tmp;
+  size_t tmp___0;
+  size_t tmp___1;
+  size_t tmp___2;
+  size_t tmp___3;
+  size_t tmp___4;
+  size_t tmp___5;
   size_t tmp___6;
   size_t tmp___7;
   size_t tmp___8;
@@ -4278,43 +3867,23 @@ static void merge(position_set const *s1, position_set const *s2,
 
   {
     i = (size_t)0;
-    j = (size_t)0;
 
     m->nelem = (size_t)0;
 
     {
-      {
-        ;
 
-        tmp___6 = m->nelem;
-        (m->nelem)++;
-        tmp___7 = i;
+      tmp___6 = m->nelem;
+      (m->nelem)++;
+      tmp___7 = i;
 
-        *(m->elems + tmp___6) = *(s1->elems + tmp___7);
-      };
+      *(m->elems + tmp___6) = *(s1->elems + tmp___7);
     }
-
-    {
-      {
-        ;
-
-        if (!(j < (size_t)s2->nelem)) {
-          goto while_break___1;
-        }
-        tmp___8 = m->nelem;
-        (m->nelem)++;
-        tmp___9 = j;
-
-        *(m->elems + tmp___8) = *(s2->elems + tmp___9);
-      };
-    }
-  while_break___1:;
   }
 }
-static void delete (position p, position_set *s) { (s->nelem)--; }
+
 static state_num state_index(struct dfa *d, position_set const *s,
                              int context) {
-
+  size_t hash;
   int constraint;
   state_num i;
   state_num j;
@@ -4325,7 +3894,6 @@ static state_num state_index(struct dfa *d, position_set const *s,
 
     {
       while (1) {
-        ;
 
         if (!(i < d->sindex)) {
           goto while_break___0;
@@ -4339,25 +3907,33 @@ static state_num state_index(struct dfa *d, position_set const *s,
         }
         j = (state_num)0;
         {
-          {
-            ;
+          while (1) {
 
+            if (!((size_t const)j < s->nelem)) {
+              goto while_break___1;
+            }
+
+            {
+              if ((s->elems + j)->index !=
+                  ((d->states + i)->elems.elems + j)->index) {
+                goto while_break___1;
+              }
+            }
             j++;
-          };
+          }
         }
-
+      while_break___1:;
         if ((size_t const)j == s->nelem) {
           return (i);
         }
       __Cont:
         i++;
-      };
+      }
     }
   while_break___0 : {
     d->states = (dfa_state *)maybe_realloc((void *)d->states, (size_t)d->sindex,
                                            &d->salloc, sizeof(*(d->states)));
 
-    alloc_position_set(&(d->states + i)->elems, (size_t)s->nelem);
     copy(s, &(d->states + i)->elems);
     (d->states + i)->context = (unsigned char)context;
 
@@ -4366,23 +3942,16 @@ static state_num state_index(struct dfa *d, position_set const *s,
     j = (state_num)0;
   }
     {
-      while (1) {
-        ;
 
-        if (!((size_t const)j < s->nelem)) {
-          goto while_break___2;
+      if (*(d->tokens + (s->elems + j)->index) < 0L) {
+        constraint = (int)(s->elems + j)->constraint;
+        {
+          (d->states + i)->constraint =
+              (unsigned short)((int)(d->states + i)->constraint | constraint);
         }
-        if (*(d->tokens + (s->elems + j)->index) < 0L) {
-          constraint = (int)(s->elems + j)->constraint;
-          {
-            (d->states + i)->constraint =
-                (unsigned short)((int)(d->states + i)->constraint | constraint);
-          }
 
-        } else {
-        }
-        j++;
-      };
+      } else {
+      }
     }
   while_break___2:
     (d->sindex)++;
@@ -4394,57 +3963,35 @@ static void epsclosure(position_set *s, struct dfa const *d, char *visited) {
   size_t j;
   position p;
   position old;
+  _Bool initialized;
 
   {
 
     i = (size_t)0;
     {
-      while (1) {
-        ;
 
-        if (!(i < s->nelem)) {
-          goto while_break;
-        }
-        if (*(d->tokens + (s->elems + i)->index) >= 256L) {
+      if (*(d->tokens + (s->elems + i)->index) >= 256L) {
 
-          if (*(d->tokens + (s->elems + i)->index) < 275L) {
+        if (*(d->tokens + (s->elems + i)->index) < 275L) {
 
-            {
-              old = *(s->elems + i);
-              p.constraint = old.constraint;
-              delete (*(s->elems + i), s);
-            }
+          {
+            old = *(s->elems + i);
+            p.constraint = old.constraint;
+          }
 
-            if (*(d->tokens + old.index) == 259L) {
-              goto case_259;
-            }
+        case_258:
+          p.constraint &= 1092U;
 
-            p.constraint &= 1092U;
-            goto switch_break;
-          case_259:
-            p.constraint &= 1792U;
+        switch_break:
+          j = (size_t)0;
+          {
 
-          switch_break:
-            j = (size_t)0;
-            {
-              {
-                ;
-
-                {
-                  p.index = ((d->follows + old.index)->elems + j)->index;
-                  insert(p, s);
-                }
-              };
-            }
-
-            i = (size_t)-1;
+            p.index = ((d->follows + old.index)->elems + j)->index;
+            insert(p, s);
           }
         }
-
-        i++;
-      };
+      }
     }
-  while_break:;
   }
 }
 
@@ -4458,13 +4005,13 @@ void dfaanalyze(struct dfa *d, int searchflag) {
   struct __anonstruct_stkalloc_43 *stk;
   position_set tmp___1;
   position_set merged;
-
+  int separate_contexts;
   size_t i;
   size_t j;
   position *pos;
   char *visited;
   char *tmp___2;
-
+  size_t tmp___3;
   size_t tmp___4;
   size_t tmp___5;
   size_t tmp___6;
@@ -4490,90 +4037,35 @@ void dfaanalyze(struct dfa *d, int searchflag) {
     }
     {
       while (1) {
-        ;
 
         if (!(i < d->tindex)) {
           goto while_break;
         }
 
-        if (*(d->tokens + i) == 265L) {
-          goto case_265;
-        }
-        if (*(d->tokens + i) == 266L) {
-          goto case_265;
-        }
-        if (*(d->tokens + i) == 264L) {
-          goto case_264;
-        }
         if (*(d->tokens + i) == 268L) {
           goto case_268;
         }
-        if (*(d->tokens + i) == 269L) {
-          goto case_269;
-        }
+
         goto switch_default;
 
-      case_265:
-        tmp___1.nelem = (stk + -1)->nfirstpos;
-
-      case_264 : { (stk + -1)->nullable = (_Bool)1; }
-        goto switch_break;
       case_268:
         tmp___1.nelem = (stk + -1)->nfirstpos;
         tmp___1.elems = firstpos;
         pos = lastpos + (stk + -1)->nlastpos;
         j = (size_t)0;
         {
-          while (1) {
-            ;
 
-            if (!(j < (stk + -2)->nlastpos)) {
-              goto while_break___1;
-            }
-            {
-              merge((position_set const *)(&tmp___1),
-                    (position_set const *)(d->follows + (pos + j)->index),
-                    &merged);
-              copy((position_set const *)(&merged),
-                   d->follows + (pos + j)->index);
-              j++;
-            }
-          };
+          merge((position_set const *)(&tmp___1),
+                (position_set const *)(d->follows + (pos + j)->index), &merged);
+          copy((position_set const *)(&merged), d->follows + (pos + j)->index);
         }
-      while_break___1:;
 
         { firstpos += (stk + -1)->nfirstpos; }
-        if ((stk + -1)->nullable) {
-          (stk + -2)->nlastpos += (stk + -1)->nlastpos;
-        } else {
-          pos = lastpos + (stk + -2)->nlastpos;
-          j = (stk + -1)->nlastpos;
-          {
-            while (1) {
-              ;
-              tmp___4 = j;
-              j--;
-              if (!(tmp___4 > 0UL)) {
-                goto while_break___2;
-              }
-              *(pos + j) = *(lastpos + j);
-            };
-          }
-        while_break___2:
-          lastpos += (stk + -2)->nlastpos;
-          (stk + -2)->nlastpos = (stk + -1)->nlastpos;
-        }
 
-        stk--;
         goto switch_break;
-      case_269:
-        (stk + -2)->nfirstpos += (stk + -1)->nfirstpos;
-        (stk + -2)->nlastpos += (stk + -1)->nlastpos;
 
-        stk--;
-        goto switch_break;
       switch_default : {
-        stk->nullable = (_Bool)(*(d->tokens + i) == 257L);
+
         tmp___5 = (size_t)1;
         stk->nlastpos = tmp___5;
         stk->nfirstpos = tmp___5;
@@ -4590,55 +4082,24 @@ void dfaanalyze(struct dfa *d, int searchflag) {
 
       switch_break:
         i++;
-      };
+      }
     }
   while_break:
     i = (size_t)0;
     {
-      while (1) {
-        ;
 
-        if (!(i < d->tindex)) {
-          goto while_break___3;
-        }
-        if (*(d->tokens + i) < 256L) {
-
-          copy((position_set const *)(d->follows + i), &merged);
-          epsclosure(&merged, (struct dfa const *)d, visited);
-          copy((position_set const *)(&merged), d->follows + i);
-
-        } else {
-
-          if (*(d->tokens + i) >= 275L) {
-
-            copy((position_set const *)(d->follows + i), &merged);
-            epsclosure(&merged, (struct dfa const *)d, visited);
-            copy((position_set const *)(&merged), d->follows + i);
-          }
-        }
-        i++;
-      };
+      copy((position_set const *)(d->follows + i), &merged);
+      epsclosure(&merged, (struct dfa const *)d, visited);
+      copy((position_set const *)(&merged), d->follows + i);
     }
   while_break___3:
     merged.nelem = (size_t)0;
-    i = (size_t)0;
-    {
-      {
-        ;
 
-        { insert(*(firstpos + i), &merged); }
-      };
-    }
-    { epsclosure(&merged, (struct dfa const *)d, visited); }
+    { insert(*(firstpos + i), &merged); }
+  while_break___4 : { epsclosure(&merged, (struct dfa const *)d, visited); }
     { tmp___8 = 4; }
 
-    {
-      state_index(d, (position_set const *)(&merged), tmp___8);
-      free((void *)posalloc);
-      free((void *)stkalloc);
-      free((void *)merged.elems);
-      free((void *)visited);
-    }
+    { state_index(d, (position_set const *)(&merged), tmp___8); }
   }
 }
 void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0) {
@@ -4647,18 +4108,40 @@ void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0) {
   size_t ngrps;
   position pos;
   charclass matches;
-
+  charclass_word matchesf;
+  charclass intersect;
+  charclass_word intersectf;
+  charclass leftovers;
+  charclass_word leftoversf;
   position_set follows;
   position_set tmp;
-
+  int possible_contexts;
+  int separate_contexts;
+  state_num state;
   state_num state_newline;
   state_num state_letter;
-
+  _Bool next_isnt_1st_byte;
   size_t i;
   size_t j;
   size_t k;
-
+  _Bool tmp___0;
+  charclass_word tmp___1;
+  charclass_word match;
+  charclass_word label___0;
+  charclass_word tmp___2;
+  charclass_word tmp___3;
+  size_t tmp___4;
+  unsigned short const **tmp___6;
   int c;
+  unsigned short const **tmp___7;
+  void *__cil_tmp47;
+  int __cil_tmp48;
+  void *__cil_tmp49;
+  int __cil_tmp50;
+  void *__cil_tmp51;
+  void *__cil_tmp52;
+  void *__cil_tmp53;
+  void *__cil_tmp54;
 
   {
     {
@@ -4668,81 +4151,65 @@ void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0) {
       i = (size_t)0;
     }
     {
-      while (1) {
-        ;
 
-        if (!(i < (d->states + s)->elems.nelem)) {
-          goto while_break;
-        }
-        pos = *((d->states + s)->elems.elems + i);
-        if (*(d->tokens + pos.index) >= 0L) {
-          if (*(d->tokens + pos.index) < 256L) {
+      pos = *((d->states + s)->elems.elems + i);
+      if (*(d->tokens + pos.index) >= 0L) {
+        if (*(d->tokens + pos.index) < 256L) {
 
-            setbit((unsigned int)*(d->tokens + pos.index), matches);
+          setbit((unsigned int)*(d->tokens + pos.index), matches);
 
-          } else {
-            goto _L___0;
-          }
         } else {
-        _L___0:
-          if (*(d->tokens + pos.index) >= 275L) {
-
-            copyset((charclass_word * /* const  */)(
-                        *(d->charclasses + (*(d->tokens + pos.index) - 275L))),
-                    matches);
-
-          } else {
-          }
+          goto _L___0;
         }
-        {
+      } else {
+      _L___0:
+        if (*(d->tokens + pos.index) >= 275L) {
 
-          if (!((pos.constraint & 15U) &
-                (unsigned int)(d->states + s)->context)) {
-            j = (size_t)0;
-            {
-              while (1) {
-                ;
+          copyset((charclass_word * /* const  */)(
+                      *(d->charclasses + (*(d->tokens + pos.index) - 275L))),
+                  matches);
 
-                if (!(j < 8UL)) {
-                  goto while_break___2;
-                }
-                matches[j] &= letters[j] | newline[j];
-                j++;
-              };
+        } else {
+        }
+      }
+      {
+
+        if (!((pos.constraint & 15U) &
+              (unsigned int)(d->states + s)->context)) {
+          j = (size_t)0;
+          {
+            while (1) {
+
+              if (!(j < 8UL)) {
+                goto while_break___2;
+              }
+              matches[j] &= letters[j] | newline[j];
+              j++;
             }
-          while_break___2:;
           }
+        while_break___2:;
         }
+      }
 
-        ;
-        {
+      {
 
-          copyset((charclass_word * /* const  */)(matches), labels[ngrps]);
-          zeroset(matches);
-          grps[ngrps].elems =
-              (size_t *)xnmalloc(d->nleaves, sizeof(*(grps[ngrps].elems)));
+        copyset((charclass_word * /* const  */)(matches), labels[ngrps]);
 
-          *(grps[ngrps].elems + 0) = pos.index;
-          ngrps++;
-        }
+        grps[ngrps].elems =
+            (size_t *)xnmalloc(d->nleaves, sizeof(*(grps[ngrps].elems)));
 
-        i++;
-      };
+        *(grps[ngrps].elems + 0) = pos.index;
+      }
     }
-  while_break : {
-    alloc_position_set(&follows, d->nleaves);
-    alloc_position_set(&tmp, d->nleaves);
-  }
+
     {
       { copy((position_set const *)(&(d->states + 0)->elems), &follows); }
       { state_newline = state_index(d, (position_set const *)(&follows), 4); }
 
       { state_letter = state_index(d, (position_set const *)(&follows), 2); }
 
-      i = (size_t)0;
       {
         while (1) {
-          ;
 
           if (!(i < 256UL)) {
             goto while_break___7;
@@ -4751,7 +4218,7 @@ void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0) {
           { *(trans___0 + i) = state_letter; }
 
           i++;
-        };
+        }
       }
     while_break___7:
       *(trans___0 + (int)eolbyte___0) = state_newline;
@@ -4759,96 +4226,54 @@ void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0) {
 
     i = (size_t)0;
     {
-      while (1) {
-        ;
 
-        if (!(i < ngrps)) {
-          goto while_break___9;
-        }
+      j = (size_t)0;
+      {
 
-        j = (size_t)0;
+        k = (size_t)0;
         {
+
+          if (!(k < (d->follows + *(grps[i].elems + j))->nelem)) {
+            goto while_break___11;
+          }
           {
-            ;
-
-            k = (size_t)0;
-            {
-              {
-                ;
-
-                if (!(k < (d->follows + *(grps[i].elems + j))->nelem)) {
-                  goto while_break___11;
-                }
-                {
-                  insert(*((d->follows + *(grps[i].elems + j))->elems + k),
-                         &follows);
-                }
-              };
-            }
-          while_break___11:
-            j++;
-          };
-        };
-
-        {
-
-          merge((position_set const *)(&(d->states + 0)->elems),
-                (position_set const *)(&follows), &tmp);
-          copy((position_set const *)(&tmp), &follows);
+            insert(*((d->follows + *(grps[i].elems + j))->elems + k), &follows);
+          }
         }
+      while_break___11:
+        j++;
+      }
 
-        { state_letter = state_index(d, (position_set const *)(&follows), 2); }
+      { state_letter = state_index(d, (position_set const *)(&follows), 2); }
 
-        {
-          while (1) {
-            ;
+      {
+        while (1) {
 
-            if (!(j < 8UL)) {
-              goto while_break___13;
+          if (!(j < 8UL)) {
+            goto while_break___13;
+          }
+          k = (size_t)0;
+          {
+            while (1) {
+
+              if (!(k < 32UL)) {
+                goto while_break___14;
+              }
+              if ((labels[i][j] >> k) & 1U) {
+                c = (int)(j * 32UL + k);
+
+                { *(trans___0 + c) = state_letter; }
+              }
+              k++;
             }
-            k = (size_t)0;
-            {
-              while (1) {
-                ;
-
-                if (!(k < 32UL)) {
-                  goto while_break___14;
-                }
-                if ((labels[i][j] >> k) & 1U) {
-                  c = (int)(j * 32UL + k);
-
-                  { *(trans___0 + c) = state_letter; }
-                }
-                k++;
-              };
-            }
-          while_break___14:
-            j++;
-          };
+          }
+        while_break___14:
+          j++;
         }
-      while_break___13:
-        i++;
-      };
+      }
+    while_break___13:
+      i++;
     }
-  while_break___9:
-    i = (size_t)0;
-    {
-      while (1) {
-        ;
-
-        if (!(i < ngrps)) {
-          goto while_break___15;
-        }
-        {
-          free((void *)grps[i].elems);
-          i++;
-        }
-      };
-    }
-  while_break___15 : {
-    free((void *)follows.elems);
-    free((void *)tmp.elems);
-  }
   }
 }
 static void realloc_trans_if_necessary(struct dfa *d, state_num new_state) {
@@ -4861,9 +4286,8 @@ static void realloc_trans_if_necessary(struct dfa *d, state_num new_state) {
   {
     oldalloc = d->tralloc;
     if (oldalloc <= new_state) {
-      if (d->trans) {
-        tmp = d->trans - 1;
-      } else {
+
+      {
         tmp = (state_num **)((void *)0);
       }
       {
@@ -4877,20 +4301,17 @@ static void realloc_trans_if_necessary(struct dfa *d, state_num new_state) {
         d->tralloc = (state_num)newalloc;
         d->fails = (state_num **)xnrealloc((void *)d->fails, newalloc,
                                            sizeof(*(d->fails)));
-        d->success = (int *)xnrealloc((void *)d->success, newalloc,
-                                      sizeof(*(d->success)));
       }
       {
         while (1) {
-          ;
 
           if (!((size_t)oldalloc < newalloc)) {
             goto while_break;
           }
-
+          *(d->trans + oldalloc) = (state_num *)((void *)0);
           *(d->fails + oldalloc) = (state_num *)((void *)0);
           oldalloc++;
-        };
+        }
       }
     while_break:;
     }
@@ -4900,28 +4321,18 @@ static void build_state(state_num s, struct dfa *d) {
   state_num *trans___0;
   state_num i;
   state_num maxstate;
+  state_num *tmp;
 
   {
+    { i = (state_num)0; }
 
-    *(d->success + s) = 0;
-    if ((((int)(d->states + s)->constraint >> 8) & 15) &
-        (int)(d->states + s)->context) {
-      *(d->success + s) |= 4;
-    }
-
-    if (((int)(d->states + s)->constraint & 15) &
-        (int)(d->states + s)->context) {
-      *(d->success + s) |= 1;
-    }
     {
       trans___0 = (state_num *)xmalloc(256UL * sizeof(*trans___0));
       dfastate(s, d, trans___0);
       maxstate = (state_num)-1;
-      i = (state_num)0;
     }
     {
       while (1) {
-        ;
 
         if (!(i < 256L)) {
           goto while_break___0;
@@ -4930,14 +4341,14 @@ static void build_state(state_num s, struct dfa *d) {
           maxstate = *(trans___0 + i);
         }
         i++;
-      };
+      }
     }
-  while_break___0 : {
-    realloc_trans_if_necessary(d, maxstate);
-
-    *(trans___0 + (int)eolbyte___0) = (state_num)-1;
-  }
-    { *(d->fails + s) = trans___0; }
+  while_break___0 : { realloc_trans_if_necessary(d, maxstate); }
+    if ((d->states + s)->constraint) {
+      *(d->fails + s) = trans___0;
+    } else {
+      *(d->trans + s) = trans___0;
+    }
   }
 }
 static void build_state_zero(struct dfa *d) {
@@ -4957,11 +4368,17 @@ char *dfaexec(struct dfa *d, char const *begin, char *end, int allow_nl,
   state_num s1;
   unsigned char const *p;
   unsigned char const *mbp;
-
+  state_num **trans___0;
+  state_num *t;
   unsigned char eol;
-
+  unsigned char saved_end;
   size_t nlcount;
-
+  wint_t wc;
+  size_t tmp;
+  unsigned char const *tmp___0;
+  unsigned char const *tmp___1;
+  state_num tmp___2;
+  unsigned char const *tmp___3;
   unsigned char const *tmp___4;
 
   {
@@ -4972,30 +4389,35 @@ char *dfaexec(struct dfa *d, char const *begin, char *end, int allow_nl,
     s = s1;
     mbp = (unsigned char const *)begin;
     p = mbp;
+    trans___0 = d->trans;
 
     *end = (char)eol;
 
     {
       while (1) {
-        ;
 
+        {
+          {
+
+            t = *(trans___0 + s);
+            if (!((unsigned long)t != (unsigned long)((void *)0))) {
+              goto while_break___2;
+            }
+
+            tmp___3 = p;
+            p++;
+            s = *(t + (int const) * tmp___3);
+          }
+        while_break___2:;
+        }
         if ((unsigned long)((char *)p) > (unsigned long)end) {
           p = (unsigned char const *)((void *)0);
           goto done;
         }
-        if (s >= 0L) {
+        {
           if (*(d->fails + s)) {
-            if (*(d->success + s) & sbit[*p]) {
 
-              goto done;
-            }
-
-            {
-              tmp___4 = p;
-              p++;
-              s = *(*(d->fails + s) + (int const) * tmp___4);
-            }
-            goto __Cont;
+            goto done;
           }
         }
         if ((int const) * (p + -1) == (int const)eol) {
@@ -5003,18 +4425,11 @@ char *dfaexec(struct dfa *d, char const *begin, char *end, int allow_nl,
             nlcount++;
           }
         }
-        if (s >= 0L) {
-          {
-
-            build_state(s, d);
-          }
-
-          goto __Cont;
+        {
+          { build_state(s, d); }
+          trans___0 = d->trans;
         }
-
-        s = (state_num)0;
-      __Cont:;
-      };
+      }
     }
 
   done : { *count += nlcount; }
@@ -5026,7 +4441,11 @@ struct dfa *dfasuperset(struct dfa const *d) __attribute__((__pure__));
 
 _Bool dfaisfast(struct dfa const *d) __attribute__((__pure__));
 
-void dfainit(struct dfa *d) { memset((void *)d, 0, sizeof(*d)); }
+void dfainit(struct dfa *d) {
+  size_t tmp;
+
+  { memset((void *)d, 0, sizeof(*d)); }
+}
 
 void dfacomp(char const *s, size_t len, struct dfa *d, int searchflag) {
 
@@ -5049,11 +4468,6 @@ struct dfa *dfaalloc(void) {
 extern __attribute__((__nothrow__)) size_t
 mbrlen(char const *__restrict __s, size_t __n, mbstate_t *__restrict __ps);
 void build_mbclen_cache(void);
-
-void kwsinit(kwset_t *kwset___1) {
-
-  *kwset___1 = kwsalloc((char const *)((void *)0));
-}
 
 extern int fflush_unlocked(FILE *__stream);
 extern int fputc_unlocked(int __c, FILE *__stream);
@@ -5089,8 +4503,6 @@ static int color_option;
 static int only_matching;
 
 static char const *selected_match_color = "01;31";
-
-static char const *line_num_color = "32";
 
 static char const *selected_line_color = "";
 
@@ -5186,20 +4598,12 @@ static void (*compile)(char const *, size_t);
 static size_t (*execute)(char const *, size_t, size_t *, char const *);
 static void suppressible_error(char const *mesg, int errnum) {
 
-  error(0, errnum, "%s", mesg);
-}
-static void clean_up_stdout(void) { close_stdout(); }
+  if (!suppress_errors) {
 
-static void context_length_arg(char const *str, intmax_t *out___0) {
-
-  char *tmp___0;
-
-  {
-
-    tmp___0 = gettext("invalid context length argument");
-    error(2, 0, "%s: %s", str, tmp___0);
+    error(0, errnum, "%s", mesg);
   }
 }
+static void clean_up_stdout(void) { close_stdout(); }
 
 static char *buffer;
 static size_t bufalloc;
@@ -5210,34 +4614,44 @@ static size_t pagesize;
 
 static int reset(int fd, struct stat const *st) {
   size_t tmp;
+  int *tmp___0;
+  char *tmp___1;
+  char *__cil_tmp9;
 
   {
-    if (!pagesize) {
-      {
-        pagesize = (size_t)getpagesize();
-      }
+    {
 
-      { tmp = (size_t)32768; }
-
-      {
-        bufalloc = (tmp + pagesize) + 1UL;
-        buffer = (char *)xmalloc(bufalloc);
-      }
-    }
-    { buflim = buffer + 1; }
-
-    bufbeg = buflim;
-    *(bufbeg + -1) = (char)eolbyte;
-    bufdesc = fd;
-
-    return (1);
+        {tmp = (size_t)32768;
   }
+
+  {
+    bufalloc = (tmp + pagesize) + 1UL;
+    buffer = (char *)xmalloc(bufalloc);
+  }
+}
+{ buflim = buffer + 1; }
+
+bufbeg = buflim;
+*(bufbeg + -1) = (char)eolbyte;
+bufdesc = fd;
+
+return (1);
+}
 }
 static int fillbuf(size_t save, struct stat const *st) {
   ssize_t fillsize;
   int cc;
   char *readbuf;
   size_t readsize;
+  size_t saved_offset;
+  size_t minsize;
+  size_t newsize;
+  size_t newalloc;
+  char *newbuf;
+  off_t to_be_read;
+  off_t maxsize_off;
+  int tmp;
+  void *tmp___0;
 
   {
     cc = 1;
@@ -5249,101 +4663,36 @@ static int fillbuf(size_t save, struct stat const *st) {
 
       fillsize = (ssize_t)safe_read(bufdesc, (void *)readbuf, readsize);
     }
-
+    if (fillsize < 0L) {
+      cc = 0;
+    }
     { buflim = readbuf + fillsize; }
     return (cc);
   }
 }
 
 static int filename_mask;
-static int out_quiet;
+
 static _Bool out_invert;
 static int out_file;
-static int out_line;
 
-static intmax_t out_after;
 static int count_matches;
 static int list_files;
 static int no_filenames;
 
-static char const *lastnl;
-
-static uintmax_t totalnl;
 static intmax_t outleft;
 
-static int done_on_match;
-static int exit_on_match;
-
-static uintmax_t add_count(uintmax_t a, uintmax_t b) {
-  uintmax_t sum;
-
-  {
-    sum = a + b;
-
-    return (sum);
-  }
-}
-static void nlscan(char const *lim) {
-  size_t newlines;
-  char const *beg;
-
-  {
-    newlines = (size_t)0;
-    beg = lastnl;
-    {
-      while (1) {
-        ;
-
-        {
-          beg = (char const *)memchr((void const *)beg, (int)eolbyte,
-                                     (size_t)(lim - beg));
-        }
-        if (!beg) {
-          goto while_break;
-        }
-        newlines++;
-        beg++;
-      };
-    }
-  while_break : { totalnl = add_count(totalnl, newlines); }
-  }
-}
 static void print_filename(void) {
 
   fputs_unlocked((char const * /* __restrict  */)filename,
                  (FILE * /* __restrict  */) stdout);
 }
 static void print_sep(char sep) { fputc_unlocked((int)sep, stdout); }
-static void print_offset(uintmax_t pos, int min_width, char const *color) {
-  char buf[sizeof(pos) * 8UL];
-  char *p;
 
-  {
-    p = buf + sizeof(buf);
-    {
-      while (1) {
-        ;
-        p--;
-        *p = (char)(48UL + pos % 10UL);
-
-        pos /= 10UL;
-        if (!(pos != 0UL)) {
-          goto while_break;
-        }
-      };
-    }
-  while_break:;
-
-    {
-
-      fwrite_unlocked((void const * /* __restrict  */)((void const *)p),
-                      (size_t)1, (size_t)((buf + sizeof(buf)) - p),
-                      (FILE * /* __restrict  */) stdout);
-    }
-  }
-}
 static void print_line_head(char const *beg, char const *lim, int sep) {
   int pending_sep;
+  uintmax_t pos;
+  uintmax_t tmp;
 
   {
     pending_sep = 0;
@@ -5352,19 +4701,6 @@ static void print_line_head(char const *beg, char const *lim, int sep) {
         print_filename();
       }
       { pending_sep = 1; }
-    }
-    if (out_line) {
-      {
-
-        nlscan(beg);
-        totalnl = add_count(totalnl, (uintmax_t)1);
-        lastnl = lim;
-      }
-
-      {
-        print_offset(totalnl, 4, line_num_color);
-        pending_sep = 1;
-      }
     }
 
     if (pending_sep) {
@@ -5379,49 +4715,51 @@ static char const *print_line_middle(char const *beg, char const *lim,
   size_t match_size;
   size_t match_offset;
   char const *cur;
-
+  char const *mid;
   char const *b;
+  int tmp;
 
   {
     cur = beg;
 
     {
+
       {
-        ;
+
+        match_offset = (*execute)(beg, (size_t)(lim - beg), &match_size,
+                                  beg + (cur - beg));
+      }
+
+      b = beg + match_offset;
+
+      {
 
         {
 
-          match_offset = (*execute)(beg, (size_t)(lim - beg), &match_size,
-                                    beg + (cur - beg));
+          fwrite_unlocked((void const * /* __restrict  */)((void const *)b),
+                          sizeof(char), match_size,
+                          (FILE * /* __restrict  */) stdout);
         }
-
-        b = beg + match_offset;
-
         {
 
-          {
-
-            fwrite_unlocked((void const * /* __restrict  */)((void const *)b),
-                            sizeof(char), match_size,
-                            (FILE * /* __restrict  */) stdout);
-          }
-          {
-
-            fputs_unlocked((char const * /* __restrict  */) "\n",
-                           (FILE * /* __restrict  */) stdout);
-          }
+          fputs_unlocked((char const * /* __restrict  */) "\n",
+                         (FILE * /* __restrict  */) stdout);
         }
-      };
-    };
+      }
+    }
 
     return (cur);
   }
 }
 
 static void prline(char const *beg, char const *lim, int sep) {
-
+  int matching;
   char const *line_color;
   char const *match_color;
+  int tmp___0;
+  char *tmp___1;
+  int tmp___2;
+  char *__cil_tmp11;
 
   {
     { print_line_head(beg, lim, sep); }
@@ -5438,7 +4776,7 @@ static void prline(char const *beg, char const *lim, int sep) {
       goto _L___0;
 
     } else {
-
+    _L___1:
       if (color_option) {
 
       _L___0 : { beg = print_line_middle(beg, lim, line_color, match_color); }
@@ -5456,7 +4794,11 @@ static void prline(char const *beg, char const *lim, int sep) {
 static void prtext(char const *beg, char const *lim) {
   char eol;
   char const *p;
-
+  char const *bp;
+  char const *tmp;
+  intmax_t i;
+  char const *nl;
+  char const *tmp___0;
   intmax_t n;
   char const *nl___0;
   char const *tmp___1;
@@ -5467,10 +4809,9 @@ static void prtext(char const *beg, char const *lim) {
     p = beg;
 
     {
-      n = (intmax_t)0;
+
       {
         while (1) {
-          ;
 
           if ((unsigned long)p < (unsigned long)lim) {
 
@@ -5483,24 +4824,23 @@ static void prtext(char const *beg, char const *lim) {
             nl___0 = tmp___1;
             nl___0++;
           }
-          if (!out_quiet) {
-
-            prline(p, nl___0, ':');
-          }
+          { prline(p, nl___0, ':'); }
           p = nl___0;
-          n++;
-        };
+        }
       }
     while_break___2:;
     }
-
-    outleft -= n;
   }
 }
 static size_t do_execute(char const *buf, size_t size, size_t *match_size,
                          char const *start_ptr) {
-
+  size_t result;
+  char const *line_next;
   size_t tmp;
+  size_t tmp___0;
+  char const *line_buf;
+  char const *line_end;
+  char const *tmp___1;
 
   {
 
@@ -5526,7 +4866,6 @@ static intmax_t grepbuf(char const *beg, char const *lim) {
     p = beg;
     {
       while (1) {
-        ;
 
         if (!((unsigned long)p < (unsigned long)lim)) {
           goto while_break;
@@ -5536,20 +4875,13 @@ static intmax_t grepbuf(char const *beg, char const *lim) {
                            (char const *)((void *)0));
           match_offset = tmp;
         }
-        if (match_offset == 0xffffffffffffffffUL) {
 
-          match_offset = (size_t)(lim - p);
-        }
         b = p + match_offset;
         endp = b + match_size;
-        if (!out_invert) {
-          if ((unsigned long)b == (unsigned long)lim) {
-            goto while_break;
-          }
-        }
 
         {
 
+        _L___0:
           if (out_invert) {
             tmp___0 = p;
           } else {
@@ -5567,7 +4899,7 @@ static intmax_t grepbuf(char const *beg, char const *lim) {
           }
         }
         p = endp;
-      };
+      }
     }
   while_break:;
     return (outleft0 - outleft);
@@ -5575,17 +4907,26 @@ static intmax_t grepbuf(char const *beg, char const *lim) {
 }
 static intmax_t grep(int fd, struct stat const *st) {
   intmax_t nlines;
-
+  intmax_t i;
+  int not_text;
+  size_t residue;
   size_t save;
-
+  char oldc;
   char *beg;
   char *lim;
   char eol;
   int tmp;
-
+  int *tmp___0;
   int tmp___1;
-
+  int tmp___2;
+  int tmp___3;
   intmax_t tmp___4;
+  int *tmp___5;
+  int tmp___6;
+  char *tmp___7;
+  intmax_t tmp___8;
+  char *tmp___9;
+  char *__cil_tmp25;
 
   {
     {
@@ -5602,26 +4943,25 @@ static intmax_t grep(int fd, struct stat const *st) {
     }
 
     {
+
+      beg = bufbeg + save;
+
       {
-        ;
-        lastnl = (char const *)bufbeg;
 
-        beg = bufbeg + save;
+        lim = (char *)memrchr((void const *)(beg - 1), (int)eol,
+                              (size_t)((buflim - beg) + 1L));
+        lim++;
+      }
 
-        {
+      { tmp___4 = grepbuf((char const *)beg, (char const *)lim); }
 
-          lim = (char *)memrchr((void const *)(beg - 1), (int)eol,
-                                (size_t)((buflim - beg) + 1L));
-          lim++;
-        }
+      { tmp___6 = fillbuf(save, st); }
+      if (!tmp___6) {
 
-        {
-
-          tmp___4 = grepbuf((char const *)beg, (char const *)lim);
-          nlines += tmp___4;
-        }
-      };
-    };
+        tmp___5 = __errno_location();
+        suppressible_error(filename, *tmp___5);
+      }
+    }
 
     return (nlines);
   }
@@ -5629,10 +4969,22 @@ static intmax_t grep(int fd, struct stat const *st) {
 static int grepdirent(FTS *fts, FTSENT *ent, int command_line) {
   int follow;
   int dirdesc;
-
+  struct stat *st;
+  int tmp;
+  int tmp___0;
   int tmp___1;
-
+  char *tmp___2;
+  char *tmp___3;
+  struct stat st1;
+  int flag;
+  int tmp___4;
+  int *tmp___5;
+  int tmp___6;
+  int tmp___7;
   int tmp___8;
+  void *__cil_tmp22;
+  char *__cil_tmp23;
+  char *__cil_tmp24;
 
   {
 
@@ -5641,14 +4993,14 @@ static int grepdirent(FTS *fts, FTSENT *ent, int command_line) {
 
     follow = tmp___1;
 
-    if ((int)ent->fts_info == 11) {
+    if ((int)ent->fts_info == 3) {
       goto case_3;
     }
 
-    {
-      out_file |= 2 * !no_filenames;
-      return (1);
-    }
+  case_1 : {
+    out_file |= 2 * !no_filenames;
+    return (1);
+  }
 
   case_3 :
 
@@ -5668,7 +5020,8 @@ static int grepfile(int dirdesc, char const *name, int follow,
   int tmp;
   int tmp___0;
   int *tmp___1;
-
+  int *tmp___2;
+  int *tmp___3;
   int tmp___4;
 
   {
@@ -5679,66 +5032,86 @@ static int grepfile(int dirdesc, char const *name, int follow,
       desc = tmp___0;
     }
     if (desc < 0) {
+      {
 
-      tmp___1 = __errno_location();
-      suppressible_error(filename, *tmp___1);
+        tmp___1 = __errno_location();
+        suppressible_error(filename, *tmp___1);
+      }
+
+      return (1);
     }
     { tmp___4 = grepdesc(desc, command_line); }
-    return (tmp___4);
   }
 }
 static int grepdesc(int desc, int command_line) {
   intmax_t count;
   int status;
   struct stat st;
-
+  int *tmp;
   int tmp___0;
-
+  int tmp___1;
   FTS *fts;
   FTSENT *ent;
   int opts;
   int tmp___2;
   char *fts_arg[2];
-
+  int *tmp___3;
+  int tmp___4;
   int tmp___5;
-
+  int *tmp___6;
+  int *tmp___7;
+  int *tmp___8;
   int tmp___9;
+  int tmp___10;
+  char const *tmp___11;
+  char *tmp___12;
+  int tmp___13;
+  off_t required_offset;
+  off_t tmp___14;
+  int *tmp___15;
+  __off_t tmp___16;
+  int *tmp___17;
+  int tmp___18;
+  void *__cil_tmp34;
+  void *__cil_tmp35;
+  char *__cil_tmp36;
 
   {
     { tmp___0 = fstat(desc, &st); }
 
     {
+      if ((unsigned int)directories == 3U) {
+        if ((st.st_mode & 61440U) == 16384U) {
+          {
+            tmp___2 = 0;
+          }
 
-      if ((st.st_mode & 61440U) == 16384U) {
-        {
-          tmp___2 = 0;
-        }
+          { opts = fts_options & ~tmp___2; }
 
-        { opts = fts_options & ~tmp___2; }
+          {
+            fts_arg[0] = (char *)filename;
 
-        {
-          fts_arg[0] = (char *)filename;
+            fts = fts_open(
+                (char *const *)(fts_arg), opts,
+                (int (*)(FTSENT const **, FTSENT const **))((void *)0));
+          }
 
-          fts =
-              fts_open((char *const *)(fts_arg), opts,
-                       (int (*)(FTSENT const **, FTSENT const **))((void *)0));
-        }
+          {
+            while (1) {
 
-        {
-          while (1) {
-            ;
-            { ent = fts_read(fts); }
-            if (!ent) {
-              goto while_break;
+              {
+                ent = fts_read(fts);
+              }
+              if (!ent) {
+                goto while_break;
+              }
+              { tmp___5 = grepdirent(fts, ent, command_line); }
             }
-            { tmp___5 = grepdirent(fts, ent, command_line); }
-          };
+          }
+        while_break : {}
+
+          return (status);
         }
-      while_break : {}
-
-        { tmp___9 = fts_close(fts); }
-
-        return (status);
       }
     }
 
@@ -5746,37 +5119,94 @@ static int grepdesc(int desc, int command_line) {
 
     {
       if (count_matches) {
-        {{print_filename();
+        if (out_file) {
+          {
+            print_filename();
+          }
+          { print_sep((char)':'); }
+        }
+        { printf((char const * /* __restrict  */) "%ld\n", count); }
       }
-      { print_sep((char)':'); }
-    }
-    { printf((char const * /* __restrict  */) "%ld\n", count); }
-  }
-  status = !count;
-  if (list_files == 1 - 2 * status) {
+      status = !count;
+      if (list_files == 1 - 2 * status) {
 
-    print_filename();
-    fputc_unlocked(10 & filename_mask, stdout);
+        print_filename();
+        fputc_unlocked(10 & filename_mask, stdout);
+      }
+    }
   }
-}
-}
 }
 static int grep_command_line_arg(char const *arg) {
-
+  char *tmp;
+  int tmp___0;
   int tmp___1;
+  int tmp___2;
+  char *__cil_tmp7;
 
   {
+    { tmp___2 = strcmp(arg, "-"); }
+    if (tmp___2 == 0) {
 
-    {
-      filename = arg;
-      tmp___1 = grepfile(-100, arg, 1, 1);
+      {
+
+        tmp = gettext("(standard input)");
+        filename = (char const *)tmp;
+      }
+      { tmp___0 = grepdesc(0, 1); }
+
+    } else {
+      {
+        filename = arg;
+        tmp___1 = grepfile(-100, arg, 1, 1);
+      }
+      return (tmp___1);
     }
-    return (tmp___1);
   }
 }
 __attribute__((__noreturn__)) void usage(int status);
 void usage(int status) {
   char *tmp;
+  char *tmp___0;
+  char *tmp___1;
+  char *tmp___2;
+  char *tmp___3;
+  char *tmp___4;
+  char *tmp___5;
+  char *tmp___6;
+  char *tmp___7;
+  char *tmp___8;
+  char *tmp___9;
+  char *tmp___10;
+  char *tmp___11;
+  char *tmp___12;
+  char *tmp___13;
+  char *tmp___14;
+  char *tmp___15;
+  char *tmp___16;
+  char *tmp___17;
+  char *tmp___18;
+  char *tmp___19;
+  char *__cil_tmp44;
+  char *__cil_tmp45;
+  char *__cil_tmp46;
+  char *__cil_tmp47;
+  char *__cil_tmp48;
+  char *__cil_tmp49;
+  char *__cil_tmp50;
+  char *__cil_tmp51;
+  char *__cil_tmp52;
+  char *__cil_tmp53;
+  char *__cil_tmp54;
+  char *__cil_tmp55;
+  char *__cil_tmp56;
+  char *__cil_tmp57;
+  char *__cil_tmp58;
+  char *__cil_tmp59;
+  char *__cil_tmp60;
+  char *__cil_tmp61;
+  char *__cil_tmp62;
+  char *__cil_tmp63;
+  char *__cil_tmp64;
 
   {
     {
@@ -5784,6 +5214,10 @@ void usage(int status) {
       tmp = gettext("Usage: %s [OPTION]... PATTERN [FILE]...\n");
       fprintf((FILE * /* __restrict  */) stderr,
               (char const * /* __restrict  */)((char const *)tmp),
+              program_name);
+      tmp___0 = gettext("Try \'%s --help\' for more information.\n");
+      fprintf((FILE * /* __restrict  */) stderr,
+              (char const * /* __restrict  */)((char const *)tmp___0),
               program_name);
     }
 
@@ -5900,26 +5334,30 @@ static struct matcher const matchers[8] = {
      (size_t(*)(char const *, size_t, size_t *, char const *))((void *)0)}};
 static void setmatcher(char const *m) {
   struct matcher const *p;
-
+  char *tmp;
+  int tmp___0;
   int tmp___1;
+  char *tmp___2;
+  char *__cil_tmp9;
+  char *__cil_tmp10;
 
   {
 
     p = matchers;
     {
       while (1) {
-        ;
 
-        { tmp___1 = strcmp(m, (char const *)(p->name)); }
+        {
+          tmp___1 = strcmp(m, (char const *)(p->name));
+        }
         if (tmp___1 == 0) {
 
           compile = (void (*)(char const *, size_t))p->compile;
-          execute = (size_t(*)(char const *, size_t, size_t *,
-                               char const *))p->execute;
+
           return;
         }
         p++;
-      };
+      }
     }
   }
 }
@@ -5929,47 +5367,119 @@ static int get_nondigit_option(int argc, char *const *argv,
 
 static int get_nondigit_option(int argc, char *const *argv,
                                intmax_t *default_context) {
-
+  int this_digit_optind;
+  int was_digit;
+  char buf[((((sizeof(intmax_t) * 8UL - 1UL) * 146UL + 484UL) / 485UL + 1UL) +
+            1UL) +
+           4UL];
+  char *p;
   int opt;
+  char *tmp;
+  void *__cil_tmp12;
+  char *__cil_tmp13;
 
   {
 
     {
-      {
-        ;
-        {
-          opt = getopt_long(argc, (char *const *)((char **)argv), short_options,
-                            long_options, (int *)((void *)0));
-        }
-      };
-    };
+
+      opt = getopt_long(argc, (char *const *)((char **)argv), short_options,
+                        long_options, (int *)((void *)0));
+    }
 
     return (opt);
   }
 }
 
 int main(int argc, char **argv) {
+  AFL_INIT_SET0("prog_name");
   char *keys;
   size_t keycc;
-
+  size_t oldcc;
+  size_t keyalloc;
   int with_filenames;
-
+  size_t cc;
   int opt;
-
+  int status;
+  int prepended;
+  int prev_optind;
+  int last_recursive;
+  int fread_errno;
   intmax_t default_context;
-
+  FILE *fp;
+  char *tmp;
   char *tmp___0;
-
+  int tmp___1;
+  int tmp___2;
   ptrdiff_t tmp___3;
-
+  size_t tmp___4;
+  FILE *tmp___6;
+  int tmp___7;
+  int *tmp___8;
+  int *tmp___9;
+  int tmp___10;
+  size_t tmp___11;
+  strtol_error tmp___12;
   char *tmp___13;
-
+  char *tmp___14;
+  int tmp___15;
+  int tmp___16;
+  int tmp___17;
+  int tmp___18;
+  int tmp___19;
+  int tmp___20;
+  int tmp___21;
+  int tmp___22;
+  int tmp___23;
+  int tmp___24;
+  int tmp___25;
+  int tmp___26;
+  int tmp___27;
+  int *tmp___28;
+  int tmp___29;
+  int tmp___30;
+  int tmp___31;
+  int tmp___32;
+  char *userval;
+  char *tmp___33;
+  char *tmp___34;
+  char const *tmp___35;
+  struct stat tmp_stat;
+  int tmp___36;
   int tmp___37;
-
+  size_t new_keycc;
+  char *new_keys;
+  size_t tmp___38;
+  _Bool tmp___39;
+  size_t tmp___40;
+  int tmp___41;
   int tmp___42;
+  int tmp___43;
+  void *__cil_tmp89;
+  char *__cil_tmp90;
+  char *__cil_tmp91;
+  char *__cil_tmp92;
+  char *__cil_tmp93;
+  char *__cil_tmp94;
+  char *__cil_tmp95;
+  char *__cil_tmp96;
+  char *__cil_tmp97;
+  char *__cil_tmp98;
+  char *__cil_tmp99;
+  char *__cil_tmp100;
+  char *__cil_tmp101;
+  char *__cil_tmp102;
+  char *__cil_tmp103;
+  char *__cil_tmp104;
+  char *__cil_tmp105;
+  char *__cil_tmp106;
+  char *__cil_tmp107;
+  char *__cil_tmp108;
 
   {
     {
+
+      set_program_name((char const *)*(argv + 0));
+      program_name = (char const *)*(argv + 0);
 
       eolbyte = (unsigned char)'\n';
       filename_mask = ~0;
@@ -5983,7 +5493,7 @@ int main(int argc, char **argv) {
     }
     {
       while (1) {
-        ;
+
         {
 
           opt =
@@ -5993,18 +5503,8 @@ int main(int argc, char **argv) {
           goto while_break;
         }
 
-        if (opt == 68) {
-          goto case_68;
-        }
         if (opt == 69) {
           goto case_69;
-        }
-        if (opt == 70) {
-          goto case_70;
-        }
-
-        if (opt == 72) {
-          goto case_72;
         }
 
         if (opt == 99) {
@@ -6014,30 +5514,12 @@ int main(int argc, char **argv) {
           goto case_100;
         }
 
-        if (opt == 104) {
-          goto case_104;
-        }
-        if (opt == 105) {
-          goto case_105;
-        }
-
         if (opt == 76) {
           goto case_76;
         }
-        if (opt == 108) {
-          goto case_108;
-        }
-        if (opt == 109) {
-          goto case_109;
-        }
-        if (opt == 110) {
-          goto case_110;
-        }
+
         if (opt == 111) {
           goto case_111;
-        }
-        if (opt == 113) {
-          goto case_113;
         }
 
         if (opt == 114) {
@@ -6049,31 +5531,13 @@ int main(int argc, char **argv) {
         if (opt == 118) {
           goto case_118;
         }
-        if (opt == 119) {
-          goto case_119;
-        }
-        if (opt == 120) {
-          goto case_120;
-        }
 
-        { context_length_arg((char const *)optarg, &out_after); }
-
-      case_68 : {}
-
-        {
-
-          tmp___0 = gettext("unknown devices method");
-          error(2, 0, (char const *)tmp___0);
-        }
+        goto switch_break;
 
       case_69 : { setmatcher("egrep"); }
-        goto switch_break;
-      case_70 : { setmatcher("fgrep"); }
-
-      case_72:
-        with_filenames = 1;
 
         goto switch_break;
+
       case_99:
         count_matches = 1;
         goto switch_break;
@@ -6084,89 +5548,56 @@ int main(int argc, char **argv) {
             argmatch_die);
       }
 
-      case_104:
-        with_filenames = 0;
-        no_filenames = 1;
-
-      case_105:
-        match_icase = 1;
-        goto switch_break;
       case_76:
         list_files = -1;
-        goto switch_break;
-      case_108:
-        list_files = 1;
-        goto switch_break;
-      case_109 : {}
 
-        {
-          tmp___13 = gettext("invalid max count");
-          error(2, 0, (char const *)tmp___13);
-        }
-
-      case_110:
-        out_line = 1;
-        goto switch_break;
       case_111:
         only_matching = 1;
-        goto switch_break;
-      case_113:
-        exit_on_match = 1;
 
       case_114:
         directories = (enum directories_type)3;
 
+        goto switch_break;
       case_115:
         suppress_errors = 1;
         goto switch_break;
       case_118:
         out_invert = (_Bool)1;
 
-      case_119:
-        match_words = 1;
-        goto switch_break;
-      case_120:
-        match_lines = 1;
-
       switch_break:;
-      };
+      }
     }
   while_break:;
 
-    if (exit_on_match | list_files) {
-
-      done_on_match = 1;
-    }
-    out_quiet = count_matches | done_on_match;
-
     {
-      if (optind < argc) {
 
-        keycc = strlen((char const *)*(argv + optind));
-        tmp___37 = optind;
-        optind++;
-        keys = (char *)xmemdup((void const *)*(argv + tmp___37), keycc + 1UL);
-
-      } else {
-
-        usage(2);
-      }
+      keycc = strlen((char const *)*(argv + optind));
+      tmp___37 = optind;
+      optind++;
+      keys = (char *)xmemdup((void const *)*(argv + tmp___37), keycc + 1UL);
     }
 
-    {
-      (*compile)((char const *)keys, keycc);
-      free((void *)keys);
-    }
+    { (*compile)((char const *)keys, keycc); }
 
     if (optind < argc) {
 
       {
-        {
-          ;
-          { tmp___42 = grep_command_line_arg((char const *)*(argv + optind)); }
-        };
-      };
+        while (1) {
+
+          {
+            tmp___42 = grep_command_line_arg((char const *)*(argv + optind));
+
+            optind++;
+          }
+          if (!(optind < argc)) {
+            goto while_break___2;
+          }
+        }
+      }
+    while_break___2:;
     } else {
+
+      status = grep_command_line_arg("-");
     }
   }
 }

@@ -1,3 +1,4 @@
+#include "argv-fuzz-inl.h"
 enum strtol_error {
   LONGINT_OK = 0,
   LONGINT_OVERFLOW = 1,
@@ -184,10 +185,10 @@ typedef unsigned int __uid_t;
 typedef unsigned int __gid_t;
 typedef unsigned long __ino_t;
 typedef unsigned long __nlink_t;
-struct __anonstruct___fsid_t_1 {
+struct __anonstruct___fsid_t___1 {
   int __val[2];
 };
-typedef struct __anonstruct___fsid_t_1 __fsid_t;
+typedef struct __anonstruct___fsid_t___1 __fsid_t__;
 typedef long __time_t;
 typedef long __blksize_t;
 typedef long __blkcnt_t;
@@ -299,7 +300,7 @@ struct statfs {
   __fsblkcnt_t f_bavail;
   __fsfilcnt_t f_files;
   __fsfilcnt_t f_ffree;
-  __fsid_t f_fsid;
+  __fsid_t__ f_fsid;
   __fsword_t f_namelen;
   __fsword_t f_frsize;
   __fsword_t f_flags;
@@ -13287,32 +13288,32 @@ void dfainit(struct dfa *d);
 void dfaparse(char const *s, size_t len, struct dfa *d);
 void dfaanalyze(struct dfa *d, int searchflag);
 void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0);
-extern __attribute__((__nothrow__)) int isalnum(int);
-extern __attribute__((__nothrow__)) int isalpha(int);
-extern __attribute__((__nothrow__)) int iscntrl(int);
-extern __attribute__((__nothrow__)) int isdigit(int);
-extern __attribute__((__nothrow__)) int islower(int);
-extern __attribute__((__nothrow__)) int isgraph(int);
-extern __attribute__((__nothrow__)) int isprint(int);
-extern __attribute__((__nothrow__)) int ispunct(int);
-extern __attribute__((__nothrow__)) int isspace(int);
-extern __attribute__((__nothrow__)) int isupper(int);
-extern __attribute__((__nothrow__)) int isxdigit(int);
-extern __attribute__((__nothrow__)) int toupper(int __c);
-extern __attribute__((__nothrow__)) int isblank(int);
-extern __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2))) strncpy)(char *__restrict __dest,
-                                                                                       char const *__restrict __src,
-                                                                                       size_t __n);
-extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2))) strcoll)(char const *__s1,
-                                                                                    char const *__s2) __attribute__((__pure__));
-extern __attribute__((__nothrow__)) char *setlocale(int __category, char const *__locale);
-extern __attribute__((__nothrow__)) int wctob(wint_t __c);
-extern __attribute__((__nothrow__)) size_t wcrtomb(char *__restrict __s, wchar_t __wc,
-                                                   mbstate_t *__restrict __ps);
-extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
-extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
-extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t __desc);
-extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
+// extern __attribute__((__nothrow__)) int isalnum(int);
+// extern __attribute__((__nothrow__)) int isalpha(int);
+// extern __attribute__((__nothrow__)) int iscntrl(int);
+// extern __attribute__((__nothrow__)) int isdigit(int);
+// extern __attribute__((__nothrow__)) int islower(int);
+// extern __attribute__((__nothrow__)) int isgraph(int);
+// extern __attribute__((__nothrow__)) int isprint(int);
+// extern __attribute__((__nothrow__)) int ispunct(int);
+// extern __attribute__((__nothrow__)) int isspace(int);
+// extern __attribute__((__nothrow__)) int isupper(int);
+// extern __attribute__((__nothrow__)) int isxdigit(int);
+// extern __attribute__((__nothrow__)) int toupper(int __c);
+// extern __attribute__((__nothrow__)) int isblank(int);
+// extern __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2))) strncpy)(char *__restrict __dest,
+//                                                                                        char const *__restrict __src,
+//                                                                                        size_t __n);
+// extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2))) strcoll)(char const *__s1,
+//                                                                                     char const *__s2) __attribute__((__pure__));
+// extern __attribute__((__nothrow__)) char *setlocale(int __category, char const *__locale);
+// extern __attribute__((__nothrow__)) int wctob(wint_t __c);
+// extern __attribute__((__nothrow__)) size_t wcrtomb(char *__restrict __s, wchar_t __wc,
+//                                                    mbstate_t *__restrict __ps);
+// extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
+// extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
+// extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t __desc);
+// extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
 static unsigned char to_uchar___0(char ch) {
 
   {
@@ -23012,6 +23013,7 @@ static void fgrep_to_grep_pattern(size_t len, char const *keys, size_t *new_len,
   }
 }
 int main(int argc, char **argv) {
+  AFL_INIT_SET0("prog_name");
   char *keys;
   size_t keycc;
   size_t oldcc;

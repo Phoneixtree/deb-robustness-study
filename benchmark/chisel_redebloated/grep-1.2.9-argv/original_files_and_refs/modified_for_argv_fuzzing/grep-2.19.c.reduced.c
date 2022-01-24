@@ -186,10 +186,10 @@ typedef unsigned int __uid_t;
 typedef unsigned int __gid_t;
 typedef unsigned long __ino_t;
 typedef unsigned long __nlink_t;
-struct __anonstruct___fsid_t____1 {
+struct __anonstruct___fsid_t___1 {
   int __val[2];
 };
-typedef struct __anonstruct___fsid_t____1 __fsid_t___;
+typedef struct __anonstruct___fsid_t___1 __fsid_t__;
 typedef long __time_t;
 typedef long __blksize_t;
 typedef long __blkcnt_t;
@@ -301,7 +301,7 @@ struct statfs {
   __fsblkcnt_t f_bavail;
   __fsfilcnt_t f_files;
   __fsfilcnt_t f_ffree;
-  __fsid_t___ f_fsid;
+  __fsid_t__ f_fsid;
   __fsword_t f_namelen;
   __fsword_t f_frsize;
   __fsword_t f_flags;
@@ -1067,8 +1067,8 @@ size_t(__attribute__((__nonnull__(1))) mbslen)(char const *string)
 
 int(__attribute__((__nonnull__(1, 2)))
     mbscasecmp)(char const *s1, char const *s2) __attribute__((__pure__));
-// extern __attribute__((__nothrow__)) int tolower(int __c);
-// extern __attribute__((__nothrow__)) wint_t towlower(wint_t __wc);
+//extern __attribute__((__nothrow__)) int tolower(int __c);
+//extern __attribute__((__nothrow__)) wint_t towlower(wint_t __wc);
 int(__attribute__((__nonnull__(1, 2)))
     mbscasecmp)(char const *s1, char const *s2) __attribute__((__pure__));
 
@@ -2257,8 +2257,12 @@ static _Bool bm_delta2_search(char const **tpp, char const *ep, char const *sp,
 
         {
 
-          *tpp = tp - len;
-          return ((_Bool)1);
+          ;
+          {
+
+            *tpp = tp - len;
+            return ((_Bool)1);
+          }
         }
       };
     }
@@ -2606,24 +2610,24 @@ void dfastate(ptrdiff_t s, struct dfa *d, ptrdiff_t *trans___0);
 // extern __attribute__((__nothrow__)) int isxdigit(int);
 // extern __attribute__((__nothrow__)) int toupper(int __c);
 // extern __attribute__((__nothrow__)) int isblank(int);
-extern
-    __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2)))
-                                        strncpy)(char *__restrict __dest,
-                                                 char const *__restrict __src,
-                                                 size_t __n);
-extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
-                                        strcoll)(char const *__s1,
-                                                 char const *__s2)
-    __attribute__((__pure__));
-extern __attribute__((__nothrow__)) char *setlocale(int __category,
-                                                    char const *__locale);
-extern __attribute__((__nothrow__)) int wctob(wint_t __c);
-extern __attribute__((__nothrow__)) size_t
-wcrtomb(char *__restrict __s, wchar_t __wc, mbstate_t *__restrict __ps);
-extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
-extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
-extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t __desc);
-extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
+// extern
+//     __attribute__((__nothrow__)) char *(__attribute__((__nonnull__(1, 2)))
+//                                         strncpy)(char *__restrict __dest,
+//                                                  char const *__restrict __src,
+//                                                  size_t __n);
+// extern __attribute__((__nothrow__)) int(__attribute__((__nonnull__(1, 2)))
+//                                         strcoll)(char const *__s1,
+//                                                  char const *__s2)
+//     __attribute__((__pure__));
+// extern __attribute__((__nothrow__)) char *setlocale(int __category,
+//                                                     char const *__locale);
+// extern __attribute__((__nothrow__)) int wctob(wint_t __c);
+// extern __attribute__((__nothrow__)) size_t
+// wcrtomb(char *__restrict __s, wchar_t __wc, mbstate_t *__restrict __ps);
+// extern __attribute__((__nothrow__)) int iswalpha(wint_t __wc);
+// extern __attribute__((__nothrow__)) wctype_t wctype(char const *__property);
+// extern __attribute__((__nothrow__)) int iswctype(wint_t __wc, wctype_t __desc);
+// extern __attribute__((__nothrow__)) wint_t towupper(wint_t __wc);
 static unsigned char to_uchar___0(char ch) { return ((unsigned char)ch); }
 static void dfamust(struct dfa *d);
 static void regexp(void);
@@ -3618,19 +3622,17 @@ static token lex(void) {
         return (lasttok);
       }
         goto normal_char;
-      case_98:
-        if (backslash) {
+      case_98 : {
 
-          lasttok = (token)262;
-          return (lasttok);
-        }
+        lasttok = (token)262;
+        return (lasttok);
+      }
         goto normal_char;
-      case_66:
-        if (backslash) {
+      case_66 : {
 
-          lasttok = (token)263;
-          return (lasttok);
-        }
+        lasttok = (token)263;
+        return (lasttok);
+      }
         goto normal_char;
       case_63:
         if (syntax_bits &
@@ -3703,11 +3705,7 @@ static token lex(void) {
           {
             ;
 
-            {
-              if (!((unsigned int)*p - 48U <= 9U)) {
-                goto while_break___1;
-              }
-            }
+            { goto while_break___1; }
 
             { minrep = (int)((int const) * p - 48); }
 
@@ -3716,14 +3714,13 @@ static token lex(void) {
         }
       while_break___1:;
         { maxrep = minrep; }
-        if (!backslash) {
-          goto _L___3;
-        } else {
+
+        {
           if ((unsigned long)p != (unsigned long)lim) {
             tmp___9 = p;
             p++;
             {
-            _L___3 : {
+
               tmp___10 = p;
               p++;
               {
@@ -3732,7 +3729,6 @@ static token lex(void) {
                   goto _L___4;
                 }
               }
-            }
             }
 
           } else {
@@ -4103,44 +4099,16 @@ static void atom(void) {
 
           } else {
 
-            if (tok == 262L) {
-
-              addtok(tok);
+            {
               tok = lex();
-
-            } else {
-
-              if (tok == 270L) {
-                {
-                  tok = lex();
-                  regexp();
-                }
-
-                { tok = lex(); }
-              } else {
-
-                addtok((token)256);
-              }
+              regexp();
             }
+
+            { tok = lex(); }
           }
         }
       }
     }
-  }
-}
-static size_t __attribute__((__pure__)) nsubtoks(size_t tindex) {
-  size_t ntoks1;
-
-  size_t __attribute__((__pure__)) tmp___0;
-
-  {
-
-    {
-      ntoks1 = (size_t)nsubtoks(tindex - 1UL);
-      tmp___0 = nsubtoks((tindex - 1UL) - ntoks1);
-    }
-    return (
-        (size_t __attribute__((__pure__)))((1UL + ntoks1) + (size_t)tmp___0));
   }
 }
 
@@ -4154,17 +4122,13 @@ static void closure(void) {
       if (!(tok == 264L)) {
         if (!(tok == 265L)) {
           if (!(tok == 266L)) {
-            if (!(tok == 267L)) {
-              goto while_break;
-            }
+
+            goto while_break;
           }
         }
       }
-      if (tok == 267L) {
 
-        tok = lex();
-
-      } else {
+      {
 
         addtok(tok);
         tok = lex();
@@ -4203,14 +4167,14 @@ static void regexp(void) {
 
   { branch(); }
   {
-    while (1) {
+    {
       ;
 
       if (!(tok == 269L)) {
         goto while_break;
       }
       {
-        tok = lex();
+
         branch();
         addtok((token)269);
       }
@@ -4293,8 +4257,7 @@ static void merge(position_set const *s1, position_set const *s2,
 
         *(m->elems + tmp___6) = *(s1->elems + tmp___7);
       };
-    }
-
+    };
     {
       {
         ;
@@ -4345,8 +4308,7 @@ static state_num state_index(struct dfa *d, position_set const *s,
 
             j++;
           };
-        }
-
+        };
         if ((size_t const)j == s->nelem) {
           return (i);
         }
@@ -4466,7 +4428,6 @@ void dfaanalyze(struct dfa *d, int searchflag) {
   char *visited;
   char *tmp___2;
 
-  size_t tmp___4;
   size_t tmp___5;
   size_t tmp___6;
   unsigned int tmp___7;
@@ -4550,19 +4511,16 @@ void dfaanalyze(struct dfa *d, int searchflag) {
           pos = lastpos + (stk + -2)->nlastpos;
           j = (stk + -1)->nlastpos;
           {
-            while (1) {
+            {
               ;
-              tmp___4 = j;
+
               j--;
-              if (!(tmp___4 > 0UL)) {
-                goto while_break___2;
-              }
+
               *(pos + j) = *(lastpos + j);
             };
           }
-        while_break___2:
+
           lastpos += (stk + -2)->nlastpos;
-          (stk + -2)->nlastpos = (stk + -1)->nlastpos;
         }
 
         stk--;
@@ -5950,7 +5908,7 @@ static int get_nondigit_option(int argc, char *const *argv,
 }
 
 int main(int argc, char **argv) {
-  AFL_INIT_SET0("grep");
+  AFL_INIT_SET0(grep);
   char *keys;
   size_t keycc;
 

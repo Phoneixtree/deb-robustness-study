@@ -189,7 +189,7 @@ static void fillbuf(int n) {
     bitbuf = (ush)((int)bitbuf << n);
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n > bitcount)) {
           goto while_break;
         }
@@ -258,16 +258,16 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
   unsigned int tmp;
   ush tmp___0;
   unsigned int tmp___1;
-                    
-                    
-                    
-                    
+  void *__cil_tmp20;
+  void *__cil_tmp21;
+  void *__cil_tmp22;
+  char *__cil_tmp23;
 
   {
     i___0 = 1U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(i___0 <= 16U)) {
           goto while_break;
         }
@@ -279,7 +279,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
     i___0 = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(i___0 < (unsigned int)nchar)) {
           goto while_break___0;
         }
@@ -292,7 +292,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
     i___0 = 1U;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(i___0 <= 16U)) {
           goto while_break___1;
         }
@@ -311,7 +311,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
     i___0 = 1U;
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         if (!(i___0 <= (unsigned int)tablebits)) {
           goto while_break___2;
         }
@@ -323,7 +323,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___3: /* CIL Label */;
         if (!(i___0 <= 16U)) {
           goto while_break___3;
         }
@@ -337,7 +337,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
       k = (unsigned int)(1 << tablebits);
       {
         while (1) {
-                                           ;
+        while_continue___4: /* CIL Label */;
           if (!(i___0 != k)) {
             goto while_break___4;
           }
@@ -353,7 +353,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
     ch = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___5: /* CIL Label */;
         if (!(ch < (unsigned int)nchar)) {
           goto while_break___5;
         }
@@ -366,7 +366,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
           i___0 = (unsigned int)start[len];
           {
             while (1) {
-                                               ;
+            while_continue___6: /* CIL Label */;
               if (!(i___0 < nextcode)) {
                 goto while_break___6;
               }
@@ -381,7 +381,7 @@ static void make_table(int nchar, uch *bitlen, int tablebits, ush *table) {
           i___0 = len - (unsigned int)tablebits;
           {
             while (1) {
-                                               ;
+            while_continue___7: /* CIL Label */;
               if (!(i___0 != 0U)) {
                 goto while_break___7;
               }
@@ -433,7 +433,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
       }
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           if (!(i___0 < nn)) {
             goto while_break;
           }
@@ -445,7 +445,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
       i___0 = 0;
       {
         while (1) {
-                                           ;
+        while_continue___0: /* CIL Label */;
           if (!(i___0 < 256)) {
             goto while_break___0;
           }
@@ -458,7 +458,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
       i___0 = 0;
       {
         while (1) {
-                                           ;
+        while_continue___1: /* CIL Label */;
           if (!(i___0 < n)) {
             goto while_break___1;
           }
@@ -467,7 +467,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
             mask = 1U << ((16UL * sizeof(char) - 1UL) - 3UL);
             {
               while (1) {
-                                                 ;
+              while_continue___2: /* CIL Label */;
                 if (!(mask & (unsigned int)bitbuf)) {
                   goto while_break___2;
                 }
@@ -494,7 +494,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
             }
             {
               while (1) {
-                                                 ;
+              while_continue___3: /* CIL Label */;
                 c--;
                 if (!(c >= 0)) {
                   goto while_break___3;
@@ -511,7 +511,7 @@ static void read_pt_len(int nn, int nbit, int i_special) {
       }
       {
         while (1) {
-                                           ;
+        while_continue___4: /* CIL Label */;
           if (!(i___0 < nn)) {
             goto while_break___4;
           }
@@ -546,7 +546,7 @@ static void read_c_len(void) {
       }
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           if (!(i___0 < 510)) {
             goto while_break;
           }
@@ -558,7 +558,7 @@ static void read_c_len(void) {
       i___0 = 0;
       {
         while (1) {
-                                           ;
+        while_continue___0: /* CIL Label */;
           if (!(i___0 < 4096)) {
             goto while_break___0;
           }
@@ -571,7 +571,7 @@ static void read_c_len(void) {
       i___0 = 0;
       {
         while (1) {
-                                           ;
+        while_continue___1: /* CIL Label */;
           if (!(i___0 < n)) {
             goto while_break___1;
           }
@@ -580,7 +580,7 @@ static void read_c_len(void) {
             mask = 1U << ((16UL * sizeof(char) - 1UL) - 8UL);
             {
               while (1) {
-                                                 ;
+              while_continue___2: /* CIL Label */;
                 if ((unsigned int)bitbuf & mask) {
                   c = (int)*((prev + 32768) + c);
                 } else {
@@ -613,7 +613,7 @@ static void read_c_len(void) {
             }
             {
               while (1) {
-                                                 ;
+              while_continue___3: /* CIL Label */;
                 c--;
                 if (!(c >= 0)) {
                   goto while_break___3;
@@ -634,7 +634,7 @@ static void read_c_len(void) {
       }
       {
         while (1) {
-                                           ;
+        while_continue___4: /* CIL Label */;
           if (!(i___0 < 510)) {
             goto while_break___4;
           }
@@ -673,7 +673,7 @@ static unsigned int decode_c(void) {
       mask = 1U << ((16UL * sizeof(char) - 1UL) - 12UL);
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           if ((unsigned int)bitbuf & mask) {
             j___0 = (unsigned int)*((prev + 32768) + j___0);
           } else {
@@ -702,7 +702,7 @@ static unsigned int decode_p(void) {
       mask = 1U << ((16UL * sizeof(char) - 1UL) - 8UL);
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           if ((unsigned int)bitbuf & mask) {
             j___0 = (unsigned int)*((prev + 32768) + j___0);
           } else {
@@ -759,7 +759,7 @@ static unsigned int decode(unsigned int count, uch *buffer) {
     r = 0U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         j--;
         if (!(j >= 0)) {
           goto while_break;
@@ -775,7 +775,7 @@ static unsigned int decode(unsigned int count, uch *buffer) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         { c = decode_c(); }
         if (c == 510U) {
           done = 1;
@@ -795,7 +795,7 @@ static unsigned int decode(unsigned int count, uch *buffer) {
           }
           {
             while (1) {
-                                               ;
+            while_continue___1: /* CIL Label */;
               j--;
               if (!(j >= 0)) {
                 goto while_break___1;
@@ -811,7 +811,7 @@ static unsigned int decode(unsigned int count, uch *buffer) {
           }
         }
       }
-                                    ;
+    while_break___0: /* CIL Label */;
     }
   }
 }
@@ -826,7 +826,7 @@ int unlzh(int in, int out) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(!done)) {
           goto while_break;
         }
@@ -876,15 +876,15 @@ static void read_tree(void) {
   unsigned int tmp___9;
   int tmp___10;
   int tmp___11;
-                    
-                    
+  char *__cil_tmp17;
+  char *__cil_tmp18;
 
   {
     orig_len = (ulg)0;
     n = 1;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n <= 4)) {
           goto while_break;
         }
@@ -923,7 +923,7 @@ static void read_tree(void) {
     len = 1;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(len <= max_len)) {
           goto while_break___0;
         }
@@ -953,7 +953,7 @@ static void read_tree(void) {
     len = 1;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(len <= max_len)) {
           goto while_break___1;
         }
@@ -961,7 +961,7 @@ static void read_tree(void) {
         n = leaves[len];
         {
           while (1) {
-                                             ;
+          while_continue___2: /* CIL Label */;
             if (!(n > 0)) {
               goto while_break___2;
             }
@@ -1002,7 +1002,7 @@ static void build_tree(void) {
     len = max_len;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(len >= 1)) {
           goto while_break;
         }
@@ -1023,14 +1023,14 @@ static void build_tree(void) {
     len = 1;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(len <= peek_bits)) {
           goto while_break___0;
         }
         prefixes = leaves[len] << (peek_bits - len);
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             tmp = prefixes;
             prefixes--;
             if (!tmp) {
@@ -1047,7 +1047,7 @@ static void build_tree(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         if (!((unsigned long)prefixp > (unsigned long)(outbuf))) {
           goto while_break___2;
         }
@@ -1072,7 +1072,7 @@ int unpack(int in, int out) {
   int tmp___3;
   int tmp___4;
   unsigned int tmp___5;
-                    
+  char *__cil_tmp15;
 
   {
     {
@@ -1087,10 +1087,10 @@ int unpack(int in, int out) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             if (!(valid < peek_bits)) {
               goto while_break___0;
             }
@@ -1119,12 +1119,12 @@ int unpack(int in, int out) {
           len = peek_bits;
           {
             while (1) {
-                                               ;
+            while_continue___1: /* CIL Label */;
               len++;
               mask = (mask << 1) + 1UL;
               {
                 while (1) {
-                                                   ;
+                while_continue___2: /* CIL Label */;
                   if (!(valid < len)) {
                     goto while_break___2;
                   }
@@ -1223,9 +1223,9 @@ int unlzw(int in, int out) {
   int tmp___1;
   char const *tmp___2;
   register int i___1;
-                    
-                    
-                    
+  char *__cil_tmp27;
+  char *__cil_tmp28;
+  char *__cil_tmp29;
 
   {
     if (inptr < insize) {
@@ -1284,7 +1284,7 @@ int unlzw(int in, int out) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(code >= 0L)) {
           goto while_break;
         }
@@ -1295,14 +1295,14 @@ int unlzw(int in, int out) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
       resetbuf:
         o = (int)(posbits >> 3);
         e = (int)(insize - (unsigned int)o);
         i___0 = 0;
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             if (!(i___0 < e)) {
               goto while_break___1;
             }
@@ -1412,7 +1412,7 @@ int unlzw(int in, int out) {
             }
             {
               while (1) {
-                                                 ;
+              while_continue___3: /* CIL Label */;
                 if (!((cmp_code_int)code >= 256UL)) {
                   goto while_break___3;
                 }
@@ -1429,7 +1429,7 @@ int unlzw(int in, int out) {
             if (outpos + i___1 >= 16384) {
               {
                 while (1) {
-                                                   ;
+                while_continue___4: /* CIL Label */;
                   if (i___1 > 16384 - outpos) {
                     i___1 = 16384 - outpos;
                   }
@@ -1573,7 +1573,7 @@ int copy(int in, int out) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (insize != 0U) {
           if (!((int)insize != -1)) {
             goto while_break;
@@ -1617,7 +1617,7 @@ ulg updcrc(uch *s, unsigned int n) {
       if (n) {
         {
           while (1) {
-                                         ;
+          while_continue: /* CIL Label */;
             tmp = s;
             s++;
             c = crc_32_tab[((int)c ^ (int)*tmp) & 255] ^ (c >> 8);
@@ -1657,7 +1657,7 @@ int fill_inbuf(int eof_ok) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           len = (int)read(ifd, (void *)((char *)(inbuf) + insize),
                           (size_t)(32768U - insize));
@@ -1724,7 +1724,7 @@ void write_buf(int fd, voidp buf, unsigned int cnt) {
   {
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         { n = (unsigned int)write(fd, (void const *)buf, (size_t)cnt); }
         if (!(n != cnt)) {
           goto while_break;
@@ -1750,7 +1750,7 @@ char *strlwr(char *s) {
     t = s;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!*t) {
           goto while_break;
         }
@@ -1798,8 +1798,8 @@ char *add_envopt(int *argcp, char ***argvp, char *env___0) {
   char **tmp___12;
   char **tmp___13;
   int tmp___14;
-                    
-                    
+  char *__cil_tmp25;
+  char *__cil_tmp26;
 
   {
     {
@@ -1820,7 +1820,7 @@ char *add_envopt(int *argcp, char ***argvp, char *env___0) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!*p) {
           goto while_break;
         }
@@ -1876,7 +1876,7 @@ char *add_envopt(int *argcp, char ***argvp, char *env___0) {
     p = env___0;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(nargc > 0)) {
           goto while_break___0;
         }
@@ -1889,7 +1889,7 @@ char *add_envopt(int *argcp, char ***argvp, char *env___0) {
         }
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             tmp___11 = p;
             p++;
             if (!*tmp___11) {
@@ -1904,7 +1904,7 @@ char *add_envopt(int *argcp, char ***argvp, char *env___0) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         tmp___14 = oargc;
         oargc--;
         if (!tmp___14) {
@@ -2002,7 +2002,7 @@ void display_ratio(long num, long den, FILE *file) {
 voidp xmalloc(unsigned int size) {
   voidp cp;
   voidp tmp;
-                   
+  char *__cil_tmp4;
 
   {
     {
@@ -2153,11 +2153,11 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
   unsigned int *tmp___5;
   unsigned int tmp___6;
   int tmp___7;
-                    
-                    
-                    
-                    
-                  
+  void *__cil_tmp36;
+  void *__cil_tmp37;
+  void *__cil_tmp38;
+  void *__cil_tmp39;
+  int __cil_tmp40;
 
   {
     {
@@ -2167,7 +2167,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         (c[*p])++;
         p++;
         i___0--;
@@ -2186,7 +2186,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     j___0 = 1U;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(j___0 <= 16U)) {
           goto while_break___0;
         }
@@ -2204,7 +2204,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     i___0 = 16U;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!i___0) {
           goto while_break___1;
         }
@@ -2223,7 +2223,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     y = 1 << j___0;
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         if (!(j___0 < i___0)) {
           goto while_break___2;
         }
@@ -2247,7 +2247,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     xp = x + 2;
     {
       while (1) {
-                                         ;
+      while_continue___3: /* CIL Label */;
         i___0--;
         if (!i___0) {
           goto while_break___3;
@@ -2265,7 +2265,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     i___0 = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___4: /* CIL Label */;
         tmp___2 = p;
         p++;
         j___0 = *tmp___2;
@@ -2291,14 +2291,14 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
     z = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___5: /* CIL Label */;
         if (!(k <= g)) {
           goto while_break___5;
         }
         a = c[k];
         {
           while (1) {
-                                             ;
+          while_continue___6: /* CIL Label */;
             tmp___6 = a;
             a--;
             if (!tmp___6) {
@@ -2306,7 +2306,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
             }
             {
               while (1) {
-                                                 ;
+              while_continue___7: /* CIL Label */;
                 if (!(k > w + l)) {
                   goto while_break___7;
                 }
@@ -2325,7 +2325,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
                   xp = c + k;
                   {
                     while (1) {
-                                                       ;
+                    while_continue___8: /* CIL Label */;
                       j___0++;
                       if (!(j___0 < z)) {
                         goto while_break___8;
@@ -2395,7 +2395,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
             j___0 = i___0 >> w;
             {
               while (1) {
-                                                 ;
+              while_continue___9: /* CIL Label */;
                 if (!(j___0 < z)) {
                   goto while_break___9;
                 }
@@ -2407,7 +2407,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
             j___0 = (unsigned int)(1 << (k - 1));
             {
               while (1) {
-                                                  ;
+              while_continue___10: /* CIL Label */;
                 if (!(i___0 & j___0)) {
                   goto while_break___10;
                 }
@@ -2419,7 +2419,7 @@ int huft_build(unsigned int *b, unsigned int n, unsigned int s, ush *d, ush *e,
             i___0 ^= j___0;
             {
               while (1) {
-                                                  ;
+              while_continue___11: /* CIL Label */;
                 if (!((i___0 & (unsigned int)((1 << w) - 1)) != x[h])) {
                   goto while_break___11;
                 }
@@ -2455,7 +2455,7 @@ int huft_free(struct huft *t) {
     p = t;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!((unsigned long)p !=
               (unsigned long)((struct huft *)((void *)0)))) {
           goto while_break;
@@ -2513,10 +2513,10 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
     md = (unsigned int)mask_bits[bd];
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             if (!(k < (unsigned int)bl)) {
               goto while_break___0;
             }
@@ -2540,7 +2540,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
         if (e > 16U) {
           {
             while (1) {
-                                               ;
+            while_continue___1: /* CIL Label */;
               if (e == 99U) {
                 return (1);
               }
@@ -2549,7 +2549,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
               e -= 16U;
               {
                 while (1) {
-                                                   ;
+                while_continue___2: /* CIL Label */;
                   if (!(k < e)) {
                     goto while_break___2;
                   }
@@ -2596,7 +2596,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
           }
           {
             while (1) {
-                                               ;
+            while_continue___3: /* CIL Label */;
               if (!(k < e)) {
                 goto while_break___3;
               }
@@ -2621,7 +2621,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
           k -= e;
           {
             while (1) {
-                                               ;
+            while_continue___4: /* CIL Label */;
               if (!(k < (unsigned int)bd)) {
                 goto while_break___4;
               }
@@ -2645,7 +2645,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
           if (e > 16U) {
             {
               while (1) {
-                                                 ;
+              while_continue___5: /* CIL Label */;
                 if (e == 99U) {
                   return (1);
                 }
@@ -2654,7 +2654,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
                 e -= 16U;
                 {
                   while (1) {
-                                                     ;
+                  while_continue___6: /* CIL Label */;
                     if (!(k < e)) {
                       goto while_break___6;
                     }
@@ -2686,7 +2686,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
           k -= (unsigned int)t->b;
           {
             while (1) {
-                                               ;
+            while_continue___7: /* CIL Label */;
               if (!(k < e)) {
                 goto while_break___7;
               }
@@ -2711,7 +2711,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
           k -= e;
           {
             while (1) {
-                                               ;
+            while_continue___8: /* CIL Label */;
               d &= 32767U;
               if (d > w) {
                 tmp___19 = d;
@@ -2736,7 +2736,7 @@ int inflate_codes(struct huft *tl, struct huft *td, int bl, int bd) {
               } else {
                 {
                   while (1) {
-                                                     ;
+                  while_continue___9: /* CIL Label */;
                     tmp___20 = w;
                     w++;
                     tmp___21 = d;
@@ -2799,7 +2799,7 @@ int inflate_stored(void) {
     k -= n;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(k < 16U)) {
           goto while_break;
         }
@@ -2823,7 +2823,7 @@ int inflate_stored(void) {
     k -= 16U;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(k < 16U)) {
           goto while_break___0;
         }
@@ -2849,7 +2849,7 @@ int inflate_stored(void) {
     k -= 16U;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         tmp___9 = n;
         n--;
         if (!tmp___9) {
@@ -2857,7 +2857,7 @@ int inflate_stored(void) {
         }
         {
           while (1) {
-                                             ;
+          while_continue___2: /* CIL Label */;
             if (!(k < 8U)) {
               goto while_break___2;
             }
@@ -2905,13 +2905,13 @@ int inflate_fixed(void) {
   int bd;
   unsigned int l[288];
   int tmp;
-                   
+  void *__cil_tmp8;
 
   {
     i___0 = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(i___0 < 144)) {
           goto while_break;
         }
@@ -2922,7 +2922,7 @@ int inflate_fixed(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(i___0 < 256)) {
           goto while_break___0;
         }
@@ -2933,7 +2933,7 @@ int inflate_fixed(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(i___0 < 280)) {
           goto while_break___1;
         }
@@ -2944,7 +2944,7 @@ int inflate_fixed(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         if (!(i___0 < 288)) {
           goto while_break___2;
         }
@@ -2963,7 +2963,7 @@ int inflate_fixed(void) {
     i___0 = 0;
     {
       while (1) {
-                                         ;
+      while_continue___3: /* CIL Label */;
         if (!(i___0 < 30)) {
           goto while_break___3;
         }
@@ -3041,14 +3041,14 @@ int inflate_dynamic(void) {
   int tmp___28;
   unsigned int tmp___29;
   int tmp___30;
-                    
+  void *__cil_tmp48;
 
   {
     b = bb;
     k = bk;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(k < 5U)) {
           goto while_break;
         }
@@ -3072,7 +3072,7 @@ int inflate_dynamic(void) {
     k -= 5U;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(k < 5U)) {
           goto while_break___0;
         }
@@ -3096,7 +3096,7 @@ int inflate_dynamic(void) {
     k -= 5U;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(k < 4U)) {
           goto while_break___1;
         }
@@ -3128,13 +3128,13 @@ int inflate_dynamic(void) {
     j___0 = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         if (!(j___0 < nb)) {
           goto while_break___2;
         }
         {
           while (1) {
-                                             ;
+          while_continue___3: /* CIL Label */;
             if (!(k < 3U)) {
               goto while_break___3;
             }
@@ -3162,7 +3162,7 @@ int inflate_dynamic(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___4: /* CIL Label */;
         if (!(j___0 < 19U)) {
           goto while_break___4;
         }
@@ -3190,13 +3190,13 @@ int inflate_dynamic(void) {
     i___0 = (int)l;
     {
       while (1) {
-                                         ;
+      while_continue___5: /* CIL Label */;
         if (!((unsigned int)i___0 < n)) {
           goto while_break___5;
         }
         {
           while (1) {
-                                             ;
+          while_continue___6: /* CIL Label */;
             if (!(k < (unsigned int)bl)) {
               goto while_break___6;
             }
@@ -3229,7 +3229,7 @@ int inflate_dynamic(void) {
           if (j___0 == 16U) {
             {
               while (1) {
-                                                 ;
+              while_continue___7: /* CIL Label */;
                 if (!(k < 2U)) {
                   goto while_break___7;
                 }
@@ -3256,7 +3256,7 @@ int inflate_dynamic(void) {
             }
             {
               while (1) {
-                                                 ;
+              while_continue___8: /* CIL Label */;
                 tmp___19 = j___0;
                 j___0--;
                 if (!tmp___19) {
@@ -3272,7 +3272,7 @@ int inflate_dynamic(void) {
             if (j___0 == 17U) {
               {
                 while (1) {
-                                                   ;
+                while_continue___9: /* CIL Label */;
                   if (!(k < 3U)) {
                     goto while_break___9;
                   }
@@ -3299,7 +3299,7 @@ int inflate_dynamic(void) {
               }
               {
                 while (1) {
-                                                    ;
+                while_continue___10: /* CIL Label */;
                   tmp___24 = j___0;
                   j___0--;
                   if (!tmp___24) {
@@ -3315,7 +3315,7 @@ int inflate_dynamic(void) {
             } else {
               {
                 while (1) {
-                                                    ;
+                while_continue___11: /* CIL Label */;
                   if (!(k < 7U)) {
                     goto while_break___11;
                   }
@@ -3342,7 +3342,7 @@ int inflate_dynamic(void) {
               }
               {
                 while (1) {
-                                                    ;
+                while_continue___12: /* CIL Label */;
                   tmp___29 = j___0;
                   j___0--;
                   if (!tmp___29) {
@@ -3425,7 +3425,7 @@ int inflate_block(int *e) {
     k = bk;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(k < 1U)) {
           goto while_break;
         }
@@ -3449,7 +3449,7 @@ int inflate_block(int *e) {
     k--;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(k < 2U)) {
           goto while_break___0;
         }
@@ -3506,7 +3506,7 @@ int inflate(void) {
     h = 0U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           hufts = 0U;
           r = inflate_block(&e);
@@ -3525,7 +3525,7 @@ int inflate(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(bk >= 8U)) {
           goto while_break___0;
         }
@@ -3635,14 +3635,14 @@ int unzip(int in, int out) {
   int tmp___10;
   int tmp___11;
   ulg tmp___12;
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+  void *__cil_tmp24;
+  char *__cil_tmp25;
+  char *__cil_tmp26;
+  char *__cil_tmp27;
+  char *__cil_tmp28;
+  char *__cil_tmp29;
+  char *__cil_tmp30;
+  char *__cil_tmp31;
 
   {
     {
@@ -3715,7 +3715,7 @@ int unzip(int in, int out) {
           }
           {
             while (1) {
-                                           ;
+            while_continue: /* CIL Label */;
               tmp___5 = n___0;
               n___0--;
               if (!tmp___5) {
@@ -3755,7 +3755,7 @@ int unzip(int in, int out) {
       n = 0;
       {
         while (1) {
-                                           ;
+        while_continue___0: /* CIL Label */;
           if (!(n < 8)) {
             goto while_break___0;
           }
@@ -3788,7 +3788,7 @@ int unzip(int in, int out) {
         n = 0;
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             if (!(n < 16)) {
               goto while_break___1;
             }
@@ -3945,7 +3945,7 @@ unsigned int bi_reverse(unsigned int code, int len) {
     res = 0U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         res |= code & 1U;
         code >>= 1;
         res <<= 1;
@@ -4079,7 +4079,7 @@ void copy_block(char *buf, unsigned int len, int header) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         tmp___9 = len;
         len--;
         if (!tmp___9) {
@@ -4185,7 +4185,7 @@ void ct_init(ush *attr, int *methodp) {
     code = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(code < 28)) {
           goto while_break;
         }
@@ -4193,7 +4193,7 @@ void ct_init(ush *attr, int *methodp) {
         n = 0;
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             if (!(n < 1 << extra_lbits[code])) {
               goto while_break___0;
             }
@@ -4213,7 +4213,7 @@ void ct_init(ush *attr, int *methodp) {
     code = 0;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(code < 16)) {
           goto while_break___1;
         }
@@ -4221,7 +4221,7 @@ void ct_init(ush *attr, int *methodp) {
         n = 0;
         {
           while (1) {
-                                             ;
+          while_continue___2: /* CIL Label */;
             if (!(n < 1 << extra_dbits[code])) {
               goto while_break___2;
             }
@@ -4239,7 +4239,7 @@ void ct_init(ush *attr, int *methodp) {
     dist >>= 7;
     {
       while (1) {
-                                         ;
+      while_continue___3: /* CIL Label */;
         if (!(code < 30)) {
           goto while_break___3;
         }
@@ -4247,7 +4247,7 @@ void ct_init(ush *attr, int *methodp) {
         n = 0;
         {
           while (1) {
-                                             ;
+          while_continue___4: /* CIL Label */;
             if (!(n < 1 << (extra_dbits[code] - 7))) {
               goto while_break___4;
             }
@@ -4265,7 +4265,7 @@ void ct_init(ush *attr, int *methodp) {
     bits = 0;
     {
       while (1) {
-                                         ;
+      while_continue___5: /* CIL Label */;
         if (!(bits <= 15)) {
           goto while_break___5;
         }
@@ -4277,7 +4277,7 @@ void ct_init(ush *attr, int *methodp) {
     n = 0;
     {
       while (1) {
-                                         ;
+      while_continue___6: /* CIL Label */;
         if (!(n <= 143)) {
           goto while_break___6;
         }
@@ -4290,7 +4290,7 @@ void ct_init(ush *attr, int *methodp) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___7: /* CIL Label */;
         if (!(n <= 255)) {
           goto while_break___7;
         }
@@ -4303,7 +4303,7 @@ void ct_init(ush *attr, int *methodp) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___8: /* CIL Label */;
         if (!(n <= 279)) {
           goto while_break___8;
         }
@@ -4316,7 +4316,7 @@ void ct_init(ush *attr, int *methodp) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___9: /* CIL Label */;
         if (!(n <= 287)) {
           goto while_break___9;
         }
@@ -4333,7 +4333,7 @@ void ct_init(ush *attr, int *methodp) {
     }
     {
       while (1) {
-                                          ;
+      while_continue___10: /* CIL Label */;
         if (!(n < 30)) {
           goto while_break___10;
         }
@@ -4356,7 +4356,7 @@ static void init_block(void) {
     n = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n < 286)) {
           goto while_break;
         }
@@ -4368,7 +4368,7 @@ static void init_block(void) {
     n = 0;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(n < 30)) {
           goto while_break___0;
         }
@@ -4380,7 +4380,7 @@ static void init_block(void) {
     n = 0;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(n < 19)) {
           goto while_break___1;
         }
@@ -4409,7 +4409,7 @@ static void pqdownheap(ct_data *tree, int k) {
     j___0 = k << 1;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(j___0 <= heap_len)) {
           goto while_break;
         }
@@ -4471,7 +4471,7 @@ static void gen_bitlen(tree_desc *desc) {
     bits = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(bits <= 15)) {
           goto while_break;
         }
@@ -4484,7 +4484,7 @@ static void gen_bitlen(tree_desc *desc) {
     h = heap_max + 1;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(h < 573)) {
           goto while_break___0;
         }
@@ -4518,11 +4518,11 @@ static void gen_bitlen(tree_desc *desc) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         bits = max_length - 1;
         {
           while (1) {
-                                             ;
+          while_continue___2: /* CIL Label */;
             if (!((int)bl_count[bits] == 0)) {
               goto while_break___2;
             }
@@ -4543,7 +4543,7 @@ static void gen_bitlen(tree_desc *desc) {
     bits = max_length;
     {
       while (1) {
-                                         ;
+      while_continue___3: /* CIL Label */;
         if (!(bits != 0)) {
           goto while_break___3;
         }
@@ -4582,14 +4582,14 @@ static void gen_codes(ct_data *tree, int max_code) {
   int n;
   int len;
   ush tmp;
-                    
+  void *__cil_tmp10;
 
   {
     code = (ush)0;
     bits = 1;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(bits <= 15)) {
           goto while_break;
         }
@@ -4602,7 +4602,7 @@ static void gen_codes(ct_data *tree, int max_code) {
     n = 0;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(n <= max_code)) {
           goto while_break___0;
         }
@@ -4649,7 +4649,7 @@ static void build_tree___0(tree_desc *desc) {
     n = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n < elems)) {
           goto while_break;
         }
@@ -4667,7 +4667,7 @@ static void build_tree___0(tree_desc *desc) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(heap_len < 2)) {
           goto while_break___0;
         }
@@ -4693,7 +4693,7 @@ static void build_tree___0(tree_desc *desc) {
     n = heap_len / 2;
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(n >= 1)) {
           goto while_break___1;
         }
@@ -4706,7 +4706,7 @@ static void build_tree___0(tree_desc *desc) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___2: /* CIL Label */;
         {
           n = heap[1];
           tmp___0 = heap_len;
@@ -4774,7 +4774,7 @@ static void scan_tree(ct_data *tree, int max_code) {
     n = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n <= max_code)) {
           goto while_break;
         }
@@ -4852,7 +4852,7 @@ static void send_tree(ct_data *tree, int max_code) {
     n = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n <= max_code)) {
           goto while_break;
         }
@@ -4870,7 +4870,7 @@ static void send_tree(ct_data *tree, int max_code) {
           if (count < min_count) {
             {
               while (1) {
-                                                 ;
+              while_continue___0: /* CIL Label */;
                 {
                   send_bits((int)bl_tree[curlen].fc.code,
                             (int)bl_tree[curlen].dl.len);
@@ -4944,7 +4944,7 @@ static int build_bl_tree(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(max_blindex >= 3)) {
           goto while_break;
         }
@@ -4971,7 +4971,7 @@ static void send_all_trees(int lcodes, int dcodes, int blcodes) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(rank < blcodes)) {
           goto while_break;
         }
@@ -5111,7 +5111,7 @@ int ct_tally(int dist, int lc) {
         dcode = 0;
         {
           while (1) {
-                                         ;
+          while_continue: /* CIL Label */;
             if (!(dcode < 30)) {
               goto while_break;
             }
@@ -5162,7 +5162,7 @@ static void compress_block(ct_data *ltree, ct_data *dtree) {
     if (last_lit != 0U) {
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           if ((lx & 7U) == 0U) {
             tmp = fx;
             fx++;
@@ -5234,7 +5234,7 @@ static void set_file_type(void) {
     bin_freq = 0U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(n < 7)) {
           goto while_break;
         }
@@ -5246,7 +5246,7 @@ static void set_file_type(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(n < 128)) {
           goto while_break___0;
         }
@@ -5258,7 +5258,7 @@ static void set_file_type(void) {
     }
     {
       while (1) {
-                                         ;
+      while_continue___1: /* CIL Label */;
         if (!(n < 256)) {
           goto while_break___1;
         }
@@ -5306,8 +5306,8 @@ int longest_match(IPos cur_match);
 void lm_init(int pack_level, ush *flags___0) {
   register unsigned int j___0;
   unsigned int tmp;
-                   
-                   
+  char *__cil_tmp6;
+  char *__cil_tmp7;
 
   {
     if (pack_level < 1) {
@@ -5361,7 +5361,7 @@ void lm_init(int pack_level, ush *flags___0) {
     eofile = 0;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (lookahead < 262U) {
           if (!(!eofile)) {
             goto while_break;
@@ -5377,7 +5377,7 @@ void lm_init(int pack_level, ush *flags___0) {
     j___0 = 0U;
     {
       while (1) {
-                                         ;
+      while_continue___0: /* CIL Label */;
         if (!(j___0 < 2U)) {
           goto while_break___0;
         }
@@ -5420,7 +5420,7 @@ int longest_match(IPos cur_match) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         match = window + cur_match;
         if ((int)*(match + best_len) != (int)scan_end) {
           goto __Cont;
@@ -5442,7 +5442,7 @@ int longest_match(IPos cur_match) {
         match++;
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             scan++;
             match++;
             if ((int)*scan == (int)*match) {
@@ -5549,7 +5549,7 @@ static void fill_window(void) {
         }
         {
           while (1) {
-                                         ;
+          while_continue: /* CIL Label */;
             if (!(n < (unsigned int)(1 << 15))) {
               goto while_break;
             }
@@ -5567,7 +5567,7 @@ static void fill_window(void) {
         n = 0U;
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             if (!(n < 32768U)) {
               goto while_break___0;
             }
@@ -5616,7 +5616,7 @@ static ulg deflate_fast(void) {
     prev_length = 2U;
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(lookahead != 0U)) {
           goto while_break;
         }
@@ -5645,7 +5645,7 @@ static ulg deflate_fast(void) {
             match_length--;
             {
               while (1) {
-                                                 ;
+              while_continue___0: /* CIL Label */;
                 strstart++;
                 ins_h = ((ins_h << 5) ^
                          (unsigned int)window[(strstart + 3U) - 1U]) &
@@ -5688,7 +5688,7 @@ static ulg deflate_fast(void) {
         }
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             if (lookahead < 262U) {
               if (!(!eofile)) {
                 goto while_break___1;
@@ -5736,7 +5736,7 @@ ulg deflate(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!(lookahead != 0U)) {
           goto while_break;
         }
@@ -5775,7 +5775,7 @@ ulg deflate(void) {
             }
             {
               while (1) {
-                                                 ;
+              while_continue___0: /* CIL Label */;
                 strstart++;
                 ins_h = ((ins_h << 5) ^
                          (unsigned int)window[(strstart + 3U) - 1U]) &
@@ -5834,7 +5834,7 @@ ulg deflate(void) {
         }
         {
           while (1) {
-                                             ;
+          while_continue___1: /* CIL Label */;
             if (lookahead < 262U) {
               if (!(!eofile)) {
                 goto while_break___1;
@@ -5906,8 +5906,8 @@ int zip(int in, int out) {
   unsigned int tmp___29;
   unsigned int tmp___30;
   unsigned int tmp___31;
-                    
-                    
+  char *__cil_tmp40;
+  char *__cil_tmp41;
 
   {
     flags___0 = (uch)0;
@@ -6031,7 +6031,7 @@ int zip(int in, int out) {
       }
       {
         while (1) {
-                                       ;
+        while_continue: /* CIL Label */;
           tmp___14 = outcnt;
           outcnt++;
           outbuf[tmp___14] = (uch)*p;
@@ -6389,7 +6389,7 @@ static void help(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!*p) {
           goto while_break;
         }
@@ -6418,7 +6418,7 @@ static void license(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         if (!*p) {
           goto while_break;
         }
@@ -6468,8 +6468,8 @@ int main(int argc, char **argv) {
   int tmp___6;
   int tmp___7;
   int tmp___8;
-                    
-                    
+  char *__cil_tmp19;
+  char *__cil_tmp20;
 
   {
     {
@@ -6537,7 +6537,7 @@ int main(int argc, char **argv) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           optc = getopt_long(argc, (char *const *)argv,
                              "ab:cdfhH?lLmMnNqrS:tvVZ123456789",
@@ -6656,9 +6656,9 @@ int main(int argc, char **argv) {
           force++;
           goto switch_break;
         case_104: /* CIL Label */
-                                 
-                                  
-         {
+        case_72:  /* CIL Label */
+        case_63 : /* CIL Label */
+        {
           help();
           do_exit(0);
         }
@@ -6728,15 +6728,15 @@ int main(int argc, char **argv) {
         }
           goto switch_break;
         case_49: /* CIL Label */
-                                
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-           level = optc - 48;
+        case_50: /* CIL Label */
+        case_51: /* CIL Label */
+        case_52: /* CIL Label */
+        case_53: /* CIL Label */
+        case_54: /* CIL Label */
+        case_55: /* CIL Label */
+        case_56: /* CIL Label */
+        case_57: /* CIL Label */
+          level = optc - 48;
           goto switch_break;
         switch_default : /* CIL Label */
         {
@@ -6818,7 +6818,7 @@ int main(int argc, char **argv) {
       }
       {
         while (1) {
-                                           ;
+        while_continue___0: /* CIL Label */;
           if (!(optind < argc)) {
             goto while_break___0;
           }
@@ -6859,13 +6859,13 @@ static void treat_stdin(void) {
   int tmp___8;
   int tmp___9;
   int tmp___10;
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+  char *__cil_tmp13;
+  char *__cil_tmp14;
+  char *__cil_tmp15;
+  char *__cil_tmp16;
+  char *__cil_tmp17;
+  char *__cil_tmp18;
+  char *__cil_tmp19;
 
   {
     if (!force) {
@@ -6977,7 +6977,7 @@ static void treat_stdin(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           tmp___8 = fileno(stdout);
           tmp___9 = fileno(stdin);
@@ -7040,11 +7040,11 @@ static void treat_file(char *iname) {
   size_t tmp___10;
   int tmp___11;
   int tmp___12;
-                    
-                    
-                    
-                    
-                    
+  void *__cil_tmp16;
+  char *__cil_tmp17;
+  char *__cil_tmp18;
+  char *__cil_tmp19;
+  char *__cil_tmp20;
 
   {
     { tmp = strcmp((char const *)iname, "-"); }
@@ -7240,7 +7240,7 @@ static void treat_file(char *iname) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         { tmp___11 = (*work)(ifd, ofd); }
         if (tmp___11 != 0) {
           method = -1;
@@ -7331,7 +7331,7 @@ static int create_outfile(void) {
   int tmp;
   int tmp___0;
   int tmp___1;
-                   
+  void *__cil_tmp6;
 
   {
     flags___0 = 193;
@@ -7342,7 +7342,7 @@ static int create_outfile(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         { tmp = check_ofname(); }
         if (tmp != 0) {
           {
@@ -7400,7 +7400,7 @@ static int create_outfile(void) {
           shorten_name(ofname);
         }
       }
-                                ;
+    while_break: /* CIL Label */;
     }
   }
 }
@@ -7443,7 +7443,7 @@ static char *get_suffix(char *name) {
   int s;
   int tmp___0;
   int tmp___1;
-                    
+  void *__cil_tmp13;
 
   {
     {
@@ -7471,7 +7471,7 @@ static char *get_suffix(char *name) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           tmp___0 = (int)strlen((char const *)*suf);
           s = tmp___0;
@@ -7551,7 +7551,7 @@ static int get_istat(char *iname, struct stat *sbuf) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           s = *suf;
           strcat((char * /* __restrict  */)(ifname),
@@ -7582,8 +7582,8 @@ static int make_ofname(void) {
   char *suff;
   int tmp;
   int tmp___0;
-                   
-                   
+  char *__cil_tmp4;
+  char *__cil_tmp5;
 
   {
     {
@@ -7755,8 +7755,8 @@ static int get_method(int in) {
   int tmp___60;
   int tmp___61;
   int tmp___62;
-                    
-                    
+  void *__cil_tmp74;
+  char *__cil_tmp75;
 
   {
     if (force) {
@@ -8026,7 +8026,7 @@ static int get_method(int in) {
           }
           {
             while (1) {
-                                           ;
+            while_continue: /* CIL Label */;
               tmp___44 = len;
               len--;
               if (!tmp___44) {
@@ -8057,7 +8057,7 @@ static int get_method(int in) {
               if (part_nb > 1) {
               _L___0 : {
                 while (1) {
-                                                   ;
+                while_continue___0: /* CIL Label */;
                   if (inptr < insize) {
                     tmp___45 = inptr;
                     inptr++;
@@ -8082,7 +8082,7 @@ static int get_method(int in) {
                 }
                 {
                   while (1) {
-                                                     ;
+                  while_continue___1: /* CIL Label */;
                     if (inptr < insize) {
                       tmp___48 = inptr;
                       inptr++;
@@ -8120,7 +8120,7 @@ static int get_method(int in) {
         if (((int)flags___0 & 16) != 0) {
           {
             while (1) {
-                                               ;
+            while_continue___2: /* CIL Label */;
               if (inptr < insize) {
                 tmp___52 = inptr;
                 inptr++;
@@ -8251,7 +8251,7 @@ static void do_list(int ifd___0, int method___0) {
   uch buf[8];
   ssize_t tmp___0;
   char *tmp___1;
-                   
+  void *__cil_tmp9;
 
   {
     if (first_time) {
@@ -8403,7 +8403,7 @@ static int name_too_long(char *name, struct stat *statb) {
   int tmp___0;
   int tmp___1;
   int tmp___2;
-                    
+  void *__cil_tmp12;
 
   {
     {
@@ -8440,11 +8440,11 @@ static void shorten_name(char *name) {
   char *p;
   int tmp;
   char *tmp___0;
-                    
-                    
-                    
-                    
-                    
+  char *__cil_tmp11;
+  char *__cil_tmp12;
+  char *__cil_tmp13;
+  char *__cil_tmp14;
+  char *__cil_tmp15;
 
   {
     {
@@ -8483,7 +8483,7 @@ static void shorten_name(char *name) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         { p = strrchr((char const *)name, '/'); }
         if (p) {
           p++;
@@ -8492,7 +8492,7 @@ static void shorten_name(char *name) {
         }
         {
           while (1) {
-                                             ;
+          while_continue___0: /* CIL Label */;
             if (!*p) {
               goto while_break___0;
             }
@@ -8523,7 +8523,7 @@ static void shorten_name(char *name) {
     if ((unsigned long)trunc != (unsigned long)((void *)0)) {
       {
         while (1) {
-                                           ;
+        while_continue___1: /* CIL Label */;
           *(trunc + 0) = *(trunc + 1);
           tmp___0 = trunc;
           trunc++;
@@ -8568,11 +8568,11 @@ static int check_ofname(void) {
   int tmp___10;
   unsigned short const **tmp___11;
   int tmp___12;
-                    
-                    
-                    
-                    
-                    
+  void *__cil_tmp16;
+  void *__cil_tmp17;
+  char *__cil_tmp18;
+  char *__cil_tmp19;
+  char *__cil_tmp20;
 
   {
     {
@@ -8581,7 +8581,7 @@ static int check_ofname(void) {
     }
     {
       while (1) {
-                                     ;
+      while_continue: /* CIL Label */;
         {
           tmp___1 = stat((char const * /* __restrict  */)(ofname),
                          (struct stat * /* __restrict  */)(&ostat));
@@ -8803,7 +8803,7 @@ static void treat_dir(char *dir) {
   int tmp___0;
   int tmp___1;
   size_t tmp___2;
-                    
+  void *__cil_tmp11;
 
   {
     { dirp = opendir((char const *)dir); }

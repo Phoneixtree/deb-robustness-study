@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-afl-fuzz -i /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel/gzip-1.2.4/fuzzed_input/afl_seed//input_1_option_d -o result /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel/gzip-1.2.4/original_files_and_refs/gzip_afl_bin -d @@
+afl-fuzz -i /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/gzip-1.2.4-input/fuzzed_input/afl_seed//input_1_option_d -o result /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/gzip-1.2.4-input/original_files_and_refs/gzip_afl_bin -d @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 50.0 MB.
