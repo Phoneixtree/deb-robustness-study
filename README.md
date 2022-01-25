@@ -42,6 +42,16 @@ gcc/clang -w -o $BIN $SRC -lm
 
 2. All source code is a merged version of the original program. If you want to check out the original program, refer to [SIR benchmark](https://sir.csc.ncsu.edu/portal/index.php), register to have access, and then download the source code.
 
+3. `get_code_size.py` in dic "tool":
+```
+python get_code_size.py path_to_bin  
+```
+   There will be two number of size, the former is size of original bin and the latter is size of debloated bin. 
+   Solution to "ImportError: No module named elftools.elf.elffile" :    
+```
+sudo apt-get install python-pyelftools python3-pyelftools -y
+```
+
 ### Online spreadsheet for result-sharing
 https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
 
