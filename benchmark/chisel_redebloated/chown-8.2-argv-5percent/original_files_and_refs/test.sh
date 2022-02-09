@@ -67,17 +67,22 @@ function run() {
 function desired() {
 
   for file in $(ls re_inputs/*); do
+  
 
   touch file1
   touch file2
   timeout $TIMEOUT $REDUCED_BIN < $file >&$LOG
+  
   retvalue=$?
-  if [[ retvalue -gt 2 ]]; then 
+#echo return value is " "$retvalue 
+# echo file is $file
+  if [[ $retvalue -gt 1 ]]; then 
 	  exit 1
   fi	
 
   rm -rf file1 file2
-  
+ # let "cnt++"
+# echo $cnt 
   done
 
 

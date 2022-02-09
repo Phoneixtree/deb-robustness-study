@@ -6,7 +6,7 @@ rm -r result
 mkdir temp
 cp -r scripts temp
 cd temp/scripts
-./test.sh
+./test_$1.sh
 cp -r result ../../result
 cd ../../
 sudo rm -rf temp

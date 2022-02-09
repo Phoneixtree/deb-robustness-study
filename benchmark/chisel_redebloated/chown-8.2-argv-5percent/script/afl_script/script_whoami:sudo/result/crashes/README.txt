@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-afl-fuzz -i /home/cytmo/Documents/chisel_work/chisel/chown-8.2/fuzzed_input/afl_seed/input_whoami:sudo -o result /home/cytmo/Documents/chisel_work/chisel/chown-8.2/original_files_and_refs/afl_bin
+afl-fuzz -i /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/chown-8.2-argv-5percent/fuzzed_input/afl_seed/input_whoami:sudo -o result /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/chown-8.2-argv-5percent/original_files_and_refs/afl_bin
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 50.0 MB.

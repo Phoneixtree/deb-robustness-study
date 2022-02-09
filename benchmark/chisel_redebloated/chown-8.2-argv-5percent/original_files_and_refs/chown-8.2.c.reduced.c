@@ -1,4 +1,4 @@
-#include "argv-fuzz-inl.h";
+#include "argv-fuzz-inl.h"
 typedef unsigned long size_t;
 typedef long __off_t;
 typedef long __off64_t;
@@ -440,11 +440,16 @@ char *quotearg_colon(char const *arg);
 void close_stdout(void) {
   char const *write_error;
   char const *tmp;
-
+  char *tmp___0;
+  int *tmp___1;
   int *tmp___2;
+  int tmp___3;
+  int *tmp___4;
+  int tmp___5;
 
   {
 
+  _L:
     tmp = (char const *)gettext("write error");
     write_error = tmp;
 
@@ -555,6 +560,7 @@ FTS *xfts_open(char *const *argv, int options,
                int (*compar)(FTSENT const **, FTSENT const **)) {
   FTS *fts;
   FTS *tmp;
+  int *tmp___0;
 
   {
     tmp = fts_open(argv, options | 512, compar);
@@ -610,14 +616,22 @@ static char const *parse_with_separator(char const *spec, char const *separator,
   struct group *grp;
   char *u;
   char const *g;
-
+  char *gname;
+  uid_t unum;
   gid_t gnum;
-
+  char *tmp;
   size_t ulen;
   struct passwd *tmp___0;
-
+  _Bool use_login_group;
+  int tmp___1;
+  unsigned long tmp___2;
+  strtol_error tmp___3;
+  char buf___1[(((sizeof(uintmax_t) * 8UL) * 146UL) / 485UL + 1UL) + 1UL];
+  char *tmp___4;
+  char *tmp___5;
   struct group *tmp___6;
-
+  unsigned long tmp___7;
+  strtol_error tmp___8;
   char const *tmp___9;
 
   {
@@ -635,8 +649,12 @@ static char const *parse_with_separator(char const *spec, char const *separator,
         *(u + ulen) = (char)'\000';
       }
     }
+    if ((unsigned long)separator == (unsigned long)((void *)0)) {
+      g = (char const *)((void *)0);
+    } else {
 
-    { g = separator + 1; }
+      g = separator + 1;
+    }
     {
 
       {
@@ -650,15 +668,16 @@ static char const *parse_with_separator(char const *spec, char const *separator,
       } else {
       }
     }
-    {
-      if ((unsigned long)error_msg == (unsigned long)((void *)0)) {
+    if ((unsigned long)g != (unsigned long)((void *)0)) {
 
-        {
-          tmp___6 = getgrnam(g);
-          grp = tmp___6;
-        }
+      {
+        tmp___6 = getgrnam(g);
+        grp = tmp___6;
+      }
+      if ((unsigned long)grp == (unsigned long)((void *)0)) {
 
-        { gnum = grp->gr_gid; }
+      } else {
+        gnum = grp->gr_gid;
       }
     }
     { *gid = gnum; }
@@ -674,6 +693,9 @@ char const *parse_user_spec(char const *spec, uid_t *uid, gid_t *gid,
   char const *tmp;
   char const *error_msg;
   char const *tmp___0;
+  char const *dot;
+  char const *tmp___1;
+  char const *tmp___2;
 
   {
     tmp = (char const *)strchr(spec, ':');
@@ -723,29 +745,49 @@ quotearg_buffer_restyled(char *buffer, size_t buffersize, char const *arg,
   size_t i;
   size_t len;
   char const *quote_string;
-
+  size_t quote_string_len;
+  _Bool backslash_escapes;
+  _Bool unibyte_locale;
+  size_t tmp;
+  _Bool elide_outer_quotes;
   unsigned char c;
-
+  unsigned char esc;
+  _Bool is_right_quote;
+  int tmp___0;
+  int tmp___1;
+  size_t m;
+  _Bool printable;
+  unsigned short const **tmp___2;
+  mbstate_t mbstate;
+  wchar_t w;
+  size_t bytes;
+  size_t tmp___3;
+  size_t j;
+  int tmp___4;
+  int tmp___5;
+  size_t ilim;
   int tmp___6;
+  size_t tmp___7;
 
   {
     len = (size_t)0;
 
-    {
-      left_quote = gettext_quote("`", quoting_style);
-      right_quote = gettext_quote("\'", quoting_style);
-    }
+  case_6 : {
+    left_quote = gettext_quote("`", quoting_style);
+    right_quote = gettext_quote("\'", quoting_style);
+  }
     {
       quote_string = left_quote;
       {
 
         { *(buffer + len) = (char)*quote_string; }
         len++;
-      };
+      }
     }
 
     quote_string = right_quote;
 
+  switch_break:
     i = (size_t)0;
     while (1) {
 
@@ -759,20 +801,18 @@ quotearg_buffer_restyled(char *buffer, size_t buffersize, char const *arg,
 
       c = (unsigned char)*(arg + i);
 
-      {
+    store_c : {
 
-        { *(buffer + len) = (char)c; }
-        len++;
-      };
+      { *(buffer + len) = (char)c; }
+      len++;
+    }
 
+    __Cont:
       i++;
     }
   while_break___3:;
 
-    {
-
-      { *(buffer + len) = (char)*quote_string; };
-    }
+    { *(buffer + len) = (char)*quote_string; }
 
     return (len);
   }
@@ -783,14 +823,20 @@ static struct slotvec slotvec0 = {sizeof(slot0), slot0};
 static struct slotvec *slotvec = &slotvec0;
 static char *quotearg_n_options(int n, char const *arg, size_t argsize,
                                 struct quoting_options const *options) {
-
+  int e;
+  int *tmp;
+  unsigned int n0;
   struct slotvec *sv;
-
+  size_t n1;
+  _Bool preallocated;
+  int tmp___0;
+  struct slotvec *tmp___1;
   size_t size;
   char *val;
   int flags;
-
+  size_t qsize;
   size_t tmp___2;
+  int *tmp___3;
 
   {
 
@@ -809,7 +855,7 @@ static char *quotearg_n_options(int n, char const *arg, size_t argsize,
 }
 char *quotearg_n_style(int n, enum quoting_style s, char const *arg) {
   struct quoting_options o;
-
+  struct quoting_options tmp;
   char *tmp___0;
 
   {
@@ -927,18 +973,36 @@ FTS *(__attribute__((__warn_unused_result__, __leaf__))
   FTS *sp;
   FTSENT *p;
   FTSENT *root;
-
+  size_t nitems;
   FTSENT *parent;
-
+  FTSENT *tmp;
+  _Bool defer_stat;
+  int *tmp___0;
+  int *tmp___1;
+  int *tmp___2;
+  size_t maxarglen;
+  size_t tmp___4;
+  size_t tmp___5;
+  _Bool tmp___6;
+  int tmp___7;
   size_t len;
   size_t tmp___8;
   struct _ftsent *tmp___9;
+  _Bool tmp___10;
+  int tmp___11;
 
   {
 
     sp = (FTS *)malloc(sizeof(FTS));
 
+    memset((void *)sp, 0, sizeof(FTS));
+
     sp->fts_cwd_fd = -100;
+    tmp___4 = fts_maxarglen(argv);
+    maxarglen = tmp___4;
+    { tmp___5 = maxarglen; }
+
+    tmp___6 = fts_palloc(sp, tmp___5);
 
     { parent = fts_alloc(sp, "", (size_t)0); }
 
@@ -951,13 +1015,12 @@ FTS *(__attribute__((__warn_unused_result__, __leaf__))
       p = fts_alloc(sp, (char const *)*argv, len);
 
       p->fts_parent = parent;
-      p->fts_accpath = p->fts_name;
 
       {
         p->fts_link = root;
         root = p;
       }
-    };
+    }
 
     tmp___9 = fts_alloc(sp, "", (size_t)0);
     sp->fts_cur = tmp___9;
@@ -967,14 +1030,45 @@ FTS *(__attribute__((__warn_unused_result__, __leaf__))
     return (sp);
   }
 }
+static void fts_load(FTS *sp, FTSENT *p) {
+  size_t len;
+  char *cp;
+  size_t tmp;
+  char *tmp___0;
 
+  {
+    tmp = p->fts_namelen;
+
+    len = tmp;
+    memmove((void *)sp->fts_path, (void const *)(p->fts_name), len + 1UL);
+
+    tmp___0 = sp->fts_path;
+
+    p->fts_accpath = tmp___0;
+  }
+}
 __attribute__((__nothrow__)) int(__attribute__((__warn_unused_result__,
                                                 __leaf__)) fts_close)(FTS *sp);
 int(__attribute__((__warn_unused_result__, __leaf__)) fts_close)(FTS *sp) {
+  FTSENT *freep;
+  FTSENT *p;
+  int saved_errno;
+  int *tmp;
+  int tmp___0;
+  int *tmp___1;
+  int tmp___2;
+  int *tmp___3;
+  int tmp___4;
+  int *tmp___5;
 
-  free((void *)sp);
+  {
 
-  return (0);
+    free((void *)sp->fts_path);
+
+    free((void *)sp);
+
+    return (0);
+  }
 }
 extern
     __attribute__((__nothrow__)) int(__attribute__((__nonnull__(2), __leaf__))
@@ -986,19 +1080,57 @@ FTSENT *(__attribute__((__warn_unused_result__, __leaf__)) fts_read)(FTS *sp);
 FTSENT *(__attribute__((__warn_unused_result__, __leaf__)) fts_read)(FTS *sp) {
   FTSENT *p;
   FTSENT *tmp;
-
+  unsigned short instr;
+  char *t;
+  int *tmp___0;
+  int tmp___1;
+  int *tmp___2;
+  int tmp___3;
+  struct _ftsent *tmp___4;
+  int tmp___5;
+  int tmp___6;
+  int tmp___7;
+  int tmp___8;
+  int tmp___9;
+  int *tmp___10;
+  int tmp___11;
+  size_t tmp___12;
+  char *tmp___13;
+  FTSENT *parent;
+  _Bool tmp___14;
+  int *tmp___15;
+  _Bool tmp___16;
+  int *tmp___17;
   struct _ftsent *tmp___18;
+  int *tmp___19;
+  int tmp___20;
+  int tmp___21;
+  int tmp___22;
+  int tmp___23;
+  int tmp___24;
+  int saved_errno;
+  int *tmp___25;
+  int *tmp___26;
+  int *tmp___27;
+  int tmp___28;
+  int tmp___29;
+  int *tmp___30;
+  int tmp___31;
+  FTSENT *tmp___32;
 
   {
 
     p = sp->fts_cur;
 
+  next:
     tmp = p;
     p = p->fts_link;
     if ((unsigned long)p != (unsigned long)((void *)0)) {
 
       free((void *)tmp);
+      { fts_load(sp, p); }
 
+    check_for_dir:
       sp->fts_cur = p;
 
       return (p);
@@ -1029,8 +1161,36 @@ static FTSENT *fts_alloc(FTS *sp, char const *name, size_t namelen) {
 
     memmove((void *)(p->fts_name), (void const *)name, namelen);
     p->fts_name[namelen] = (char)'\000';
+    p->fts_namelen = namelen;
 
     return (p);
+  }
+}
+
+static _Bool fts_palloc(FTS *sp, size_t more) {
+  char *p;
+  size_t new_len;
+  int *tmp;
+
+  {
+    new_len = (sp->fts_pathlen + more) + 256UL;
+
+    sp->fts_pathlen = new_len;
+    p = (char *)realloc((void *)sp->fts_path, sp->fts_pathlen);
+
+    sp->fts_path = p;
+    return ((_Bool)1);
+  }
+}
+
+static size_t fts_maxarglen(char *const *argv) {
+  size_t len;
+  size_t max;
+
+  {
+    max = (size_t)0;
+
+    return (max + 1UL);
   }
 }
 
@@ -1075,15 +1235,7 @@ __inline static int chownat(int fd, char const *file, uid_t owner,
     return (tmp);
   }
 }
-__inline static int lchownat(int fd, char const *file, uid_t owner,
-                             gid_t group) {
-  int tmp;
 
-  {
-    tmp = fchownat(fd, file, owner, group, 256);
-    return (tmp);
-  }
-}
 extern void chopt_init(struct Chown_option *chopt);
 extern void chopt_free(struct Chown_option *chopt __attribute__((__unused__)));
 extern char *gid_to_name(gid_t gid);
@@ -1095,14 +1247,58 @@ extern _Bool chown_files(char **files, int bit_flags, uid_t uid, gid_t gid,
 static _Bool change_file_owner(FTS *fts, FTSENT *ent, uid_t uid, gid_t gid,
                                uid_t required_uid, gid_t required_gid,
                                struct Chown_option const *chopt) {
-
+  char const *file_full_name;
   char const *file;
-
+  struct stat const *file_stats;
+  struct stat stat_buf;
   _Bool ok;
-
+  _Bool do_chown;
+  _Bool symlink_changed;
+  char const *tmp;
+  char *tmp___0;
+  char const *tmp___1;
+  char const *tmp___2;
+  char *tmp___3;
+  int tmp___4;
+  char *tmp___5;
+  FTSENT *tmp___6;
+  char const *tmp___7;
+  char *tmp___8;
+  char const *tmp___9;
+  char *tmp___10;
+  char const *tmp___11;
+  char *tmp___12;
+  char const *tmp___13;
+  char *tmp___14;
+  _Bool tmp___15;
+  char const *tmp___16;
+  char *tmp___17;
+  int *tmp___18;
+  int tmp___19;
+  int tmp___20;
+  char const *tmp___21;
+  char *tmp___22;
+  char const *tmp___23;
+  char const *tmp___24;
+  char *tmp___25;
+  int tmp___26;
+  char *tmp___27;
   int tmp___28;
-
+  int *tmp___29;
+  enum RCH_status err;
+  enum RCH_status tmp___30;
   int tmp___31;
+  char const *tmp___32;
+  char *tmp___33;
+  char *tmp___34;
+  char *tmp___35;
+  int *tmp___36;
+  _Bool changed;
+  int tmp___37;
+  enum Change_status ch_status;
+  int tmp___38;
+  int tmp___39;
+  int tmp___40;
 
   {
 
@@ -1110,13 +1306,9 @@ static _Bool change_file_owner(FTS *fts, FTSENT *ent, uid_t uid, gid_t gid,
     ok = (_Bool)1;
 
     {
-      if (!chopt->affect_symlink_referent) {
-        tmp___28 = lchownat(fts->fts_cwd_fd, file, uid, gid);
 
-      } else {
-
-        tmp___31 = chownat(fts->fts_cwd_fd, file, uid, gid);
-      }
+    case_5:
+      tmp___31 = chownat(fts->fts_cwd_fd, file, uid, gid);
     }
 
     return (ok);
@@ -1131,9 +1323,12 @@ extern _Bool chown_files(char **files, int bit_flags, uid_t uid, gid_t gid,
   FTS *fts;
   FTS *tmp___0;
   FTSENT *ent;
-
+  char *tmp___1;
+  int *tmp___2;
+  int *tmp___3;
   _Bool tmp___4;
-
+  char *tmp___5;
+  int *tmp___6;
   int tmp___7;
 
   {
@@ -1185,10 +1380,26 @@ static struct option const long_options___1[14] = {
     {"version", 0, (int *)((void *)0), -131},
     {(char const *)((void *)0), 0, (int *)((void *)0), 0}};
 __attribute__((__noreturn__)) void usage(int status);
-void usage(int status) { exit(status); }
+void usage(int status) {
+  char *tmp;
+  char *tmp___0;
+  char *tmp___1;
+  char *tmp___2;
+  char *tmp___3;
+  char *tmp___4;
+  char *tmp___5;
+  char *tmp___6;
+  char *tmp___7;
+  char *tmp___8;
+  char *tmp___9;
+  char *tmp___10;
+
+  { exit(status); }
+}
 
 int main(int argc, char **argv) {
   AFL_INIT_SET0(chown);
+  _Bool preserve_root;
   uid_t uid;
   gid_t gid;
   uid_t required_uid;
@@ -1200,44 +1411,47 @@ int main(int argc, char **argv) {
   int optc;
   char *u_dummy;
   char *g_dummy;
-
+  char const *e;
   char const *tmp;
-
+  char const *tmp___0;
+  char *tmp___1;
+  char *tmp___2;
   char const *tmp___3;
   char *tmp___4;
   int tmp___5;
-
+  struct stat ref_stats;
+  char const *tmp___6;
+  char *tmp___7;
+  int *tmp___8;
+  int tmp___9;
   char const *e___0;
   char const *tmp___10;
   char const *tmp___11;
+  char const *tmp___12;
+  char *tmp___13;
+  int *tmp___14;
+  int tmp___15;
 
   {
 
     uid = (uid_t)-1;
-
-    bit_flags = 16;
-    dereference = -1;
 
     atexit(&close_stdout);
 
     {
       optc = getopt_long(argc, (char *const *)argv, "HLPRcfhv",
                          long_options___1, (int *)((void *)0));
-      if (!(optc != -1)) {
-        goto while_break;
-      }
 
-      dereference = 0;
+    case_72:
+      bit_flags = 17;
+
       goto switch_break;
-
+    case_129:
       tmp = parse_user_spec((char const *)optarg, &required_uid, &required_gid,
                             &u_dummy, &g_dummy);
 
     switch_break:;
     }
-  while_break:;
-
-    chopt.affect_symlink_referent = (_Bool)(dereference != 0);
 
     { tmp___5 = 2; }
     if (argc - optind < tmp___5) {

@@ -1,15 +1,15 @@
-start_time        : 1638076281
-last_update       : 1638078120
-fuzzer_pid        : 77488
-cycles_done       : 108
-execs_done        : 2058763
-execs_per_sec     : 2025.71
-paths_total       : 41
-paths_favored     : 5
-paths_found       : 34
+start_time        : 1644124220
+last_update       : 1644127209
+fuzzer_pid        : 5661
+cycles_done       : 229
+execs_done        : 3125576
+execs_per_sec     : 1408.26
+paths_total       : 42
+paths_favored     : 6
+paths_found       : 35
 paths_imported    : 0
-max_depth         : 4
-cur_path          : 0
+max_depth         : 3
+cur_path          : 32
 pending_favs      : 0
 pending_total     : 0
 variable_paths    : 0
@@ -17,14 +17,14 @@ stability         : 100.00%
 bitmap_cvg        : 0.05%
 unique_crashes    : 4
 unique_hangs      : 0
-last_path         : 1638077195
-last_crash        : 1638076777
+last_path         : 1644125152
+last_crash        : 1644124305
 last_hang         : 0
-execs_since_crash : 1349297
+execs_since_crash : 2995196
 exec_timeout      : 20
-slowest_exec_ms   : 20
+slowest_exec_ms   : 38
 peak_rss_mb       : 0
 afl_banner        : afl_bin
 afl_version       : ++2.59d
 target_mode       : default
-command_line      : afl-fuzz -i /home/cytmo/Documents/chisel_work/chisel/chown-8.2/fuzzed_input/afl_seed/input_whoami:sudo -o result /home/cytmo/Documents/chisel_work/chisel/chown-8.2/original_files_and_refs/afl_bin
+command_line      : afl-fuzz -i /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/chown-8.2-argv-5percent/fuzzed_input/afl_seed/input_whoami:sudo -o result /home/cytmo/Documents/git/deb-robustness-study/benchmark/chisel_redebloated/chown-8.2-argv-5percent/original_files_and_refs/afl_bin

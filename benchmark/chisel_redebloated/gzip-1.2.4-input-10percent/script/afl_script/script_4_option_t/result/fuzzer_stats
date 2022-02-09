@@ -1,9 +1,9 @@
 start_time        : 1643892453
-last_update       : 1643895458
+last_update       : 1643895572
 fuzzer_pid        : 1241413
 cycles_done       : 0
-execs_done        : 2615524
-execs_per_sec     : 781.13
+execs_done        : 2700268
+execs_per_sec     : 819.53
 paths_total       : 137
 paths_favored     : 1
 paths_found       : 136
@@ -20,7 +20,7 @@ unique_hangs      : 14
 last_path         : 1643894449
 last_crash        : 1643894448
 last_hang         : 1643893626
-execs_since_crash : 868787
+execs_since_crash : 953531
 exec_timeout      : 20
 slowest_exec_ms   : 1000
 peak_rss_mb       : 0
