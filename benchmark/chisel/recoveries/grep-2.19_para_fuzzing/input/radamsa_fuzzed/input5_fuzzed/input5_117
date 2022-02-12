@@ -1,0 +1,1 @@
+"1" -r train_input/input -r train_in_input/input -r train_input/input_dir -L
