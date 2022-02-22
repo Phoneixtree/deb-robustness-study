@@ -1,0 +1,1 @@
+/home/cytmo/Documents/chiselbench/benchmark/mkdir-5.2.1/original_files_and_refs/mkdir-5.2.1.reduced: cannot create directory `d-2664458071970630/d799492334973880765524602/d79949233497388349738807655876': No such file or directory
