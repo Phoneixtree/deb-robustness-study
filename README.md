@@ -66,3 +66,6 @@ https://www.yuque.com/cytmo/gi9oz5
 
 ### Online document about insights and notes about the expriment
 https://docs.qq.com/doc/DSmVOam9YaVp1UWNn
+
+### Online document about the results of double-checking the inputs and scripts
+https://docs.qq.com/doc/DZmdNZXlGVmVpVWhI
