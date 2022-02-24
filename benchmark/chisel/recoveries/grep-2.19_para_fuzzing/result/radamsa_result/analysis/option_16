@@ -1,18 +1,18 @@
 origin.out hangs 3 times
 reduced.out hangs 0 times
-recovered.out hangs 1 times
+robust_reduced.out hangs 0 times
 
 origin.out has 6 crashes
-reduced.out has 39 crashes
-recovered.out has 10 crashes
+reduced.out has 26 crashes
+robust_reduced.out has 11 crashes
 
 origin.out successfully executed 491 times
-reduced.out successfully executed 461 times
-recovered.out successfully executed 489 times
+reduced.out successfully executed 474 times
+robust_reduced.out successfully executed 489 times
 
 ======================================================    Option  16  Radamsa Result Analysis    ======================================================
                              Crashes        Crash Rate(%)                Hangs         Hang Rate(%)          Successfully Executed                Total
 Origin                             6                    1                    3                    0                            491                  500
-Reduced                           39                    7                    0                    0                            461                  500
-recovered                         10                    2                    1                    0                            489                  500
+Reduced                           26                    5                    0                    0                            474                  500
+robust_reduced                    11                    2                    0                    0                            489                  500
 =========================================================================  END  ========================================================================
