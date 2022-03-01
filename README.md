@@ -63,3 +63,12 @@ https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
 ### Online document about prog_redebloat(add failed testcases back)
  currently gzip_input and grep_argv
 https://www.yuque.com/cytmo/gi9oz5
+
+### Online document about insights and notes about the expriment
+https://docs.qq.com/doc/DSmVOam9YaVp1UWNn
+
+### Online document about the results of double-checking the inputs and scripts
+https://docs.qq.com/doc/DZmdNZXlGVmVpVWhI
+
+### Online multi-dimensional spreadsheet for statistics and analysis on the results
+https://a1hga02396.feishu.cn/base/bascn01AqxkhbFUeEtSPfAl7Cgb
