@@ -1,0 +1,1 @@
+-c < train_inpus/traind/sample340282366920938463463374607431768211455.gz > sample-49.tst

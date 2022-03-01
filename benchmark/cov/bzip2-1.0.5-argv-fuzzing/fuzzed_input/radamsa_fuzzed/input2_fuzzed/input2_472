@@ -1,0 +1,1 @@
+-d <  train_ind/sample1.bz2.ref input/traind/sampbz2.ref input/traind/sample9223372036854775808.bz2.ref > sample1.tst

@@ -1,0 +1,1 @@
+-c < train_input/traind/sample170141183460469231731687303715884105728.gz > sample1.tst-c < train_input/traind/sample1.gz > sample340282366920938463463374607431768211455À®tst-c < train_input/traind/sample170141183460469231731687303715884105728.gz > sample1.tst-c < train_input/traind/sample2.gz > sample340282366920938463463374607431768211455À®tst

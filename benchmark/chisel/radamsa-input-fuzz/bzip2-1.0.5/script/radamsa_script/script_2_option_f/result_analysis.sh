@@ -1,7 +1,7 @@
 #/bin/bash
 rm result/result
-origin_hang=`grep -o '124' result/log_origin | wc -l`
-reduced_hang=`grep -o '124' result/log_reduced | wc -l`
+origin_hang=`grep -o '137' result/log_origin | wc -l`
+reduced_hang=`grep -o '137' result/log_reduced | wc -l`
 origin_exc=`grep -o '139' result/log_origin | wc -l`
 reduced_exc=`grep -o '139' result/log_reduced | wc -l`
 origin_beh=`grep -o '0' result/log_origin | wc -l`

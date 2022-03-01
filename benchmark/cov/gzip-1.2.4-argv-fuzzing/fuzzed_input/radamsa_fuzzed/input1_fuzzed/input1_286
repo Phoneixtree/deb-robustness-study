@@ -1,0 +1,1 @@
+-c < train_inc/sample128.ref > sample65535.rb255

@@ -1,0 +1,1 @@
+-c < train_inut/traind/sample4294967296.gz > sample3.gz > sample9223372036854775807.tst
