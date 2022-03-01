@@ -10,7 +10,7 @@ for paras in ${para[@]}; do
     if [ $cnt -lt $limit ]
     then
         cd ${afl_seed}
-        mkdir $cnt
+        mkdir $cnt >& /dev/null
         cd $cnt
         echo ${para[${cnt}]} > test
         echo  ${para[${cnt}]} == ${cnt}
