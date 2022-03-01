@@ -69,3 +69,6 @@ https://docs.qq.com/doc/DSmVOam9YaVp1UWNn
 
 ### Online document about the results of double-checking the inputs and scripts
 https://docs.qq.com/doc/DZmdNZXlGVmVpVWhI
+
+### Online multi-dimensional spreadsheet for statistics and analysis on the results
+https://a1hga02396.feishu.cn/base/bascn01AqxkhbFUeEtSPfAl7Cgb
