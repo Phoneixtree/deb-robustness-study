@@ -1,0 +1,1 @@
+-d <s train_input/traindample1.bz2.ref > sample11.bz2.ref > sample1.tst
