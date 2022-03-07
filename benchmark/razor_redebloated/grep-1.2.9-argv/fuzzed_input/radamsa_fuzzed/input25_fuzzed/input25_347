@@ -1,1 +1,0 @@
--E "free[^[:space:]]+" train_inpvt/input_dir/input2

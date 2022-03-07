@@ -1,9 +1,0 @@
-Command line used to find this crash:
-afl-fuzz -i afl_input -o afl_output_rhe crashes or sending
-
-them tto
-add your finds to the gallery at:
-  http://lcamtuf.coredump.cx/a󠀹fl/
-
-
-Thanks :-)
