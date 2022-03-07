@@ -1,3 +1,4 @@
+#include "argv-fuzz-inl.h"
 typedef long __time_t;
 typedef long __syscall_slong_t;
 typedef __time_t time_t;
@@ -154,15 +155,15 @@ struct addrinfo {
 };
 struct __locale_data;
 struct __locale_data;
-struct __locale_struct {
+struct __locale_struct__ {
   struct __locale_data *__locales[13];
   unsigned short const *__ctype_b;
   int const *__ctype_tolower;
   int const *__ctype_toupper;
   char const *__names[13];
 };
-typedef struct __locale_struct *__locale_t;
-typedef __locale_t locale_t;
+typedef struct __locale_struct__ *__locale_t____;
+typedef __locale_t____ locale_t__;
 struct base64_decode_context {
   unsigned int i;
   char buf[4];
@@ -964,10 +965,10 @@ struct termios {
   speed_t c_ospeed;
 };
 typedef long long xtime_t;
-struct __anonstruct___fsid_t_1 {
+struct __anonstruct___fsid_t___1 {
   int __val[2];
 };
-typedef struct __anonstruct___fsid_t_1 __fsid_t;
+typedef struct __anonstruct___fsid_t___1 __fsid_t__;
 typedef unsigned long __fsblkcnt_t;
 typedef unsigned long __fsfilcnt_t;
 typedef long __fsword_t;
@@ -4999,6 +5000,7 @@ static void check_file(char const *infile, char const *outfile,
   }
 }
 int main(int argc, char **argv) {
+  AFL_INIT_SET0("uniq");
   int optc;
   _Bool posixly_correct;
   char *tmp;

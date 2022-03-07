@@ -1,0 +1,4 @@
+-s 1 data.txt
+-s 1 data.txt
+-s 32768 data.txt
+-s 65536 data.txt
