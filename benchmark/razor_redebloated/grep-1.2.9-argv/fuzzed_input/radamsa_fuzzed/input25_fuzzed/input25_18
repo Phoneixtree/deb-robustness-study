@@ -1,1 +1,0 @@
--E "free[^^[:spaaaaaaaace:]]+" train_input/%n\r$(xcalc)+in_input/%n\r$(xcalc)+inf\u18446744073709551617input_dir/input254

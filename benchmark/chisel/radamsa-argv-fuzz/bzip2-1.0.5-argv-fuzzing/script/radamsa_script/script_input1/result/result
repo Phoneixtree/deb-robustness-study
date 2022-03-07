@@ -1,9 +1,9 @@
-origin_bin hang 0 times
+origin_bin hang 1 times
 reduced_bin hang 0 times
 
 origin_bin has executed 3 exceptions
 reduced_bin has 4 exceptions
 
-origin_bin successfully executed 1 times
+origin_bin successfully executed 2 times
 reduced_bin successfully executed 496 times
 

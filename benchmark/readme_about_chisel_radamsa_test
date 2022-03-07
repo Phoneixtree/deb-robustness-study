@@ -1,8 +1,0 @@
-About chown
-please run script/radamsa_script/modify_fuzzed_testfile.sh and script/radamsa_script/create_fuzzed_testfile.sh first before u run radamsa test
-
-About grep_argv
-see script/radamsa_script/0_README
-
-About rm_argv mkdir sort_argv tar_argv uniq_argv
-please look into script/radamsa_script/ and see files inside
