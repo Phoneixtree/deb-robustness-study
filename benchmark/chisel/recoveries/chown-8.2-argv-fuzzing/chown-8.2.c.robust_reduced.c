@@ -1,3 +1,4 @@
+#include "argv-fuzz-inl.h";
 typedef unsigned long size_t;
 typedef long __off_t;
 typedef long __off64_t;
@@ -272,10 +273,10 @@ struct hash_table {
   void (*data_freer)(void *);
   struct hash_entry *free_entry_list;
 };
-struct __anonstruct___fsid_t_1 {
+struct __anonstruct___fsid_t___1 {
   int __val[2];
 };
-typedef struct __anonstruct___fsid_t_1 __fsid_t;
+typedef struct __anonstruct___fsid_t___1 __fsid_t__;
 typedef unsigned long __fsblkcnt_t;
 typedef unsigned long __fsfilcnt_t;
 typedef long __fsword_t;
@@ -5209,6 +5210,7 @@ void usage(int status) {
 }
 static struct dev_ino dev_ino_buf;
 int main(int argc, char **argv) {
+  AFL_INIT_SET0("chown");
   _Bool preserve_root;
   uid_t uid;
   gid_t gid;

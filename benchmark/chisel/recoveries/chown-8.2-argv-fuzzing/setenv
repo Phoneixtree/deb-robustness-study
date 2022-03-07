@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export home_folder=$(pwd)
+export rad_files4chown=${home_folder}/inputs/radamsa_fuzzed
+# export afl_seed=${home_folder}/inputs/afl_seed
+# export bins=${home_folder}/original_files_and_refs
+# export origin=${bins}/chown-8.2.origin
+# export reduced=${bins}/chown-8.2.reduced
+
+
+
