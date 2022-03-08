@@ -1,5 +1,5 @@
 #/bin/bash
-radamsa_result_analysis=${home_folder}/result/radamsa_result/analysis/input${option}
+radamsa_result_analysis=${home_folder}/result/radamsa_result/analysis/input_${option}
 
 origin_hangs=`grep -o '124' ${origin_result} | wc -l`
 reduced_hangs=`grep -o '124' ${reduced_result} | wc -l`

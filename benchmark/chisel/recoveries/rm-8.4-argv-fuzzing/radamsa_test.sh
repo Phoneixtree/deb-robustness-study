@@ -34,15 +34,22 @@ do
     [ ! -f file ] && touch file
     [ ! -d dir ]  && mkdir dir
 
-
     echo ${cnt}
-    { timeout -k 0.5 0.5 ${origin_bin} < ${fuzzed_input}/input${option}_${cnt}; } >/dev/null
+    ${origin_bin} < ${fuzzed_input}/input${option}_${cnt}
     echo $? >> ${origin_result}
-   
-    { timeout -k 0.5 0.5 ${reduced_bin} < ${fuzzed_input}/input${option}_${cnt}; } >/dev/null
+
+    # to make sure the file / dir exist
+    [ ! -f file ] && touch file
+    [ ! -d dir ]  && mkdir dir
+
+    ${reduced_bin} < ${fuzzed_input}/input${option}_${cnt}
     echo $? >> ${reduced_result}
 
-    { timeout -k 0.5 0.5 ${robust_reduced_bin} < ${fuzzed_input}/input${option}_${cnt}; } >/dev/null
+    # to make sure the file / dir exist
+    [ ! -f file ] && touch file
+    [ ! -d dir ]  && mkdir dir
+
+    ${robust_reduced_bin} < ${fuzzed_input}/input${option}_${cnt}
     echo $? >> ${robust_reduced_result}
 
   
