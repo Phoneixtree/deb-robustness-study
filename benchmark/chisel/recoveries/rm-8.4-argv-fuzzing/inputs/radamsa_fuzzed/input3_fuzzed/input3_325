@@ -1,0 +1,8 @@
+f dir
+-r  dir
+-r -f dir
+r
+-r
+-f
+-fr
+-fid 
