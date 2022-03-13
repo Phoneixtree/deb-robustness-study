@@ -1,4 +1,7 @@
--h+cytmo:sudo+symfile1+symfile1+symfile2
--h+cytmo:sudo+symfile1+symfile1+symfile2
--h+cytmo:sudo+symfile1+symfile1+symfile2
--h+cytmo:sudo+symfile1+symfile1+symfile2
+-h+cytmo:tmo:sudo+symfile1
+-h+cytmo:tmo:sudo+symfile1
+-h+csudo+symfile1
+-h+cytmo:tmo:sudo+symfile1
+-h+csudo+symfile1
+-h+csudo+symfile1
+-h+cytmo:tmo:sudo+symfile1
