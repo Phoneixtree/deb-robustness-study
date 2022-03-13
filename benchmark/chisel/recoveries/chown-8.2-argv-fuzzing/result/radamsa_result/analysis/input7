@@ -1,0 +1,18 @@
+origin.out hangs 0 times
+reduced.out hangs 0 times
+robust_reduced.out hangs 0 times
+
+origin.out has 0 crashes
+reduced.out has 23 crashes
+robust_reduced.out has 4 crashes
+
+origin.out successfully executed 500 times
+reduced.out successfully executed 477 times
+robust_reduced.out successfully executed 496 times
+
+=======================================================    Input  7  Radamsa Result Analysis    ======================================================
+                             Crashes        Crash Rate(%)                Hangs         Hang Rate(%)          Successfully Executed                Total
+Origin                             0                 0.00                    0                 0.00                            500                  500
+Reduced                           23                 4.60                    0                 0.00                            477                  500
+Robust_Reduced                     4                 0.80                    0                 0.00                            496                  500
+=========================================================================  END  ========================================================================
