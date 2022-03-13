@@ -1,7 +1,7 @@
 #!/bin/bash
   cd ../../..
   . setenv
-  cd script/radamsa_script/script_0_option_d
+  cd script/radamsa_script/script_1_option_d
 cnt=0
 while(( $cnt<=499 )) 
 do

@@ -8,4 +8,4 @@ export origin=${bins}/bzip2-1.0.5.origin
 export reduced=${bins}/bzip2-1.0.5.reduced
 export debloat=$bins/afl_bin
 export input2=$bins/train_input/traind
-
+export afl_origin=$bins/afl_bin_origin

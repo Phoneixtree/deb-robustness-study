@@ -11,4 +11,4 @@ cd result
 rm -rf *
 cd ..
 cd tmp
-afl-fuzz -i ${afl_seed}/input_1 -o ../result ${debloat} 
+afl-fuzz -i ${afl_seed}/input_1 -o  ../result --  ${afl_origin}
