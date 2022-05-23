@@ -1,0 +1,79 @@
+[2022-05-23 02:07:59.053] [Logger] [info] Oracle: ./chisel-test-template.sh
+[2022-05-23 02:07:59.053] [Logger] [info] Input: /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:07:59.053] [Logger] [info] Output Directory: /root/small_progs_debloated/printtokens/testscript/n10train/result/
+[2022-05-23 02:07:59.059] [Logger] [info] Reduce File: /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:07:59.065] [Logger] [info] Iteration 1 (Word: 3667)
+[2022-05-23 02:08:01.272] [Logger] [info] Start global reduction
+[2022-05-23 02:08:01.278] [Logger] [info] Running delta debugging - Size: 46
+[2022-05-23 02:08:01.440] [Logger] [info] Reduced - Size: 40
+[2022-05-23 02:08:01.588] [Logger] [info] Reduced - Size: 38
+[2022-05-23 02:08:01.747] [Logger] [info] Reduced - Size: 36
+[2022-05-23 02:08:01.882] [Logger] [info] Reduced - Size: 35
+[2022-05-23 02:08:02.061] [Logger] [info] Reduced - Size: 34
+[2022-05-23 02:08:02.061] [Logger] [info] Start local reduction
+[2022-05-23 02:08:02.064] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:02.064] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:02.217] [Logger] [info] Reduced - Size: 0
+[2022-05-23 02:08:02.217] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:02.217] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:02.217] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 02:08:02.373] [Logger] [info] Reduced - Size: 2
+[2022-05-23 02:08:02.535] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:02.535] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:02.535] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:02.535] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 02:08:02.746] [Logger] [info] Reduced - Size: 3
+[2022-05-23 02:08:02.884] [Logger] [info] Reduced - Size: 2
+[2022-05-23 02:08:02.884] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:02.884] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:03.034] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:03.034] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:03.034] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 02:08:03.247] [Logger] [info] Reduced - Size: 1
+[2022-05-23 02:08:03.409] [Logger] [info] Reduced - Size: 0
+[2022-05-23 02:08:03.409] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:03.409] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:03.409] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 02:08:03.542] [Logger] [info] Reduced - Size: 1
+[2022-05-23 02:08:03.690] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:03.838] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 02:08:03.840] [Logger] [info] Iteration 2 (Word: 1378)
+[2022-05-23 02:08:04.625] [Logger] [info] Start global reduction
+[2022-05-23 02:08:04.627] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 02:08:04.765] [Logger] [info] Reduced - Size: 6
+[2022-05-23 02:08:04.924] [Logger] [info] Reduced - Size: 5
+[2022-05-23 02:08:05.071] [Logger] [info] Reduced - Size: 4
+[2022-05-23 02:08:05.226] [Logger] [info] Reduced - Size: 3
+[2022-05-23 02:08:05.226] [Logger] [info] Start local reduction
+[2022-05-23 02:08:05.228] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:05.231] [Logger] [info] Iteration 3 (Word: 847)
+[2022-05-23 02:08:05.406] [Logger] [info] Start global reduction
+[2022-05-23 02:08:05.407] [Logger] [info] Running delta debugging - Size: 26
+[2022-05-23 02:08:05.608] [Logger] [info] Reduced - Size: 0
+[2022-05-23 02:08:05.609] [Logger] [info] Start local reduction
+[2022-05-23 02:08:05.613] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:05.615] [Logger] [info] Iteration 4 (Word: 414)
+[2022-05-23 02:08:05.750] [Logger] [info] Start global reduction
+[2022-05-23 02:08:05.751] [Logger] [info] Running delta debugging - Size: 23
+[2022-05-23 02:08:05.875] [Logger] [info] Reduced - Size: 0
+[2022-05-23 02:08:05.875] [Logger] [info] Start local reduction
+[2022-05-23 02:08:05.876] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:05.877] [Logger] [info] Reduce File: /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:05.878] [Logger] [info] Iteration 1 (Word: 414)
+[2022-05-23 02:08:06.026] [Logger] [info] Start global reduction
+[2022-05-23 02:08:06.026] [Logger] [info] Running delta debugging - Size: 23
+[2022-05-23 02:08:06.219] [Logger] [info] Reduced - Size: 0
+[2022-05-23 02:08:06.219] [Logger] [info] Start local reduction
+[2022-05-23 02:08:06.221] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c.origin.c
+[2022-05-23 02:08:06.231] [Logger] [info] ====================================================
+[2022-05-23 02:08:06.231] [Logger] [info]                        Report                       
+[2022-05-23 02:08:06.231] [Logger] [info] ====================================================
+[2022-05-23 02:08:06.231] [Logger] [info]              Total Time :                  7.2s
+[2022-05-23 02:08:06.231] [Logger] [info]             Oracle Time :                  7.1s
+[2022-05-23 02:08:06.231] [Logger] [info]           Learning Time :                  0.0s
+[2022-05-23 02:08:06.231] [Logger] [info]    Global Success Ratio :  100% (   12 /    12)
+[2022-05-23 02:08:06.231] [Logger] [info]     Local Success Ratio :  100% (   11 /    11)
+[2022-05-23 02:08:06.238] [Logger] [info]   #Functions (Original) :                    18
+[2022-05-23 02:08:06.238] [Logger] [info]  #Statements (Original) :                   396
+[2022-05-23 02:08:06.239] [Logger] [info]    #Functions (Reduced) :                     1
+[2022-05-23 02:08:06.239] [Logger] [info]   #Statements (Reduced) :                     0

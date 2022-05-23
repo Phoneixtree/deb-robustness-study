@@ -1,0 +1,518 @@
+[2022-05-23 05:46:19.314] [Logger] [info] Oracle: ./chisel-test-template.sh
+[2022-05-23 05:46:19.314] [Logger] [info] Input: /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:19.314] [Logger] [info] Output Directory: /root/small_progs_debloated/schedule/testscript/n10train/chisel-out
+[2022-05-23 05:46:19.333] [Logger] [info] Reduce File: /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:19.335] [Logger] [info] Iteration 1 (Word: 1471)
+[2022-05-23 05:46:21.230] [Logger] [info] Start global reduction
+[2022-05-23 05:46:21.232] [Logger] [info] Running delta debugging - Size: 30
+[2022-05-23 05:46:21.233] [Logger] [info] Start local reduction
+[2022-05-23 05:46:21.234] [Logger] [info] Reduce new_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:21.234] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:21.234] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:21.234] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:46:21.500] [Logger] [info] Reduced - Size: 3
+[2022-05-23 05:46:21.586] [Logger] [info] Reduce new_list at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:21.586] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:21.586] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:21.586] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:46:21.857] [Logger] [info] Reduced - Size: 3
+[2022-05-23 05:46:21.951] [Logger] [info] Reduce append_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:21.951] [Logger] [info] Running delta debugging - Size: 7
+[2022-05-23 05:46:22.585] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:22.638] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:22.684] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:22.730] [Logger] [info] Reduce find_nth at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:22.730] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:22.730] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:46:23.084] [Logger] [info] Reduced - Size: 4
+[2022-05-23 05:46:23.265] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:23.353] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:24.745] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:24.835] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:24.880] [Logger] [info] Reduce del_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:24.880] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:46:25.280] [Logger] [info] Reduced - Size: 4
+[2022-05-23 05:46:25.701] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:25.748] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:25.795] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:25.846] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:25.893] [Logger] [info] Reduce free_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:25.893] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:26.021] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:26.144] [Logger] [info] Reduced - Size: 0
+[2022-05-23 05:46:26.144] [Logger] [info] Reduce finish_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:26.144] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:26.307] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:26.385] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:26.477] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:26.641] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:26.767] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:26.805] [Logger] [info] Reduce finish_all_processes at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:26.805] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:26.844] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:46:27.155] [Logger] [info] Reduced - Size: 3
+[2022-05-23 05:46:27.231] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:27.307] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:28.426] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:29.004] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:29.549] [Logger] [info] Reduce schedule at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:29.549] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:29.593] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:46:29.984] [Logger] [info] Reduced - Size: 3
+[2022-05-23 05:46:30.061] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:30.139] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:32.463] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:32.512] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:32.590] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:32.687] [Logger] [info] Reduce upgrade_process_prio at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:32.687] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:32.730] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 05:46:33.206] [Logger] [info] Reduced - Size: 5
+[2022-05-23 05:46:33.600] [Logger] [info] Reduced - Size: 4
+[2022-05-23 05:46:33.808] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:33.900] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:33.991] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:34.307] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:34.307] [Logger] [info] Reduce unblock_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:34.307] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:34.345] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:34.515] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:34.563] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:34.602] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:34.650] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:34.901] [Logger] [info] Reduce quantum_expire at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:34.901] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:34.939] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:35.101] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:35.177] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:35.263] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:35.348] [Logger] [info] Reduce block_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:35.348] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:35.511] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:35.587] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:35.673] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:35.711] [Logger] [info] Reduce new_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:35.711] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:35.711] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:35.711] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:46:36.005] [Logger] [info] Reduce add_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:36.005] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:36.044] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:36.205] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:36.205] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:36.244] [Logger] [info] Reduce init_prio_queue at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:36.244] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:36.290] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:46:36.679] [Logger] [info] Reduced - Size: 3
+[2022-05-23 05:46:36.774] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:36.861] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:36.939] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:38.070] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:39.247] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:39.806] [Logger] [info] Reduce initialize at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:39.806] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:39.933] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:40.058] [Logger] [info] Reduced - Size: 0
+[2022-05-23 05:46:40.058] [Logger] [info] Reduce main at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:40.058] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:40.096] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 05:46:40.856] [Logger] [info] Reduced - Size: 5
+[2022-05-23 05:46:41.185] [Logger] [info] Reduced - Size: 4
+[2022-05-23 05:46:41.346] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:41.471] [Logger] [info] Reduced - Size: 1
+[2022-05-23 05:46:41.518] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:41.565] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:41.604] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:41.790] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:41.844] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:42.432] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:43.601] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:45.380] [Logger] [info] Running delta debugging - Size: 25
+[2022-05-23 05:46:46.837] [Logger] [info] Reduced - Size: 24
+[2022-05-23 05:46:47.538] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:47.539] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:47.585] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:47.711] [Logger] [info] Reduced - Size: 0
+[2022-05-23 05:46:47.711] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:50.377] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:50.420] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:50.459] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:50.497] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:51.037] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:51.580] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:52.121] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:52.159] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:52.200] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:52.237] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:52.277] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:52.859] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:53.941] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:53.987] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:54.025] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:54.063] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:54.430] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:54.471] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:54.511] [Logger] [info] Iteration 2 (Word: 1193)
+[2022-05-23 05:46:55.017] [Logger] [info] Start global reduction
+[2022-05-23 05:46:55.019] [Logger] [info] Running delta debugging - Size: 30
+[2022-05-23 05:46:55.147] [Logger] [info] Reduced - Size: 29
+[2022-05-23 05:46:55.271] [Logger] [info] Reduced - Size: 28
+[2022-05-23 05:46:55.271] [Logger] [info] Start local reduction
+[2022-05-23 05:46:55.272] [Logger] [info] Reduce new_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:55.272] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:55.272] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:55.272] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:55.406] [Logger] [info] Reduce new_list at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:55.406] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:55.406] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:55.406] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:55.574] [Logger] [info] Reduced - Size: 2
+[2022-05-23 05:46:55.574] [Logger] [info] Reduce append_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:55.575] [Logger] [info] Running delta debugging - Size: 7
+[2022-05-23 05:46:56.193] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:56.238] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:56.285] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:56.331] [Logger] [info] Reduce find_nth at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:56.331] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:56.331] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:46:56.511] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:56.600] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:57.860] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:57.949] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:57.992] [Logger] [info] Reduce del_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:57.992] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:46:58.381] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.419] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.465] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.510] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.548] [Logger] [info] Reduce finish_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:58.548] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:58.625] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.710] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.749] [Logger] [info] Reduce finish_all_processes at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:46:58.749] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:46:58.786] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:46:58.937] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:46:59.015] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:00.136] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:00.713] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:01.255] [Logger] [info] Reduce schedule at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:01.255] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:01.294] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:01.520] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:01.597] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:03.934] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:03.981] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.055] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.138] [Logger] [info] Reduce upgrade_process_prio at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:04.138] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:04.181] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:04.475] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.514] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.560] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.656] [Logger] [info] Reduce unblock_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:04.656] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:04.698] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:04.794] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:04.834] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:04.882] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:05.128] [Logger] [info] Reduce quantum_expire at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:05.128] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.166] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:05.244] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.328] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:05.412] [Logger] [info] Reduce block_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:05.412] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:05.488] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.572] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.611] [Logger] [info] Reduce new_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:05.611] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.611] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:05.611] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:47:05.904] [Logger] [info] Reduce add_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:05.904] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:05.943] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:05.983] [Logger] [info] Reduce init_prio_queue at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:05.983] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:06.028] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:06.261] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:06.346] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:06.422] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:07.561] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:08.754] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:09.309] [Logger] [info] Reduce main at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:09.309] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:09.351] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:09.840] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:09.886] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:09.932] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:09.970] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:10.160] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:10.211] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:10.798] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:12.471] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:14.242] [Logger] [info] Running delta debugging - Size: 24
+[2022-05-23 05:47:25.415] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:25.416] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:25.464] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.317] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.362] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.407] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.455] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.497] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:28.540] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:29.082] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:29.637] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:30.184] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:30.223] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:30.270] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:30.309] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:30.348] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:30.928] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:32.007] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:32.551] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:32.612] [Logger] [info] Iteration 3 (Word: 1174)
+[2022-05-23 05:47:32.743] [Logger] [info] Start global reduction
+[2022-05-23 05:47:32.744] [Logger] [info] Running delta debugging - Size: 28
+[2022-05-23 05:47:32.744] [Logger] [info] Start local reduction
+[2022-05-23 05:47:32.746] [Logger] [info] Reduce new_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:32.746] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:32.746] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:32.746] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:32.900] [Logger] [info] Reduce new_list at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:32.900] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:32.900] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:32.900] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:32.900] [Logger] [info] Reduce append_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:32.900] [Logger] [info] Running delta debugging - Size: 7
+[2022-05-23 05:47:33.572] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:33.618] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:33.673] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:33.721] [Logger] [info] Reduce find_nth at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:33.721] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:33.721] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:33.931] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:34.020] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:35.291] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:35.382] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:35.429] [Logger] [info] Reduce del_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:35.429] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:35.844] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:35.883] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:35.929] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:35.973] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:36.010] [Logger] [info] Reduce finish_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:36.010] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:36.092] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:36.179] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:36.217] [Logger] [info] Reduce finish_all_processes at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:36.217] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:36.256] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:36.409] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:36.486] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:37.612] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:38.191] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:38.735] [Logger] [info] Reduce schedule at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:38.735] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:38.778] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:39.006] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:39.084] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:41.432] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:41.490] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:41.567] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:41.653] [Logger] [info] Reduce upgrade_process_prio at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:41.653] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:41.698] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:42.017] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:42.060] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:42.108] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:42.204] [Logger] [info] Reduce unblock_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:42.204] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:42.246] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:42.362] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:42.405] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:42.456] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:42.708] [Logger] [info] Reduce quantum_expire at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:42.708] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:42.745] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:42.823] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:42.911] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:43.000] [Logger] [info] Reduce block_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:43.000] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:43.080] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:43.177] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:43.215] [Logger] [info] Reduce new_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:43.215] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:43.215] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:43.216] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:47:43.516] [Logger] [info] Reduce add_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:43.516] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:43.556] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:43.595] [Logger] [info] Reduce init_prio_queue at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:43.596] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:43.653] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:43.898] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:43.992] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:44.070] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:45.196] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:46.379] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:46.934] [Logger] [info] Reduce main at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:47:46.934] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:46.978] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:47:47.520] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:47.568] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:47.615] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:47.655] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:47.842] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:47:47.895] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:47:48.480] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:50.171] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:47:51.951] [Logger] [info] Running delta debugging - Size: 24
+[2022-05-23 05:48:03.084] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:03.084] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:03.141] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.022] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.066] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.105] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.149] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.189] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.228] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:06.770] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:07.313] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:07.856] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:07.901] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:07.948] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:07.988] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:08.028] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:08.607] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:09.692] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:10.236] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:10.281] [Logger] [info] Reduce File: /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:10.282] [Logger] [info] Iteration 1 (Word: 1174)
+[2022-05-23 05:48:10.422] [Logger] [info] Start global reduction
+[2022-05-23 05:48:10.423] [Logger] [info] Running delta debugging - Size: 28
+[2022-05-23 05:48:10.423] [Logger] [info] Start local reduction
+[2022-05-23 05:48:10.425] [Logger] [info] Reduce new_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:10.425] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:10.425] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:10.425] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:10.562] [Logger] [info] Reduce new_list at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:10.562] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:10.562] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:10.562] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:10.562] [Logger] [info] Reduce append_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:10.562] [Logger] [info] Running delta debugging - Size: 7
+[2022-05-23 05:48:11.173] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:11.221] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:11.275] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:11.327] [Logger] [info] Reduce find_nth at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:11.327] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:11.327] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:48:11.518] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:11.607] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:12.884] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:12.979] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.026] [Logger] [info] Reduce del_ele at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:13.026] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:48:13.451] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.489] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.536] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.581] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.620] [Logger] [info] Reduce finish_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:13.620] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:13.696] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.782] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.820] [Logger] [info] Reduce finish_all_processes at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:13.820] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:13.860] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:14.014] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:14.088] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:15.206] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:15.789] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:16.336] [Logger] [info] Reduce schedule at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:16.336] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:16.381] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:16.613] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:16.690] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:19.041] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:19.094] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.171] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.270] [Logger] [info] Reduce upgrade_process_prio at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:19.270] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:19.310] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:48:19.624] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.667] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.714] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.812] [Logger] [info] Reduce unblock_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:19.812] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:19.850] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:19.932] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:19.970] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:20.017] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:20.266] [Logger] [info] Reduce quantum_expire at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:20.266] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:20.305] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:20.381] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:20.480] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:20.563] [Logger] [info] Reduce block_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:20.563] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:20.641] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:20.736] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:20.774] [Logger] [info] Reduce new_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:20.774] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:20.774] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:20.774] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 05:48:21.069] [Logger] [info] Reduce add_process at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:21.069] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:21.106] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:21.145] [Logger] [info] Reduce init_prio_queue at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:21.145] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:21.199] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:21.446] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:21.535] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:21.611] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:22.744] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:23.932] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:24.489] [Logger] [info] Reduce main at /root/small_progs_debloated/schedule/src/origin/schedule.c
+[2022-05-23 05:48:24.489] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:24.530] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 05:48:25.042] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:25.094] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:25.154] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:25.193] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:25.395] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:25.449] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:26.035] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:27.709] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 05:48:29.479] [Logger] [info] Running delta debugging - Size: 24
+[2022-05-23 05:48:40.595] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:40.595] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:40.648] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.494] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.535] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.574] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.629] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.668] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:43.706] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:44.247] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:44.790] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:45.332] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:45.372] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:45.417] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:45.458] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:45.499] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:46.079] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 05:48:47.169] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:47.712] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 05:48:47.766] [Logger] [info] ====================================================
+[2022-05-23 05:48:47.766] [Logger] [info]                        Report                       
+[2022-05-23 05:48:47.766] [Logger] [info] ====================================================
+[2022-05-23 05:48:47.767] [Logger] [info]              Total Time :                148.5s
+[2022-05-23 05:48:47.767] [Logger] [info]             Oracle Time :                147.2s
+[2022-05-23 05:48:47.767] [Logger] [info]           Learning Time :                  0.0s
+[2022-05-23 05:48:47.767] [Logger] [info]    Global Success Ratio :  100% (    2 /     2)
+[2022-05-23 05:48:47.767] [Logger] [info]     Local Success Ratio :    3% (   33 /  1099)
+[2022-05-23 05:48:47.768] [Logger] [info]   #Functions (Original) :                    18
+[2022-05-23 05:48:47.768] [Logger] [info]  #Statements (Original) :                   211
+[2022-05-23 05:48:47.770] [Logger] [info]    #Functions (Reduced) :                    16
+[2022-05-23 05:48:47.770] [Logger] [info]   #Statements (Reduced) :                   159

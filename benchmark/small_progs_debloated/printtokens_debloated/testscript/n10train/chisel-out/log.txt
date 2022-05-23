@@ -1,0 +1,977 @@
+[2022-05-23 03:07:46.111] [Logger] [info] Oracle: ./chisel-test-template.sh
+[2022-05-23 03:07:46.111] [Logger] [info] Input: /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:46.111] [Logger] [info] Output Directory: /root/small_progs_debloated/printtokens/testscript/n10train/chisel-out
+[2022-05-23 03:07:46.187] [Logger] [info] Reduce File: /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:46.189] [Logger] [info] Iteration 1 (Word: 3272)
+[2022-05-23 03:07:48.065] [Logger] [info] Start global reduction
+[2022-05-23 03:07:48.068] [Logger] [info] Running delta debugging - Size: 46
+[2022-05-23 03:07:48.875] [Logger] [info] Start local reduction
+[2022-05-23 03:07:48.877] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:48.878] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:48.922] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:07:49.112] [Logger] [info] Reduced - Size: 3
+[2022-05-23 03:07:49.154] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:49.154] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:07:49.154] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:07:49.343] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:07:49.387] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:07:51.566] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:07:52.706] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:52.749] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:53.804] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:53.804] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:53.805] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:07:53.966] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:07:54.155] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:07:54.345] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:54.400] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:54.400] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:54.400] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:07:55.585] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:07:57.833] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:57.877] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:07:58.929] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:07:58.935] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:00.040] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:01.107] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:01.264] [Logger] [info] Reduced - Size: 0
+[2022-05-23 03:08:01.264] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:01.264] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:02.470] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:03.665] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:03.845] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:03.845] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:03.845] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:03.845] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:03.845] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:04.032] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:04.032] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:04.033] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:04.224] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:08:04.224] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:08:10.789] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:10.839] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:08:14.150] [Logger] [info] Reduced - Size: 4
+[2022-05-23 03:08:18.641] [Logger] [info] Running delta debugging - Size: 29
+[2022-05-23 03:08:18.917] [Logger] [info] Reduced - Size: 25
+[2022-05-23 03:08:19.460] [Logger] [info] Reduced - Size: 23
+[2022-05-23 03:08:20.847] [Logger] [info] Reduced - Size: 22
+[2022-05-23 03:08:21.595] [Logger] [info] Reduced - Size: 20
+[2022-05-23 03:08:22.875] [Logger] [info] Reduced - Size: 19
+[2022-05-23 03:08:23.659] [Logger] [info] Reduced - Size: 18
+[2022-05-23 03:08:24.448] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:24.577] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:28.058] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:28.119] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:28.694] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:28.788] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:28.833] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:28.881] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:28.943] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.008] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.055] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.102] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.158] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.212] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:29.256] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:29.445] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:29.445] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:29.534] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:29.723] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:29.724] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:30.057] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:30.241] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:08:30.385] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:30.430] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:30.484] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:30.534] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:30.720] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:08:30.860] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:30.905] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:31.963] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:33.056] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:08:35.771] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:35.772] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:35.772] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:36.068] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:36.113] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:08:36.827] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:39.441] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:39.525] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:45.542] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:46.899] [Logger] [info] Reduced - Size: 3
+[2022-05-23 03:08:49.007] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:49.060] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:08:52.627] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:52.685] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:52.685] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:52.685] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:08:56.297] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:56.422] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:56.686] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:56.826] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:57.879] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:57.988] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:57.989] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:57.989] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:08:58.210] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:08:58.210] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:58.262] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:58.262] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:58.400] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:08:58.400] [Logger] [info] Reduce keyword at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:58.400] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:58.540] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:58.540] [Logger] [info] Running delta debugging - Size: 14
+[2022-05-23 03:08:58.770] [Logger] [info] Reduced - Size: 10
+[2022-05-23 03:08:59.043] [Logger] [info] Reduced - Size: 7
+[2022-05-23 03:08:59.317] [Logger] [info] Reduced - Size: 6
+[2022-05-23 03:08:59.460] [Logger] [info] Reduced - Size: 3
+[2022-05-23 03:08:59.600] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:59.600] [Logger] [info] Reduce special at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:08:59.600] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:08:59.738] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:08:59.738] [Logger] [info] Running delta debugging - Size: 20
+[2022-05-23 03:09:00.201] [Logger] [info] Reduced - Size: 17
+[2022-05-23 03:09:00.480] [Logger] [info] Reduced - Size: 14
+[2022-05-23 03:09:00.818] [Logger] [info] Reduced - Size: 12
+[2022-05-23 03:09:01.203] [Logger] [info] Reduced - Size: 10
+[2022-05-23 03:09:02.134] [Logger] [info] Reduced - Size: 9
+[2022-05-23 03:09:02.702] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:02.762] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:02.827] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:02.874] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:02.921] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:02.921] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:02.964] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:03.146] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:09:03.282] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:09:03.324] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:03.411] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:04.455] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:04.592] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:05.679] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:05.769] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:06.812] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:06.812] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:07.008] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:09:07.008] [Logger] [info] Running delta debugging - Size: 8
+[2022-05-23 03:09:07.425] [Logger] [info] Reduced - Size: 7
+[2022-05-23 03:09:07.787] [Logger] [info] Reduced - Size: 6
+[2022-05-23 03:09:08.061] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.115] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:08.115] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.116] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:08.426] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.480] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.633] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.676] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:08.728] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:08.728] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:08.728] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:09.935] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:09:09.976] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:09.976] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:09.976] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:10.154] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:09:10.155] [Logger] [info] Running delta debugging - Size: 60
+[2022-05-23 03:09:11.788] [Logger] [info] Reduced - Size: 58
+[2022-05-23 03:09:13.318] [Logger] [info] Reduced - Size: 56
+[2022-05-23 03:09:14.359] [Logger] [info] Reduced - Size: 52
+[2022-05-23 03:09:15.190] [Logger] [info] Reduced - Size: 48
+[2022-05-23 03:09:16.391] [Logger] [info] Reduced - Size: 46
+[2022-05-23 03:09:16.952] [Logger] [info] Reduced - Size: 43
+[2022-05-23 03:09:18.909] [Logger] [info] Reduced - Size: 42
+[2022-05-23 03:09:20.319] [Logger] [info] Reduced - Size: 41
+[2022-05-23 03:09:22.050] [Logger] [info] Reduced - Size: 40
+[2022-05-23 03:09:23.654] [Logger] [info] Reduced - Size: 38
+[2022-05-23 03:09:25.125] [Logger] [info] Reduced - Size: 37
+[2022-05-23 03:09:27.324] [Logger] [info] Reduced - Size: 36
+[2022-05-23 03:09:28.991] [Logger] [info] Reduced - Size: 35
+[2022-05-23 03:09:31.203] [Logger] [info] Reduced - Size: 34
+[2022-05-23 03:09:32.974] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.014] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.058] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.099] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.142] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.187] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.249] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.311] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.356] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.403] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.455] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.508] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:33.759] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.801] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:33.845] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:34.099] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:34.368] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:34.422] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:34.486] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:34.553] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:34.600] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:34.647] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:34.984] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:35.321] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:35.321] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:35.363] [Logger] [info] Running delta debugging - Size: 9
+[2022-05-23 03:09:36.644] [Logger] [info] Reduced - Size: 8
+[2022-05-23 03:09:37.020] [Logger] [info] Reduced - Size: 7
+[2022-05-23 03:09:37.621] [Logger] [info] Reduced - Size: 6
+[2022-05-23 03:09:38.145] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:38.190] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:38.328] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:09:39.517] [Logger] [info] Reduced - Size: 3
+[2022-05-23 03:09:42.644] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:09:49.094] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:49.186] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:49.242] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:49.333] [Logger] [info] Iteration 2 (Word: 2487)
+[2022-05-23 03:09:50.305] [Logger] [info] Start global reduction
+[2022-05-23 03:09:50.308] [Logger] [info] Running delta debugging - Size: 46
+[2022-05-23 03:09:51.035] [Logger] [info] Start local reduction
+[2022-05-23 03:09:51.037] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:51.037] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:51.078] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:51.158] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:51.159] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:51.159] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:51.240] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:53.411] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:54.524] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:54.566] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:55.622] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:55.622] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:55.622] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:55.755] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:09:55.819] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:55.879] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:09:55.879] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:55.879] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:09:57.033] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:09:59.250] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:09:59.291] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:00.343] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:00.343] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:01.446] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:01.446] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:01.446] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:02.513] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:02.513] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:02.513] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:02.514] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:10:02.721] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:02.721] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:02.721] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:02.763] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:10:08.504] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:08.562] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:08.780] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:09.105] [Logger] [info] Running delta debugging - Size: 18
+[2022-05-23 03:10:17.256] [Logger] [info] Reduced - Size: 17
+[2022-05-23 03:10:20.918] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:21.055] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:21.105] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:22.590] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:22.680] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:23.804] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:23.846] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:23.891] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:23.953] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.016] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.063] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.110] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.166] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.221] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.265] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.405] [Logger] [info] Reduced - Size: 0
+[2022-05-23 03:10:24.405] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.452] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.587] [Logger] [info] Reduced - Size: 0
+[2022-05-23 03:10:24.588] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:10:24.890] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:24.933] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:24.985] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:25.040] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:26.098] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:27.195] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:10:29.901] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:29.902] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:29.902] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:30.200] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:30.242] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:10:30.948] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:33.569] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:33.647] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:39.660] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:10:41.888] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:41.945] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:10:46.476] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:46.548] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:46.548] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:46.548] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:10:51.197] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:52.341] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:10:52.603] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:53.657] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:53.766] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:53.766] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:53.766] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:53.766] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:53.818] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:53.954] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:10:53.954] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:53.954] [Logger] [info] Reduce keyword at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:53.954] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:53.954] [Logger] [info] Reduce special at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:53.954] [Logger] [info] Running delta debugging - Size: 9
+[2022-05-23 03:10:54.091] [Logger] [info] Reduced - Size: 4
+[2022-05-23 03:10:54.226] [Logger] [info] Reduced - Size: 2
+[2022-05-23 03:10:54.363] [Logger] [info] Reduced - Size: 1
+[2022-05-23 03:10:54.363] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:54.363] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:54.405] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:54.493] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:55.576] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:55.620] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:56.706] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:56.796] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:57.840] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:57.840] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:10:58.206] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.260] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:58.260] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.260] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:58.489] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.540] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.754] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.796] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:10:58.852] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.852] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:58.852] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.894] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:10:58.894] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:10:58.894] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 03:11:02.389] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:02.637] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.678] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.721] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.761] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.805] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.851] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.914] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:02.978] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.024] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.071] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.123] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.176] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.216] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.260] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:03.504] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:03.765] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.812] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.874] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.938] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:03.984] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:04.033] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:04.357] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:04.684] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:04.684] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:04.724] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:11:05.645] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:05.688] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:05.819] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:09.986] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:16.469] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:16.590] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:16.658] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:16.719] [Logger] [info] Iteration 3 (Word: 2373)
+[2022-05-23 03:11:17.000] [Logger] [info] Start global reduction
+[2022-05-23 03:11:17.003] [Logger] [info] Running delta debugging - Size: 46
+[2022-05-23 03:11:17.677] [Logger] [info] Reduced - Size: 45
+[2022-05-23 03:11:17.978] [Logger] [info] Start local reduction
+[2022-05-23 03:11:17.980] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:17.980] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:18.024] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:18.104] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:18.104] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:18.104] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:18.185] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:20.376] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:21.501] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:21.542] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:22.616] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:22.616] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:22.616] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:22.784] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:22.846] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:22.910] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:22.910] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:22.910] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:24.073] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:26.305] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:26.346] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:27.399] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:27.399] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:28.505] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:28.505] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:28.505] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:29.584] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:29.584] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:29.585] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:29.585] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:29.772] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:29.772] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:29.775] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:29.817] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:11:35.603] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:35.660] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:35.871] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:36.198] [Logger] [info] Running delta debugging - Size: 17
+[2022-05-23 03:11:38.979] [Logger] [info] Reduced - Size: 16
+[2022-05-23 03:11:39.565] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:39.657] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:39.719] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:40.149] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.285] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.333] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.383] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.445] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.511] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.558] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.607] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.666] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.722] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:41.767] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:42.064] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:42.108] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:42.164] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:42.239] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:43.297] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:44.393] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:11:47.078] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:11:47.079] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:47.079] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:47.406] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:47.451] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:11:48.167] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:50.767] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:11:50.875] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:11:56.740] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:11:59.001] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:11:59.055] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:12:03.620] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:03.678] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:03.678] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:03.678] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:12:08.350] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:09.526] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:09.833] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:10.889] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:10.990] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:10.990] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:10.990] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:10.990] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:11.043] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:11.043] [Logger] [info] Reduce keyword at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:11.043] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:11.043] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:11.043] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:11.085] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:11.174] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:12.259] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:12.308] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:13.391] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:13.487] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:14.531] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:14.532] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:12:14.860] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:14.916] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:14.916] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:14.916] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:15.091] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.147] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.342] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.384] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:15.472] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.472] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:15.472] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.513] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:15.513] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:15.514] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 03:12:19.072] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:19.327] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.370] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.413] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.453] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.499] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.546] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.609] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.675] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.722] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.772] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.828] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.884] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.925] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:19.969] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:20.226] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:20.515] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:20.566] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:20.635] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:20.710] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:20.763] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:20.816] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:21.151] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:21.477] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:21.477] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:21.517] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:12:22.421] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:22.464] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:22.590] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:26.764] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:12:33.343] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:33.449] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:33.540] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:33.653] [Logger] [info] Iteration 4 (Word: 2345)
+[2022-05-23 03:12:33.821] [Logger] [info] Start global reduction
+[2022-05-23 03:12:33.823] [Logger] [info] Running delta debugging - Size: 45
+[2022-05-23 03:12:34.531] [Logger] [info] Reduced - Size: 44
+[2022-05-23 03:12:34.909] [Logger] [info] Start local reduction
+[2022-05-23 03:12:34.911] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:34.911] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:34.960] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:35.057] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:35.057] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:35.058] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:35.170] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:37.369] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:38.473] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:38.517] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:39.573] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:39.573] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:39.573] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:39.734] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:39.814] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:39.895] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:39.895] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:39.895] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:12:41.121] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:43.401] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:43.453] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:44.521] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:44.521] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:45.708] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:45.708] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:45.708] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:46.767] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:46.767] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:46.767] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:46.767] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:46.984] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:12:46.984] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:46.984] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:47.025] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:12:52.759] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:52.864] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:12:53.127] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:12:53.479] [Logger] [info] Running delta debugging - Size: 16
+[2022-05-23 03:12:54.934] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:55.045] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:55.121] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:55.571] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.712] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.755] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.803] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.869] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.939] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:56.989] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.036] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.103] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.158] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.201] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:12:57.490] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.533] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:57.617] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:57.684] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:12:58.738] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:12:59.833] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:13:02.545] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:02.545] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:02.545] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:02.857] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:02.904] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:13:03.639] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:06.225] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:06.329] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:12.291] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:14.615] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:14.670] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:19.287] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:19.360] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:19.360] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:19.360] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:13:24.078] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:25.216] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:25.478] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:26.529] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:26.640] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:26.640] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:26.640] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:26.640] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:26.699] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:26.699] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:26.699] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:26.768] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:26.870] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:27.961] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:28.009] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:29.099] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:29.197] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:30.259] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:30.259] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:13:30.622] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:30.683] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:30.683] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:30.683] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:30.909] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:30.999] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:31.172] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:31.211] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:31.262] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:31.262] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:31.262] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:31.305] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:31.305] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:31.305] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 03:13:34.971] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:35.226] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.266] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.310] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.350] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.394] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.442] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.508] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.591] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.641] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.690] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.753] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.816] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.863] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:35.911] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:36.161] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:36.465] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:36.514] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:36.595] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:36.674] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:36.723] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:36.772] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:37.113] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:37.441] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:37.441] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:37.481] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:13:38.590] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:38.635] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:38.766] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:42.949] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:49.442] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:49.540] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:49.615] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:49.709] [Logger] [info] Iteration 5 (Word: 2337)
+[2022-05-23 03:13:49.856] [Logger] [info] Start global reduction
+[2022-05-23 03:13:49.858] [Logger] [info] Running delta debugging - Size: 44
+[2022-05-23 03:13:50.457] [Logger] [info] Start local reduction
+[2022-05-23 03:13:50.459] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:50.459] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:50.504] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:50.591] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:50.592] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:50.592] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:50.679] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:52.847] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:53.962] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:54.002] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:55.053] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:55.053] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:55.053] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:55.168] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:13:55.226] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:55.287] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:55.288] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:55.288] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:13:56.440] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:13:58.661] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:58.707] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:13:59.762] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:13:59.762] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:00.870] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:00.870] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:00.870] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:01.933] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:01.933] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:01.933] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:01.933] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:02.131] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:02.131] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:02.132] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:02.172] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:14:07.960] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:08.009] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:08.234] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:08.598] [Logger] [info] Running delta debugging - Size: 16
+[2022-05-23 03:14:10.025] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:10.161] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:10.220] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:10.672] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:11.785] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:11.827] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:11.872] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:11.935] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:11.997] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.041] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.088] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.142] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.194] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.238] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:12.529] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.572] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:12.641] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:12.723] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:13.777] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:14.872] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:14:17.592] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:17.592] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:17.592] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:17.925] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:17.968] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:14:18.737] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:21.359] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:21.453] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:27.374] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:29.593] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:29.649] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:14:34.229] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:34.331] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:34.331] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:34.331] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:14:39.091] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:40.237] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:40.502] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:41.552] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:41.669] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:41.669] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:41.669] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:41.669] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:41.725] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:41.725] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:41.725] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:41.770] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:41.858] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:42.949] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:42.991] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:44.081] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:44.173] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:45.214] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:45.214] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:14:45.537] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:45.590] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:45.590] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:45.590] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:45.794] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:45.889] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:46.042] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:46.088] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:46.187] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:46.187] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:46.187] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:46.228] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:46.228] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:46.228] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 03:14:49.791] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:50.039] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.080] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.128] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.173] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.217] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.264] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.327] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.391] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.436] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.482] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.536] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.591] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.631] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:50.675] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:50.921] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:51.192] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:51.238] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:51.307] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:51.376] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:51.426] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:51.478] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:51.817] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:52.141] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:14:52.141] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:14:52.184] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:14:53.101] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:53.149] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:14:53.296] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:14:57.469] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:03.980] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:04.073] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:04.128] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:04.186] [Logger] [info] Reduce File: /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:04.188] [Logger] [info] Iteration 1 (Word: 2337)
+[2022-05-23 03:15:04.342] [Logger] [info] Start global reduction
+[2022-05-23 03:15:04.344] [Logger] [info] Running delta debugging - Size: 44
+[2022-05-23 03:15:04.928] [Logger] [info] Start local reduction
+[2022-05-23 03:15:04.930] [Logger] [info] Reduce main at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:04.930] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:04.972] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:05.053] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:05.053] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:05.054] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:05.134] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:07.308] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:08.422] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:08.463] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:09.518] [Logger] [info] Reduce open_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:09.518] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:09.518] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:09.644] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:09.698] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:09.751] [Logger] [info] Reduce get_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:09.751] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:09.751] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:10.899] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:13.112] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:13.154] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:14.211] [Logger] [info] Reduce is_end_of_character_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:14.211] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:15.329] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:15.329] [Logger] [info] Reduce unget_char at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:15.329] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:16.397] [Logger] [info] Reduce open_token_stream at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:16.397] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:16.397] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:16.397] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:16.643] [Logger] [info] Reduce get_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:16.643] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:16.643] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:16.686] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:15:22.421] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:22.486] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:22.722] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:23.084] [Logger] [info] Running delta debugging - Size: 16
+[2022-05-23 03:15:24.499] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:24.611] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:24.689] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:25.124] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.240] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.285] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.337] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.407] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.485] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.534] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.583] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.640] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.697] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:26.743] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:27.040] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:27.083] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:27.135] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:27.189] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:28.244] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:29.337] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:15:32.060] [Logger] [info] Reduce numeric_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:32.061] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:32.061] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:32.369] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:32.414] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:15:33.120] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:35.753] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:35.839] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:41.746] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:44.044] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:44.099] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:15:48.659] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:48.756] [Logger] [info] Reduce error_or_eof_case at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:48.756] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:48.756] [Logger] [info] Running delta debugging - Size: 5
+[2022-05-23 03:15:53.480] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:54.626] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:15:54.892] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:55.945] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:56.054] [Logger] [info] Reduce check_delimiter at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:56.055] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:56.055] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:56.055] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:56.111] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:56.111] [Logger] [info] Reduce skip at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:56.111] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:56.155] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:56.245] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:57.333] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:57.380] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:15:58.469] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:58.561] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:59.606] [Logger] [info] Reduce constant at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:59.606] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:15:59.937] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:59.991] [Logger] [info] Reduce next_state at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:15:59.991] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:15:59.991] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:16:00.178] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.238] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.431] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.472] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:16:00.534] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.534] [Logger] [info] Reduce is_eof_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:16:00.534] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.576] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:00.576] [Logger] [info] Reduce print_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:16:00.576] [Logger] [info] Running delta debugging - Size: 34
+[2022-05-23 03:16:04.191] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:04.445] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.488] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.532] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.575] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.632] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.697] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.776] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.850] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.899] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:04.950] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.005] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.059] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.100] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.147] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:05.395] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:05.669] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.719] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.783] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.846] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.893] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:05.937] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:06.266] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:06.602] [Logger] [info] Reduce get_actual_token at /root/small_progs_debloated/printtokens/src/origin/printtokens.c
+[2022-05-23 03:16:06.602] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:06.646] [Logger] [info] Running delta debugging - Size: 6
+[2022-05-23 03:16:07.600] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:16:07.648] [Logger] [info] Running delta debugging - Size: 2
+[2022-05-23 03:16:07.789] [Logger] [info] Running delta debugging - Size: 3
+[2022-05-23 03:16:11.986] [Logger] [info] Running delta debugging - Size: 4
+[2022-05-23 03:16:18.436] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:18.523] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:18.577] [Logger] [info] Running delta debugging - Size: 1
+[2022-05-23 03:16:18.653] [Logger] [info] ====================================================
+[2022-05-23 03:16:18.653] [Logger] [info]                        Report                       
+[2022-05-23 03:16:18.654] [Logger] [info] ====================================================
+[2022-05-23 03:16:18.654] [Logger] [info]              Total Time :                512.5s
+[2022-05-23 03:16:18.654] [Logger] [info]             Oracle Time :                509.0s
+[2022-05-23 03:16:18.654] [Logger] [info]           Learning Time :                  0.1s
+[2022-05-23 03:16:18.654] [Logger] [info]    Global Success Ratio :    1% (    2 /   113)
+[2022-05-23 03:16:18.654] [Logger] [info]     Local Success Ratio :    2% (   75 /  3292)
+[2022-05-23 03:16:18.658] [Logger] [info]   #Functions (Original) :                    18
+[2022-05-23 03:16:18.658] [Logger] [info]  #Statements (Original) :                   396
+[2022-05-23 03:16:18.660] [Logger] [info]    #Functions (Reduced) :                    16
+[2022-05-23 03:16:18.660] [Logger] [info]   #Statements (Reduced) :                   224
