@@ -1,6 +1,6 @@
 #!/bin/bash
 # afl测试reduced程序
-afl-fuzz -d  -m 100 -i afl_seed/input_0 -o afl_result/reduced/result_0 ./bin/afl-reduced.out '@h' 'w0Yj|`l`AYgv{M<#KAouk'
+afl-fuzz -d  -m 100 -i afl_seed/input_1 -o afl_result/reduced/result_1 ./bin/afl-reduced.out '@h' 'w0Yj|`l`AYgv{M<#KAouk'
 # '@h' 'w0Yj|`l`AYgv{M<#KAouk'
 # '@**?' 'b@t'
 # afl测试origin程序
