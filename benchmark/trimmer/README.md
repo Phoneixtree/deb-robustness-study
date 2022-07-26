@@ -73,7 +73,7 @@ To install wllvm:
 ```
 	pip install wllvm
 ```
-** I failed in using wllvm after I changed the priority of python and python3, so please do not change default "python" in your Ubuntu!**
+**I failed in using wllvm after I changed the priority of python and python3, so please do not change default "python" in your Ubuntu!**
 Then you have to set environment variable for wllvm:
 ```
 	export LLVM_COMPILER=clang
