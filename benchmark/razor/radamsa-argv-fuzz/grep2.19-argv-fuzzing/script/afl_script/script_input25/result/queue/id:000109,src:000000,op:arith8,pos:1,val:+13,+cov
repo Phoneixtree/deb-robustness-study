@@ -1,1 +1,0 @@
--R "free[^[:space:]]+" t_dir/input2

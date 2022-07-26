@@ -1,1 +1,0 @@
--G "free[l[:space:]]+" -G free[l[:space<]]+" tt_dir/input2

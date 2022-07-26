@@ -1,0 +1,8 @@
+xor Fqc-2 [ 32768 ;zl2147483647
+xor Fqc-2 [ 0 ;zl0
+xor Fqc-2 [ 0 ;zl1
+xor Fqc-2 [ 0 ;zl1
+xor Fqc-2 [ 32768 ;zl0
+xor Fqc-2 [ 0 ;zl0
+xor Fqc-2 [ 32768 ;zl0
+xor Fqc-2 [ 0 ;zl0
