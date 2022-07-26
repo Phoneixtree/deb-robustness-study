@@ -67,7 +67,7 @@ If you succeeded in building, it shows you
 	failed:0
 ```
 
-#Step4 Install wllvm
+# Step4 Install wllvm
 Trimmer uses wllvm to create xxxx.bc
 To install wllvm:
 ```
