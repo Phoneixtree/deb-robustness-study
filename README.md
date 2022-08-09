@@ -58,16 +58,9 @@ https://docs.qq.com/sheet/DSm5xZ25naGJ1cEFo?tab=BB08J2
 ### Online document for findings-sharing
 
 https://a1hga02396.feishu.cn/docx/doxcnGXGH5RUQCHzKkHy8nRDrbf
-
- (Edit, Need login) https://www.yuque.com/g/cytmo/gi9oz5/pbcgnq/collaborator/join?token=HgMjDpgDslYlfzqU&goto=%2Fcytmo%2Fgi9oz5%2Fpbcgnq%2Fedit
- 
- (Read only) https://www.yuque.com/cytmo/gi9oz5/pbcgnq#IHGF2
  
 ### Online document about prog_redebloat(add failed testcases back)
-https://www.yuque.com/cytmo/gi9oz5
-
-### Online document about insights and notes about the expriment
-https://docs.qq.com/doc/DSmVOam9YaVp1UWNn
+https://a1hga02396.feishu.cn/docs/doccnLXA5gfUdm6r2yeekWq31Bb
 
 ### Online document about the results of double-checking the inputs and scripts
 https://docs.qq.com/doc/DZmdNZXlGVmVpVWhI
